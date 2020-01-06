@@ -1,0 +1,88 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem{russakovsky2015imagenet}
+Olga Russakovsky, Jia Deng, Hao Su, Jonathan Krause, Sanjeev Satheesh, Sean Ma,
+  Zhiheng Huang, Andrej Karpathy, Aditya Khosla, Michael Bernstein, et~al.
+\newblock Imagenet large scale visual recognition challenge[J].
+\newblock Int. J. Comput. Vis., 2015, 115(3):211--252.
+
+\bibitem{krizhevsky2012imagenet}
+Alex Krizhevsky, Ilya Sutskever, Geoffrey~E Hinton.
+\newblock Imagenet classification with deep convolutional neural networks[C].
+  Proc. NeurIPS.
+\newblock 2012:1097--1105.
+
+\bibitem{fei2006one}
+Li~Fei-Fei, Rob Fergus, Pietro Perona.
+\newblock One-shot learning of object categories[J].
+\newblock {IEEE} Trans. Pattern Anal. and Mach. Intell., 2006, 28(4):594--611.
+
+\bibitem{lampert2009learning}
+Christoph~H Lampert, Hannes Nickisch, Stefan Harmeling.
+\newblock Learning to detect unseen object classes by between-class attribute
+  transfer[C]. Proc. {IEEE} Conf. CVPR.
+\newblock 2009:951--958.
+
+\bibitem{ren2015faster}
+Shaoqing Ren, Kaiming He, Ross Girshick, Jian Sun.
+\newblock Faster r-cnn: Towards real-time object detection with region proposal
+  networks[C]. Proc. NeurIPS.
+\newblock 2015:91--99.
+
+\bibitem{he2017mask}
+Kaiming He, Georgia Gkioxari, Piotr Doll{\'a}r, Ross Girshick.
+\newblock Mask r-cnn[C]. Proc. {IEEE} ICCV.
+\newblock 2017:2961--2969.
+
+\bibitem{johnson2015image}
+Justin Johnson, Ranjay Krishna, Michael Stark, Li-Jia Li, David Shamma, Michael
+  Bernstein, Li~Fei-Fei.
+\newblock Image retrieval using scene graphs[C]. Proc. {IEEE} Conf. CVPR.
+\newblock 2015:3668--3678.
+
+\bibitem{kirillov2019panoptic}
+Alexander Kirillov, Kaiming He, Ross Girshick, Carsten Rother, Piotr
+  Doll{\'a}r.
+\newblock Panoptic segmentation[C]. Proc. {IEEE} Conf. CVPR.
+\newblock 2019:9404--9413.
+
+\bibitem{hochreiter1997long}
+Sepp Hochreiter, J{\"u}rgen Schmidhuber.
+\newblock Long short-term memory[J].
+\newblock Neural Computation, 1997, 9(8):1735--1780.
+
+\bibitem{chung2014empirical}
+Junyoung Chung, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio.
+\newblock Empirical evaluation of gated recurrent neural networks on sequence
+  modeling[C]. arXiv.
+\newblock 2014.
+
+\bibitem{vinyals2015show}
+Oriol Vinyals, Alexander Toshev, Samy Bengio, Dumitru Erhan.
+\newblock Show and tell: A neural image caption generator[C]. Proc. {IEEE}
+  Conf. CVPR.
+\newblock 2015:3156--3164.
+
+\bibitem{gao2017tall}
+Jiyang Gao, Chen Sun, Zhenheng Yang, Ram Nevatia.
+\newblock Tall: Temporal activity localization via language query[C]. Proc.
+  {IEEE} ICCV.
+\newblock 2017:5267--5275.
+
+\bibitem{antol2015vqa}
+Stanislaw Antol, Aishwarya Agrawal, Jiasen Lu, Margaret Mitchell, Dhruv Batra,
+  C~Lawrence~Zitnick, Devi Parikh.
+\newblock Vqa: Visual question answering[C]. Proc. {IEEE} ICCV.
+\newblock 2015:2425--2433.
+
+\bibitem{das2017visual}
+Abhishek Das, Satwik Kottur, Khushi Gupta, Avi Singh, Deshraj Yadav,
+  Jos{\'e}~MF Moura, Devi Parikh, Dhruv Batra.
+\newblock Visual dialog[C]. Proc. {IEEE} Conf. CVPR.
+\newblock 2017:326--335.
+
+\end{thebibliography}

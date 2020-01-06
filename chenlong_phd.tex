@@ -1,0 +1,192 @@
+%# -*- coding:utf-8 -*-
+%!TEX program = xelatex
+\documentclass[twoside,AutoFakeBold=true]{ZJUthesis}
+% 该文档中首字符为“%”的均为注释行，不会在论文中出现
+% https://github.com/shuwei1204/ZJUthesis
+% https://github.com/KwenString/Thesis-SE-ZJU-LaTeX
+
+% AutoFakeBold=true 是为解决在Windows系统下，使用xelatex时中文字体不能加粗的问题
+
+% 取消目录中链接的颜色，方便打印
+% 如需颜色，请将“false”改为“true”
+\hypersetup{colorlinks=false}
+%\usepackage{ccmap} %解决生成pdf的中文复制文字后乱码问题
+%\usepackage[sectionbib]{chapterbib}
+\usepackage[chapter]{algorithm}
+\floatname{algorithm}{算法}
+\usepackage{paralist}
+\usepackage{algorithmic}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{cleveref}
+\usepackage{adjustbox}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.10}
+\usepgfplotslibrary{colormaps}
+\usetikzlibrary{pgfplots.colormaps}
+
+\renewcommand{\algorithmicrepeat}{\textbf{重复}}
+\renewcommand{\algorithmicuntil}{\textbf{直到}}
+\renewcommand{\algorithmicfor}{\textbf{对于}}
+\renewcommand{\algorithmicdo}{\textbf{}}
+\renewcommand{\algorithmicend}{\textbf{结束}}
+
+\newcommand{\crefrangeconjunction}{至}
+\newcommand{\crefpairconjunction}{和}
+\newcommand{\creflastgroupconjunction}{和}
+\crefname{figure}{图}{图}
+\crefname{equation}{公式}{公式}
+\crefname{table}{表}{表}
+\crefname{algorithm}{算法}{算法}
+\crefname{chapter}{章}{章}
+
+
+\begin{document}
+\fangsong\zihao{-4} %% 正文字体设定
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% 中文封面内容
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\classification{TP391.41}% 中图分类号
+\serialnumber{10335}% 单位代码
+\SecretLevel{无}% 密级
+\PersonalID{11521059}%
+
+\title{面向复杂场景理解的视觉内容识别、}%中文题目
+\titletl{检测与推理方法研究}
+
+\Etitle{Visual Recognition, Detection, and Reasoning}%英文题目
+\Etitletl{for Complex Visual Scene Understanding}
+
+\author{陈隆}%
+
+\degree{博士}
+
+\supervisor{肖俊}%
+\cpsupervisor{}%
+\major{计算机科学与技术}% 专业名称
+\researchdm{计算机视觉}
+\institute{计算机科学与技术学院}
+
+\submitdate{2020 年 xx 月 xx 日}
+\defenddate{2020 年 xx 月 xx 日}
+\defenddateE{xx June 2020}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 中文题名页内容
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 论文评阅人信息 注意两字名与三字名，两字职称与三字职称的写法，便于对齐
+% 多余的名额直接注释掉即可，比如三个评阅人，把评阅人D，E注释掉即可
+\reviewersA{}%(隐名评阅学位论文省略)
+\reviewersB{}
+\reviewersC{}
+\reviewersD{}
+\reviewersE{}
+
+% 答辩委员会信息，如果某一个单位比较长，
+% 请在其它较短后面补上{hspace{Xem}}，X是比最长的单位名少几个字
+% 如果实际人数少于6人，多余的注释掉即可
+\chairman{ xx   \quad\quad 教授	\quad\quad xx大学} 
+\commissionerA{xx	\quad\quad 教授	\quad\quad xx大学}
+\commissionerB{xx	\quad\quad 教授	\quad\quad xx大学} %计算机科学与技术学院
+\commissionerC{xx	\quad\quad 教授	\quad\quad xx大学}
+\commissionerD{xx	\quad\quad 教授	\quad\quad xx大学}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 英文题名页内容
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% 评阅人信息，名字，职称，单位尽量用简写，否则会写不下
+\EreviewersA{}
+\EreviewersB{}
+\EreviewersC{}
+\EreviewersD{}
+\EreviewersE{}
+
+% 答辩委员会信息，同样尽量用简写，否则会写不下
+\Echairman{xx	\quad Professor	\quad ZJU}
+\EcommissionerA{xx	\hspace{1em}\quad\quad\quad\quad Professor	\quad ZJU}
+\EcommissionerB{xx	\hspace{1.5em}\quad Professor	\quad ZJU}
+\EcommissionerC{xx	\hspace{1em}\quad\quad\quad Professor	\quad ZJU}
+\EcommissionerD{xx	\hspace{1em}\quad\quad Professor	\quad ZJU}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 原创声明与版权协议页
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\SignautreDateA{}{}{}
+\SignautreDateB{}{}{}
+\SignautreDateC{}{}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 论文部分开始
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeCoverPage% 生成封面
+\maketitle	% 生成中文题名页
+\makeenglishtitle	% 生成英文封面
+\makeOSandCPRTpage	% 生成原创声明与版权协议页
+%%%%%%%%%%Roman page numbering%%%%%%%%
+\ZJUfrontmatter
+\include{./chapter0/abstractC} %% 摘要
+\include{./chapter0/abstractE} %% 英文摘要
+\ZJUcontents	% 生成目录列表
+\ZJUListofFigures	% 生成插图列表
+\ZJUListofTables	% 生成表格列表
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 正文内容部分开始
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ZJUmainmatter
+
+\include{./chapter1/chap1}
+\include{./chapter2/chap2}
+
+% \include{./chapter3/chap3}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{基于属性保持的零样本物体识别方法}
+
+\section{引言}
+
+\section{属性保持的对抗网络学习}
+
+\section{实验设置与性能对比}
+
+\section{本章小结}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\include{./chapter4/chap4}
+\include{./chapter5/chap5}
+\include{./chapter6/chap6}
+\include{./chapter7/chap7}
+\include{./chapter8/chap8}
+
+\ZJUbackmatter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 参考文献
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ZJUthesisbib{ZJUthesis}
+\bibliography{ZJUthesis}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 发表论文目录
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{./chapter8/publications}
+\include{./chapter8/thanks}
+
+\end{document}
