@@ -22,11 +22,14 @@
 \contentsline {section}{\numberline {2.3}图像描述语句生成}{7}{section.2.3}% 
 \contentsline {section}{\numberline {2.4}图像视觉问答}{7}{section.2.4}% 
 \contentsline {section}{\numberline {2.5}视频片段检索}{7}{section.2.5}% 
-\contentsline {chapter}{\numberline {3\hspace {.3em}}基于属性保持的零样本物体识别方法}{9}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}引言}{9}{section.3.1}% 
+\contentsline {chapter}{\numberline {3\hspace {.3em}}基于属性保持的零样本物体分类方法}{9}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}问题描述}{9}{section.3.1}% 
 \contentsline {section}{\numberline {3.2}属性保持的对抗网络学习}{9}{section.3.2}% 
-\contentsline {section}{\numberline {3.3}实验设置与性能对比}{9}{section.3.3}% 
-\contentsline {section}{\numberline {3.4}本章小结}{9}{section.3.4}% 
+\contentsline {section}{\numberline {3.3}实验设置与性能分析}{9}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}零样本物体分类数据集}{9}{subsection.3.3.1}% 
+\contentsline {subsection}{\numberline {3.3.2}实验设定与零样本物体分类评价指标}{10}{subsection.3.3.2}% 
+\contentsline {subsection}{\numberline {3.3.3}网络模型与参数设置}{10}{subsection.3.3.3}% 
+\contentsline {section}{\numberline {3.4}本章小结}{10}{section.3.4}% 
 \contentsline {chapter}{\numberline {4\hspace {.3em}}基于反事实多智能体学习的图像场景图检测方法}{11}{chapter.4}% 
 \contentsline {section}{\numberline {4.1}引言}{11}{section.4.1}% 
 \contentsline {section}{\numberline {4.2}反事实多智能体学习}{11}{section.4.2}% 

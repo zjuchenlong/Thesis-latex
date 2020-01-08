@@ -85,4 +85,32 @@ Abhishek Das, Satwik Kottur, Khushi Gupta, Avi Singh, Deshraj Yadav,
 \newblock Visual dialog[C]. Proc. {IEEE} Conf. CVPR.
 \newblock 2017:326--335.
 
+\bibitem{wah2011caltech}
+Catherine Wah, Steve Branson, Peter Welinder, Pietro Perona, Serge Belongie.
+\newblock The caltech-ucsd birds-200-2011 dataset[J].
+\newblock 2011.
+
+\bibitem{patterson2012sun}
+Genevieve Patterson, James Hays.
+\newblock Sun attribute database: Discovering, annotating, and recognizing
+  scene attributes[C]. Proc. {IEEE} Conf. CVPR.
+\newblock 2012:2751--2758.
+
+\bibitem{xian2017zero}
+Yongqin Xian, Bernt Schiele, Zeynep Akata.
+\newblock Zero-shot learning-the good, the bad and the ugly[C]. Proc. {IEEE}
+  Conf. CVPR.
+\newblock 2017:4582--4591.
+
+\bibitem{farhadi2009describing}
+Ali Farhadi, Ian Endres, Derek Hoiem, David Forsyth.
+\newblock Describing objects by their attributes[C]. Proc. {IEEE} Conf. CVPR.
+\newblock 2009:1778--1785.
+
+\bibitem{he2016deep}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun.
+\newblock Deep residual learning for image recognition[C]. Proc. {IEEE} Conf.
+  CVPR.
+\newblock 2016:770--778.
+
 \end{thebibliography}
