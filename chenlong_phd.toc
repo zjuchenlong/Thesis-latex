@@ -30,11 +30,13 @@
 \contentsline {subsection}{\numberline {3.3.2}实验设定与零样本物体分类评价指标}{10}{subsection.3.3.2}% 
 \contentsline {subsection}{\numberline {3.3.3}网络模型与参数设置}{10}{subsection.3.3.3}% 
 \contentsline {section}{\numberline {3.4}本章小结}{10}{section.3.4}% 
-\contentsline {chapter}{\numberline {4\hspace {.3em}}基于反事实多智能体学习的图像场景图检测方法}{11}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}引言}{11}{section.4.1}% 
+\contentsline {chapter}{\numberline {4\hspace {.3em}}基于反事实多智能体学习的图像场景图生成方法}{11}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}问题描述}{11}{section.4.1}% 
 \contentsline {section}{\numberline {4.2}反事实多智能体学习}{11}{section.4.2}% 
 \contentsline {section}{\numberline {4.3}实验设置与性能对比}{11}{section.4.3}% 
-\contentsline {section}{\numberline {4.4}本章小结}{11}{section.4.4}% 
+\contentsline {subsection}{\numberline {4.3.1}图像场景图生成数据集与实验设定}{11}{subsection.4.3.1}% 
+\contentsline {subsection}{\numberline {4.3.2}实验细节}{11}{subsection.4.3.2}% 
+\contentsline {section}{\numberline {4.4}本章小结}{12}{section.4.4}% 
 \contentsline {chapter}{\numberline {5\hspace {.3em}}基于通道注意力机制的图像描述语句生成方法}{13}{chapter.5}% 
 \contentsline {section}{\numberline {5.1}引言}{13}{section.5.1}% 
 \contentsline {section}{\numberline {5.2}通道注意力机制}{13}{section.5.2}% 
@@ -54,5 +56,5 @@
 \contentsline {section}{\numberline {8.1}本文工作总结}{19}{section.8.1}% 
 \contentsline {section}{\numberline {8.2}未来研究展望}{19}{section.8.2}% 
 \contentsline {chapter}{参考文献}{21}{chapter*.7}% 
-\contentsline {chapter}{作者简历及在学期间所取得的科研成果}{23}{chapter*.8}% 
-\contentsline {chapter}{致谢}{25}{chapter*.12}% 
+\contentsline {chapter}{作者简历及在学期间所取得的科研成果}{25}{chapter*.8}% 
+\contentsline {chapter}{致谢}{27}{chapter*.12}% 

@@ -5,6 +5,7 @@ A level-1 auxiliary file: ./chapter0/abstractC.aux
 A level-1 auxiliary file: ./chapter0/abstractE.aux
 A level-1 auxiliary file: ./chapter1/chap1.aux
 A level-1 auxiliary file: ./chapter2/chap2.aux
+A level-1 auxiliary file: ./chapter3/chap3.aux
 A level-1 auxiliary file: ./chapter4/chap4.aux
 A level-1 auxiliary file: ./chapter5/chap5.aux
 A level-1 auxiliary file: ./chapter6/chap6.aux
@@ -16,45 +17,46 @@ A level-1 auxiliary file: ./chapter8/thanks.aux
 Database file #1: ZJUthesis.bib
 Warning--empty pages in chung2014empirical
 Warning--empty journal in wah2011caltech
-You've used 19 entries,
+Warning--empty pages in simonyan2015very
+You've used 29 entries,
             2586 wiz_defined-function locations,
-            722 strings with 8370 characters,
-and the built_in function-call counts, 9086 in all, are:
-= -- 651
-> -- 280
+            763 strings with 9996 characters,
+and the built_in function-call counts, 13944 in all, are:
+= -- 1005
+> -- 425
 < -- 0
-+ -- 106
-- -- 87
-* -- 437
-:= -- 993
-add.period$ -- 57
-call.type$ -- 19
-change.case$ -- 19
++ -- 161
+- -- 132
+* -- 663
+:= -- 1514
+add.period$ -- 87
+call.type$ -- 29
+change.case$ -- 29
 chr.to.int$ -- 0
-cite$ -- 21
-duplicate$ -- 878
-empty$ -- 847
-format.name$ -- 106
-if$ -- 2046
+cite$ -- 32
+duplicate$ -- 1350
+empty$ -- 1304
+format.name$ -- 161
+if$ -- 3153
 int.to.chr$ -- 0
-int.to.str$ -- 19
-missing$ -- 236
-newline$ -- 101
-num.names$ -- 19
-pop$ -- 385
+int.to.str$ -- 29
+missing$ -- 360
+newline$ -- 151
+num.names$ -- 29
+pop$ -- 592
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 315
+skip$ -- 496
 stack$ -- 0
-substring$ -- 601
-swap$ -- 590
+substring$ -- 924
+swap$ -- 906
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 2
-while$ -- 67
-width$ -- 21
-write$ -- 182
-(There were 2 warnings)
+warning$ -- 3
+while$ -- 103
+width$ -- 31
+write$ -- 274
+(There were 3 warnings)

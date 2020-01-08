@@ -1,9 +1,47 @@
-\chapter{基于属性保持的零样本物体识别方法}
+\chapter{基于属性保持的零样本物体分类方法}
 
-\section{引言}
+
+\section{问题描述}
 
 \section{属性保持的对抗网络学习}
 
-\section{实验设置与性能对比}
+
+\section{实验设置与性能分析}
+\subsection{零样本物体分类数据集}
+\textbf{CUB}~\cite{wah2011caltech}：全称是Caltech-UCSD-Birds 200-2011数据集。它是一个细粒度鸟类别分类数据集，总共包含11788张来自200个细粒度类别的鸟图像，并且每张图像有312个语义属性标注。其中训练集包含150个已见类别的7057张图像，测试集包含150个已见类别的1764张图像和50个未见类别的2967张图像。
+
+\textbf{SUN}~\cite{patterson2012sun}：全称是SUN attribute数据集。它是一个细粒度场景分类数据集，总共包含14340张来自717个场景类别的场景图像，并且每张图像有102个语义属性标注。其中训练集包含645个已见类别的10320张图像，测试集包含645个已见类别的2580张图像和72个未见类别的1440张图像。
+
+\textbf{AWA}~\cite{lampert2009learning}：全称是Animals with Attributes数据集。它是一个动物类别分类数据集，总共包含30475张来自50个类别的动物图像，并且每张图像有85个语义属性标注。其中训练集包含40个已见类别的23527张图像，测试集包含40个已见类别的5882张图像和10个未见类别的7913张图像。由于原始AWA数据集图像版权的问题，我们这里的AWA数据集实际上使用的是AWA2~\cite{xian2017zero}.
+
+\textbf{aPY}~\cite{farhadi2009describing}：全称是Attribute Pascal and Yahoo数据集。它是一个通用的物体分类数据集，总共包含12051张来自32个类别，并且每张图像有64个语义属性标注。其中训练集包含20个已见类别5932张图像，测试集包含20个已见类别1483张图像和12个未见类别的7924张图像。
+
+为了公平地和其他模型进行比较，我们使用Xian等人~\cite{xian2017zero}提供的类别嵌入映射向量，其中每个嵌入映射向量都经过$l_2$范数进行归一化。
+
+
+\subsection{实验设定与零样本物体分类评价指标}
+\noindent{\kaishu{实验设定}}：
+为了评估模型对零样本物体分类的结果，我们采用三种实验设定：
+\begin{asparaenum}
+\item U$\to$U: 测试图像的类别和可以预测的类别都只是未见类别；
+
+\item S$\to$T: 测试图像的类别是未见类别，但是可以预测的类别是未见类别和已见类别的总和；
+
+\item U$\to$T: 测试图像的类别和可以预测的类别都是未见类别和已见类别的总和。
+\end{asparaenum}
+通常，U$\to$U被称为传统型零样本分类，而U$\to$T被称为通用型零样本分类。
+
+\noindent{\kaishu{评价指标}}:
+我们参考现有的文献~\cite{xian2017zero}，常用的每类平均准确率作为评价指标。对于通用型零样本分类，我们另外使用常用的$H$作为主要的评价指标，其中$H$是已见类别$L_s$的准确率（$Acc_{S\rightarrow T}$）和未见类别$L_u$的准确率（$Acc_{U\rightarrow T}$）的调和平均数：
+\begin{equation} \label{ch3:equ:H}
+H = 2\times Acc_{S\rightarrow T}\times Acc_{U\rightarrow T} /(Acc_{S\rightarrow T}+Acc_{U\rightarrow T})
+\end{equation}
+
+\subsection{网络模型与参数设置}
+\noindent{\kaishu{网络结构}}：整个网络结构都是端到端地直接进行训练。其中映射网络$E$是基于ResNet-101~\cite{he2016deep}，输入图像的大小是$224\times224\times3$。映射网络$F$是基于AlexNet~\cite{krizhevsky2012imagenet}，然后附加上两层额外的全连接层。重建网络$G$采用类似于生成器~\cite{dosovitskiy2016generating}的结构，通过五个连续的反卷积和非线性操作（leaky ReLU）将向量特征转换成三维卷积特征。
+
+
+\noindent{\kaishu{参数设置}}：对于本章所有的实验，训练图像都将短边放缩到256个像素。参照AlexNet~\cite{krizhevsky2012imagenet}，我们采用了增大十倍训练图像的数据增强方式。为了提升训练速度，映射网络$E$中ResNet-101部分参数始终保持固定，映射网络$F$的参数初始化采用预训练好的AlexNet的参数，重建网络$G$的参数初始化用预训练好的生成器~\cite{dosovitskiy2016generating}。剩余的所有参数都是用MSRA的随机初始化~\cite{he2015delving}。初始的学习率设置为$1e^{-4}$，然后当loss不下降时，学习率降低10倍。
+
 
 \section{本章小结}

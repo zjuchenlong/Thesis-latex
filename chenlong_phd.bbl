@@ -113,4 +113,64 @@ Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun.
   CVPR.
 \newblock 2016:770--778.
 
+\bibitem{dosovitskiy2016generating}
+Alexey Dosovitskiy, Thomas Brox.
+\newblock Generating images with perceptual similarity metrics based on deep
+  networks[C]. Proc. NeurIPS.
+\newblock 2016:658--666.
+
+\bibitem{he2015delving}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun.
+\newblock Delving deep into rectifiers: Surpassing human-level performance on
+  imagenet classification[C]. Proc. {IEEE} ICCV.
+\newblock 2015:1026--1034.
+
+\bibitem{krishna2017visual}
+Ranjay Krishna, Yuke Zhu, Oliver Groth, Justin Johnson, Kenji Hata, Joshua
+  Kravitz, Stephanie Chen, Yannis Kalantidis, Li-Jia Li, David~A Shamma, et~al.
+\newblock Visual genome: Connecting language and vision using crowdsourced
+  dense image annotations[J].
+\newblock Int. J. Comput. Vis., 2017, 123(1):32--73.
+
+\bibitem{xu2017scene}
+Danfei Xu, Yuke Zhu, Christopher~B Choy, Li~Fei-Fei.
+\newblock Scene graph generation by iterative message passing[C]. Proc. {IEEE}
+  Conf. CVPR.
+\newblock 2017:5410--5419.
+
+\bibitem{zellers2018neural}
+Rowan Zellers, Mark Yatskar, Sam Thomson, Yejin Choi.
+\newblock Neural motifs: Scene graph parsing with global context[C]. Proc.
+  {IEEE} Conf. CVPR.
+\newblock 2018:5831--5840.
+
+\bibitem{newell2017pixels}
+Alejandro Newell, Jia Deng.
+\newblock Pixels to graphs by associative embedding[C]. Proc. NeurIPS.
+\newblock 2017:2171--2180.
+
+\bibitem{yang2018graph}
+Jianwei Yang, Jiasen Lu, Stefan Lee, Dhruv Batra, Devi Parikh.
+\newblock Graph r-cnn for scene graph generation[C]. Proc. ECCV.
+\newblock 2018:670--685.
+
+\bibitem{herzig2018mapping}
+Roei Herzig, Moshiko Raboh, Gal Chechik, Jonathan Berant, Amir Globerson.
+\newblock Mapping images to scene graphs with permutation-invariant structured
+  prediction[C]. Proc. NeurIPS.
+\newblock 2018:7211--7221.
+
+\bibitem{jae2018tensorize}
+Seong Jae~Hwang, Sathya~N Ravi, Zirui Tao, Hyunwoo~J Kim, Maxwell~D Collins,
+  Vikas Singh.
+\newblock Tensorize, factorize and regularize: Robust visual relationship
+  learning[C]. Proc. {IEEE} Conf. CVPR.
+\newblock 2018:1014--1023.
+
+\bibitem{simonyan2015very}
+Karen Simonyan, Andrew Zisserman.
+\newblock Very deep convolutional networks for large-scale image
+  recognition[C]. Proc. ICLR.
+\newblock 2015.
+
 \end{thebibliography}

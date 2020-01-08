@@ -1,9 +1,37 @@
-\chapter{基于反事实多智能体学习的图像场景图检测方法}
+\chapter{基于反事实多智能体学习的图像场景图生成方法}
 
-\section{引言}
+\section{问题描述}
 
 \section{反事实多智能体学习}
 
 \section{实验设置与性能对比}
+\subsection{图像场景图生成数据集与实验设定}
+
+\noindent{\kaishu{图像场景图生成数据集}}：我们使用目前最大的场景图数据集Visual Genome（VG） ~\cite{krishna2017visual}。为了与现有工作能够公平地进行比较，我们采用与现有工作相同的数据集划分和预处理~\cite{xu2017scene, zellers2018neural, newell2017pixels, yang2018graph, herzig2018mapping}。处理后的图像数据共包含150个物体类别和50个视觉关系类别。每张图像平均有11.5个物体和6.2个视觉关系。整个数据集中，70\%的图像数据当成训练集，30\%的图像数据当成测试集。
+
+
+\noindent{\kaishu{实验设定}}：参考现有的文献~\cite{xu2017scene, zellers2018neural, jae2018tensorize}，我们在三种实验设定下评估场景图生成质量：
+\begin{asparaenum}
+\item 视觉关系分类（PredCls）：给定图像、所有的物体框和物体类别，模型需要预测所有的物体组合的视觉关系；
+
+\item 场景图分类（SGCls）：给定图像和所有的物体框，模型需要预测所有物体类别以及所有物体组合的视觉关系；
+
+\item 场景图生成（SGDet）：给定图像，模型需要检测物体框、预测所有物体类别以及所有物体组合的视觉关系。
+\end{asparaenum}
+
+对于视觉关系中物体框检测来说，需要主语（subject）和宾语（object）与真实准确物体框的交并比（IoU）均大于0.5。按照惯例，我们使用Recall@20（R@20）、Recall（R@50）和Recall（R@100）作为场景图生成质量的评价指标。
+
+
+\subsection{实验细节}
+
+
+\noindent{\kaishu{物体检测器}}：为了公平地与现有工作进行对比，我们采用了与~\cite{zellers2018neural}一样的物体检测器。具体来说，它是以VGG网络~\cite{simonyan2015very}为主干网络
+
+
+
+\noindent{\kaishu{速度与正确率的权衡}}
+
+
+\noindent{\kaishu{SGDet的后处理}}
 
 \section{本章小结}
