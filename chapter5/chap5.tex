@@ -5,5 +5,31 @@
 \section{通道注意力机制}
 
 \section{实验设置与性能对比}
+\subsection{图像描述语句生成数据集}
+\noindent\textbf{Flickr8k}~\cite{hodosh2013framing}：它一共包含8000张图像。按照官方划分，我们将其中6000张图像作为训练集，1000张图像为验证集，以及1000张图像为测试集。
+
+\noindent\textbf{Flickr30k}~\cite{young2014image}: 它一共包含31000张图像。因为这个数据集缺少官方划分，我们采用与之前工作~\cite{karpathy2015deep}同样的划分。在这种划分中，29000张图像作为训练集，1000张图像为验证集，以及1000张图像为测试集。
+
+\noindent\textbf{MSCOCO}~\cite{lin2014microsoft}：根据该数据集的官方划分，训练集包含82783张图像，验证集包含40504张图像，以及测试集包含40775张图像。对于官方测试集，由于所有的图像都没有公布其中的人工标注信息，我们同样参考之前的工作~\cite{karpathy2015deep}将官方验证集划分为验证集和测试集两部分，其中验证集和测试集各包含5000张图像。
+
+
+\subsection{评价指标}
+\noindent\textbf{BLEU}~\cite{papineni2002bleu} (B@1, B@2, B@3, B@4):
+
+\noindent\textbf{METEOR}~\cite{banerjee2005meteor} (MT):
+
+\noindent\textbf{CIDEr}~\cite{vedantam2015cider} (CD):
+
+\noindent\textbf{ROUGE-L}~\cite{lin2002manual} (RG):
+
+
+对于所有的四种评价指标来说，他们都是通过比较生成语句中的n元词组在人工标注的语句中出现的频率。所有的评价指标都是采用MSCOCO官方的测评工具\footnote{https://github/tylin/coco-caption.}。
+
+
+
+\subsection{实验设定}
+对于图像编码部分，我们采用两种流行的卷积神经网络：VGG-19~\cite{simonyan2015very}和ResNet-152~\cite{he2016deep}。对于文本解码部分，我们使用LSTM~\cite{hochreiter1997long}来生成描述语句中的单词。单词编码的维度和LSTM的隐含状态的维度分别设定为100和1000。用于计算注意力权重的共同空间维度设置为512。对于Flickr8k数据集，batch size设置为16；对于Flickr30k和MSCOCO，batch size设置为64。为了避免过拟合，我们采用dropout和early stopping。我们整个模型采用端到端的训练方式，用优化算法Adadelta~\cite{zeiler2012adadelta}进行参数优化。整个语句的生成过程将会终止当模型刚好预测一个特定的“END”字符或者达到了预先设定的句子最长的长度。在测试阶段，我们采用BeamSearch~\cite{vinyals2015show}的方法，在每个时刻选择5个句子作为候选答案。
+
+
 
 \section{本章小结}

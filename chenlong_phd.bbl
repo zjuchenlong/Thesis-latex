@@ -173,4 +173,95 @@ Karen Simonyan, Andrew Zisserman.
   recognition[C]. Proc. ICLR.
 \newblock 2015.
 
+\bibitem{redmon2017yolo9000}
+Joseph Redmon, Ali Farhadi.
+\newblock Yolo9000: better, faster, stronger[C]. Proc. {IEEE} Conf. CVPR.
+\newblock 2017.
+
+\bibitem{zhang2019graphical}
+Ji~Zhang, Kevin~J Shih, Ahmed Elgammal, Andrew Tao, Bryan Catanzaro.
+\newblock Graphical contrastive losses for scene graph parsing[C]. Proc. {IEEE}
+  Conf. CVPR.
+\newblock 2019:11535--11543.
+
+\bibitem{hodosh2013framing}
+Micah Hodosh, Peter Young, Julia Hockenmaier.
+\newblock Framing image description as a ranking task: Data, models and
+  evaluation metrics[J].
+\newblock J. Arti. Intel. Res., 2013, 47:853--899.
+
+\bibitem{young2014image}
+Peter Young, Alice Lai, Micah Hodosh, Julia Hockenmaier.
+\newblock From image descriptions to visual denotations: New similarity metrics
+  for semantic inference over event descriptions[J].
+\newblock Trans. Assoc. Comp. Lingui., 2014, 2:67--78.
+
+\bibitem{karpathy2015deep}
+Andrej Karpathy, Li~Fei-Fei.
+\newblock Deep visual-semantic alignments for generating image descriptions[C].
+  Proc. {IEEE} Conf. CVPR.
+\newblock 2015:3128--3137.
+
+\bibitem{lin2014microsoft}
+Tsung-Yi Lin, Michael Maire, Serge Belongie, James Hays, Pietro Perona, Deva
+  Ramanan, Piotr Doll{\'a}r, C~Lawrence Zitnick.
+\newblock Microsoft coco: Common objects in context[C]. Proc. ECCV.
+\newblock Springer, 2014:740--755.
+
+\bibitem{papineni2002bleu}
+Kishore Papineni, Salim Roukos, Todd Ward, Wei-Jing Zhu.
+\newblock Bleu: a method for automatic evaluation of machine translation[C].
+  Proc. ACL.
+\newblock Association for Computational Linguistics, 2002:311--318.
+
+\bibitem{banerjee2005meteor}
+Satanjeev Banerjee, Alon Lavie.
+\newblock Meteor: An automatic metric for mt evaluation with improved
+  correlation with human judgments[C]. Proc. ACL.
+\newblock 2005:65--72.
+
+\bibitem{vedantam2015cider}
+Ramakrishna Vedantam, C~Lawrence~Zitnick, Devi Parikh.
+\newblock Cider: Consensus-based image description evaluation[C]. Proc. {IEEE}
+  Conf. CVPR.
+\newblock 2015:4566--4575.
+
+\bibitem{lin2002manual}
+Chin-Yew Lin, Eduard Hovy.
+\newblock Manual and automatic evaluation of summaries[C]. Proc. ACL.
+\newblock Association for Computational Linguistics, 2002:45--51.
+
+\bibitem{zeiler2012adadelta}
+Matthew~D Zeiler.
+\newblock Adadelta: an adaptive learning rate method[C]. arXiv.
+\newblock 2012.
+
+\bibitem{regneri2013grounding}
+Michaela Regneri, Marcus Rohrbach, Dominikus Wetzel, Stefan Thater, Bernt
+  Schiele, Manfred Pinkal.
+\newblock Grounding action descriptions in videos[J].
+\newblock Trans. Assoc. Comp. Lingui., 2013, 1:25--36.
+
+\bibitem{krishna2017dense}
+Ranjay Krishna, Kenji Hata, Frederic Ren, Li~Fei-Fei, Juan Carlos~Niebles.
+\newblock Dense-captioning events in videos[C]. Proc. {IEEE} ICCV.
+\newblock 2017:706--715.
+
+\bibitem{yuan2019find}
+Yitian Yuan, Tao Mei, Wenwu Zhu.
+\newblock To find where you talk: Temporal sentence localization in video with
+  attention based location regression[C]. Proc. AAAI.
+\newblock volume~33. 2019:9159--9166.
+
+\bibitem{feng2018video}
+Yang Feng, Lin Ma, Wei Liu, Tong Zhang, Jiebo Luo.
+\newblock Video re-localization[C]. Proc. ECCV.
+\newblock 2018:51--66.
+
+\bibitem{caba2015activitynet}
+Fabian Caba~Heilbron, Victor Escorcia, Bernard Ghanem, Juan Carlos~Niebles.
+\newblock Activitynet: A large-scale video benchmark for human activity
+  understanding[C]. Proc. {IEEE} Conf. CVPR.
+\newblock 2015:961--970.
+
 \end{thebibliography}

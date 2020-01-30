@@ -6,5 +6,36 @@
 
 \section{实验设置与性能对比}
 
+\subsection{视频片段检索数据集}
+
+\noindent\textbf{\kaishu{基于语句的视频片段检索}}：我们在以下三个数据集上进行评估：
+
+\noindent\textbf{TACoS}~\cite{regneri2013grounding}：它一共包含127个视频和17344个文本与视频序列对（样本）。我们参考现有的标准数据集划分~\cite{gao2017tall}，将其中50\%的样本作为训练集，25\%的样本作为验证集，25\%的样本作为测试集。每个样本中视频的平均长度为5分钟。
+
+
+\noindent\textbf{Charades-STA}~\cite{gao2017tall}：它一共包含12408个文本与视频序列对作为训练集，3720个文本与视频序列对作为测试集。每个样本中视频的平均长度为30秒。
+
+
+\noindent\textbf{ActivityNet Captions}~\cite{krishna2017dense}：它是目前为止最大、最丰富的数据集，一共包含19209个视频。我们参考现有的工作~\cite{yuan2019find}, 使用37421个文本与视频序列作为训练集，17505个文本与视频序列作为测试集。每个样本中视频的平均长度为2分钟。
+
+
+\noindent\textbf{\kaishu{基于视频的视频片段检索}}：我们在以下数据集上进行评估：
+
+\noindent\textbf{ActivityNet-VRL}~\cite{feng2018video}：它是目前唯一公开发布的数据集。它对动作识别数据集ActivityNet~\cite{caba2015activitynet}共200个类别的视频进行了重组，其中任意选取160个类别对应的视频作为训练集，20个类别对应的视频作为验证集，以及剩余20个类别对应的视频作为测试集。这种零样本式的数据集划分能够评估模型的泛化能力。在训练阶段，查询视频和引用视频是随机选取的。在测试阶段，查询视频和引用视频是固定的。
+
+\subsection{评价指标}
+
+
+\noindent\textbf{\kaishu{基于语句的视频片段检索}}：我们参考现有工作，使用下列两种通用的评价指标：
+
+\noindent\textbf{R@N, IoU@$\theta$}：在测试集中，每个样本预测分数最高的n个的结果重叠度（Intersection-over-Union，IoU）大于$\theta$的百分比。由于自底向上框架的特性，我们仅考虑$N=1$。
+
+\noindent\textbf{mIoU}：测试集中所有测试样本的平均的重叠度。
+
+
+\noindent\textbf{\kaishu{基于视频的视频片段检索}}：我们使用以下评价指标：
+
+\noindent\textbf{mAP@1}：在不同阈值下最高预测结果的平均精度均值（mAP）。
+
 \section{本章小结}
 

@@ -18,45 +18,47 @@ Database file #1: ZJUthesis.bib
 Warning--empty pages in chung2014empirical
 Warning--empty journal in wah2011caltech
 Warning--empty pages in simonyan2015very
-You've used 29 entries,
+Warning--empty pages in redmon2017yolo9000
+Warning--empty pages in zeiler2012adadelta
+You've used 45 entries,
             2586 wiz_defined-function locations,
-            763 strings with 9996 characters,
-and the built_in function-call counts, 13944 in all, are:
-= -- 1005
-> -- 425
-< -- 0
-+ -- 161
-- -- 132
-* -- 663
-:= -- 1514
-add.period$ -- 87
-call.type$ -- 29
-change.case$ -- 29
+            839 strings with 12493 characters,
+and the built_in function-call counts, 20959 in all, are:
+= -- 1513
+> -- 618
+< -- 1
++ -- 236
+- -- 191
+* -- 986
+:= -- 2275
+add.period$ -- 136
+call.type$ -- 45
+change.case$ -- 45
 chr.to.int$ -- 0
-cite$ -- 32
-duplicate$ -- 1350
-empty$ -- 1304
-format.name$ -- 161
-if$ -- 3153
+cite$ -- 50
+duplicate$ -- 2047
+empty$ -- 1983
+format.name$ -- 235
+if$ -- 4743
 int.to.chr$ -- 0
-int.to.str$ -- 29
-missing$ -- 360
-newline$ -- 151
-num.names$ -- 29
-pop$ -- 592
+int.to.str$ -- 45
+missing$ -- 547
+newline$ -- 231
+num.names$ -- 45
+pop$ -- 904
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 496
+skip$ -- 733
 stack$ -- 0
-substring$ -- 924
-swap$ -- 906
-text.length$ -- 0
+substring$ -- 1355
+swap$ -- 1355
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 3
-while$ -- 103
-width$ -- 31
-write$ -- 274
-(There were 3 warnings)
+warning$ -- 5
+while$ -- 158
+width$ -- 47
+write$ -- 428
+(There were 5 warnings)
