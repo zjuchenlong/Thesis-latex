@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.12.18)  30 JAN 2020 19:31
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.12.18)  7 FEB 2020 13:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1811,16 +1811,19 @@ Underfull \vbox (badness 2302) has occurred while \output is active []
 
 ]
 2
-) [7]
+
+Package natbib Warning: Citation `' on page 7 undefined on input line 11.
+
+[7]) [8]
 \openout2 = `./chapter3/chap3.aux'.
 
- (./chapter3/chap3.tex [8
-
-
-
-]
+ (./chapter3/chap3.tex
 3
-[9]) [10]
+[9
+
+
+
+]) [10]
 \openout2 = `./chapter4/chap4.aux'.
 
  (./chapter4/chap4.tex
@@ -1845,10 +1848,10 @@ Underfull \vbox (badness 2302) has occurred while \output is active []
 6
 
 Overfull \hbox (5.39864pt too wide) in paragraph at lines 31--32
-\TU/TimesNewRoman(0)/bx/n/12.045 R@N, IoU@$\OML/cmm/m/it/12.045 ^^R$\TU/STFangs
-ong(0)/m/n/12.045 ：|  在 测 试 集 中，|  每 个 样 本 预 测 分 数 最 高 的 \TU/TimesNewRoman(0)/m
-/n/12.045 n \TU/STFangsong(0)/m/n/12.045 个 的 结 果 重 叠 度  |（\TU/TimesNewRoman(0)/
-m/n/12.045 Intersection-
+\TU/TimesNewRoman(0)/bx/n/12.045 R@N, IoU@$\OML/cmm/m/it/12.045 ^^R$\TU/KaitiSC
+(0)/m/n/12.045 ：|  在 测 试 集 中，|  每 个 样 本 预 测 分 数 最 高 的 \TU/TimesNewRoman(0)/m/n/
+12.045 n \TU/KaitiSC(0)/m/n/12.045 个 的 结 果 重 叠 度  |（\TU/TimesNewRoman(0)/m/n/12
+.045 Intersection-
  []
 
 [15
@@ -1914,26 +1917,29 @@ sis and Machine Intelligence (TPAMI),
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 177.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 177.
- (./chenlong_phd.aux
-(./chapter0/abstractC.aux) (./chapter0/abstractE.aux) (./chapter1/chap1.aux)
-(./chapter2/chap2.aux) (./chapter3/chap3.aux) (./chapter4/chap4.aux)
-(./chapter5/chap5.aux) (./chapter6/chap6.aux) (./chapter7/chap7.aux)
-(./chapter8/chap8.aux) (./chapter8/publications.aux) (./chapter8/thanks.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 177.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 177.
+
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 176.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 176.
+(./chenlong_phd.aux (./chapter0/abstractC.aux) (./chapter0/abstractE.aux)
+(./chapter1/chap1.aux) (./chapter2/chap2.aux) (./chapter3/chap3.aux)
+(./chapter4/chap4.aux) (./chapter5/chap5.aux) (./chapter6/chap6.aux)
+(./chapter7/chap7.aux) (./chapter8/chap8.aux) (./chapter8/publications.aux)
+(./chapter8/thanks.aux))
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 176.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 176.
 Package rerunfilecheck Info: File `chenlong_phd.out' has not changed.
-(rerunfilecheck)             Checksum: AB09E5FF88FA488371170733F597D8B0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 177.
+(rerunfilecheck)             Checksum: 1D2B2D7A8DE96D7494E3DF65678F79C0.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 176.
  ) 
 Here is how much of TeX's memory you used:
- 51424 strings out of 492916
- 1188417 string characters out of 6133344
+ 51579 strings out of 492916
+ 1197607 string characters out of 6133344
  1423077 words of memory out of 5000000
- 54595 multiletter control sequences out of 15000+600000
- 562673 words of font info for 197 fonts, out of 8000000 for 9000
+ 54749 multiletter control sequences out of 15000+600000
+ 562681 words of font info for 198 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 65i,12n,96p,859b,709s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,12n,96p,859b,701s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on chenlong_phd.pdf (47 pages).

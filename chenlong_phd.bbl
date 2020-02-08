@@ -85,6 +85,42 @@ Abhishek Das, Satwik Kottur, Khushi Gupta, Avi Singh, Deshraj Yadav,
 \newblock Visual dialog[C]. Proc. {IEEE} Conf. CVPR.
 \newblock 2017:326--335.
 
+\bibitem{farhadi2009describing}
+Ali Farhadi, Ian Endres, Derek Hoiem, David Forsyth.
+\newblock Describing objects by their attributes[C]. Proc. {IEEE} Conf. CVPR.
+\newblock 2009:1778--1785.
+
+\bibitem{romera2015embarrassingly}
+Bernardino Romera-Paredes, Philip Torr.
+\newblock An embarrassingly simple approach to zero-shot learning[C]. Proc.
+  ICML.
+\newblock 2015:2152--2161.
+
+\bibitem{norouzi2014zero}
+Mohammad Norouzi, Tomas Mikolov, Samy Bengio, Yoram Singer, Jonathon Shlens,
+  Andrea Frome, Greg~S Corrado, Jeffrey Dean.
+\newblock Zero-shot learning by convex combination of semantic embeddings[C].
+  Proc. ICLR.
+\newblock 2014.
+
+\bibitem{demirel2017attributes2classname}
+Berkan Demirel, Ramazan Gokberk~Cinbis, Nazli Ikizler-Cinbis.
+\newblock Attributes2classname: A discriminative model for attribute-based
+  unsupervised zero-shot learning[C]. Proc. {IEEE} ICCV.
+\newblock 2017:1232--1241.
+
+\bibitem{jiang2017learning}
+Huajie Jiang, Ruiping Wang, Shiguang Shan, Yi~Yang, Xilin Chen.
+\newblock Learning discriminative latent attributes for zero-shot
+  classification[C]. Proc. {IEEE} ICCV.
+\newblock 2017:4223--4232.
+
+\bibitem{frome2013devise}
+Andrea Frome, Greg~S Corrado, Jon Shlens, Samy Bengio, Jeff Dean, Marc'Aurelio
+  Ranzato, Tomas Mikolov.
+\newblock Devise: A deep visual-semantic embedding model[C]. Proc. NeurIPS.
+\newblock 2013:2121--2129.
+
 \bibitem{wah2011caltech}
 Catherine Wah, Steve Branson, Peter Welinder, Pietro Perona, Serge Belongie.
 \newblock The caltech-ucsd birds-200-2011 dataset[J].
@@ -101,11 +137,6 @@ Yongqin Xian, Bernt Schiele, Zeynep Akata.
 \newblock Zero-shot learning-the good, the bad and the ugly[C]. Proc. {IEEE}
   Conf. CVPR.
 \newblock 2017:4582--4591.
-
-\bibitem{farhadi2009describing}
-Ali Farhadi, Ian Endres, Derek Hoiem, David Forsyth.
-\newblock Describing objects by their attributes[C]. Proc. {IEEE} Conf. CVPR.
-\newblock 2009:1778--1785.
 
 \bibitem{he2016deep}
 Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun.

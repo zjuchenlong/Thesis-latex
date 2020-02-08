@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.12.18)  22 DEC 2019 16:34
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.12.18)  7 FEB 2020 13:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -37,9 +37,139 @@ Overfull \hbox (20.0pt too wide) in paragraph at lines 1--2
 [] 
  []
 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 本
+     章将就感兴趣零样本物体识别、图像场景图生成、图像描述语句生成、视频片段检索和图像视觉问答几方面的相关工作和本文的关系进行综述。
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 本 in font nullfont!
+Missing character: There is no 章 in font nullfont!
+Missing character: There is no 将 in font nullfont!
+Missing character: There is no 就 in font nullfont!
+Missing character: There is no 感 in font nullfont!
+Missing character: There is no 兴 in font nullfont!
+Missing character: There is no 趣 in font nullfont!
+Missing character: There is no 零 in font nullfont!
+Missing character: There is no 样 in font nullfont!
+Missing character: There is no 本 in font nullfont!
+Missing character: There is no 物 in font nullfont!
+Missing character: There is no 体 in font nullfont!
+Missing character: There is no 识 in font nullfont!
+Missing character: There is no 别 in font nullfont!
+Missing character: There is no 、 in font nullfont!
+Missing character: There is no 图 in font nullfont!
+Missing character: There is no 像 in font nullfont!
+Missing character: There is no 场 in font nullfont!
+Missing character: There is no 景 in font nullfont!
+Missing character: There is no 图 in font nullfont!
+Missing character: There is no 生 in font nullfont!
+Missing character: There is no 成 in font nullfont!
+Missing character: There is no 、 in font nullfont!
+Missing character: There is no 图 in font nullfont!
+Missing character: There is no 像 in font nullfont!
+Missing character: There is no 描 in font nullfont!
+Missing character: There is no 述 in font nullfont!
+Missing character: There is no 语 in font nullfont!
+Missing character: There is no 句 in font nullfont!
+Missing character: There is no 生 in font nullfont!
+Missing character: There is no 成 in font nullfont!
+Missing character: There is no 、 in font nullfont!
+Missing character: There is no 视 in font nullfont!
+Missing character: There is no 频 in font nullfont!
+Missing character: There is no 片 in font nullfont!
+Missing character: There is no 段 in font nullfont!
+Missing character: There is no 检 in font nullfont!
+Missing character: There is no 索 in font nullfont!
+Missing character: There is no 和 in font nullfont!
+Missing character: There is no 图 in font nullfont!
+Missing character: There is no 像 in font nullfont!
+Missing character: There is no 视 in font nullfont!
+Missing character: There is no 觉 in font nullfont!
+Missing character: There is no 问 in font nullfont!
+Missing character: There is no 答 in font nullfont!
+Missing character: There is no 几 in font nullfont!
+Missing character: There is no 方 in font nullfont!
+Missing character: There is no 面 in font nullfont!
+Missing character: There is no 的 in font nullfont!
+Missing character: There is no 相 in font nullfont!
+Missing character: There is no 关 in font nullfont!
+Missing character: There is no 工 in font nullfont!
+Missing character: There is no 作 in font nullfont!
+Missing character: There is no 和 in font nullfont!
+Missing character: There is no 本 in font nullfont!
+Missing character: There is no 文 in font nullfont!
+Missing character: There is no 的 in font nullfont!
+Missing character: There is no 关 in font nullfont!
+Missing character: There is no 系 in font nullfont!
+Missing character: There is no 进 in font nullfont!
+Missing character: There is no 行 in font nullfont!
+Missing character: There is no 综 in font nullfont!
+Missing character: There is no 述 in font nullfont!
+Missing character: There is no 。 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 3--4
+[] 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 本
+     文提出的算法和其相关工作的具体细节和对比将在之后各章节中展示。
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 本 in font nullfont!
+Missing character: There is no 文 in font nullfont!
+Missing character: There is no 提 in font nullfont!
+Missing character: There is no 出 in font nullfont!
+Missing character: There is no 的 in font nullfont!
+Missing character: There is no 算 in font nullfont!
+Missing character: There is no 法 in font nullfont!
+Missing character: There is no 和 in font nullfont!
+Missing character: There is no 其 in font nullfont!
+Missing character: There is no 相 in font nullfont!
+Missing character: There is no 关 in font nullfont!
+Missing character: There is no 工 in font nullfont!
+Missing character: There is no 作 in font nullfont!
+Missing character: There is no 的 in font nullfont!
+Missing character: There is no 具 in font nullfont!
+Missing character: There is no 体 in font nullfont!
+Missing character: There is no 细 in font nullfont!
+Missing character: There is no 节 in font nullfont!
+Missing character: There is no 和 in font nullfont!
+Missing character: There is no 对 in font nullfont!
+Missing character: There is no 比 in font nullfont!
+Missing character: There is no 将 in font nullfont!
+Missing character: There is no 在 in font nullfont!
+Missing character: There is no 之 in font nullfont!
+Missing character: There is no 后 in font nullfont!
+Missing character: There is no 各 in font nullfont!
+Missing character: There is no 章 in font nullfont!
+Missing character: There is no 节 in font nullfont!
+Missing character: There is no 中 in font nullfont!
+Missing character: There is no 展 in font nullfont!
+Missing character: There is no 示 in font nullfont!
+Missing character: There is no 。 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 5--6
+[] 
+ []
+
 ! Undefined control sequence.
-l.3 \section
-            {零样本物体识别方法}
+l.8 \section
+            {零样本物体识别}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -53,8 +183,8 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3 \section{零
-              样本物体识别方法}
+l.8 \section{零
+              样本物体识别}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -65,23 +195,20 @@ Missing character: There is no 物 in font nullfont!
 Missing character: There is no 体 in font nullfont!
 Missing character: There is no 识 in font nullfont!
 Missing character: There is no 别 in font nullfont!
-Missing character: There is no 方 in font nullfont!
-Missing character: There is no 法 in font nullfont!
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 3--4
+Overfull \hbox (20.0pt too wide) in paragraph at lines 8--9
 [] 
  []
 
 ! Undefined control sequence.
-l.5 \section
-            {}
+l.10 \subsection
+                {零样本学习}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-)
 
 ! LaTeX Error: Missing \begin{document}.
 
@@ -89,11 +216,885 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-<*> chap2.tex -
-               recorder
+l.10 \subsection{零
+                  样本学习}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
+Missing character: There is no 零 in font nullfont!
+Missing character: There is no 样 in font nullfont!
+Missing character: There is no 本 in font nullfont!
+Missing character: There is no 学 in font nullfont!
+Missing character: There is no 习 in font nullfont!
+Missing character: There is no 零 in font nullfont!
+Missing character: There is no 样 in font nullfont!
+Missing character: There is no 本 in font nullfont!
+Missing character: There is no 物 in font nullfont!
+Missing character: There is no 体 in font nullfont!
+Missing character: There is no 识 in font nullfont!
+Missing character: There is no 别 in font nullfont!
+Missing character: There is no 的 in font nullfont!
+Missing character: There is no 主 in font nullfont!
+Missing character: There is no 流 in font nullfont!
+Missing character: There is no 方 in font nullfont!
+Missing character: There is no 法 in font nullfont!
+Missing character: There is no 是 in font nullfont!
+Missing character: There is no 基 in font nullfont!
+Missing character: There is no 于 in font nullfont!
+Missing character: There is no 类 in font nullfont!
+Missing character: There is no 别 in font nullfont!
+Missing character: There is no 属 in font nullfont!
+Missing character: There is no 性 in font nullfont!
+Missing character: There is no 的 in font nullfont!
+Missing character: There is no 物 in font nullfont!
+Missing character: There is no 体 in font nullfont!
+Missing character: There is no 识 in font nullfont!
+Missing character: There is no 别 in font nullfont!
+Missing character: There is no [ in font nullfont!
+\citation{farhadi2009describing}
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .^^J
+l.11 ...017attributes2classname,jiang2017learning}
+                                                  ：这类方法通常将类别属性看成是一个共同语义空间的中间...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `farhadi2009describing' on page  undefined on input lin
+e 11.
+
+Missing character: There is no , in font nullfont!
+\citation{lampert2009learning}
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .^^J
+l.11 ...017attributes2classname,jiang2017learning}
+                                                  ：这类方法通常将类别属性看成是一个共同语义空间的中间...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `lampert2009learning' on page  undefined on input line 
+11.
+
+Missing character: There is no , in font nullfont!
+\citation{romera2015embarrassingly}
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .^^J
+l.11 ...017attributes2classname,jiang2017learning}
+                                                  ：这类方法通常将类别属性看成是一个共同语义空间的中间...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `romera2015embarrassingly' on page  undefined on input 
+line 11.
+
+Missing character: There is no , in font nullfont!
+\citation{norouzi2014zero}
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .^^J
+l.11 ...017attributes2classname,jiang2017learning}
+                                                  ：这类方法通常将类别属性看成是一个共同语义空间的中间...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `norouzi2014zero' on page  undefined on input line 11.
+
+Missing character: There is no , in font nullfont!
+\citation{demirel2017attributes2classname}
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .^^J
+l.11 ...017attributes2classname,jiang2017learning}
+                                                  ：这类方法通常将类别属性看成是一个共同语义空间的中间...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `demirel2017attributes2classname' on page  undefined on
+ input line 11.
+
+Missing character: There is no , in font nullfont!
+\citation{jiang2017learning}
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .^^J
+l.11 ...017attributes2classname,jiang2017learning}
+                                                  ：这类方法通常将类别属性看成是一个共同语义空间的中间...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `jiang2017learning' on page  undefined on input line 11
+.
+
+Missing character: There is no ] in font nullfont!
+Missing character: There is no ： in font nullfont!
+Missing character: There is no 这 in font nullfont!
+Missing character: There is no 类 in font nullfont!
+Missing character: There is no 方 in font nullfont!
+Missing character: There is no 法 in font nullfont!
+Missing character: There is no 通 in font nullfont!
+Missing character: There is no 常 in font nullfont!
+Missing character: There is no 将 in font nullfont!
+Missing character: There is no 类 in font nullfont!
+Missing character: There is no 别 in font nullfont!
+Missing character: There is no 属 in font nullfont!
+Missing character: There is no 性 in font nullfont!
+Missing character: There is no 看 in font nullfont!
+Missing character: There is no 成 in font nullfont!
+Missing character: There is no 是 in font nullfont!
+Missing character: There is no 一 in font nullfont!
+Missing character: There is no 个 in font nullfont!
+Missing character: There is no 共 in font nullfont!
+Missing character: There is no 同 in font nullfont!
+Missing character: There is no 语 in font nullfont!
+Missing character: There is no 义 in font nullfont!
+Missing character: There is no 空 in font nullfont!
+Missing character: There is no 间 in font nullfont!
+Missing character: There is no 的 in font nullfont!
+Missing character: There is no 中 in font nullfont!
+Missing character: There is no 间 in font nullfont!
+Missing character: There is no 特 in font nullfont!
+Missing character: There is no 征 in font nullfont!
+Missing character: There is no ， in font nullfont!
+Missing character: There is no 从 in font nullfont!
+Missing character: There is no 而 in font nullfont!
+Missing character: There is no 实 in font nullfont!
+Missing character: There is no 现 in font nullfont!
+Missing character: There is no 对 in font nullfont!
+Missing character: There is no 不 in font nullfont!
+Missing character: There is no 同 in font nullfont!
+Missing character: There is no 类 in font nullfont!
+Missing character: There is no 别 in font nullfont!
+Missing character: There is no 之 in font nullfont!
+Missing character: There is no 间 in font nullfont!
+Missing character: There is no 的 in font nullfont!
+Missing character: There is no 语 in font nullfont!
+Missing character: There is no 义 in font nullfont!
+Missing character: There is no 迁 in font nullfont!
+Missing character: There is no 移 in font nullfont!
+Missing character: There is no 。 in font nullfont!
+Missing character: There is no 为 in font nullfont!
+Missing character: There is no 了 in font nullfont!
+Missing character: There is no 实 in font nullfont!
+Missing character: There is no 现 in font nullfont!
+Missing character: There is no 零 in font nullfont!
+Missing character: There is no 样 in font nullfont!
+Missing character: There is no 本 in font nullfont!
+Missing character: There is no ， in font nullfont!
+Missing character: There is no 流 in font nullfont!
+Missing character: There is no 行 in font nullfont!
+Missing character: There is no 的 in font nullfont!
+Missing character: There is no 类 in font nullfont!
+Missing character: There is no 别 in font nullfont!
+Missing character: There is no 属 in font nullfont!
+Missing character: There is no 性 in font nullfont!
+Missing character: There is no 的 in font nullfont!
+Missing character: There is no 方 in font nullfont!
+Missing character: There is no 法 in font nullfont!
+Missing character: There is no [ in font nullfont!
+\citation{frome2013devise}
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .^^J
+l.11 ...为了实现零样本，流行的类别属性的方法~\cite{frome2013devise,}
+                                                  都是通过
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `frome2013devise' on page  undefined on input line 11.
+
+Missing character: There is no , in font nullfont!
+\citation{}
+! Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .^^J
+l.11 ...为了实现零样本，流行的类别属性的方法~\cite{frome2013devise,}
+                                                  都是通过
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `' on page  undefined on input line 11.
+
+Missing character: There is no ] in font nullfont!
+Missing character: There is no 都 in font nullfont!
+Missing character: There is no 是 in font nullfont!
+Missing character: There is no 通 in font nullfont!
+Missing character: There is no 过 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 10--12
+[]
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 10--12
+[]
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 10--12
+[]
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 10--12
+[]
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 10--12
+[]
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 10--12
+[]
+ []
+
+
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 10--12
+[] []
+ []
+
+
+Overfull \hbox (5.43pt too wide) in paragraph at lines 10--12
+[] 
+ []
+
+! Undefined control sequence.
+l.14 \subsection
+                {域偏移问题}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 \subsection{域
+                  偏移问题}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 域 in font nullfont!
+Missing character: There is no 偏 in font nullfont!
+Missing character: There is no 移 in font nullfont!
+Missing character: There is no 问 in font nullfont!
+Missing character: There is no 题 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 14--15
+[] 
+ []
+
+! Undefined control sequence.
+l.16 \subsection
+                {对抗生成网络}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 \subsection{对
+                  抗生成网络}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 对 in font nullfont!
+Missing character: There is no 抗 in font nullfont!
+Missing character: There is no 生 in font nullfont!
+Missing character: There is no 成 in font nullfont!
+Missing character: There is no 网 in font nullfont!
+Missing character: There is no 络 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 16--17
+[] 
+ []
+
+! Undefined control sequence.
+l.21 \section
+             {图像场景图生成}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 \section{图
+               像场景图生成}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 图 in font nullfont!
+Missing character: There is no 像 in font nullfont!
+Missing character: There is no 场 in font nullfont!
+Missing character: There is no 景 in font nullfont!
+Missing character: There is no 图 in font nullfont!
+Missing character: There is no 生 in font nullfont!
+Missing character: There is no 成 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 21--22
+[] 
+ []
+
+! Undefined control sequence.
+l.23 \subsection
+                {场景图生成}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \subsection{场
+                  景图生成}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 场 in font nullfont!
+Missing character: There is no 景 in font nullfont!
+Missing character: There is no 图 in font nullfont!
+Missing character: There is no 生 in font nullfont!
+Missing character: There is no 成 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 23--24
+[] 
+ []
+
+! Undefined control sequence.
+l.26 \subsection
+                {多智能体梯度策略}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 \subsection{多
+                  智能体梯度策略}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 多 in font nullfont!
+Missing character: There is no 智 in font nullfont!
+Missing character: There is no 能 in font nullfont!
+Missing character: There is no 体 in font nullfont!
+Missing character: There is no 梯 in font nullfont!
+Missing character: There is no 度 in font nullfont!
+Missing character: There is no 策 in font nullfont!
+Missing character: There is no 略 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 26--27
+[] 
+ []
+
+! Undefined control sequence.
+l.33 \section
+             {图像描述语句生成}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.33 \section{图
+               像描述语句生成}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 图 in font nullfont!
+Missing character: There is no 像 in font nullfont!
+Missing character: There is no 描 in font nullfont!
+Missing character: There is no 述 in font nullfont!
+Missing character: There is no 语 in font nullfont!
+Missing character: There is no 句 in font nullfont!
+Missing character: There is no 生 in font nullfont!
+Missing character: There is no 成 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 33--34
+[] 
+ []
+
+! Undefined control sequence.
+l.36 \kaishu
+            {空间注意力机制}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.36 \kaishu{空
+              间注意力机制}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 空 in font nullfont!
+Missing character: There is no 间 in font nullfont!
+Missing character: There is no 注 in font nullfont!
+Missing character: There is no 意 in font nullfont!
+Missing character: There is no 力 in font nullfont!
+Missing character: There is no 机 in font nullfont!
+Missing character: There is no 制 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 36--37
+[] 
+ []
+
+! Undefined control sequence.
+l.39 \kaishu
+            {语义注意力机制}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 \kaishu{语
+              义注意力机制}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 语 in font nullfont!
+Missing character: There is no 义 in font nullfont!
+Missing character: There is no 注 in font nullfont!
+Missing character: There is no 意 in font nullfont!
+Missing character: There is no 力 in font nullfont!
+Missing character: There is no 机 in font nullfont!
+Missing character: There is no 制 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 39--40
+[] 
+ []
+
+! Undefined control sequence.
+l.42 \kaishu
+            {多层注意力机制}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.42 \kaishu{多
+              层注意力机制}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 多 in font nullfont!
+Missing character: There is no 层 in font nullfont!
+Missing character: There is no 注 in font nullfont!
+Missing character: There is no 意 in font nullfont!
+Missing character: There is no 力 in font nullfont!
+Missing character: There is no 机 in font nullfont!
+Missing character: There is no 制 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 42--43
+[] 
+ []
+
+! Undefined control sequence.
+l.50 \section
+             {视频片段检索}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50 \section{视
+               频片段检索}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 视 in font nullfont!
+Missing character: There is no 频 in font nullfont!
+Missing character: There is no 片 in font nullfont!
+Missing character: There is no 段 in font nullfont!
+Missing character: There is no 检 in font nullfont!
+Missing character: There is no 索 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 50--51
+[] 
+ []
+
+! Undefined control sequence.
+l.52 \subsection
+                {基于文本的视频片段检索}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \subsection{基
+                  于文本的视频片段检索}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 基 in font nullfont!
+Missing character: There is no 于 in font nullfont!
+Missing character: There is no 文 in font nullfont!
+Missing character: There is no 本 in font nullfont!
+Missing character: There is no 的 in font nullfont!
+Missing character: There is no 视 in font nullfont!
+Missing character: There is no 频 in font nullfont!
+Missing character: There is no 片 in font nullfont!
+Missing character: There is no 段 in font nullfont!
+Missing character: There is no 检 in font nullfont!
+Missing character: There is no 索 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 52--53
+[] 
+ []
+
+! Undefined control sequence.
+l.55 \subsection
+                {基于视频的视频片段检索}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 \subsection{基
+                  于视频的视频片段检索}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 基 in font nullfont!
+Missing character: There is no 于 in font nullfont!
+Missing character: There is no 视 in font nullfont!
+Missing character: There is no 频 in font nullfont!
+Missing character: There is no 的 in font nullfont!
+Missing character: There is no 视 in font nullfont!
+Missing character: There is no 频 in font nullfont!
+Missing character: There is no 片 in font nullfont!
+Missing character: There is no 段 in font nullfont!
+Missing character: There is no 检 in font nullfont!
+Missing character: There is no 索 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 55--56
+[] 
+ []
+
+! Undefined control sequence.
+l.58 \subsection
+                {自上向下框架与自底向上框架}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 \subsection{自
+                  上向下框架与自底向上框架}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 自 in font nullfont!
+Missing character: There is no 上 in font nullfont!
+Missing character: There is no 向 in font nullfont!
+Missing character: There is no 下 in font nullfont!
+Missing character: There is no 框 in font nullfont!
+Missing character: There is no 架 in font nullfont!
+Missing character: There is no 与 in font nullfont!
+Missing character: There is no 自 in font nullfont!
+Missing character: There is no 底 in font nullfont!
+Missing character: There is no 向 in font nullfont!
+Missing character: There is no 上 in font nullfont!
+Missing character: There is no 框 in font nullfont!
+Missing character: There is no 架 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 58--59
+[] 
+ []
+
+! Undefined control sequence.
+l.66 \section
+             {图像视觉问答}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.66 \section{图
+               像视觉问答}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 图 in font nullfont!
+Missing character: There is no 像 in font nullfont!
+Missing character: There is no 视 in font nullfont!
+Missing character: There is no 觉 in font nullfont!
+Missing character: There is no 问 in font nullfont!
+Missing character: There is no 答 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 66--67
+[] 
+ []
+
+! Undefined control sequence.
+l.69 \subsection
+                {视觉问答模型的文本偏差}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69 \subsection{视
+                  觉问答模型的文本偏差}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 视 in font nullfont!
+Missing character: There is no 觉 in font nullfont!
+Missing character: There is no 问 in font nullfont!
+Missing character: There is no 答 in font nullfont!
+Missing character: There is no 模 in font nullfont!
+Missing character: There is no 型 in font nullfont!
+Missing character: There is no 的 in font nullfont!
+Missing character: There is no 文 in font nullfont!
+Missing character: There is no 本 in font nullfont!
+Missing character: There is no 偏 in font nullfont!
+Missing character: There is no 差 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 69--70
+[] 
+ []
+
+! Undefined control sequence.
+l.72 \subsection
+                {视觉问答模型的特性}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.72 \subsection{视
+                  觉问答模型的特性}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 视 in font nullfont!
+Missing character: There is no 觉 in font nullfont!
+Missing character: There is no 问 in font nullfont!
+Missing character: There is no 答 in font nullfont!
+Missing character: There is no 模 in font nullfont!
+Missing character: There is no 型 in font nullfont!
+Missing character: There is no 的 in font nullfont!
+Missing character: There is no 特 in font nullfont!
+Missing character: There is no 性 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 72--73
+[] 
+ []
+
+! Undefined control sequence.
+l.74 \kaishu
+            {视觉可解释性}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.74 \kaishu{视
+              觉可解释性}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 视 in font nullfont!
+Missing character: There is no 觉 in font nullfont!
+Missing character: There is no 可 in font nullfont!
+Missing character: There is no 解 in font nullfont!
+Missing character: There is no 释 in font nullfont!
+Missing character: There is no 性 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 74--75
+[] 
+ []
+
+! Undefined control sequence.
+l.77 \kaishu
+            {文本敏感性}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.77 \kaishu{文
+              本敏感性}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 文 in font nullfont!
+Missing character: There is no 本 in font nullfont!
+Missing character: There is no 敏 in font nullfont!
+Missing character: There is no 感 in font nullfont!
+Missing character: There is no 性 in font nullfont!
+)
 Missing character: There is no - in font nullfont!
 Missing character: There is no r in font nullfont!
 Missing character: There is no e in font nullfont!
@@ -103,6 +1104,7 @@ Missing character: There is no r in font nullfont!
 Missing character: There is no d in font nullfont!
 Missing character: There is no e in font nullfont!
 Missing character: There is no r in font nullfont!
+
 ! Emergency stop.
 <*> chap2.tex -recorder
                        
@@ -110,11 +1112,11 @@ Missing character: There is no r in font nullfont!
 
  
 Here is how much of TeX's memory you used:
- 4 strings out of 492916
- 34 string characters out of 6133344
- 64431 words of memory out of 5000000
- 4159 multiletter control sequences out of 15000+600000
- 3640 words of font info for 14 fonts, out of 8000000 for 9000
+ 11 strings out of 492916
+ 207 string characters out of 6133344
+ 65431 words of memory out of 5000000
+ 4162 multiletter control sequences out of 15000+600000
+ 3656 words of font info for 16 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 5i,0n,4p,41b,16s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 19i,2n,26p,312b,97s stack positions out of 5000i,500n,10000p,200000b,80000s
 No pages of output.
