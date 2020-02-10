@@ -15,52 +15,66 @@ The style file: ZJUthesis.bst
 A level-1 auxiliary file: ./chapter8/publications.aux
 A level-1 auxiliary file: ./chapter8/thanks.aux
 Database file #1: ZJUthesis.bib
-Warning--I didn't find a database entry for ""
+Warning--string name "tpmai" is undefined
+--line 121 of file ZJUthesis.bib
+I was expecting a `,' or a `}'---line 995 of file ZJUthesis.bib
+ :   pages={1378--1386}
+ :                     ，
+I'm skipping whatever remains of this entry
+Warning--string name "emnlp" is undefined
+--line 1433 of file ZJUthesis.bib
 Warning--empty pages in chung2014empirical
 Warning--empty pages in norouzi2014zero
+Warning--empty journal in akata2015label
+Warning--empty pages in makhzani2015adversarial
+Warning--empty pages in zhu2018deep
+Warning--empty pages in ranzato2016sequence
+Warning--empty pages in zhang2017actor
+Warning--empty pages in venugopalan2014translating
+Warning--empty year in li2010object
 Warning--empty journal in wah2011caltech
 Warning--empty pages in simonyan2015very
 Warning--empty pages in redmon2017yolo9000
 Warning--empty pages in zeiler2012adadelta
-You've used 50 entries,
+You've used 113 entries,
             2586 wiz_defined-function locations,
-            858 strings with 13430 characters,
-and the built_in function-call counts, 23451 in all, are:
-= -- 1690
-> -- 698
+            1118 strings with 24022 characters,
+and the built_in function-call counts, 54455 in all, are:
+= -- 3976
+> -- 1601
 < -- 1
-+ -- 266
-- -- 216
-* -- 1102
-:= -- 2542
-add.period$ -- 151
-call.type$ -- 50
-change.case$ -- 50
++ -- 609
+- -- 496
+* -- 2525
+:= -- 5849
+add.period$ -- 340
+call.type$ -- 113
+change.case$ -- 113
 chr.to.int$ -- 0
-cite$ -- 56
-duplicate$ -- 2289
-empty$ -- 2216
-format.name$ -- 265
-if$ -- 5311
+cite$ -- 126
+duplicate$ -- 5285
+empty$ -- 5144
+format.name$ -- 608
+if$ -- 12420
 int.to.chr$ -- 0
-int.to.str$ -- 50
-missing$ -- 611
-newline$ -- 256
-num.names$ -- 50
-pop$ -- 1014
+int.to.str$ -- 113
+missing$ -- 1387
+newline$ -- 571
+num.names$ -- 113
+pop$ -- 2341
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 828
+skip$ -- 2016
 stack$ -- 0
-substring$ -- 1515
-swap$ -- 1516
+substring$ -- 3609
+swap$ -- 3513
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 6
-while$ -- 175
-width$ -- 52
-write$ -- 473
-(There were 7 warnings)
+warning$ -- 13
+while$ -- 407
+width$ -- 116
+write$ -- 1048
+(There was 1 error message)

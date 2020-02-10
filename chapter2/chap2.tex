@@ -8,38 +8,43 @@
 \section{零样本物体识别}
 
 \subsection{零样本学习}
-零样本物体识别的主流方法是基于类别属性的物体识别~\cite{farhadi2009describing,lampert2009learning,romera2015embarrassingly,norouzi2014zero,demirel2017attributes2classname,jiang2017learning}：这类方法通常将类别属性看成是一个共同语义空间的中间特征，从而实现对不同类别之间的语义迁移。为了实现零样本，流行的类别属性的方法~\cite{frome2013devise,}都是通过
+零样本物体识别的主流方法是借助类别属性对物体进行零样本学习~\cite{farhadi2009describing,lampert2009learning,romera2015embarrassingly,norouzi2014zero,demirel2017attributes2classname,jiang2017learning}：这类方法通常将类别属性看成是一个共同语义空间的中间特征，从而实现对不同类别之间的语义迁移。为了扩大零样本迁移能力，目前的大多数方法都是基于嵌入映射的~\cite{frome2013devise,akata2015label,akata2015evaluation,romera2015embarrassingly,xian2016latent,socher2013zero,kodirov2017semantic,li2017zero}。它们通过将图像特征从视觉空间直接映射到语义空间，然后在语义空间与类别属性的嵌入向量进行相似度对比。语义空间中的嵌入向量既可以来自于单词~\cite{mikolov2013distributed,pennington2014glove}，也可以来自于语句~\cite{lei2015predicting,elhoseiny2013write}。我们提出的零样本算法模型算法模型SP-AEN也是一种基于嵌入映射的方法。然而，据我们了解，我们是第一个零样本分类算法，可以用语义空间的嵌入向量来重建原始图像。另外，与零样本学习非常接近的两个任务是少样本学习~\cite{hariharan2017low}和领域自适应~\cite{motiian2017unified,panareda2017open}。这两个任务在训练阶段都能有少量测试类别的图像，相反，零样本学习在训练阶段没有任何测试类别的信息。
 
 
 \subsection{域偏移问题}
+语义损失在其他的文献中也常常被称为域偏移问题~\cite{fu2015transductive,saenko2010adapting}。
+域偏移问题是所有物体识别任务中一个非常普遍的问题。只要训练集数据和测试集数据分布不同，就存在域偏移问题。目前，需要的研究工作都发现重建原始信号可以缓解域偏移问题~\cite{kim2017learning}。在本文，我们发现同时进行重建任务和分类任务~\cite{kodirov2017semantic}对于保持语义特征并不是很有效。另一种缓解语义损失的办法是增加一个单独的属性分类器~\cite{morgado2017semantically}，但是这个方法需要额外的属性标注信息。
+
 
 \subsection{对抗生成网络}
-
-
+对抗生成网络~\cite{goodfellow2014generative}主要是训练一个生成器，使得生成器生成的样本和真实数据非常“相似”，可以“骗过”判别器。理论上，这种对抗的训练过程可以让生成器生成的样本分布和真实的样本分布完全相同。我们的零样本分类模型SP-AEN将这种对抗思想运用到特征层面上~\cite{odena2017conditional,tzeng2017adversarial,makhzani2015adversarial,shrivastava2017learning}。与此同时，少数零样本分类的模型借助于对抗生成网络来生成更多的训练样本，从而将零样本分类问题转化为普通的分类问题~\cite{mishra2018generative}。但是这类方法违背了零样本分类问题中的一个基本假设：训练阶段中测试集的类别信息是无法知道的。
 
 
 \section{图像场景图生成}
 
 \subsection{场景图生成}
- 
-
-\subsection{多智能体梯度策略}
+在第一个视觉关系检测工作~\cite{lu2016visual}以及大规模图像场景图数据集~\cite{krishna2017visual}出现之后，图像场景图生成任务逐渐成为一个新的研究热点。在早期阶段，许多场景图生成任务将物体和视觉关系拆分成两个独立的任务~\cite{lu2016visual,zhang2017visual,zhuang2017towards,zhu2018deep,zhang2017relationship}。但是这些方法忽略了场景中所有物体与视觉关系之间内在联系。为了利用所有物体与视觉关系的联系，最近的一些场景图生成算法都利用信息传递机制（Message Passing）~\cite{xu2017scene,dai2017detecting,li2017scene,li2018factorizable,yin2018zoom,jae2018tensorize,yang2018graph,tang2019learning,gu2019scene,qi2019attentive,wang2019exploring}。但是由于这些方法仍然是利用交叉熵作为模型的优化目标，在整个图结构层面不具备整体一致性。与现有方法不同，本文提出的CMAT模型可以同时满足场景图生成优化目标的两个要求：整体一致性和局部敏感性。
 
 
+\subsection{多智能体策略梯度}
 
+策略梯度是一种对不可导优化目标进行优化的方法，已经广泛应用在多个场景理解的任务中，如：图像描述语句生成~\cite{ranzato2016sequence,ren2017deep,liu2017improved,rennie2017self,zhang2017actor,liu2018context}，图像视觉问答~\cite{hu2017learning,johnson2017inferring}，图文匹配~\cite{chen2017query,yu2017joint}，视觉对话~\cite{das2017learning}，和物体检测~\cite{caicedo2015active,mathe2016reinforcement,jie2016tree}。Liang等人~\cite{liang2017deep}将图像场景图生成任务看成一个单智能体决策过程。相反，本文将图像场景图生成任务看成一个多智能体协同决策过程，并且将优化目标设成最终的图像场景图生成质量，利用多智能体策略梯度进行优化。与此同时，与目前许多现有的多智能体工作不同~\cite{foerster2016learning,omidshafiei2017deep}，本文提出的CMAT模型里智能体的数量（64个物体）与动作空间（151个物体类别）都非常大。
 
 
 
 \section{图像描述语句生成}
+编码-解码框架已经广泛的应用在许多的多模态任务中，如图像描述语句~\cite{vinyals2015show,karpathy2015deep,donahue2015long,venugopalan2015sequence,venugopalan2014translating}，视觉问答~\cite{antol2015vqa,malinowski2015ask,gao2015you,ren2015exploring}等。一个基本的编码-解码框架通常利用卷积神经网络（Convolutional Neural Network, CNN）对图像或者视频进行编码，得到一个固定的视觉特征，然后利用递归神经网络（Recurrent Neural Network, RNN）对视觉特征进行解码，生成描述语句或者问答的答案。
 
 
-\kaishu{空间注意力机制}
+随着注意力机制在编码-解码框架的运用，越来越多的视觉-文本多模态任务开始研究注意力机制。
+
+空间注意力机制
 
 
-\kaishu{语义注意力机制}
+语义注意力机制
 
 
-\kaishu{多层注意力机制}
+多层注意力机制
 
 
 
@@ -71,7 +76,3 @@
 
 \subsection{视觉问答模型的特性}
 
-\kaishu{视觉可解释性}
-
-
-\kaishu{文本敏感性}

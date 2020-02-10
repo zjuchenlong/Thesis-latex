@@ -2,6 +2,12 @@
 
 
 \section{问题描述}
+零样本物体识别（Zero-Shot Recogintion, ZSR）或零样本学习（Zero-Shot Learning, ZSL）是为了能够对训练过程未见过的新类别图像进行分类识别。目前，关于零样本学习问题的难点，学界的共识是如何将已见类别的知识迁移到未见类别上。尽管到目前为止，已经有非常多的零样本分类方法，这些方法都是依据一些非常简单和直观的机制。例如，虽然“浣熊”这个类别在训练的时候没有见过，但是我们仍然可以识别出浣熊的图像，通过检查浣熊这个类别特有的一些属性特征，像“有条纹的尾巴”~\cite{farhadi2009describing,lampert2009learning,zhang2013attribute,li2010object}、“像狐狸的外观”~\cite{torresani2010efficient,li2010object}、以及“浣熊”这个类别的语义信息~\cite{pennington2014glove,mikolov2013distributed}。这些属性特征通常在训练阶段被建模，然后期待在测试阶段中可以在所有的类别（已见类别和未见类别）中共享。经过数十年的发展，目前的零样本学习框架已经从初始基于属性分类器的模型~\cite{lampert2009learning}发展到基于嵌入映射的模型~\cite{akata2015label,frome2013devise,weston2010large}。
+
+
+
+
+
 
 \section{属性保持的对抗网络学习}
 
