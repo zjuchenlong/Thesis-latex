@@ -4,6 +4,12 @@
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
 
+\bibitem{kodirov2017semantic}
+Elyor Kodirov, Tao Xiang, Shaogang Gong.
+\newblock Semantic autoencoder for zero-shot learning[C]. Proc. {IEEE} Conf.
+  CVPR.
+\newblock 2017:3174--3183.
+
 \bibitem{russakovsky2015imagenet}
 Olga Russakovsky, Jia Deng, Hao Su, Jonathan Krause, Sanjeev Satheesh, Sean Ma,
   Zhiheng Huang, Andrej Karpathy, Aditya Khosla, Michael Bernstein, et~al.
@@ -143,12 +149,6 @@ Yongqin Xian, Zeynep Akata, Gaurav Sharma, Quynh Nguyen, Matthias Hein, Bernt
 Richard Socher, Milind Ganjoo, Christopher~D Manning, Andrew Ng.
 \newblock Zero-shot learning through cross-modal transfer[C]. Proc. NeurIPS.
 \newblock 2013:935--943.
-
-\bibitem{kodirov2017semantic}
-Elyor Kodirov, Tao Xiang, Shaogang Gong.
-\newblock Semantic autoencoder for zero-shot learning[C]. Proc. {IEEE} Conf.
-  CVPR.
-\newblock 2017:3174--3183.
 
 \bibitem{li2017zero}
 Yanan Li, Donghui Wang, Huanhang Hu, Yuetan Lin, Yueting Zhuang.
@@ -531,6 +531,29 @@ Jason Weston, Samy Bengio, Nicolas Usunier.
   embeddings[J].
 \newblock Machine Learning, 2010.
 
+\bibitem{lazaridou2015hubness}
+Angeliki Lazaridou, Georgiana Dinu, Marco Baroni.
+\newblock Hubness and pollution: Delving into cross-space mapping for zero-shot
+  learning[C]. Proc. ACL.
+\newblock 2015:270--280.
+
+\bibitem{yi2017dualgan}
+Zili Yi, Hao Zhang, Ping Tan, Minglun Gong.
+\newblock Dualgan: Unsupervised dual learning for image-to-image
+  translation[C]. Proc. {IEEE} ICCV.
+\newblock 2017:2849--2857.
+
+\bibitem{zhu2017unpaired}
+Jun-Yan Zhu, Taesung Park, Phillip Isola, Alexei~A Efros.
+\newblock Unpaired image-to-image translation using cycle-consistent
+  adversarial networks[C]. Proc. {IEEE} ICCV.
+\newblock 2017:2223--2232.
+
+\bibitem{he2016dual}
+Di~He, Yingce Xia, Tao Qin, Liwei Wang, Nenghai Yu, Tie-Yan Liu, Wei-Ying Ma.
+\newblock Dual learning for machine translation[C]. Proc. NeurIPS.
+\newblock 2016:820--828.
+
 \bibitem{wah2011caltech}
 Catherine Wah, Steve Branson, Peter Welinder, Pietro Perona, Serge Belongie.
 \newblock The caltech-ucsd birds-200-2011 dataset[J].
@@ -565,6 +588,18 @@ Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun.
 \newblock Delving deep into rectifiers: Surpassing human-level performance on
   imagenet classification[C]. Proc. {IEEE} ICCV.
 \newblock 2015:1026--1034.
+
+\bibitem{zhang2015zero}
+Ziming Zhang, Venkatesh Saligrama.
+\newblock Zero-shot learning via semantic similarity embedding[C]. Proc. {IEEE}
+  ICCV.
+\newblock 2015:4166--4174.
+
+\bibitem{changpinyo2016synthesized}
+Soravit Changpinyo, Wei-Lun Chao, Boqing Gong, Fei Sha.
+\newblock Synthesized classifiers for zero-shot learning[C]. Proc. {IEEE} Conf.
+  CVPR.
+\newblock 2016:5327--5336.
 
 \bibitem{zellers2018neural}
 Rowan Zellers, Mark Yatskar, Sam Thomson, Yejin Choi.

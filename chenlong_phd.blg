@@ -17,12 +17,12 @@ A level-1 auxiliary file: ./chapter8/thanks.aux
 Database file #1: ZJUthesis.bib
 Warning--string name "tpmai" is undefined
 --line 121 of file ZJUthesis.bib
-I was expecting a `,' or a `}'---line 995 of file ZJUthesis.bib
+I was expecting a `,' or a `}'---line 1049 of file ZJUthesis.bib
  :   pages={1378--1386}
  :                     ，
 I'm skipping whatever remains of this entry
 Warning--string name "emnlp" is undefined
---line 1433 of file ZJUthesis.bib
+--line 1487 of file ZJUthesis.bib
 Warning--empty pages in chung2014empirical
 Warning--empty pages in norouzi2014zero
 Warning--empty journal in akata2015label
@@ -36,45 +36,45 @@ Warning--empty journal in wah2011caltech
 Warning--empty pages in simonyan2015very
 Warning--empty pages in redmon2017yolo9000
 Warning--empty pages in zeiler2012adadelta
-You've used 113 entries,
+You've used 119 entries,
             2586 wiz_defined-function locations,
-            1118 strings with 24022 characters,
-and the built_in function-call counts, 54455 in all, are:
-= -- 3976
-> -- 1601
+            1142 strings with 24919 characters,
+and the built_in function-call counts, 57493 in all, are:
+= -- 4212
+> -- 1679
 < -- 1
-+ -- 609
-- -- 496
-* -- 2525
-:= -- 5849
-add.period$ -- 340
-call.type$ -- 113
-change.case$ -- 113
++ -- 639
+- -- 520
+* -- 2659
+:= -- 6167
+add.period$ -- 358
+call.type$ -- 119
+change.case$ -- 119
 chr.to.int$ -- 0
-cite$ -- 126
-duplicate$ -- 5285
-empty$ -- 5144
-format.name$ -- 608
-if$ -- 12420
+cite$ -- 132
+duplicate$ -- 5575
+empty$ -- 5432
+format.name$ -- 638
+if$ -- 13126
 int.to.chr$ -- 0
-int.to.str$ -- 113
-missing$ -- 1387
-newline$ -- 571
-num.names$ -- 113
-pop$ -- 2341
+int.to.str$ -- 119
+missing$ -- 1459
+newline$ -- 601
+num.names$ -- 119
+pop$ -- 2467
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 2016
+skip$ -- 2142
 stack$ -- 0
-substring$ -- 3609
-swap$ -- 3513
+substring$ -- 3833
+swap$ -- 3707
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 13
-while$ -- 407
-width$ -- 116
-write$ -- 1048
+while$ -- 431
+width$ -- 122
+write$ -- 1102
 (There was 1 error message)

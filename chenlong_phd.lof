@@ -4,6 +4,10 @@
 \contentsline {figure}{\numberline {1-1}{\ignorespaces 复杂场景感知和理解的关键技术路线\relax }}{2}{figure.caption.6}% 
 \addvspace {10.0pt}
 \addvspace {10.0pt}
+\contentsline {figure}{\numberline {3-1}{\ignorespaces 三种典型的零样本学习框架。\relax }}{11}{figure.caption.7}% 
+\contentsline {figure}{\numberline {3-2}{\ignorespaces 现有模型SAE\nobreakspace {}\cite {kodirov2017semantic}和提出模型SP-AEN的图像重建结果对比。\relax }}{12}{figure.caption.8}% 
+\contentsline {figure}{\numberline {3-3}{\ignorespaces 三种图像重建网络框架。\relax }}{16}{figure.caption.10}% 
+\contentsline {figure}{\numberline {3-4}{\ignorespaces 不同图像重建网络框架在数据集CUB、SUN、AWA、aPY上的重建结果。\relax }}{17}{figure.caption.12}% 
 \addvspace {10.0pt}
 \addvspace {10.0pt}
 \addvspace {10.0pt}

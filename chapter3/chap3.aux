@@ -5,17 +5,39 @@
 \citation{pennington2014glove,mikolov2013distributed}
 \citation{lampert2009learning}
 \citation{akata2015label,frome2013devise,weston2010large}
-\citation{wah2011caltech}
-\citation{patterson2012sun}
-\citation{lampert2009learning}
-\citation{xian2017zero}
+\citation{lazaridou2015hubness,fu2015transductive}
 \@writefile{toc}{\contentsline {chapter}{\numberline {3\hspace  {.3em}}基于属性保持的零样本物体分类方法}{11}{chapter.3}\protected@file@percent }
 \@writefile{lof}{\addvspace {10.0pt}}
 \@writefile{lot}{\addvspace {10.0pt}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.1}问题描述}{11}{section.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}属性保持的对抗网络学习}{11}{section.3.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}实验设置与性能分析}{11}{section.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}零样本物体分类数据集}{11}{subsection.3.3.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3-1}{\ignorespaces 三种典型的零样本学习框架。\relax }}{11}{figure.caption.7}\protected@file@percent }
+\newlabel{ch3:fig:zsl_paradigms}{{3-1}{11}{三种典型的零样本学习框架。\relax }{figure.caption.7}{}}
+\newlabel{ch3:fig:zsl_paradigms@cref}{{[figure][1][3]3-1}{[1][11][]11}}
+\citation{kim2017learning,yi2017dualgan,zhu2017unpaired,he2016dual}
+\citation{kodirov2017semantic}
+\citation{kodirov2017semantic}
+\citation{kodirov2017semantic}
+\citation{goodfellow2014generative}
+\@writefile{lof}{\contentsline {figure}{\numberline {3-2}{\ignorespaces 现有模型SAE\nobreakspace  {}\cite  {kodirov2017semantic}和提出模型SP-AEN的图像重建结果对比。\relax }}{12}{figure.caption.8}\protected@file@percent }
+\newlabel{ch3:fig:reconstruction_visualization}{{3-2}{12}{现有模型SAE~\cite {kodirov2017semantic}和提出模型SP-AEN的图像重建结果对比。\relax }{figure.caption.8}{}}
+\newlabel{ch3:fig:reconstruction_visualization@cref}{{[figure][2][3]3-2}{[1][12][]12}}
+\citation{wah2011caltech}
+\citation{lampert2009learning}
+\citation{patterson2012sun}
+\citation{farhadi2009describing}
+\citation{xian2017zero}
+\citation{wah2011caltech}
+\citation{patterson2012sun}
+\citation{lampert2009learning}
+\citation{xian2017zero}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}属性保持的对抗网络学习}{13}{section.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}零样本分类预备知识}{13}{subsection.3.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}分类任务优化目标}{13}{subsection.3.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}重建任务优化目标}{13}{subsection.3.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.4}对抗学习优化目标}{13}{subsection.3.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.5}损失函数}{13}{subsection.3.2.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}实验设置与性能分析}{13}{section.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}零样本物体分类数据集}{13}{subsection.3.3.1}\protected@file@percent }
 \citation{farhadi2009describing}
 \citation{xian2017zero}
 \citation{xian2017zero}
@@ -25,19 +47,46 @@
 \citation{krizhevsky2012imagenet}
 \citation{dosovitskiy2016generating}
 \citation{he2015delving}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}实验设定与零样本物体分类评价指标}{12}{subsection.3.3.2}\protected@file@percent }
-\newlabel{ch3:equ:H}{{3-1}{12}{实验设定与零样本物体分类评价指标}{equation.3.3.1}{}}
-\newlabel{ch3:equ:H@cref}{{[equation][1][3]3-1}{[1][12][]12}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}网络模型与参数设置}{12}{subsection.3.3.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}本章小结}{13}{section.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}实验设定与零样本物体分类评价指标}{14}{subsection.3.3.2}\protected@file@percent }
+\newlabel{ch3:equ:H}{{3-1}{14}{实验设定与零样本物体分类评价指标}{equation.3.3.1}{}}
+\newlabel{ch3:equ:H@cref}{{[equation][1][3]3-1}{[1][14][]14}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.3}网络模型与参数设置}{14}{subsection.3.3.3}\protected@file@percent }
+\citation{frome2013devise}
+\citation{akata2015label}
+\citation{akata2015evaluation}
+\citation{romera2015embarrassingly}
+\citation{xian2016latent}
+\citation{socher2013zero}
+\citation{kodirov2017semantic}
+\citation{lampert2009learning}
+\citation{lampert2009learning}
+\citation{zhang2015zero}
+\citation{norouzi2014zero}
+\citation{changpinyo2016synthesized}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.4}零样本物体分类的性能对比}{15}{subsection.3.3.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3-1}{\ignorespaces 不同零样本物体分类方法在4个数据集上的性能对比\relax }}{15}{table.caption.9}\protected@file@percent }
+\newlabel{ch3:tab:sota}{{3-1}{15}{不同零样本物体分类方法在4个数据集上的性能对比\relax }{table.caption.9}{}}
+\newlabel{ch3:tab:sota@cref}{{[table][1][3]3-1}{[1][15][]15}}
+\citation{kodirov2017semantic}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.5}零样本物体分类方法分析}{16}{subsection.3.3.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3-3}{\ignorespaces 三种图像重建网络框架。\relax }}{16}{figure.caption.10}\protected@file@percent }
+\newlabel{ch3:fig:conflict}{{3-3}{16}{三种图像重建网络框架。\relax }{figure.caption.10}{}}
+\newlabel{ch3:fig:conflict@cref}{{[figure][3][3]3-3}{[1][16][]16}}
+\@writefile{lot}{\contentsline {table}{\numberline {3-2}{\ignorespaces 不同重建网络下重建图像与输入图像之间的平均像素差平方。\relax }}{16}{table.caption.11}\protected@file@percent }
+\newlabel{ch3:tab:conflict_quantitative}{{3-2}{16}{不同重建网络下重建图像与输入图像之间的平均像素差平方。\relax }{table.caption.11}{}}
+\newlabel{ch3:tab:conflict_quantitative@cref}{{[table][2][3]3-2}{[1][16][]16}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3-4}{\ignorespaces 不同图像重建网络框架在数据集CUB、SUN、AWA、aPY上的重建结果。\relax }}{17}{figure.caption.12}\protected@file@percent }
+\newlabel{ch3:fig:conflict_visualization}{{3-4}{17}{不同图像重建网络框架在数据集CUB、SUN、AWA、aPY上的重建结果。\relax }{figure.caption.12}{}}
+\newlabel{ch3:fig:conflict_visualization@cref}{{[figure][4][3]3-4}{[1][16][]17}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}本章小结}{17}{section.3.4}\protected@file@percent }
 \@setckpt{./chapter3/chap3}{
-\setcounter{page}{14}
+\setcounter{page}{18}
 \setcounter{equation}{1}
 \setcounter{enumi}{3}
 \setcounter{enumii}{0}
 \setcounter{enumiii}{0}
 \setcounter{enumiv}{0}
-\setcounter{footnote}{0}
+\setcounter{footnote}{1}
 \setcounter{mpfootnote}{0}
 \setcounter{part}{0}
 \setcounter{chapter}{3}
@@ -46,12 +95,12 @@
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
-\setcounter{figure}{0}
-\setcounter{table}{0}
+\setcounter{figure}{4}
+\setcounter{table}{2}
 \setcounter{Item}{12}
-\setcounter{Hfootnote}{3}
+\setcounter{Hfootnote}{4}
 \setcounter{Hy@AnnotLevel}{0}
-\setcounter{bookmark@seq@number}{39}
+\setcounter{bookmark@seq@number}{46}
 \setcounter{parentequation}{0}
 \setcounter{NAT@ctr}{0}
 \setcounter{caption@flags}{0}
