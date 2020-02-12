@@ -4,11 +4,19 @@
 \contentsline {figure}{\numberline {1-1}{\ignorespaces 复杂场景感知和理解的关键技术路线\relax }}{2}{figure.caption.6}% 
 \addvspace {10.0pt}
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {3-1}{\ignorespaces 三种典型的零样本学习框架。\relax }}{11}{figure.caption.7}% 
-\contentsline {figure}{\numberline {3-2}{\ignorespaces 现有模型SAE\nobreakspace {}\cite {kodirov2017semantic}和提出模型SP-AEN的图像重建结果对比。\relax }}{12}{figure.caption.8}% 
-\contentsline {figure}{\numberline {3-3}{\ignorespaces 三种图像重建网络框架。\relax }}{16}{figure.caption.10}% 
-\contentsline {figure}{\numberline {3-4}{\ignorespaces 不同图像重建网络框架在数据集CUB、SUN、AWA、aPY上的重建结果。\relax }}{17}{figure.caption.12}% 
+\contentsline {figure}{\numberline {3-1}{\ignorespaces 三种典型的零样本学习框架\relax }}{12}{figure.caption.7}% 
+\contentsline {figure}{\numberline {3-2}{\ignorespaces 现有模型SAE\nobreakspace {}\cite {kodirov2017semantic}和提出模型SP-AEN的图像重建结果对比\relax }}{13}{figure.caption.8}% 
+\contentsline {figure}{\numberline {3-3}{\ignorespaces 模型SP-AEN的整体结构流程图\relax }}{14}{figure.caption.9}% 
+\contentsline {figure}{\numberline {3-4}{\ignorespaces 三种图像重建网络框架\relax }}{19}{figure.caption.11}% 
+\contentsline {figure}{\numberline {3-5}{\ignorespaces 不同图像重建网络框架在数据集CUB、SUN、AWA、aPY上的重建结果\relax }}{20}{figure.caption.13}% 
+\contentsline {figure}{\numberline {3-6}{\ignorespaces 在数据集SUN、CUB、AWA和aPY中的已见-未见准确率曲线下区域面积\nobreakspace {}\cite {chao2016empirical}\relax }}{21}{figure.caption.14}% 
 \addvspace {10.0pt}
+\contentsline {figure}{\numberline {4-1}{\ignorespaces motivation\relax }}{23}{figure.caption.15}% 
+\contentsline {figure}{\numberline {4-2}{\ignorespaces motivation\relax }}{24}{figure.caption.16}% 
+\contentsline {figure}{\numberline {4-3}{\ignorespaces motivation\relax }}{24}{figure.caption.17}% 
+\contentsline {figure}{\numberline {4-4}{\ignorespaces motivation\relax }}{25}{figure.caption.18}% 
+\contentsline {figure}{\numberline {4-5}{\ignorespaces motivation\relax }}{26}{figure.caption.19}% 
+\contentsline {figure}{\numberline {4-6}{\ignorespaces motivation\relax }}{27}{figure.caption.20}% 
 \addvspace {10.0pt}
 \addvspace {10.0pt}
 \addvspace {10.0pt}

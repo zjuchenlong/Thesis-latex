@@ -1,6 +1,8 @@
 \chapter{基于属性保持的零样本物体分类方法}
 
 
+零样本物体分类旨在对训练过程中从未见过类别的图像进行分类。为了解决零样本物体分类问题，本章我们提出了一个全新的学习框架：属性保持的对抗网络学习（Semantics-Preserving Adversarial Embedding Networks, SP-AEN）。SP-AEN主要解决了一个目前主流零样本分类框架（基于嵌入映射的模型）中不可避免的问题：语义损失。语义损失是指在训练集的训练过程中，模型往往容易“丢失”一些对训练类别来说区分性不大的属性，但是这些属性可能对测试集（包含不可知的未见类别的图像）非常有用。具体来说，SP-AEN通过引入一个新的映射函数，从而将两个冲突的任务：分类和重建进行分离，映射到两个子空间中。通过对抗学习，SP-AEN可以让重建子空间中部分属性迁移到分类子空间，实现对未见类别的分类。通过与现有零样本分类方法的对比，SP-AEN不仅仅在分类性能上有大幅提升，同时可以生成非常逼真的图像，表现出非常好的属性保持效果。在通用的四个数据集中：CUB、AWA、SUN和aPY， SP-AEN比现有最好的零样本分类方法~\cite{xian2017zero}在H值上分别提升了12.2\%、9.3\%、4.0\%和3.6\%
+
 
 \section{问题描述}
 
@@ -10,7 +12,7 @@
 \begin{wrapfigure}{r}{0.6\linewidth}
     \centering
         \includegraphics[width=0.95\linewidth]{chapter3/res/zsl_paradigms.pdf}
-    \captionof{figure}{三种典型的零样本学习框架。}
+    \captionof{figure}{三种典型的零样本学习框架}
     \label{ch3:fig:zsl_paradigms}
 \end{wrapfigure}
 
@@ -23,30 +25,81 @@
 \begin{figure}[h]
     \centering
         \includegraphics[width=\linewidth]{chapter3/res/reconstruction_visualization.pdf}
-    \captionof{figure}{现有模型SAE~\cite{kodirov2017semantic}和提出模型SP-AEN的图像重建结果对比。}
+    \caption{现有模型SAE~\cite{kodirov2017semantic}和提出模型SP-AEN的图像重建结果对比}
     \label{ch3:fig:reconstruction_visualization}
 \end{figure}
 
-为了缓解分类任务和重建任务的冲突，本文提出一个全新的视觉-语义映射的框架：属性保持的对抗网络学习（Semantics-Preserving Adversarial Embedding Network, SP-AEN）。如图~\ref{ch3:fig:zsl_paradigms}（c）所示，我们引入一个新的映射函数$F$: $\mathcal{V}\rightarrow \mathcal{S}$和一个对抗优化目标~\cite{goodfellow2014generative}。映射函数$F$和对抗训练的目的是让判别器$D$无法区分这两个不同的映射分布$E(x)$和$F(x)$。具体来说，这样做有两个好处：（1）\textbf{语义迁移}：虽然对于单独的分类映射函数$E$来说，语义损失是不可避免的。我们通过利用判别器$D$的训练，让分类映射向量$E(x)$和重建映射向量$F(x)$在同一个分布下，实现属性特征的迁移，让$E(x)$尽可能地保持更多的属性。（2）\textbf{分类任务与重建任务分解}：映射网络$F$和$G$实现重建任务，而映射网络$E$实现分类任务。通过将分类任务和重建任务进行分解，之前的严格条件$G(E(x)) \approx x$和$G(E(x')) \approx x'$变成了$G(F(x))\approx x$和$G(F(x'))\approx x'$，同时$F(x)$与$F(x')$在语义空间中也不需要非常接近。如图~\ref{ch3:fig:reconstruction_visualization}所示，我们的映射$G(F(x))$可以重建出较好的输入图像，说明属性特征能够更好地保持。
+为了缓解分类任务和重建任务的冲突，本文提出一个全新的视觉-语义映射的框架：属性保持的对抗网络学习（SP-AEN）。如图~\ref{ch3:fig:zsl_paradigms}（c）所示，我们引入一个新的映射函数$F$: $\mathcal{V}\rightarrow \mathcal{S}$和一个对抗优化目标~\cite{goodfellow2014generative}。映射函数$F$和对抗训练的目的是让判别器$D$无法区分这两个不同的映射分布$E(x)$和$F(x)$。具体来说，这样做有两个好处：（1）\textbf{语义迁移}：虽然对于单独的分类映射函数$E$来说，语义损失是不可避免的。我们通过利用判别器$D$的训练，让分类映射向量$E(x)$和重建映射向量$F(x)$在同一个分布下，实现属性特征的迁移，让$E(x)$尽可能地保持更多的属性。（2）\textbf{分类任务与重建任务分解}：映射网络$F$和$G$实现重建任务，而映射网络$E$实现分类任务。通过将分类任务和重建任务进行分解，之前的严格条件$G(E(x)) \approx x$和$G(E(x')) \approx x'$变成了$G(F(x))\approx x$和$G(F(x'))\approx x'$，同时$F(x)$与$F(x')$在语义空间中也不需要非常接近。如图~\ref{ch3:fig:reconstruction_visualization}所示，我们的映射$G(F(x))$可以重建出较好的输入图像，说明属性特征能够更好地保持。
 
 本文在四个通用的零样本分类数据集中对模型SP-AEN的效果进行验证：CUB~\cite{wah2011caltech}，AWA~\cite{lampert2009learning}, SUN~\cite{patterson2012sun}，和aPY~\cite{farhadi2009describing}。相比于目前最好的零样本分类方法~\cite{xian2017zero}，SP-AEN在评价指标H值（Harmonic Mean Value）上对于上述四个数据集各自提升了12.2\%，9.3\%，4.0\%，和3.6\%。据我们了解，SP-AEN是第一个能够直接重建回原始图像的零样本分类方法。
 
 
 \section{属性保持的对抗网络学习}
 
+在本节，我们首先介绍零样本分类任务，然后再具体介绍本章提出模型SP-AEN的各个优化目标的细节。
+
 \subsection{零样本分类预备知识}
+给定一个训练集$\{x_i, l_i\}$，其中$x_i\in\mathcal{V}$是图像在视觉空间的映射向量，$l_i\in \mathcal{L}_s$是已见类别的类别标签，零样本分类任务的目标是学习一个分类器。这个分类器不仅可以预测已见类别的图像（$\mathcal{L}_s$），也可以预测未见类别的图像（$\mathcal{L}_u$）。按照之前工作的总结~\cite{xian2017zero,lei2015predicting}，几乎所有先进的零样本分类方法都是基于嵌入映射的。这类方法旨在找到一个映射函数$\mathcal{V}\rightarrow \mathcal{S}$，其中所有的类别标签在语义空间$\mathcal{S}$都是编码成$\mathbf{y}_l\in\mathbb{R}^d$。因此，预测类别标签$l^*$时，可以直接通过简单的最近邻查找：
+\begin{equation}\label{ch3:eq:eq_1}
+l^* = \max_{l\in\mathcal{L}}~\mathbf{y}^T_l E(x)
+\end{equation}
+特别地，如果$l\in\mathcal{L}_u$，这是\textbf{传统型零样本分类}；如果$l \in\mathcal{L}_s\cup \mathcal{L}_u$，这是\textbf{通用型零样本分类问题}。另外，公式~\eqref{ch3:eq:eq_1}中$E$不一定是线性函数，同样可以利用深度神经网络等非线性函数。
+
+
+\begin{figure}[tbp]
+    \centering
+        \includegraphics[width=\linewidth]{chapter3/res/sp_aen.pdf}
+    \caption{模型SP-AEN的整体结构流程图}
+    \label{ch3:fig:sp_aen}
+\end{figure}
 
 
 \subsection{分类任务优化目标}
+由于公式~\eqref{ch3:eq:eq_1}的标签预测本质上是一个排序问题，我们使用排序损失（Ranking Loss）作为分类任务的优化目标~\cite{frome2013devise,weston2010large}，即给定一个训练样本$(x, l)$，我们希望$\mathbf{y}_l$和$E(x)$之间有一个较大的点积相似度，而负样本$(x,l')$有较小的点积相似度，并且正样本的相似度相比负样本的相似度要大于一定的阈值：
+\begin{equation}\label{ch3:eq:eq_2}
+L_{cls} = \sum\limits_{l\neq l'}~\max\{0, \gamma - \mathbf{y}_l^T E(x) + \mathbf{y}^T_{l'} E(x)\}
+\end{equation}
+其中，$\gamma >0$是一个超参数（即阈值）。在每次训练迭代过程中，$l'$是从所有错误的标签中任选一个。
+
+分类任务优化目标$L_{cls}$的目的是让所有的同一类图像的语义空间映射向量$E(x)$都接近与其类别标签$\mathbf{y}$在语义空间的映射向量。它造成的语义损失问题将由后续介绍的两个额外的优化目标来解决。
 
 
 \subsection{重建任务优化目标}
+重建任务的目标是学习一个从语义空间到视觉空间的映射函数$G$: $\mathcal{S}\rightarrow \mathcal{V}$，使得将语义映射向量$s\in\mathcal{S}$可以重建输入图像，并且使差别$\|G(s)-x\|$很小。由于在自编码器中重建任务$s = E(x)$与分类任务是相互冲突的，我们引入一个新的视觉空间到语义空间的映射函数$F$，使得$s = F(x)$。另外，不同于SAE~\cite{kodirov2017semantic}利用卷积神经网络~\cite{he2016deep,simonyan2015very}的输入作为视觉空间$\mathcal{V}$的特征，我们直接利用原始的$256\times 256 \times 3$大小的RGB色彩空间来进行图像重建。这样做的主要原因是，卷积神经网络的输出特征在网络的预训练阶段已经存在语义损失问题。
+
+
+为了最小化重建损失，映射向量$F(x)$会尽可能地保持多的属性，以便于重建回输入图像。我们参考最新的图像生成工作~\cite{johnson2016perceptual,dosovitskiy2016generating,ledig2017photo}，将优化目标定义为：
+\begin{equation}\label{ch3:eq:eq_3}
+L_{rec} = L_{feat}+\lambda_p L_{pixel}
+\end{equation}
+其中$L_{feat} = \|\phi\left(G\left(F(x)\right)\right)-\phi(x)\|^2_2$是特征维度上的重建损失函数，帮助图像能够保持细节感知上的相似度。我们使用卷积神经网络AlexNet~\cite{krizhevsky2012imagenet}中$conv5$层来表示$\phi$。$L_{pixel} = \|G(F(x))-x\|^2_2$是像素维度上的重建损失函数，有利于算法的稳定性。
 
 
 \subsection{对抗学习优化目标}
+到目前为止，语义向量$E(x)$和$F(x)$之间没有知识迁移。我们的目标是让$E(x)$从$F(x)$中迁移部分丢失的属性特征。然后，手工直接定义$E(x)$与$F(x)$之间的迁移比较困难。因此，我们借助于对抗学习的思想，来鼓励$E(x)$的分布向$F(x)$的分布靠近，通过“欺骗”判别网络$D$，使$F(x)$的知识向$E(x)$迁移：
+\begin{equation}\label{ch3:eq:eq_4}
+L_{adv} = \mathbb{E}_{x}\left( \log D(F(x)) \right) + \mathbb{E}_{x'}\left( \log \left[1-D(E(x'))\right] \right)
+\end{equation}
+其中网络$E$为了减少优化目标$L_{adv}$，而网络$D$希望增大优化目标$L_{adv}$，即：$E^* = \arg\min_E \max_D L_{adv}$。
+
+目前，许多研究工作都发现目标函数$L_{adv}$进行优化容易陷入“塌陷问题”~\cite{arjovsky2017wasserstein}。在我们这个任务中，如果两个同类别的图像$x$和$x'$非常相似，容易导致$\|F(x)-E(x')\|\approx 0$，引起塌陷问题。为了避免塌陷问题，我们参考WGAN的策略~\cite{arjovsky2017wasserstein}，极大地增加了模型训练的稳定性。
 
 
-\subsection{损失函数}
+\subsection{总体优化目标}
+将之前提到的分类任务优化目标、重建任务优化目标、以及对抗学习优化目标合在一起，得到最终整体的优化目标：
+\begin{equation}\label{ch3:eq:eq_5}
+\begin{split}
+L (E, F, G, D) = L_{cls}(E) &+ \alpha L_{rec} (E, F, G) \\
+&+ \beta L_{adv}(E, F, G, D)
+\end{split}
+\end{equation}
+其中，$\alpha$和$\beta$是参数用于权衡不同的训练目标。最终的目标是得到：
+\begin{equation}\label{ch3:eq:eq_6}
+E^* = \arg\min\limits_{E, F, G}\max\limits_{D} L(E, F, G, D)
+\end{equation}
+
+如图~\ref{ch3:fig:sp_aen}所示，网络$F$是编码网络，网络$G$是解码网络，重建映射向量$F(x)$可以看成是瓶颈层，来约束分类映射向量$E(x)$。另外，SP-AEN可以转换成其他条件下的零样本分类问题，例如半监督条件下，我们只需要给$F(x)$增加一个额外的对抗学习优化目标来近似先验的映射空间。
+
 
 
 \section{实验设置与性能分析}
@@ -76,7 +129,7 @@
 
 \noindent{\kaishu{评价指标}}:
 我们参考现有的文献~\cite{xian2017zero}，常用的每类平均准确率作为评价指标。对于通用型零样本分类，我们另外使用常用的$H$作为主要的评价指标，其中$H$是已见类别$L_s$的准确率（$Acc_{S\rightarrow T}$）和未见类别$L_u$的准确率（$Acc_{U\rightarrow T}$）的调和平均数：
-\begin{equation} \label{ch3:equ:H}
+\begin{equation} \label{ch3:eq:eq_7}
 H = 2\times Acc_{S\rightarrow T}\times Acc_{U\rightarrow T} /(Acc_{S\rightarrow T}+Acc_{U\rightarrow T})
 \end{equation}
 
@@ -132,7 +185,7 @@ Dataset &  & DAP & IAP & SSE & CSE & SYNC & CMT & LTM & DeViSE & ALE & SJE & ESZ
 \begin{wrapfigure}{r}{0.55\linewidth}
     \centering
         \includegraphics[width=0.95\linewidth]{chapter3/res/conflict.pdf}
-    \captionof{figure}{三种图像重建网络框架。}
+    \captionof{figure}{三种图像重建网络框架}
     \label{ch3:fig:conflict}
 \end{wrapfigure}
 
@@ -151,21 +204,41 @@ SplitBranch & 0.070 & 0.058  & 0.059 & 0.076 \\
 SP-AEN & \textbf{0.053}  & \textbf{0.040}& \textbf{0.047} & \textbf{0.055} \\
 \hline
 \end{tabular}
-\caption{不同重建网络下重建图像与输入图像之间的平均像素差平方。}
+\caption{不同重建网络下重建图像与输入图像之间的平均像素差平方}
 \label{ch3:tab:conflict_quantitative}
 \end{table}
 
 
 \begin{figure}[htbp]
     \centering
-        \includegraphics[width=\linewidth]{chapter3/res/conflict_visualization.pdf}
-    \captionof{figure}{不同图像重建网络框架在数据集CUB、SUN、AWA、aPY上的重建结果。}
+    \scalebox{0.9}{
+        \includegraphics[width=\linewidth]{chapter3/res/conflict_visualization.pdf}    
+    }
+    \caption{不同图像重建网络框架在数据集CUB、SUN、AWA、aPY上的重建结果}
     \label{ch3:fig:conflict_visualization}
 \end{figure}
 
-图~\ref{ch3:fig:conflict_visualization}和表~\ref{ch3:tab:conflict_quantitative}分别表示四个数据集中测试集未见类别图像的重建图像和重建差异。
+图~\ref{ch3:fig:conflict_visualization}和表~\ref{ch3:tab:conflict_quantitative}分别表示四个数据集中测试集未见类别图像的重建图像和重建差异。从实验结果中，我们可以有以下结论：（1）在数据集CUB和SUN中，DirectMap重建的图像和SP-AEN非常接近，都具有较好的重建结果。然而，在数据集AWA和aPY中，DirectMap的重建效果有明显下降。同样地，这是由于在数据集CUB和SUN中，训练集和测试集所有属性方差的余弦相似度大于AWA和aPY。（2）如果像SAE模型一样同时训练分类网络E和重建网络G，所有的样本都重建失败。如果像SplitBranch模型一样同时训练，我们可以看到重建效果得到显著的提升，十分接近SP-AEN。但是，我们发现在SplitBranch中，分类分支合并时的权重几乎为零。这一方面说明分类的映射向量基本对重建任务没有贡献，另一方面也引导我们借助对抗学习来实现语义迁移和高质量图像的重建。
+
+\textbf{网络D和网络G的作用}：由于可见类别标签的分数常常大于未见类别标签的分数，通常使用“校准规则”来解决这个问题。具体来说，就是对已见类别的分数减掉一个偏置，然后再和未见类别一起进行排序比较：
+
+\begin{equation}\label{ch3:eq:eq_8}
+    l^* = \max_{l\in \mathcal{L}_u \cup \mathcal{L}_s }~\mathbf{y}^T_l E(x) - \gamma \mathbf{1} \left[ l \in \mathcal{L}_s \right]
+\end{equation}
+其中，指示函数$\mathbf{1} \left[ \cdot \right]$用于判断$l$是否时已见类别，$\gamma \in \mathbb{R}$是校准系数。这个校准规则能够有效地实现对已见类别和未见类别预测之间的权衡。通过改变校准系数$\gamma$，我们可以得到一系列分类准确率（$Acc_{U \to T}$和$Acc_{S \to T}$），并且可以画出已见-未见准确率曲线（Seen-Unseen accuracy Curve, SUC）。已见-未见准确率曲线下区域面积（Area Under Seen-Unseen accuracy Curve, AUSUC）也是通用型零样本分类问题中一个常用评价指标，用来评估$Acc_{U \to T}$和$Acc_{S \to T}$之间的权衡。
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.8\linewidth]{chapter3/res/ausuc.pdf}
+    \caption{在数据集SUN、CUB、AWA和aPY中的已见-未见准确率曲线下区域面积~\cite{chao2016empirical}}
+\label{ch3:fig:ausuc}
+\end{figure}
 
 
+xxxx
 
 
 \section{本章小结}
+
+本章提出了一个全新的零样本分类框架：属性保持的对抗网络学习（SP-AEN），用于解决目前零样本分类模型中普遍存在的语义损失的问题。SP-AEN主要通过两个设计来解决语义损失问题：（1）引入一个独立的重建网络，同时重建网络不直接影响分类网络的优化目标。（2）通过对抗学习，实现重建语义向量和分类语义向量之间的知识迁移。我们通过大量的实验对比在四个标准数据集上验证了SP-AEN的性能。
+

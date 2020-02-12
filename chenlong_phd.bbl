@@ -10,6 +10,12 @@ Elyor Kodirov, Tao Xiang, Shaogang Gong.
   CVPR.
 \newblock 2017:3174--3183.
 
+\bibitem{chao2016empirical}
+Wei-Lun Chao, Soravit Changpinyo, Boqing Gong, Fei Sha.
+\newblock An empirical study and analysis of generalized zero-shot learning for
+  object recognition in the wild[C]. Proc. ECCV.
+\newblock Springer, 2016:52--68.
+
 \bibitem{russakovsky2015imagenet}
 Olga Russakovsky, Jia Deng, Hao Su, Jonathan Krause, Sanjeev Satheesh, Sean Ma,
   Zhiheng Huang, Andrej Karpathy, Aditya Khosla, Michael Bernstein, et~al.
@@ -314,14 +320,14 @@ Yikang Li, Wanli Ouyang, Bolei Zhou, Kun Wang, Xiaogang Wang.
 Yikang Li, Wanli Ouyang, Bolei Zhou, Jianping Shi, Chao Zhang, Xiaogang Wang.
 \newblock Factorizable net: an efficient subgraph-based framework for scene
   graph generation[C]. Proc. ECCV.
-\newblock 2018:335--351.
+\newblock Springer, 2018:335--351.
 
 \bibitem{yin2018zoom}
 Guojun Yin, Lu~Sheng, Bin Liu, Nenghai Yu, Xiaogang Wang, Jing Shao, Chen
   Change~Loy.
 \newblock Zoom-net: Mining deep feature interactions for visual relationship
   recognition[C]. Proc. ECCV.
-\newblock 2018:322--338.
+\newblock Springer, 2018:322--338.
 
 \bibitem{jae2018tensorize}
 Seong Jae~Hwang, Sathya~N Ravi, Zirui Tao, Hyunwoo~J Kim, Maxwell~D Collins,
@@ -333,7 +339,7 @@ Seong Jae~Hwang, Sathya~N Ravi, Zirui Tao, Hyunwoo~J Kim, Maxwell~D Collins,
 \bibitem{yang2018graph}
 Jianwei Yang, Jiasen Lu, Stefan Lee, Dhruv Batra, Devi Parikh.
 \newblock Graph r-cnn for scene graph generation[C]. Proc. ECCV.
-\newblock 2018:670--685.
+\newblock Springer, 2018:670--685.
 
 \bibitem{tang2019learning}
 Kaihua Tang, Hanwang Zhang, Baoyuan Wu, Wenhan Luo, Wei Liu.
@@ -508,6 +514,12 @@ Mengye Ren, Ryan Kiros, Richard Zemel.
   NeurIPS.
 \newblock 2015:2953--2961.
 
+\bibitem{xian2017zero}
+Yongqin Xian, Bernt Schiele, Zeynep Akata.
+\newblock Zero-shot learning-the good, the bad and the ugly[C]. Proc. {IEEE}
+  Conf. CVPR.
+\newblock 2017:4582--4591.
+
 \bibitem{zhang2013attribute}
 Hanwang Zhang, Zheng-Jun Zha, Yang Yang, Shuicheng Yan, Yue Gao, Tat-Seng Chua.
 \newblock Attribute-augmented semantic hierarchy: towards bridging semantic gap
@@ -523,7 +535,7 @@ Li-Jia Li, Hao Su, Li~Fei-Fei, Eric~P Xing.
 \bibitem{torresani2010efficient}
 Lorenzo Torresani, Martin Szummer, Andrew Fitzgibbon.
 \newblock Efficient object category recognition using classemes[C]. Proc. ECCV.
-\newblock 2010:776--789.
+\newblock Springer, 2010:776--789.
 
 \bibitem{weston2010large}
 Jason Weston, Samy Bengio, Nicolas Usunier.
@@ -565,23 +577,42 @@ Genevieve Patterson, James Hays.
   scene attributes[C]. Proc. {IEEE} Conf. CVPR.
 \newblock 2012:2751--2758.
 
-\bibitem{xian2017zero}
-Yongqin Xian, Bernt Schiele, Zeynep Akata.
-\newblock Zero-shot learning-the good, the bad and the ugly[C]. Proc. {IEEE}
-  Conf. CVPR.
-\newblock 2017:4582--4591.
-
 \bibitem{he2016deep}
 Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun.
 \newblock Deep residual learning for image recognition[C]. Proc. {IEEE} Conf.
   CVPR.
 \newblock 2016:770--778.
 
+\bibitem{simonyan2015very}
+Karen Simonyan, Andrew Zisserman.
+\newblock Very deep convolutional networks for large-scale image
+  recognition[C]. Proc. ICLR.
+\newblock 2015.
+
+\bibitem{johnson2016perceptual}
+Justin Johnson, Alexandre Alahi, Li~Fei-Fei.
+\newblock Perceptual losses for real-time style transfer and
+  super-resolution[C]. Proc. ECCV.
+\newblock Springer, 2016:694--711.
+
 \bibitem{dosovitskiy2016generating}
 Alexey Dosovitskiy, Thomas Brox.
 \newblock Generating images with perceptual similarity metrics based on deep
   networks[C]. Proc. NeurIPS.
 \newblock 2016:658--666.
+
+\bibitem{ledig2017photo}
+Christian Ledig, Lucas Theis, Ferenc Husz{\'a}r, Jose Caballero, Andrew
+  Cunningham, Alejandro Acosta, Andrew Aitken, Alykhan Tejani, Johannes Totz,
+  Zehan Wang, et~al.
+\newblock Photo-realistic single image super-resolution using a generative
+  adversarial network[C]. Proc. {IEEE} Conf. CVPR.
+\newblock 2017:4681--4690.
+
+\bibitem{arjovsky2017wasserstein}
+Martin Arjovsky, Soumith Chintala, L{\'e}on Bottou.
+\newblock Wasserstein gan[C]. arXiv.
+\newblock 2017.
 
 \bibitem{he2015delving}
 Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun.
@@ -617,12 +648,6 @@ Roei Herzig, Moshiko Raboh, Gal Chechik, Jonathan Berant, Amir Globerson.
 \newblock Mapping images to scene graphs with permutation-invariant structured
   prediction[C]. Proc. NeurIPS.
 \newblock 2018:7211--7221.
-
-\bibitem{simonyan2015very}
-Karen Simonyan, Andrew Zisserman.
-\newblock Very deep convolutional networks for large-scale image
-  recognition[C]. Proc. ICLR.
-\newblock 2015.
 
 \bibitem{redmon2017yolo9000}
 Joseph Redmon, Ali Farhadi.
@@ -701,7 +726,7 @@ Yitian Yuan, Tao Mei, Wenwu Zhu.
 \bibitem{feng2018video}
 Yang Feng, Lin Ma, Wei Liu, Tong Zhang, Jiebo Luo.
 \newblock Video re-localization[C]. Proc. ECCV.
-\newblock 2018:51--66.
+\newblock Springer, 2018:51--66.
 
 \bibitem{caba2015activitynet}
 Fabian Caba~Heilbron, Victor Escorcia, Bernard Ghanem, Juan Carlos~Niebles.
