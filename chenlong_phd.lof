@@ -11,12 +11,9 @@
 \contentsline {figure}{\numberline {3-5}{\ignorespaces 不同图像重建网络框架在数据集CUB、SUN、AWA、aPY上的重建结果\relax }}{20}{figure.caption.13}% 
 \contentsline {figure}{\numberline {3-6}{\ignorespaces 在数据集SUN、CUB、AWA和aPY中的已见-未见准确率曲线下区域面积\nobreakspace {}\cite {chao2016empirical}\relax }}{21}{figure.caption.14}% 
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {4-1}{\ignorespaces motivation\relax }}{23}{figure.caption.15}% 
-\contentsline {figure}{\numberline {4-2}{\ignorespaces motivation\relax }}{24}{figure.caption.16}% 
-\contentsline {figure}{\numberline {4-3}{\ignorespaces motivation\relax }}{24}{figure.caption.17}% 
-\contentsline {figure}{\numberline {4-4}{\ignorespaces motivation\relax }}{25}{figure.caption.18}% 
-\contentsline {figure}{\numberline {4-5}{\ignorespaces motivation\relax }}{26}{figure.caption.19}% 
-\contentsline {figure}{\numberline {4-6}{\ignorespaces motivation\relax }}{27}{figure.caption.20}% 
+\contentsline {figure}{\numberline {4-1}{\ignorespaces 一个图像视觉场景图生成任务示例\relax }}{24}{figure.caption.15}% 
+\contentsline {figure}{\numberline {4-2}{\ignorespaces 视觉场景图生成中优化目标的整体一致性和局部敏感性\relax }}{25}{figure.caption.16}% 
+\contentsline {figure}{\numberline {4-3}{\ignorespaces CMAT和MOTIFS在数据集VG上的场景图生成结果对比\relax }}{30}{figure.caption.21}% 
 \addvspace {10.0pt}
 \addvspace {10.0pt}
 \addvspace {10.0pt}

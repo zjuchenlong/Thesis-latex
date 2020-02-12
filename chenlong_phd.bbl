@@ -632,11 +632,134 @@ Soravit Changpinyo, Wei-Lun Chao, Boqing Gong, Fei Sha.
   CVPR.
 \newblock 2016:5327--5336.
 
+\bibitem{liu2016ssd}
+Wei Liu, Dragomir Anguelov, Dumitru Erhan, Christian Szegedy, Scott Reed,
+  Cheng-Yang Fu, Alexander~C Berg.
+\newblock Ssd: Single shot multibox detector[C]. Proc. ECCV.
+\newblock Springer, 2016:21--37.
+
+\bibitem{long2015fully}
+Jonathan Long, Evan Shelhamer, Trevor Darrell.
+\newblock Fully convolutional networks for semantic segmentation[C]. Proc.
+  {IEEE} Conf. CVPR.
+\newblock 2015:3431--3440.
+
+\bibitem{yao2018exploring}
+Ting Yao, Yingwei Pan, Yehao Li, Tao Mei.
+\newblock Exploring visual relationship for image captioning[C]. Proc. ECCV.
+\newblock Springer, 2018:684--699.
+
+\bibitem{yang2019auto}
+Xu~Yang, Kaihua Tang, Hanwang Zhang, Jianfei Cai.
+\newblock Auto-encoding scene graphs for image captioning[C]. Proc. {IEEE}
+  Conf. CVPR.
+\newblock 2019:10685--10694.
+
+\bibitem{kim2019dense}
+Dong-Jin Kim, Jinsoo Choi, Tae-Hyun Oh, In~So Kweon.
+\newblock Dense relational captioning: Triple-stream networks for
+  relationship-based captioning[C]. Proc. {IEEE} Conf. CVPR.
+\newblock 2019:6271--6280.
+
+\bibitem{norcliffe2018learning}
+Will Norcliffe-Brown, Stathis Vafeias, Sarah Parisot.
+\newblock Learning conditioned graph structures for interpretable visual
+  question answering[C]. Proc. NeurIPS.
+\newblock 2018:8334--8343.
+
+\bibitem{hudson2019gqa}
+Drew~A Hudson, Christopher~D Manning.
+\newblock Gqa: A new dataset for real-world visual reasoning and compositional
+  question answering[C]. Proc. {IEEE} Conf. CVPR.
+\newblock 2019:6700--6709.
+
+\bibitem{shi2019explainable}
+Jiaxin Shi, Hanwang Zhang, Juanzi Li.
+\newblock Explainable and explicit visual reasoning over scene graphs[C]. Proc.
+  {IEEE} Conf. CVPR.
+\newblock 2019:8376--8384.
+
+\bibitem{haurilet2019s}
+Monica Haurilet, Alina Roitberg, Rainer Stiefelhagen.
+\newblock It's not about the journey; it's about the destination: Following
+  soft paths under question-guidance for visual reasoning[C]. Proc. {IEEE}
+  Conf. CVPR.
+\newblock 2019:1930--1939.
+
+\bibitem{yang2018shuffle}
+Proc. ECCV.
+\newblock
+\newblock Shuffle-then-assemble: Learning object-agnostic visual relationship
+  features[C].
+\newblock Springer, 2018:36--52.
+
+\bibitem{divvala2009empirical}
+Santosh~K Divvala, Derek Hoiem, James~H Hays, Alexei~A Efros, Martial Hebert.
+\newblock An empirical study of context in object detection[C]. Proc. {IEEE}
+  Conf. CVPR.
+\newblock IEEE, 2009:1271--1278.
+
+\bibitem{li2017vip}
+Yikang Li, Wanli Ouyang, Xiaogang Wang, Xiao'ou Tang.
+\newblock Vip-cnn: Visual phrase guided convolutional neural network[C]. Proc.
+  {IEEE} Conf. CVPR.
+\newblock 2017:1347--1356.
+
 \bibitem{zellers2018neural}
 Rowan Zellers, Mark Yatskar, Sam Thomson, Yejin Choi.
 \newblock Neural motifs: Scene graph parsing with global context[C]. Proc.
   {IEEE} Conf. CVPR.
 \newblock 2018:5831--5840.
+
+\bibitem{qian2019video}
+Xufeng Qian, Yueting Zhuang, Yimeng Li, Shaoning Xiao, Shiliang Pu, Jun Xiao.
+\newblock Video relation detection with spatio-temporal graph[C]. Proc. ACM
+  Multimedia.
+\newblock 2019:84--93.
+
+\bibitem{zheng2015conditional}
+Shuai Zheng, Sadeep Jayasumana, Bernardino Romera-Paredes, Vibhav Vineet,
+  Zhizhong Su, Dalong Du, Chang Huang, Philip~HS Torr.
+\newblock Conditional random fields as recurrent neural networks[C]. Proc.
+  {IEEE} ICCV.
+\newblock 2015:1529--1537.
+
+\bibitem{krahenbuhl2011efficient}
+Philipp Kr{\"a}henb{\"u}hl, Vladlen Koltun.
+\newblock Efficient inference in fully connected crfs with gaussian edge
+  potentials[C]. Proc. NeurIPS.
+\newblock 2011:109--117.
+
+\bibitem{anderson2016spice}
+Peter Anderson, Basura Fernando, Mark Johnson, Stephen Gould.
+\newblock Spice: Semantic propositional image caption evaluation[C]. Proc.
+  ECCV.
+\newblock Springer, 2016:382--398.
+
+\bibitem{sutton2000policy}
+Richard~S Sutton, David~A McAllester, Satinder~P Singh, Yishay Mansour.
+\newblock Policy gradient methods for reinforcement learning with function
+  approximation[C]. Proc. NeurIPS.
+\newblock 2000:1057--1063.
+
+\bibitem{tampuu2017multiagent}
+Ardi Tampuu, Tambet Matiisen, Dorian Kodelja, Ilya Kuzovkin, Kristjan Korjus,
+  Juhan Aru, Jaan Aru, Raul Vicente.
+\newblock Multiagent cooperation and competition with deep reinforcement
+  learning[J].
+\newblock PloS one, 2017, 12(4).
+
+\bibitem{lowe2017multi}
+Ryan Lowe, Yi~Wu, Aviv Tamar, Jean Harb, OpenAI~Pieter Abbeel, Igor Mordatch.
+\newblock Multi-agent actor-critic for mixed cooperative-competitive
+  environments[C]. Proc. NeurIPS.
+\newblock 2017:6379--6390.
+
+\bibitem{foerster2018counterfactual}
+Jakob~N Foerster, Gregory Farquhar, Triantafyllos Afouras, Nantas Nardelli,
+  Shimon Whiteson.
+\newblock Counterfactual multi-agent policy gradients[C]. Proc. AAAI.
+\newblock 2018.
 
 \bibitem{newell2017pixels}
 Alejandro Newell, Jia Deng.
@@ -659,6 +782,12 @@ Ji~Zhang, Kevin~J Shih, Ahmed Elgammal, Andrew Tao, Bryan Catanzaro.
 \newblock Graphical contrastive losses for scene graph parsing[C]. Proc. {IEEE}
   Conf. CVPR.
 \newblock 2019:11535--11543.
+
+\bibitem{chen2019knowledge}
+Tianshui Chen, Weihao Yu, Riquan Chen, Liang Lin.
+\newblock Knowledge-embedded routing network for scene graph generation[C].
+  Proc. {IEEE} Conf. CVPR.
+\newblock 2019:6163--6171.
 
 \bibitem{hodosh2013framing}
 Micah Hodosh, Peter Young, Julia Hockenmaier.

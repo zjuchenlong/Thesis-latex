@@ -14,15 +14,16 @@ A level-1 auxiliary file: ./chapter8/chap8.aux
 The style file: ZJUthesis.bst
 A level-1 auxiliary file: ./chapter8/publications.aux
 A level-1 auxiliary file: ./chapter8/thanks.aux
+Reallocated field_info (elt_size=4) to 10040 items from 5000.
 Database file #1: ZJUthesis.bib
 Warning--string name "tpmai" is undefined
 --line 121 of file ZJUthesis.bib
-I was expecting a `,' or a `}'---line 1125 of file ZJUthesis.bib
+I was expecting a `,' or a `}'---line 1269 of file ZJUthesis.bib
  :   pages={1378--1386}
  :                     ，
 I'm skipping whatever remains of this entry
 Warning--string name "emnlp" is undefined
---line 1565 of file ZJUthesis.bib
+--line 1801 of file ZJUthesis.bib
 Warning--empty pages in chung2014empirical
 Warning--empty pages in norouzi2014zero
 Warning--empty journal in akata2015label
@@ -35,47 +36,48 @@ Warning--empty year in li2010object
 Warning--empty journal in wah2011caltech
 Warning--empty pages in simonyan2015very
 Warning--empty pages in arjovsky2017wasserstein
+Warning--empty pages in foerster2018counterfactual
 Warning--empty pages in redmon2017yolo9000
 Warning--empty pages in zeiler2012adadelta
-You've used 123 entries,
+You've used 144 entries,
             2586 wiz_defined-function locations,
-            1157 strings with 25668 characters,
-and the built_in function-call counts, 59436 in all, are:
-= -- 4340
-> -- 1746
+            1242 strings with 29163 characters,
+and the built_in function-call counts, 69766 in all, are:
+= -- 5112
+> -- 2037
 < -- 1
-+ -- 664
-- -- 541
-* -- 2760
-:= -- 6379
-add.period$ -- 370
-call.type$ -- 123
-change.case$ -- 123
++ -- 775
+- -- 631
+* -- 3228
+:= -- 7479
+add.period$ -- 434
+call.type$ -- 144
+change.case$ -- 144
 chr.to.int$ -- 0
-cite$ -- 137
-duplicate$ -- 5769
-empty$ -- 5628
-format.name$ -- 663
-if$ -- 13571
+cite$ -- 159
+duplicate$ -- 6767
+empty$ -- 6611
+format.name$ -- 773
+if$ -- 15954
 int.to.chr$ -- 0
-int.to.str$ -- 123
-missing$ -- 1511
-newline$ -- 621
-num.names$ -- 123
-pop$ -- 2548
+int.to.str$ -- 144
+missing$ -- 1766
+newline$ -- 727
+num.names$ -- 144
+pop$ -- 2980
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 2199
+skip$ -- 2598
 stack$ -- 0
-substring$ -- 3929
-swap$ -- 3836
+substring$ -- 4625
+swap$ -- 4504
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 14
-while$ -- 444
-width$ -- 126
-write$ -- 1145
+warning$ -- 15
+while$ -- 522
+width$ -- 147
+write$ -- 1343
 (There was 1 error message)
