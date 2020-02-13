@@ -6,10 +6,10 @@
 \contentsline {table}{\numberline {3-1}{\ignorespaces 不同零样本物体分类方法在4个数据集上的性能对比\relax }}{18}{table.caption.10}% 
 \contentsline {table}{\numberline {3-2}{\ignorespaces 不同重建网络下重建图像与输入图像之间的平均像素差平方\relax }}{19}{table.caption.12}% 
 \addvspace {10.0pt}
-\contentsline {table}{\numberline {4-1}{\ignorespaces xx\relax }}{28}{table.caption.17}% 
-\contentsline {table}{\numberline {4-2}{\ignorespaces xx\relax }}{28}{table.caption.18}% 
-\contentsline {table}{\numberline {4-3}{\ignorespaces xx\relax }}{28}{table.caption.19}% 
-\contentsline {table}{\numberline {4-4}{\ignorespaces 不同场景图生成方法在VG数据集上的性能对比\relax }}{29}{table.caption.20}% 
+\contentsline {table}{\numberline {4-1}{\ignorespaces 不同全局奖励函数的选择对性能的影响\relax }}{34}{table.caption.21}% 
+\contentsline {table}{\numberline {4-2}{\ignorespaces 不同基准模型对性能的影响\relax }}{35}{table.caption.22}% 
+\contentsline {table}{\numberline {4-3}{\ignorespaces 不同多智能体通信步数对性能的影响\relax }}{35}{table.caption.23}% 
+\contentsline {table}{\numberline {4-4}{\ignorespaces 不同场景图生成方法在VG数据集上的性能对比\relax }}{36}{table.caption.24}% 
 \addvspace {10.0pt}
 \addvspace {10.0pt}
 \addvspace {10.0pt}

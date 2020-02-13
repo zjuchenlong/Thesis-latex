@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.12.18)  12 FEB 2020 20:42
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.12.18)  13 FEB 2020 21:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1436,21 +1436,9 @@ Package: wrapfig 2003/01/31  v 3.6
 )
 (./chenlong_phd.aux (./chapter0/abstractC.aux) (./chapter0/abstractE.aux)
 (./chapter1/chap1.aux) (./chapter2/chap2.aux) (./chapter3/chap3.aux)
-(./chapter4/chap4.aux
-
-LaTeX Warning: Label `xx' multiply defined.
-
-
-LaTeX Warning: Label `xx@cref' multiply defined.
-
-
-LaTeX Warning: Label `xx' multiply defined.
-
-
-LaTeX Warning: Label `xx@cref' multiply defined.
-
-) (./chapter5/chap5.aux) (./chapter6/chap6.aux) (./chapter7/chap7.aux)
-(./chapter8/chap8.aux) (./chapter8/publications.aux) (./chapter8/thanks.aux))
+(./chapter4/chap4.aux) (./chapter5/chap5.aux) (./chapter6/chap6.aux)
+(./chapter7/chap7.aux) (./chapter8/chap8.aux) (./chapter8/publications.aux)
+(./chapter8/thanks.aux))
 \openout1 = `chenlong_phd.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
@@ -1473,8 +1461,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
 LaTeX Font Info:    ... okay on input line 48.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 48.
 LaTeX Font Info:    ... okay on input line 48.
-
-ABD: EverySelectfont initializing macros
+ ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 48.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
@@ -1913,32 +1900,67 @@ Package fontspec Warning: Font "STFangsong" does not contain requested Script
 File: chapter4/res/motivation.pdf Graphic file (type pdf)
 <use chapter4/res/motivation.pdf>
 [24]
-Underfull \vbox (badness 3579) has occurred while \output is active []
+Underfull \vbox (badness 5077) has occurred while \output is active []
 
  [25]
-[26] [27] [28]
-Overfull \hbox (3.88133pt too wide) in paragraph at lines 202--202
+File: chapter4/res/architecture.pdf Graphic file (type pdf)
+<use chapter4/res/architecture.pdf>
+
+[26]
+File: chapter4/res/communication.pdf Graphic file (type pdf)
+<use chapter4/res/communication.pdf>
+ [27]
+Underfull \vbox (badness 2393) has occurred while \output is active []
+
+ [28]
+[29] [30]
+File: chapter4/res/local_sensitive.pdf Graphic file (type pdf)
+<use chapter4/res/local_sensitive.pdf>
+File: chapter4/res/baseline.pdf Graphic file (type pdf)
+<use chapter4/res/baseline.pdf>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (12.71895pt too wide) in paragraph at lines 182--183
+[]\l_fontspec_font 给 定 一 个 全 局 的 奖 励 $\OML/cmm/m/it/12.045 R\OT1/cmr/m/n/12.045
+ (\OML/cmm/m/it/12.045 H[]; V[]\OT1/cmr/m/n/12.045 )$ \l_fontspec_font 和 第 $\OM
+L/cmm/m/it/12.045 i$ \l_fontspec_font 个 智 能 体 动 作 的 反 事 实 基 准 $[][]\OT1/cmr/m/n
+/12.045 (\OML/cmm/m/it/12.045 H[]; V[]\OT1/cmr/m/n/12.045 )$\l_fontspec_font ，|
+
+ []
+
+[31] [32] [33] [34]
+Underfull \vbox (badness 1953) has occurred while \output is active []
+
+ [35]
+Overfull \hbox (3.88133pt too wide) in paragraph at lines 352--352
 [][] 
  []
 
 
-Overfull \hbox (1.78683pt too wide) in paragraph at lines 202--202
+Overfull \hbox (1.78683pt too wide) in paragraph at lines 352--352
 [][] 
  []
 
-[29]
+
+Underfull \vbox (badness 2941) has occurred while \output is active []
+
+ [36]
 File: chapter4/res/visualization.pdf Graphic file (type pdf)
 <use chapter4/res/visualization.pdf>
- [30]) [31]
+
+[37]) [38]
 \openout2 = `./chapter5/chap5.aux'.
 
- (./chapter5/chap5.tex [32
-
-
-
-]
+ (./chapter5/chap5.tex
 5
-[33]) [34]
+[39
+
+
+
+]) [40]
 \openout2 = `./chapter6/chap6.aux'.
 
  (./chapter6/chap6.tex
@@ -1951,35 +1973,35 @@ _font ：|  在 测 试 集 中，|  每 个 样 本 预 测 分 数 最 高 的
 
  []
 
-[35
+[41
 
 
 
-]) [36]
+]) [42]
 \openout2 = `./chapter7/chap7.aux'.
 
  (./chapter7/chap7.tex
 7
-) [37
+) [43
 
 
 
 ]
 \openout2 = `./chapter8/chap8.aux'.
 
- (./chapter8/chap8.tex [38
+ (./chapter8/chap8.tex [44
 
 
 
 ]
 8
-) [39] [40
+) [45] [46
 
 
 ] (./chenlong_phd.bbl
 Underfull \vbox (badness 6094) has occurred while \output is active []
 
- [41
+ [47
 
 ]
 Underfull \hbox (badness 8000) in paragraph at lines 89--93
@@ -1990,44 +2012,47 @@ Lu, Margaret Mitchell, Dhruv Batra,
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [42]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [43]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [44]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [45]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [46]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [47]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [48]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [49])
-[50]
+ [49]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [50]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [51]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [52]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [53]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [54]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [55]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [56])
+[57]
 \openout2 = `./chapter8/publications.aux'.
 
- (./chapter8/publications.tex
+ (./chapter8/publications.tex [58
+
+
+]
 Overfull \hbox (15.33745pt too wide) in paragraph at lines 35--39
 \TU/TimesNewRoman(0)/m/n/12.045 Tracking[J]. IEEE Transactions on Pattern Analy
 sis and Machine Intelligence (TPAMI),
  []
 
-[51
-
-
-]) [52]
+[59]) [60]
 \openout2 = `./chapter8/thanks.aux'.
 
- (./chapter8/thanks.tex) [53
+ (./chapter8/thanks.tex) [61
 
 
 
@@ -2042,20 +2067,16 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 180.
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 180.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 180.
 Package rerunfilecheck Info: File `chenlong_phd.out' has not changed.
-(rerunfilecheck)             Checksum: 05C3F3C27DEA449E096621352519279A.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+(rerunfilecheck)             Checksum: 7E034DFBB38229DCC70D40222F9EDFB8.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 180.
  ) 
 Here is how much of TeX's memory you used:
- 52116 strings out of 492916
- 1210811 string characters out of 6133344
+ 52247 strings out of 492916
+ 1216500 string characters out of 6133344
  1435077 words of memory out of 5000000
- 55264 multiletter control sequences out of 15000+600000
- 564578 words of font info for 211 fonts, out of 8000000 for 9000
+ 55389 multiletter control sequences out of 15000+600000
+ 564594 words of font info for 213 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 65i,15n,96p,1043b,1067s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,22n,96p,1037b,1123s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chenlong_phd.pdf (73 pages).
+Output written on chenlong_phd.pdf (81 pages).

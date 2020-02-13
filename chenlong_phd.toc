@@ -50,35 +50,37 @@
 \contentsline {chapter}{\numberline {4\hspace {.3em}}基于反事实的多智能体学习的图像场景图生成方法}{23}{chapter.4}% 
 \contentsline {section}{\numberline {4.1}问题描述}{23}{section.4.1}% 
 \contentsline {section}{\numberline {4.2}反事实的多智能体学习}{26}{section.4.2}% 
-\contentsline {section}{\numberline {4.3}实验设置与性能对比}{26}{section.4.3}% 
-\contentsline {subsection}{\numberline {4.3.1}图像场景图生成数据集与实验设定}{26}{subsection.4.3.1}% 
-\contentsline {subsection}{\numberline {4.3.2}实验细节}{27}{subsection.4.3.2}% 
-\contentsline {subsection}{\numberline {4.3.3}视觉场景图生成性能分析}{28}{subsection.4.3.3}% 
-\contentsline {subsection}{\numberline {4.3.4}视觉场景图生成性能对比}{28}{subsection.4.3.4}% 
-\contentsline {section}{\numberline {4.4}本章小结}{31}{section.4.4}% 
-\contentsline {chapter}{\numberline {5\hspace {.3em}}基于通道注意力机制的图像描述语句生成方法}{33}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}引言}{33}{section.5.1}% 
-\contentsline {section}{\numberline {5.2}通道注意力机制}{33}{section.5.2}% 
-\contentsline {section}{\numberline {5.3}实验设置与性能对比}{33}{section.5.3}% 
-\contentsline {subsection}{\numberline {5.3.1}图像描述语句生成数据集}{33}{subsection.5.3.1}% 
-\contentsline {subsection}{\numberline {5.3.2}评价指标}{33}{subsection.5.3.2}% 
-\contentsline {subsection}{\numberline {5.3.3}实验设定}{34}{subsection.5.3.3}% 
-\contentsline {section}{\numberline {5.4}本章小结}{34}{section.5.4}% 
-\contentsline {chapter}{\numberline {6\hspace {.3em}}基于自底向上框架的视频片段检索方法}{35}{chapter.6}% 
-\contentsline {section}{\numberline {6.1}引言}{35}{section.6.1}% 
-\contentsline {section}{\numberline {6.2}视频片段检索}{35}{section.6.2}% 
-\contentsline {section}{\numberline {6.3}实验设置与性能对比}{35}{section.6.3}% 
-\contentsline {subsection}{\numberline {6.3.1}视频片段检索数据集}{35}{subsection.6.3.1}% 
-\contentsline {subsection}{\numberline {6.3.2}评价指标}{35}{subsection.6.3.2}% 
-\contentsline {section}{\numberline {6.4}本章小结}{36}{section.6.4}% 
-\contentsline {chapter}{\numberline {7\hspace {.3em}}基于反事实样本生成的图像视觉问答方法}{37}{chapter.7}% 
-\contentsline {section}{\numberline {7.1}引言}{37}{section.7.1}% 
-\contentsline {section}{\numberline {7.2}反事实样本生成}{37}{section.7.2}% 
-\contentsline {section}{\numberline {7.3}实验设置与性能对比}{37}{section.7.3}% 
-\contentsline {section}{\numberline {7.4}本章小结}{37}{section.7.4}% 
-\contentsline {chapter}{\numberline {8\hspace {.3em}}总结和展望}{39}{chapter.8}% 
-\contentsline {section}{\numberline {8.1}本文工作总结}{39}{section.8.1}% 
-\contentsline {section}{\numberline {8.2}未来研究展望}{39}{section.8.2}% 
-\contentsline {chapter}{参考文献}{41}{chapter*.22}% 
-\contentsline {chapter}{作者简历及在学期间所取得的科研成果}{51}{chapter*.23}% 
-\contentsline {chapter}{致谢}{53}{chapter*.27}% 
+\contentsline {subsection}{\numberline {4.2.1}场景图生成中的多智能体通信}{27}{subsection.4.2.1}% 
+\contentsline {subsection}{\numberline {4.2.2}反事实多智能体学习}{30}{subsection.4.2.2}% 
+\contentsline {section}{\numberline {4.3}实验设置与性能对比}{33}{section.4.3}% 
+\contentsline {subsection}{\numberline {4.3.1}图像场景图生成数据集与实验设定}{33}{subsection.4.3.1}% 
+\contentsline {subsection}{\numberline {4.3.2}实验细节}{33}{subsection.4.3.2}% 
+\contentsline {subsection}{\numberline {4.3.3}场景图生成性能分析}{34}{subsection.4.3.3}% 
+\contentsline {subsection}{\numberline {4.3.4}场景图生成性能对比}{36}{subsection.4.3.4}% 
+\contentsline {section}{\numberline {4.4}本章小结}{38}{section.4.4}% 
+\contentsline {chapter}{\numberline {5\hspace {.3em}}基于通道注意力机制的图像描述语句生成方法}{39}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}引言}{39}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}通道注意力机制}{39}{section.5.2}% 
+\contentsline {section}{\numberline {5.3}实验设置与性能对比}{39}{section.5.3}% 
+\contentsline {subsection}{\numberline {5.3.1}图像描述语句生成数据集}{39}{subsection.5.3.1}% 
+\contentsline {subsection}{\numberline {5.3.2}评价指标}{39}{subsection.5.3.2}% 
+\contentsline {subsection}{\numberline {5.3.3}实验设定}{40}{subsection.5.3.3}% 
+\contentsline {section}{\numberline {5.4}本章小结}{40}{section.5.4}% 
+\contentsline {chapter}{\numberline {6\hspace {.3em}}基于自底向上框架的视频片段检索方法}{41}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}引言}{41}{section.6.1}% 
+\contentsline {section}{\numberline {6.2}视频片段检索}{41}{section.6.2}% 
+\contentsline {section}{\numberline {6.3}实验设置与性能对比}{41}{section.6.3}% 
+\contentsline {subsection}{\numberline {6.3.1}视频片段检索数据集}{41}{subsection.6.3.1}% 
+\contentsline {subsection}{\numberline {6.3.2}评价指标}{41}{subsection.6.3.2}% 
+\contentsline {section}{\numberline {6.4}本章小结}{42}{section.6.4}% 
+\contentsline {chapter}{\numberline {7\hspace {.3em}}基于反事实样本生成的图像视觉问答方法}{43}{chapter.7}% 
+\contentsline {section}{\numberline {7.1}引言}{43}{section.7.1}% 
+\contentsline {section}{\numberline {7.2}反事实样本生成}{43}{section.7.2}% 
+\contentsline {section}{\numberline {7.3}实验设置与性能对比}{43}{section.7.3}% 
+\contentsline {section}{\numberline {7.4}本章小结}{43}{section.7.4}% 
+\contentsline {chapter}{\numberline {8\hspace {.3em}}总结和展望}{45}{chapter.8}% 
+\contentsline {section}{\numberline {8.1}本文工作总结}{45}{section.8.1}% 
+\contentsline {section}{\numberline {8.2}未来研究展望}{45}{section.8.2}% 
+\contentsline {chapter}{参考文献}{47}{chapter*.26}% 
+\contentsline {chapter}{作者简历及在学期间所取得的科研成果}{59}{chapter*.27}% 
+\contentsline {chapter}{致谢}{61}{chapter*.31}% 

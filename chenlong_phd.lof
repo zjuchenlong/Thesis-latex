@@ -11,9 +11,13 @@
 \contentsline {figure}{\numberline {3-5}{\ignorespaces 不同图像重建网络框架在数据集CUB、SUN、AWA、aPY上的重建结果\relax }}{20}{figure.caption.13}% 
 \contentsline {figure}{\numberline {3-6}{\ignorespaces 在数据集SUN、CUB、AWA和aPY中的已见-未见准确率曲线下区域面积\nobreakspace {}\cite {chao2016empirical}\relax }}{21}{figure.caption.14}% 
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {4-1}{\ignorespaces 一个图像视觉场景图生成任务示例\relax }}{24}{figure.caption.15}% 
-\contentsline {figure}{\numberline {4-2}{\ignorespaces 视觉场景图生成中优化目标的整体一致性和局部敏感性\relax }}{25}{figure.caption.16}% 
-\contentsline {figure}{\numberline {4-3}{\ignorespaces CMAT和MOTIFS在数据集VG上的场景图生成结果对比\relax }}{30}{figure.caption.21}% 
+\contentsline {figure}{\numberline {4-1}{\ignorespaces 一个图像场景图生成任务示例\relax }}{24}{figure.caption.15}% 
+\contentsline {figure}{\numberline {4-2}{\ignorespaces 场景图生成中优化目标的整体一致性和局部敏感性\relax }}{25}{figure.caption.16}% 
+\contentsline {figure}{\numberline {4-3}{\ignorespaces 模型CMAT的总体流程图\relax }}{27}{figure.caption.17}% 
+\contentsline {figure}{\numberline {4-4}{\ignorespaces 智能体通信示意图\relax }}{28}{figure.caption.18}% 
+\contentsline {figure}{\numberline {4-5}{\ignorespaces 局部敏感性的重要性\relax }}{31}{figure.caption.19}% 
+\contentsline {figure}{\numberline {4-6}{\ignorespaces CMAT中反事实基准模型\relax }}{32}{figure.caption.20}% 
+\contentsline {figure}{\numberline {4-7}{\ignorespaces CMAT和MOTIFS在数据集VG上的场景图生成结果对比\relax }}{37}{figure.caption.25}% 
 \addvspace {10.0pt}
 \addvspace {10.0pt}
 \addvspace {10.0pt}

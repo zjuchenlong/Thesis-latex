@@ -761,6 +761,60 @@ Jakob~N Foerster, Gregory Farquhar, Triantafyllos Afouras, Nantas Nardelli,
 \newblock Counterfactual multi-agent policy gradients[C]. Proc. AAAI.
 \newblock 2018.
 
+\bibitem{chen2017sca}
+Long Chen, Hanwang Zhang, Jun Xiao, Liqiang Nie, Jian Shao, Wei Liu, Tat-Seng
+  Chua.
+\newblock Sca-cnn: Spatial and channel-wise attention in convolutional networks
+  for image captioning[C]. Proc. {IEEE} Conf. CVPR.
+\newblock 2017:5659--5667.
+
+\bibitem{zhang2018learning}
+Yan Zhang, Jonathon Hare, Adam Pr{\"u}gel-Bennett.
+\newblock Learning to count objects in natural images for visual question
+  answering[C]. Proc. ICLR.
+\newblock 2018.
+
+\bibitem{hausknecht2015deep}
+Matthew Hausknecht, Peter Stone.
+\newblock Deep recurrent q-learning for partially observable mdps[C]. Proc.
+  AAAI.
+\newblock 2015.
+
+\bibitem{bahdanau2017actor}
+Dzmitry Bahdanau, Philemon Brakel, Kelvin Xu, Anirudh Goyal, Ryan Lowe, Joelle
+  Pineau, Aaron Courville, Yoshua Bengio.
+\newblock An actor-critic algorithm for sequence prediction[C]. Proc. ICLR.
+\newblock 2017.
+
+\bibitem{konda2000actor}
+Vijay~R Konda, John~N Tsitsiklis.
+\newblock Actor-critic algorithms[C]. Proc. NeurIPS.
+\newblock 2000:1008--1014.
+
+\bibitem{rao2018learning}
+Yongming Rao, Dahua Lin, Jiwen Lu, Jie Zhou.
+\newblock Learning globally optimized object detector via policy gradient[C].
+  Proc. {IEEE} Conf. CVPR.
+\newblock 2018:6190--6198.
+
+\bibitem{sutton2018reinforcement}
+Richard~S Sutton, Andrew~G Barto.
+\newblock Reinforcement learning: An introduction[M].
+\newblock MIT press, 2018.
+
+\bibitem{mnih2016asynchronous}
+Volodymyr Mnih, Adria~Puigdomenech Badia, Mehdi Mirza, Alex Graves, Timothy
+  Lillicrap, Tim Harley, David Silver, Koray Kavukcuoglu.
+\newblock Asynchronous methods for deep reinforcement learning[C]. Proc. ICML.
+\newblock 2016:1928--1937.
+
+\bibitem{xu2015show}
+Kelvin Xu, Jimmy Ba, Ryan Kiros, Kyunghyun Cho, Aaron Courville, Ruslan
+  Salakhudinov, Rich Zemel, Yoshua Bengio.
+\newblock Show, attend and tell: Neural image caption generation with visual
+  attention[C]. Proc. ICML.
+\newblock 2015:2048--2057.
+
 \bibitem{newell2017pixels}
 Alejandro Newell, Jia Deng.
 \newblock Pixels to graphs by associative embedding[C]. Proc. NeurIPS.
@@ -782,6 +836,12 @@ Ji~Zhang, Kevin~J Shih, Ahmed Elgammal, Andrew Tao, Bryan Catanzaro.
 \newblock Graphical contrastive losses for scene graph parsing[C]. Proc. {IEEE}
   Conf. CVPR.
 \newblock 2019:11535--11543.
+
+\bibitem{weaver2013optimal}
+Lex Weaver, Nigel Tao.
+\newblock The optimal reward baseline for gradient-based reinforcement
+  learning[C]. arXiv.
+\newblock 2013.
 
 \bibitem{chen2019knowledge}
 Tianshui Chen, Weihao Yu, Riquan Chen, Liang Lin.

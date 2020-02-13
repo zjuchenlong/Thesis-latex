@@ -1,49 +1,49 @@
 \chapter{基于反事实的多智能体学习的图像场景图生成方法}
 
-视觉场景图（Scene Graph）是将图像中每个物体当成一个节点，两两物体之间视觉关系看成连接两个节点间的有向边。视觉场景图描绘的是图像视觉场景中物体的类别、位置关系以及两两物体之间的交互（视觉关系）。为了产生连贯的视觉场景图，几乎所有现有的视觉场景图生成方法都是通过“信息传递机制”（Message Passing），让每个物体和视觉关系都能充分地考虑和融合周围的视觉元素之间的内在联系。例如，物体“人”和物体“自行车”之间一个很常见的视觉关系就是“骑”（人-骑-自行车），反过来，视觉关系“骑”也能够提升这两个物体的类别预测。然后，现有的这些方法都是直接利用交叉熵作为模型的优化目标，这将大大限制模型融合周围信息的能力。造成这样结果主要原因在于，交叉熵的损失函数对所有的节点一视同仁，即每个不同节点的分类损失对总的损失函数影响相同。
+图像场景图（Scene Graph）是将图像中每个物体当成一个节点，两两物体之间视觉关系看成连接两个节点间的有向边。图像场景图描绘的是图像视觉场景中物体的类别、位置关系以及两两物体之间的交互（视觉关系）。为了产生连贯的场景图，几乎所有现有的场景图生成方法都是通过“信息传递机制”（Message Passing），让每个物体和视觉关系都能充分地考虑和融合周围的视觉元素之间的内在联系。例如，物体“人”和物体“自行车”之间一个很常见的视觉关系就是“骑”（人-骑-自行车），反过来，视觉关系“骑”也能够提升这两个物体的类别预测。然后，现有的这些方法都是直接利用交叉熵作为模型的优化目标，这将大大限制模型融合周围信息的能力。造成这样结果主要原因在于，交叉熵的损失函数对所有的节点一视同仁，即每个不同节点的分类损失对总的损失函数影响相同。
 
 在本章，我们提出一种反事实的多智能体学习方法（Counterfactual critic Multi-Agent Training, CMAT）。CMT是一种基于多智能体策略梯度优化方法。它通过将每个物体看成一个智能体，可以直接对整个场景图的生成质量作为总的奖励函数。另外，为了给每个智能体分配适当的奖励，我们设计来一个反事实基准模型（counterfactual baseline）：通过固定其他智能体的类别，以及改变当前智能体的类别，从而分类出每个智能体单独的贡献。通过在数据集Visual Genome（VG）上进行大量的对比实验，我们验证了本章提出的CMAT模型在多个实验设定和评价指标下可以达到目前最好的结果。
 
 
 \section{问题描述}
 
-视觉场景理解是计算机视觉研究领域一个重要的研究方法。它不仅仅需要对场景中所有物体的类别以及位置进行预测，同时需要对两两物体之间的视觉关系进行预测。随着物体检测~\cite{ren2015faster,liu2016ssd}与分割技术~\cite{long2015fully,he2017mask}的成熟，计算机已经可以准确地识别物体的类别、位置以及属性。然后，视觉场景理解不仅仅只是单个物体的识别，还需要对视觉关系进行识别。所有的物体和视觉关系一起，就构成了视觉场景图~\cite{johnson2015image}。如图~\ref{ch4:fig:sgg}所示，每个节点和边分别表示图像中的物体和视觉关系。目前，视觉场景图已经成为一种视觉知识结构的表达，辅助许多计算机视觉任务：如图像描述语句生成~\cite{yao2018exploring,yang2019auto,kim2019dense}、视觉问答~\cite{norcliffe2018learning,hudson2019gqa}、视觉推理~\cite{shi2019explainable,haurilet2019s}等。
+视觉场景理解是计算机视觉研究领域一个重要的研究方法。它不仅仅需要对场景中所有物体的类别以及位置进行预测，同时需要对两两物体之间的视觉关系进行预测。随着物体检测~\cite{ren2015faster,liu2016ssd}与分割技术~\cite{long2015fully,he2017mask}的成熟，计算机已经可以准确地识别物体的类别、位置以及属性。然后，视觉场景理解不仅仅只是单个物体的识别，还需要对视觉关系进行识别。所有的物体和视觉关系一起，就构成了场景图~\cite{johnson2015image}。如图~\ref{ch4:fig:sgg}所示，每个节点和边分别表示图像中的物体和视觉关系。目前，图像场景图已经成为一种视觉知识结构的表达，辅助许多计算机视觉任务：如图像描述语句生成~\cite{yao2018exploring,yang2019auto,kim2019dense}、视觉问答~\cite{norcliffe2018learning,hudson2019gqa}、视觉推理~\cite{shi2019explainable,haurilet2019s}等。
 
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.95\linewidth]{chapter4/res/sgg.pdf}
-    \caption{一个图像视觉场景图生成任务示例}
+    \includegraphics[width=0.8\linewidth]{chapter4/res/sgg.pdf}
+    \caption{一个图像场景图生成任务示例}
     \label{ch4:fig:sgg}
 \end{figure}
 
 
-对于图像的视觉场景图生成（Scene Graph Generation, SGG），一个最简单的解决思路是将视觉场景图生成任务分成物体检测和视觉关系检测两个独立的子任务，即先用现有的物体检测器检测物体框，然后预测每个物体框的类别以及两两物体框之间视觉关系的类别~\cite{lu2016visual,zhang2017visual,yang2018shuffle}。然而，这类方法忽略了同一图像中所有物体间的内在联系。通常，这些内在联系往往会提供一些归纳偏置~\cite{divvala2009empirical}（inductive bias）帮助物体或者视觉关系的预测。如图~\ref{ch4:fig:sgg}，物体“窗户”（window）和物体“建筑物”（building）常常出现在同一张图像中，“在附近”（near）也是物体“树”（tree）和物体“建筑物”（building）之间最常见的视觉关系。因此，从视觉关系“窗户-在上面-\texttt{?}”或“树-在附近-\texttt{?}”中，很容易推测出“\texttt{?}”是“建筑物”。这些辅助信息已经被广泛地用来提升视觉场景图生成效果~\cite{xu2017scene, dai2017detecting, li2017vip, li2017scene, li2018factorizable, yin2018zoom, jae2018tensorize, zellers2018neural, tang2019learning, gu2019scene, qi2019attentive, wang2019exploring, qian2019video}。具体来说，这些方法都是通过借助条件随机场~\cite{zheng2015conditional}（Conditional Random Field, CRF）来建模所有节点和边的联合分布，然后通过信息传递机制来更新节点和边的特征~\cite{krahenbuhl2011efficient}。最后，整个模型利用所有节点（物体）和边（视觉关系）分类的交叉熵之和作为损失函数进行参数优化。
+对于图像的场景图生成（Scene Graph Generation, SGG），一个最简单的解决思路是将场景图生成任务分成物体检测和视觉关系检测两个独立的子任务，即先用现有的物体检测器检测物体框，然后预测每个物体框的类别以及两两物体框之间视觉关系的类别~\cite{lu2016visual,zhang2017visual,yang2018shuffle}。然而，这类方法忽略了同一图像中所有物体间的内在联系。通常，这些内在联系往往会提供一些归纳偏置~\cite{divvala2009empirical}（inductive bias）帮助物体或者视觉关系的预测。如图~\ref{ch4:fig:sgg}，物体“窗户”（window）和物体“建筑物”（building）常常出现在同一张图像中，“在附近”（near）也是物体“树”（tree）和物体“建筑物”（building）之间最常见的视觉关系。因此，从视觉关系“窗户-在上面-\texttt{?}”或“树-在附近-\texttt{?}”中，很容易推测出“\texttt{?}”是“建筑物”。这些辅助信息已经被广泛地用来提升场景图生成效果~\cite{xu2017scene, dai2017detecting, li2017vip, li2017scene, li2018factorizable, yin2018zoom, jae2018tensorize, zellers2018neural, tang2019learning, gu2019scene, qi2019attentive, wang2019exploring, qian2019video}。具体来说，这些方法都是通过借助条件随机场~\cite{zheng2015conditional}（Conditional Random Field, CRF）来建模所有节点和边的联合分布，然后通过信息传递机制来更新节点和边的特征~\cite{krahenbuhl2011efficient}。最后，整个模型利用所有节点（物体）和边（视觉关系）分类的交叉熵之和作为损失函数进行参数优化。
 
 
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.95\linewidth]{chapter4/res/motivation.pdf}
-    \caption{视觉场景图生成中优化目标的整体一致性和局部敏感性}
+    \includegraphics[width=0.8\linewidth]{chapter4/res/motivation.pdf}
+    \caption{场景图生成中优化目标的整体一致性和局部敏感性}
     \label{ch4:fig:motivation}
 \end{figure}
 
 
-现有的视觉场景图生成方法对并没有充分地利用图像中物体和视觉关系之间的内在联系，一个重要的原因是交叉熵之和作为视觉场景图生成的优化目标，不具备\textbf{整体一致性}。所谓的“整体一致性”，意思是所有预测的物体类别和视觉关系类别之间应该整体一致。相反，交叉熵之和将所有的物体和视觉关系看成是相互独立的。如图~\ref{ch4:fig:motivation}（a），如果红色节点和蓝色节点都被错误分成类别“man”，根据目前的损失函数（交叉熵之和），这两种错误情况的损失相同。然而，因为红色节点连接的边远多于蓝色节点，即对红色节点的错误分类将造成更大的损失，因为它会影响更多的视觉关系。因此，我们提出直接用Recall@K~\cite{lu2016visual}或者SPICE~\cite{anderson2016spice}这种场景图的全局评价指标作为优化目标。另外，视觉场景图生成的优化目标还应该具备\textbf{局部敏感性}。所谓的“局部敏感性”，意思是优化目标应该能够感知每个节点类别的预测变化。由于场景图的全局评价指标是一个整体生成质量的评价数值，因此我们需要设计一种机制，可以感知每个节点各自的贡献，进而为每个局部预测提供更加有效的优化梯度。
+现有的场景图生成方法对并没有充分地利用图像中物体和视觉关系之间的内在联系，一个重要的原因是交叉熵之和作为场景图生成的优化目标，不具备\textbf{整体一致性}。所谓的“整体一致性”，意思是所有预测的物体类别和视觉关系类别之间应该整体一致。相反，交叉熵之和将所有的物体和视觉关系看成是相互独立的。如图~\ref{ch4:fig:motivation}（a），如果红色节点和蓝色节点都被错误分成类别“man”，根据目前的损失函数（交叉熵之和），这两种错误情况的损失相同。然而，因为红色节点连接的边远多于蓝色节点，即对红色节点的错误分类将造成更大的损失，因为它会影响更多的视觉关系。因此，我们提出直接用Recall@K~\cite{lu2016visual}或者SPICE~\cite{anderson2016spice}这种场景图的全局评价指标作为优化目标。另外，场景图生成的优化目标还应该具备\textbf{局部敏感性}。所谓的“局部敏感性”，意思是优化目标应该能够感知每个节点类别的预测变化。由于场景图的全局评价指标是一个整体生成质量的评价数值，因此我们需要设计一种机制，可以感知每个节点各自的贡献，进而为每个局部预测提供更加有效的优化梯度。
 
 
 在本章，我们提出了一种全新的训练方式可以同时满足优化目标的整体一致性和局部敏感性：反事实的多智能体学习（CMAT）。具体来说，我们设计了一种全新的多智能体模型，其中将每个物体框看成是一个智能体。每个智能体的动作就是物体类别，智能体之间可以进行通信进而提升智能体的特征表达。在多轮的智能体通信之后，我们利用一个视觉关系预测模型来得到智能体之间的视觉关系。通过与人工标注的场景图对比，得到一个全局的奖励。
 
-为了整体一致性，我们直接将视觉场景图的评价指标（如：Recall@K或SPICE）作为全局奖励，并且使用策略梯度的方式进行参数优化~\cite{sutton2000policy}。从多智能体强化学习~\cite{tampuu2017multiagent,lowe2017multi}（Multi-Agent Reinforcement Learning, MARL）的观点来看，尤其是演员-评论家方法~\cite{lowe2017multi}（actor-critic），CMAT中视觉关系模型可以看成是\textbf{评论家}（critic）,而物体类别分类模型可以看成是策略网络。为了局部敏感性，对于每个智能体，我们从全局奖励中减去一个反事实基准~\cite{foerster2018counterfactual}。这个反事实基准模型通过改变目标智能体的预测类别同时固定其他智能体的预测类别，从而得到目标智能体的局部贡献。如图~\ref{ch4:fig:motivation}（b）所示，为了得到红色节点预测为“自行车”（bike）的贡献，我们可以固定其他节点的预测，而将红色节点的预测替换成其他的“非自行车”类。进而可以计算出这种\textbf{反事实}的替换对整体的场景图生成效果带来多大的影响。
+为了整体一致性，我们直接将场景图生成的评价指标（如：Recall@K或SPICE）作为全局奖励，并且使用策略梯度的方式进行参数优化~\cite{sutton2000policy}。从多智能体强化学习~\cite{tampuu2017multiagent,lowe2017multi}（Multi-Agent Reinforcement Learning, MARL）的观点来看，尤其是演员-评论家方法~\cite{lowe2017multi}（actor-critic），CMAT中视觉关系模型可以看成是\textbf{评论家}（critic）,而物体类别分类模型可以看成是策略网络。为了局部敏感性，对于每个智能体，我们从全局奖励中减去一个反事实基准~\cite{foerster2018counterfactual}。这个反事实基准模型通过改变目标智能体的预测类别同时固定其他智能体的预测类别，从而得到目标智能体的局部贡献。如图~\ref{ch4:fig:motivation}（b）所示，为了得到红色节点预测为“自行车”（bike）的贡献，我们可以固定其他节点的预测，而将红色节点的预测替换成其他的“非自行车”类。进而可以计算出这种\textbf{反事实}的替换对整体的场景图生成效果带来多大的影响。
 
 为了更好的编码物体之间的内在联系，我们还设计了一种更加有效的智能体通信模型。相比于现有的信息传递机制~\cite{xu2017scene, li2017scene, jae2018tensorize, li2017vip, yin2018zoom, li2018factorizable}，我们没有将视觉关系也看成节点。通过这个设计，我们可以将智能体通信与视觉关系预测两个任务分离出来，让前者关注如何编码物体间内在联系，后者作为评论家提供全局奖励引导网络的优化。
 
-我们在目前最大的图像视觉场景图生成数据集Visual Genome（VG）上对CMAT的性能进行了验证。通过大量的对比实验，我们在通用的三个标准实验设定下都可以达到目前最好的效果。
+我们在目前最大的图像场景图生成数据集Visual Genome（VG）上对CMAT的性能进行了验证。通过大量的对比实验，我们在通用的三个标准实验设定下都可以达到目前最好的效果。
 
 本章主要有三个贡献：
 \begin{asparaenum}
 
-\item 我们提出了一种全新的图像视觉场景图生成的优化方式：反事实的多智能体学习（CMAT）。据我们了解，这是第一个将图像场景图生成任务构思成一个多智能体协同合作的问题，使得优化目标满足整体一致性要求。
+\item 我们提出了一种全新的图像场景图生成的优化方式：反事实的多智能体学习（CMAT）。据我们了解，这是第一个将图像场景图生成任务构思成一个多智能体协同合作的问题，使得优化目标满足整体一致性要求。
 
 \item 我们设计了一个全新的反事实基准模型，可以使得多智能体策略梯度算法的优化目标具备局部敏感性。
 
@@ -53,6 +53,151 @@
 
 
 \section{反事实的多智能体学习}
+给定一个物体类别集$\mathcal{C}$（包含背景）和一个视觉关系类别集$\mathcal{R}$（包括没有视觉关系），图场景图可以表示成：$\mathcal{G} = \left\{ \mathcal{V}=\{(v_i, \bm{l}_i)\},\mathcal{E}=\{r_{ij}\} | i,j = 1...n \right\}$，其中$\mathcal{V}$和$\mathcal{E}$分别表示所有节点（物体）和边（视觉关系）的结合。
+$v_i \in \mathcal{C}$表示第$i$个节点的物体类别，$\bm{l}_i \in \mathbb{R}^4$表示第$i$个节点的物体位置，$r_{ij} \in \mathcal{R}$表示第$i$个节点和第$j$个节点之间的视觉关系。场景图生成任务就是检测出图像中所有的物体以及物体间的视觉关系。
+
+在本节，我们先介绍模型CMAT中的每个组成部分。然后，我们再介绍模型CMAT的优化目标。
+
+\begin{figure}[tbp]
+    \centering
+    \includegraphics[width=\linewidth]{chapter4/res/architecture.pdf}
+    \caption{模型CMAT的总体流程图}
+    \label{ch4:fig:architecture}
+\end{figure}
+
+\subsection{场景图生成中的多智能体通信}
+
+\textbf{物体候选框检测}：我们首先使用现有的目标检测器Faster R-CNN~\cite{ren2015faster}得到一系列候选框。对于每个候选框，同时可以得到其位置坐标$\bm{l}_i$，特征向量$\bm{x}^0_i$，以及初始的物体类别预测概率$\bm{s}^0_i$。上角标$0$表示$T$轮智能体通信的初始输入。我们参考现有的工作~\cite{xu2017scene, zellers2018neural}，固定所有候选框的位置$\{\bm{l}_i\}$作为最终的预测结果。为了表达的简洁性，我们在后续内容中省略$\bm{l}_i$。
+
+
+\textbf{智能体通信}：给定$n$物体候选框，我们将每个候选框看成是一个智能体，智能体之间通过$T$轮的通信来编码所有物体间的内在联系。如图~\ref{ch4:fig:communication}所示，在每次智能体通信过程中，共有三个模块：信息提取模块（extract module）、信息合成模块（message module）和状态更新模块（update module）。为了减小模型参数，这三个模块在所有的智能体之间都共享参数。具体细节如下：
+
+（a）信息提取模块：我们使用递归神经网络（LSTM）来作为信息提取模块。LSTM不仅可以编码智能体之间的交互历史，同时也可以提取智能体自身的内部状态。具体来说，对于第$i$个智能体（物体），在第$t$（$0 < t \leqslant T$）轮通信时：
+\begin{equation}
+\begin{aligned}
+    \bm{h}^{t}_i & = \text{LSTM}(\bm{h}^{t-1}_i, [\bm{x}^{t}_i, \bm{e}^{t-1}_i]), \\
+    \bm{s}^t_i & = \bm{s}^{t-1}_i + \bm{W}_h \bm{h}^{t}_i, \\
+    v^t_i & \sim \bm{p}^{t}_i = \text{softmax}(\bm{s}^t_i), \\
+    \bm{e}^{t}_i &= \textstyle{\sum_{\tilde{v}}} \bm{p}^{t}_i(\tilde{v}) \mathbf{E}[\tilde{v}],
+\end{aligned}
+\end{equation}
+其中$\bm{h}^t_i \in \mathbb{R}^h$是LSTM的隐含状态，$\bm{x}^t_i \in \mathbb{R}^d$是每个时刻的输入特征，$\bm{s}^t_i \in \mathbb{R}^{|\mathcal{C}|}$时物体类别预测概率。初始的输入特征和类别预测概率（第$0$步）来自于物体候选框检测。$\mathbf{E}[\tilde{v}] \in \mathbb{R}^e$是类别标签$\tilde{v} \in \mathcal{C}$的编码，以及$\bm{e}^{t}_i \in \mathbb{R}^e$是一个基于类别概率$\bm{p}^t_i$加权的类别标签编码，$\bm{W}_h \in \mathbb{R}^{h \times |\mathcal{C}|}$是一个学习的矩阵，以及$[,]$是向量连接操作。所有的隐藏状态$\{\bm{h}^t_i\}$都输入到信息合成模块用于合成通信信息。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\linewidth]{chapter4/res/communication.pdf}
+    \caption{智能体通信示意图}
+    \label{ch4:fig:communication}
+\end{figure}
+
+（b）信息合成模块：对于第$i$个智能体和第$j$个智能体之间的通信，信息合成模块将分别合成信息$M^t_{ij}$和$M^t_{ji}$。具体来说，对于第$i$个智能体收到的信息$M^t_{ij} = (\bm{m}^t_j, \bm{m}^t_{ij})$主要包含两部分：
+\begin{equation}
+\begin{aligned}
+\bm{m}^t_j = \bm{W}_u \bm{h}^t_j, \; \bm{m}^t_{ij} = \bm{W}_p\bm{h}^t_{ij}
+\end{aligned}
+\end{equation}
+其中$\bm{m}^t_j \in \mathbb{R}^h$表示一元信息，用来表征第$j$个智能体本身的属性（如：单个物体的局部视觉特征），$\bm{m}^t_{ij} \in \mathbb{R}^h$二元信息，用来表征两个智能体之间的交互信息（如：两个智能体的相对位置信息）。$\bm{h}^t_{ij} \in \bm{R}^d$表示第$i$个智能体与第$j$个智能体之间的共同特征，它的初始化是两个智能体所在位置合并之后的视觉特征。所有与第$i$个智能体的通信信息$\{M^t_{i*}\}$与内部状态$\bm{h}^t_i$都输入到信息更新模块，用于更新所有智能体的内部状态。
+
+（c）状态更新模块：在每轮智能体通信过程中，对于每个智能体，我们使用注意力机制~\cite{chen2017sca}融合来自其他智能体的通信信息：
+\begin{equation}
+\begin{aligned}
+    u^t_j &= \bm{w}_u [\bm{h}^t_i, \bm{h}^t_j],\; \alpha^t_j = \exp(u^t_j) / \textstyle{\sum_k} \exp(u^t_k), \\
+    u^t_{ij} &= \bm{w}_p [\bm{h}^t_i, \bm{h}^t_{ij}],\; \alpha^t_{ij} = \exp(u^t_{ij}) / \textstyle{\sum_k} \exp(u^t_{ik}) \\
+    \bm{x}^{t+1}_i &= \bm{W}_x (\text{ReLU} (\bm{h}^t_i + \textstyle{\sum_j} \alpha^t_j \bm{m}^t_j +  \textstyle{\sum_j} \alpha^t_{ij} \bm{m}^t_{ij})) \\
+    \bm{h}^{t+1}_{ij} &= \text{ReLU} (\bm{h}^t_{ij} + \bm{W}_s \bm{h}^{t+1}_i + \bm{W}_e \bm{h}^{t+1}_j)
+\end{aligned}
+\end{equation}
+其中$\alpha^t_j$和$\alpha^t_{ij}$是融合不同信息的权重，$\bm{w}_u \in \mathbb{R}^{2h}$、$\bm{w}_p \in \mathbb{R}^{h+d}$、$\bm{W}_x \in \mathbb{R}^{h\times d}$、$\bm{W}_s \in \mathbb{R}^{h\times d}$和$\bm{W}_e \in \mathbb{R}^{h\times d}$这些都是需要学习的参数矩阵。
+
+
+\textbf{视觉关系预测}：在$T$轮智能体通信之后，所有的智能体都完成了状态更新。在测试阶段，对于所有的智能体，我们直接根据预测的分数$\bm{s}^T_i$来选取所有智能体的物体类别$v^T_i$。之后，我们利用视觉关系分类模型对任意两个智能体之间进行视觉关系预测。
+\begin{equation}
+\begin{aligned}
+    \bm{z}_i & = \bm{W}_o [\bm{h}^T_i, \mathbf{E}[v^T_i]], \; \bm{z}_j = \bm{W}_o [\bm{h}^T_j, \mathbf{E}[v^T_j]], \\
+    \bm{p}_{ij} & = \text{softmax} ([\bm{z}_i,  \bm{z}_j] \odot \bm{W}_r \bm{z}_{ij} + \bm{w}_{v^T_i, v^T_j}), \\
+    r_{ij} & = \arg \textstyle{\max_{r \in \mathcal{R}}} \bm{p}_{ij}(r),
+\end{aligned}
+\end{equation}
+其中$\bm{W}_o \in \mathbb{R}^{(h+e) \times z}$、$\bm{W}_r \in \mathbb{R}^{z\times 2z}$都是需要学习的映射矩阵，$\bm{z}_{ij} \in \mathbb{R}^z$是第$i$个智能体与第$j$个智能体之间预测的视觉关系特征，$\odot$是特征融合函数~\footnote{不同的特征融合函数对最终的实验性能影响不太。在我们的实验中，我们参考~\cite{zhang2018learning}使用融合函数: $\bm{x} \odot \bm{y} = \text{ReLU}(\bm{W}_x \bm{x} + \bm{W}_y \bm{y}) - (\bm{W}_x \bm{x} - \bm{W}_y \bm{y})^2$.}，$\bm{w}_{v^T_i, v^T_j} \in \mathbb{R}^{|\mathcal{C}|}$是基于VG数据集统计的视觉关系类别偏置~\cite{zellers2018neural}。 
+
+
+\subsection{反事实多智能体学习}
+
+在本节，我们将详细介绍CMAT中优化目标的细节，具体包括：（1）符合整体一致性的多智能体策略梯度；（2）符合局部敏感性的反事实评论家。
+
+
+\textbf{优化目标的整体一致性}：目前，几乎所有的场景图生成算法都是将交叉熵之和作为模型的优化目标。对于一个预测的场景图（$\hat{\mathcal{V}}, \hat{\mathcal{E}}$），如果人工标注的场景图为（$\mathcal{V}^{gt}, \mathcal{E}^{gt}$），根据交叉熵之和的优化目标，整个模型的损失函数为：
+\begin{equation} \label{ch4:eq:eq_5}
+\begin{aligned}
+   L(\theta) =  \textstyle{\sum_{ij}} \left(\text{XE}(\hat{v}_i, v^{gt}_i) + \text{XE}(\hat{r}_{ij}, r^{gt}_{ij}) \right). 
+\end{aligned}
+\end{equation}
+由公式~\eqref{ch4:eq:eq_5}可以看出，交叉熵之和的优化目标将所有的节点都看成相互独立的。
+
+为了解决上述问题，我们提出将目前流行的交叉熵之和的优化目标替换成下面两种具备整体一致性的优化目标：（1）Recall@K~\cite{lu2016visual}：计算前K个预测中正确预测的三元组所占的百分比。（2）SPICE~\cite{anderson2016spice}：所有三元组预测的准确率和召回率之间的F值。由交叉熵之和不同的是，Recall@K和SPICE都是不可导的。因此，CMAT借助多智能体策略梯度对模型参数进行优化。
+
+
+\textbf{多智能体策略梯度}：
+我们首先定义模型CMAT中智能体的动作（action）、策略函数（policy）、和状态（state）。然后，我们推导模型参数的梯度公式。
+
+（a）动作：每个智能体的动作空间是所有的可选择的物体类别的总和，即第$i$的智能体的动作是$v^t_i$。我们用$V^t = \{v^t_i\}$来表示所有智能体的动作。
+
+（b）状态：我们参考现有工作~\cite{hausknecht2015deep}使用递归神经网络LSTM（信息提取模块）来编码智能体与环境之间的交互历史。LSTM的隐含状态$\bm{h}^t_i$可以看成是第$i$个智能体对局部可见环境状态的近视。我们用$H^t = \{\bm{h}^t_i\}$来表示所有智能体的状态。
+
+
+（c）策略函数：每个智能体的策略函数就是物体类别分类器。在训练阶段，每个智能体的类别通过对分类概率进行采样得到，即：$\bm{p}^T_i = \text{softmax}(\bm{s}^T_i)$。因为CMAT只在$T$轮智能体通信之后进行动作采样，根据策略梯度的理论~\cite{sutton2000policy}，CMAT中梯度计算公式为：
+\begin{align}
+\nabla_{\theta} J \approx \sum^n_{i=1} \nabla_{\theta} \log \bm{p}^T_i (v^T_i|h^T_i; \theta)Q(H^T, V^T),
+\end{align}
+其中，$Q(H^T, V^T)$为状态-动作函数（state-action value function）。不同于现有的基于演员-评论家~\cite{bahdanau2017actor,lowe2017multi,konda2000actor}（actor-critic）算法的工作用一个独立的网络来逼近$Q$，在CMAT中，我们参考~\cite{rao2018learning}直接使用实际的奖励来代替$Q$。这样做的原因主要有两个：（1）在场景图生成任务中，智能体的数量和动作空间的采样大小都明显大于现有的多智能体策略梯度的工作，这容易导致训练样本不充足难以训练一个准确的状态-动作函数。（2）直接用实际奖励可以大大减小模型的复杂度，提升训练速度。因此，CMAT中梯度计算公式变为：
+\begin{align} \label{ch4:eq:eq_7}
+\nabla_{\theta} J \approx \sum^n_{i=1} \nabla_{\theta} \log \bm{p}^t_i (v^T_i|h^T_i; \theta) R(H^T, V^T),
+\end{align}
+其中，$R(H^T, V^T)$是实际的全局奖励（即：Recall@K或SPICE）。另外，值得注意的是，$R(H^T, V^T)$ 里包含一个可以学习的视觉关系分类模型。
+
+
+\begin{wrapfigure}{r}{0.4\linewidth}
+    \centering
+        \includegraphics[width=0.95\linewidth]{chapter4/res/local_sensitive.pdf}
+    \captionof{figure}{局部敏感性的重要性}
+    \label{ch4:fig:local_sensitive}
+\end{wrapfigure}
+
+\textbf{优化目标的局部敏感性}：从公式~\eqref{ch4:eq:eq_7}可以看出，全局的奖励是综合考虑了所有智能体预测类别的总贡献，即对每个智能体而已，总贡献是相同的。图~\ref{ch4:fig:local_sensitive}，我们举一个简单的例子来说明这种相同总贡献对场景图生成任务的副作用。如图~\ref{ch4:fig:local_sensitive}所示，绿色和红色分别表示正确的预测和错误的预测，假定全局奖励是预测正确的三元组数减去预测错误的三元组数，且（1）（2）两个场景图中只有节点“a”预测不同。
+
+根据公式~\eqref{ch4:eq:eq_7}，（1）中所有的节点都得到一个正的全局奖励（3-1=+2），而（2）中所有的节点都得到一个负的全局奖励（1-3=-2）。在这个例子中，虽然节点“b”、“c”、“d”的预测完全相同，但是计算的到的梯度方向却完全相反，这将造成许多无效的优化迭代。因此，通过让优化目标满足局部敏感性，即通过计算每个智能体各自的局部奖励，有利于提供更有效的优化信号。
+
+
+\textbf{反事实评论家}：一个简单的计算某个智能体动作的局部奖励的方法就是将目标智能体的动作替换成其他的动作。因此，$R(H^T, V^T) - R(H^T, (V^T_{-i}, \tilde{v}^T_i))$可以表示第$i$个智能体的动作$v^T_i$的局部贡献。其中，其中$V^T_{-i}$表示所有除第$i$个智能体以外其他所有智能体都保持默认的动作，而第$i$个智能体采用新的动作$\tilde{v}^T_i$。由于新的动作$\tilde{v}^T_i$有$|\mathcal{C}|$种可能性，为了准确地计算$V^T_{-i}$的贡献，我们对所有可能的动作选择进行平均：$ \text{CB}^i(H^T, V^T) = \sum \bm{p}^T_i(\tilde{v}^T_i) R(H^T, (V^T_{-i}, \tilde{v}^T_i))$，其中$\text{CB}^i(H^T, V^T)$是第$i$个智能体动作的\textbf{反事实基准}。这个反事实基准表示的是无论第$i$个智能体采用的动作，而其他所有智能体采用默认动作时得到的平均的全局奖励。CMAT的反事实基准模型展示在图~\ref{ch4:fig:baseline}中。
+
+
+\begin{figure}[h]
+    \centering
+        \includegraphics[width=0.8\linewidth]{chapter4/res/baseline.pdf}
+    \caption{CMAT中反事实基准模型}
+    \label{ch4:fig:baseline}
+\end{figure}
+
+
+给定一个全局的奖励$R(H^T, V^T)$和第$i$个智能体动作的反事实基准$\text{CB}^i(H^T, V^T)$，我们可以得到第$i$个智能体动作的局部贡献为：
+\begin{align}
+    A^i(H^T, V^T) = R(H^T, V^T) - \text{CB}^i(H^T, V^T)
+\end{align}
+其中，$A^i(H^T, V^T)$在演员-评论家算法~\cite{sutton2018reinforcement,mnih2016asynchronous}中常被称为“优势”（advantage），$\text{CB}^i(H^T, V^T)$在策略梯度算法中常被称为“基准”（baseline），用来减少梯度预测的方差。整个计算$A^i(H^T, V^T)$的网络结果可以合称为“反事实评论家”。此时，参数训练的梯度就变为了：
+\begin{align}
+\nabla_{\theta} J \approx \sum^n_{i=1} \nabla_{\theta} \log \bm{p}^T_i (v^T_i|h^T_i; \theta) A^i(H^T, V^T)
+\end{align}
+
+最后，我们在加上交叉熵之和损失一起训练，最终参数训练的梯度为：
+\begin{equation}
+\begin{split}
+\nabla_{\theta} J \approx  \overbrace{\sum^n_{i=1} \nabla_{\theta} \log \bm{p}^T_i (v^T_i|h^T_i; \theta) A^i(H^T, V^T)}^{\text{CMAT}} + \\
+\underbrace{\alpha\sum^n_{i=1}\sum^n_{j=1} \nabla_{\theta} \log \bm{p}_{ij}(r_{ij})}_{\text{视觉关系交叉熵之和}} + 
+\underbrace{\beta \sum^n_{i=1} \nabla_{\theta} \log \bm{p}^T_i(v^T_i)}_{\text{物体类别交叉熵之和}},
+\end{split}
+\end{equation}
+其中，$\alpha$和$\beta$是不同损失之间权衡的权重，额外的交叉熵之和是为了增加模型训练的稳定性~\cite{rao2018learning}。同样，我们还增加了一个熵正则项~\cite{xu2015show, hu2017learning}来约束$\{\bm{p}^T_i\}_i$。
+
 
 \section{实验设置与性能对比}
 \subsection{图像场景图生成数据集与实验设定}
@@ -87,10 +232,13 @@
 \noindent{\kaishu{SGDet的后处理}}： 对于场景图生成任务（SGDet），为了与之前的工作~\cite{zellers2018neural,zhang2019graphical}公平地进行对比，我们采用相同的后处理操作。具体来说，在对每个RoI预测出物体所有类别的概率分布之后，我们对每个类别使用一次非极大值抑制来确定最终的物体类别，以及对应类别的位移偏置。在我们的实验中，非极大值抑制的IoU阈值设置为0.5。
 
 
-\subsection{视觉场景图生成性能分析}
+\subsection{场景图生成性能分析}
+本节，我们通过大量的对比实验来分析CMAT中的不同设计对总体性能的影响，包括全局奖励函数的选择、基准模型的选择、以及多智能体通信步数的选择等。
+
+\textbf{全局奖励函数的选择}：为了验证不同全局奖励对最终场景图生成性能的影响，我们对比了两种全局奖励函数：Recall@K和SPICE。在这个实验中，我们使用预测前20个三元组来计算对应的Recall@K和SPICE值。从表~\ref{ch4:tab:reward_choice}可以看出，全局奖励函数Recall@K和SPICE都在交叉熵损失（XE）预训练的基础上继续提升性能，这主要是因为全局奖励函数的使用满足优化目标需要的整体一致性。另外，使用Recall@K可以得到比SPICE稍微好一点的结果，主要是因为目前的场景图生成数据集都是不完全标注的，SPICE不适合用来评估这类数据集。因此，我们在之后的实验都使用Recall@K作为全局奖励函数。
 
 %%%%%%%%%%%%%%%%% reward choice %%%%%%%%%%%%%%
-\begin{table}
+\begin{table}[htbp]
 \begin{center}
 \scalebox{0.95}{
     \begin{tabular}{|l|l ccc|}
@@ -106,14 +254,16 @@
     \end{tabular}
 }
 \end{center}
-\caption{xx}
-\label{xx}
+\caption{不同全局奖励函数的选择对性能的影响}
+\label{ch4:tab:reward_choice}
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\textbf{基准模型的选择}：为了验证不同的基准模型对最终场景图生成性能的影响，我们将本章提出的反事实基准（CF）与其他两种流行的基准模型进行对比：“移动平均”（Moving Average, MA）~\cite{weaver2013optimal}和“自评论”（Self-Critical, SC）~\cite{rennie2017self}。MA是一个对奖励动态平均的常数~\cite{xu2015show, hu2017learning}。SC是对所有的动作采取贪婪选择时得到的奖励。从表~\ref{ch4:tab:baseline_types}可以看出，反事实基准可以在交叉熵损失（XE）预训练的基础显著提升性，相反，MA和SC只能提升细微的性能。这主要是因为反事实基准符合局部敏感性，可以对所有的智能体提供更加有效的训练梯度；而MA、SC都只能提供全局的奖励，不具备局部敏感性。
+
 
 %%%%%%%%%%%%%%%%% baseline types %%%%%%%%%%%%%%
-\begin{table}
+\begin{table}[htbp]
 \begin{center}
 \scalebox{0.95}{
     \begin{tabular}{|l|l cccc|}
@@ -131,15 +281,15 @@
     \end{tabular}
 }
 \end{center}
-\caption{xx}
-\label{xx}
+\caption{不同基准模型对性能的影响}
+\label{ch4:tab:baseline_types}
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
+\textbf{多智能体通信步数的选择}：为了验证不同的多智能体通信步数对最终场景图生成性能的影响，我们将通信步数分别从2变化到5。从表~\ref{ch4:tab:comm_steps}可以看出，随着通信步数的增加，模型的性能可以持续提升。但是由于GPU的限制，我们将最大步数设为5。和现有的信息传递机制相比，我们的多智能体通信模型可以避免过早饱和的问题，主要的原因是我们没有将视觉关系也看成节点进行信息传递。
 
 %%%%%%%%%%%%%%%%% communication steps %%%%%%%%%%%%%%
-\begin{table}
+\begin{table}[htbp]
 \begin{center}
 \scalebox{0.95}{
     \begin{tabular}{|l|l cccc|}
@@ -157,15 +307,15 @@
     \end{tabular}
 }
 \end{center}
-\caption{xx}
-\label{xx}
+\caption{不同多智能体通信步数对性能的影响}
+\label{ch4:tab:comm_steps}
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 
-\subsection{视觉场景图生成性能对比}
-本节将本章方法与目前最先进的视觉场景图生成算法进行对比。这些方法主要可以分为两大类：（1）VRD~\cite{lu2016visual}, AED~\cite{newell2017pixels}, FREQ~\cite{zellers2018neural}。这类方法都是将视觉场景图生成任务分解成物体检测和视觉关系检测两个独立的任务。（2）MSDN~\cite{li2017scene}, IMP~\cite{xu2017scene}, TFR~\cite{jae2018tensorize}, MOTIFS~\cite{zellers2018neural}, G-RCNN~\cite{yang2018graph}, GPI~\cite{herzig2018mapping}, KER~\cite{chen2019knowledge}。这类方法利用信息传递机制来编码物体间的内在联系。所有的方法都是利用交叉熵之和作为模型的损失函数。
+\subsection{场景图生成性能对比}
+本节将本章方法与目前最先进的场景图生成算法进行对比。这些方法主要可以分为两大类：（1）VRD~\cite{lu2016visual}, AED~\cite{newell2017pixels}, FREQ~\cite{zellers2018neural}。这类方法都是将场景图生成任务分解成物体检测和视觉关系检测两个独立的任务。（2）MSDN~\cite{li2017scene}, IMP~\cite{xu2017scene}, TFR~\cite{jae2018tensorize}, MOTIFS~\cite{zellers2018neural}, G-RCNN~\cite{yang2018graph}, GPI~\cite{herzig2018mapping}, KER~\cite{chen2019knowledge}。这类方法利用信息传递机制来编码物体间的内在联系。所有的方法都是利用交叉熵之和作为模型的损失函数。
 
 
 %%%%%%%%%%%%%%%%%%%%%%% SOTA %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -220,5 +370,10 @@
 
 
 
-
 \section{本章小结}
+
+在本章，我们提出了一个全新的反事实多智能体学习（CMAT）来代替目前场景图生成的优化目标交叉熵之和。CMAT首先将场景图生成任务看成一个多智能体协同合作任务，并且使用最终的评价指标作为全局奖励；其次，CMAT通过反事实基准模型将每个智能体的局部贡献分离出来，提供更加有效的训练信号。
+
+
+
+
