@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.12.18)  13 FEB 2020 21:22
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.12.18)  14 FEB 2020 20:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1960,7 +1960,20 @@ File: chapter4/res/visualization.pdf Graphic file (type pdf)
 
 
 
-]) [40]
+]
+File: chapter5/res/motivation.pdf Graphic file (type pdf)
+<use chapter5/res/motivation.pdf>
+
+Underfull \vbox (badness 4899) has occurred while \output is active []
+
+ [40]
+[41]
+File: chapter5/res/architecture.pdf Graphic file (type pdf)
+<use chapter5/res/architecture.pdf>
+ [42] [43]
+File: chapter5/res/visualization.pdf Graphic file (type pdf)
+<use chapter5/res/visualization.pdf>
+) [44] [45] [46] [47] [48]
 \openout2 = `./chapter6/chap6.aux'.
 
  (./chapter6/chap6.tex
@@ -1973,35 +1986,35 @@ _font ：|  在 测 试 集 中，|  每 个 样 本 预 测 分 数 最 高 的
 
  []
 
-[41
+[49
 
 
 
-]) [42]
+]) [50]
 \openout2 = `./chapter7/chap7.aux'.
 
  (./chapter7/chap7.tex
 7
-) [43
+) [51
 
 
 
 ]
 \openout2 = `./chapter8/chap8.aux'.
 
- (./chapter8/chap8.tex [44
+ (./chapter8/chap8.tex [52
 
 
 
 ]
 8
-) [45] [46
+) [53] [54
 
 
 ] (./chenlong_phd.bbl
 Underfull \vbox (badness 6094) has occurred while \output is active []
 
- [47
+ [55
 
 ]
 Underfull \hbox (badness 8000) in paragraph at lines 89--93
@@ -2012,47 +2025,50 @@ Lu, Margaret Mitchell, Dhruv Batra,
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [48]
+ [56]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [49]
+ [57]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [50]
+ [58]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [51]
+ [59]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [52]
+ [60]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [53]
+ [61]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [54]
+ [62]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [55]
+ [63]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [56])
-[57]
+ [64]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [65])
+[66]
 \openout2 = `./chapter8/publications.aux'.
 
- (./chapter8/publications.tex [58
-
-
-]
+ (./chapter8/publications.tex
 Overfull \hbox (15.33745pt too wide) in paragraph at lines 35--39
 \TU/TimesNewRoman(0)/m/n/12.045 Tracking[J]. IEEE Transactions on Pattern Analy
 sis and Machine Intelligence (TPAMI),
  []
 
-[59]) [60]
+[67
+
+
+]) [68]
 \openout2 = `./chapter8/thanks.aux'.
 
- (./chapter8/thanks.tex) [61
+ (./chapter8/thanks.tex) [69
 
 
 
@@ -2067,16 +2083,16 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 180.
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 180.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 180.
 Package rerunfilecheck Info: File `chenlong_phd.out' has not changed.
-(rerunfilecheck)             Checksum: 7E034DFBB38229DCC70D40222F9EDFB8.
+(rerunfilecheck)             Checksum: 7B8A7FFA32983629CE1FE04580F84BF1.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 180.
  ) 
 Here is how much of TeX's memory you used:
- 52247 strings out of 492916
- 1216500 string characters out of 6133344
- 1435077 words of memory out of 5000000
- 55389 multiletter control sequences out of 15000+600000
+ 52326 strings out of 492916
+ 1218268 string characters out of 6133344
+ 1465077 words of memory out of 5000000
+ 55467 multiletter control sequences out of 15000+600000
  564594 words of font info for 213 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 65i,22n,96p,1037b,1123s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,22n,96p,1037b,1187s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chenlong_phd.pdf (81 pages).
+Output written on chenlong_phd.pdf (89 pages).

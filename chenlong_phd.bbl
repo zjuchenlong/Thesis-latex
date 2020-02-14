@@ -849,6 +849,53 @@ Tianshui Chen, Weihao Yu, Riquan Chen, Liang Lin.
   Proc. {IEEE} Conf. CVPR.
 \newblock 2019:6163--6171.
 
+\bibitem{yao2015describing}
+Li~Yao, Atousa Torabi, Kyunghyun Cho, Nicolas Ballas, Christopher Pal, Hugo
+  Larochelle, Aaron Courville.
+\newblock Describing videos by exploiting temporal structure[C]. Proc. {IEEE}
+  ICCV.
+\newblock 2015:4507--4515.
+
+\bibitem{chen2016abc}
+Kan Chen, Jiang Wang, Liang-Chieh Chen, Haoyuan Gao, Wei Xu, Ram Nevatia.
+\newblock Abc-cnn: An attention based convolutional neural network for visual
+  question answering[C]. Proc. {IEEE} Conf. CVPR.
+\newblock 2016.
+
+\bibitem{yang2016stacked}
+Zichao Yang, Xiaodong He, Jianfeng Gao, Li~Deng, Alex Smola.
+\newblock Stacked attention networks for image question answering[C]. Proc.
+  {IEEE} Conf. CVPR.
+\newblock 2016:21--29.
+
+\bibitem{xu2016ask}
+Huijuan Xu, Kate Saenko.
+\newblock Ask, attend and answer: Exploring question-guided spatial attention
+  for visual question answering[C]. Proc. ECCV.
+\newblock Springer, 2016:451--466.
+
+\bibitem{corbetta2002control}
+Maurizio Corbetta, Gordon~L Shulman.
+\newblock Control of goal-directed and stimulus-driven attention in the
+  brain[J].
+\newblock Nature reviews neuroscience, 2002, 3(3):201--215.
+
+\bibitem{mnih2014recurrent}
+Volodymyr Mnih, Nicolas Heess, Alex Graves, et~al.
+\newblock Recurrent models of visual attention[C]. Proc. NeurIPS.
+\newblock 2014:2204--2212.
+
+\bibitem{stollenga2014deep}
+Marijn~F Stollenga, Jonathan Masci, Faustino Gomez, J{\"u}rgen Schmidhuber.
+\newblock Deep networks with internal selective attention through feedback
+  connections[C]. Proc. NeurIPS.
+\newblock 2014:3545--3553.
+
+\bibitem{zeiler2014visualizing}
+Matthew~D Zeiler, Rob Fergus.
+\newblock Visualizing and understanding convolutional networks[C]. Proc. ECCV.
+\newblock Springer, 2014:818--833.
+
 \bibitem{hodosh2013framing}
 Micah Hodosh, Peter Young, Julia Hockenmaier.
 \newblock Framing image description as a ranking task: Data, models and
@@ -894,6 +941,23 @@ Chin-Yew Lin, Eduard Hovy.
 Matthew~D Zeiler.
 \newblock Adadelta: an adaptive learning rate method[C]. arXiv.
 \newblock 2012.
+
+\bibitem{mao2015deep}
+Junhua Mao, Wei Xu, Yi~Yang, Jiang Wang, Zhiheng Huang, Alan Yuille.
+\newblock Deep captioning with multimodal recurrent neural networks (m-rnn)[C].
+  Proc. ICLR.
+\newblock 2015.
+
+\bibitem{jia2015guiding}
+Xu~Jia, Efstratios Gavves, Basura Fernando, Tinne Tuytelaars.
+\newblock Guiding the long-short term memory model for image caption
+  generation[C]. Proc. {IEEE} ICCV.
+\newblock 2015:2407--2415.
+
+\bibitem{you2016image}
+Quanzeng You, Hailin Jin, Zhaowen Wang, Chen Fang, Jiebo Luo.
+\newblock Image captioning with semantic attention[C]. Proc. {IEEE} Conf. CVPR.
+\newblock 2016:4651--4659.
 
 \bibitem{regneri2013grounding}
 Michaela Regneri, Marcus Rohrbach, Dominikus Wetzel, Stefan Thater, Bernt
