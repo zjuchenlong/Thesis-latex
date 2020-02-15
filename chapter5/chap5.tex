@@ -75,7 +75,43 @@ y_t & \sim p_t = \textrm{softmax} \left(\mathbf{h}_t, y_{t-1} \right).
 
 
 \subsection{通道注意力机制}
+从公式~\ref{ch5:eq:eq_3}中可以看出，空间注意力机制需要使用视觉特征$\mathbf{V}$计算空间注意力参数，我们也同时可以使用通道注意力机制对$\mathbf{V}$进行通道注意力加权。因为卷积神经网络的特征图的每一个通道本质上可以认为是一种特定属性或者物体检测器的响应结果，因此，对特征图使用通道注意力机制可以看成是对不同的语义特征进行删选的过程。
 
+对于通道注意力机制，我们先将特征图$\mathbf{V}$转变为$\mathbf{U}$，其中$\mathbf{U} = [\mathbf{u}_1, \mathbf{u}_2, ..., \mathbf{u}_C]$、$\mathbf{u}_i \in \mathbb{R}^{W \times H}$表示特征图$\mathbf{V}$的第$i$个通道，$C$是总的通道数。然后我们对每个通道使用平均池化，得到通道特征$\mathbf{v}$:
+\begin{equation}
+\mathbf{v} = \left[v_1, v_2, ..., v_C \right], \mathbf{v} \in \mathbb{R}^{C},
+\end{equation}
+其中标量$v_i$是向量$\mathbf{u}_i$的平均，表示第$i$个通道的特征。于是，通道注意力模型$\Phi_c$可以定义为：
+\begin{equation} \label{ch5:eq:eq_7}
+\begin{split}
+\mathbf{b} & = \tanh \left(\left(\mathbf{W}_c \otimes \mathbf{v} + b_c \right) \oplus \mathbf{W}_{hc}\mathbf{h}_{t-1} \right), \\
+\beta & = \textrm{softmax} \left(\mathbf{W'}_i \mathbf{b} + {b'}_i \right).
+\end{split}
+\end{equation}
+其中$\mathbf{W}_c \in \mathbb{R}^k$、$\mathbf{W}_{hc} \in \mathbb{R}^{k \times d}$和$\mathbf{W'}_i \in \mathbb{R}^k$是需要学习的映射矩阵，$\otimes$表示向量间的外积，$b_c \in \mathbb{R}^k, {b'}_i \in \mathbb{R}^1$是模型可学习的偏置。
+
+根据空间注意力模型和通道注意力模型的顺序，共有两种可能的组合结果：
+
+\textbf{通道-空间模型（Channel-Spatial）}：第一类是先使用通道注意力机制再使用空间注意力机制。对于这类，如图~\ref{ch5:fig:architecture}所示，给定一个初始的视觉特征图$\mathbf{V}$，我们先使用通道注意力模型$\Phi_c$得到通道注意力权重$\beta$，然后利用$\beta$对$\mathbf{V}$进行线性加权。之后，我们将加权的特征图输入到空间注意力模型$\Phi_s$得到空间注意力权重$\alpha$。在得到注意力权重$\alpha$和$\beta$之和，我们可以得到最终的特征图$\mathbf{X}$：
+\begin{equation} \label{ch5:eq:eq_8}
+\begin{split}
+\beta &= \Phi_c \left(\mathbf{h}_{t-1},\mathbf{V} \right), \\
+\alpha &= \Phi_s \left(\mathbf{h}_{t-1}, f_c \left(\mathbf{V}, \beta \right) \right), \\
+\mathbf{X} &= f \left(\mathbf{V}, \alpha, \beta \right).
+\end{split}
+\end{equation}
+其中，$f_c(\cdot)$表示特征图通道与通道注意力权重在通道维度上进行乘积。
+
+
+\textbf{空间-通道模型（Spatial-Channel）}：第二类是先使用空间注意力机制再使用通道注意力机制。对于这类，给定一个初始的视觉特征图$\mathbf{V}$，我们先使用空间注意力模型$\Phi_s$得到空间注意力权重$\alpha$。通过$\alpha$、线性函数$f_s(\cdot)$和通道注意力模型$\Phi_c$，我们可以得到最终的特征图$\mathbf{X}$：
+\begin{equation} \label{ch5:eq:eq_9}
+\begin{split}
+\alpha &= \Phi_s \left(\mathbf{h}_{t-1}, \mathbf{V} \right), \\
+\beta &= \Phi_c \left(\mathbf{h}_{t-1}, f_s \left(\mathbf{V}, \alpha \right) \right), \\
+\mathbf{X} &= f \left(\mathbf{V}, \alpha, \beta \right).
+\end{split}
+\end{equation}
+其中，$f_s(\cdot)$表示特征图空间不同区域特征与空间注意力权重进行乘积。
 
 
 
@@ -108,46 +144,48 @@ y_t & \sim p_t = \textrm{softmax} \left(\mathbf{h}_t, y_{t-1} \right).
 
 \subsection{通道注意力机制的性能分析}
 
+\textbf{实验设定}：本小节主要探讨通道注意力机制对现有空间注意力模型的影响。我们总共比较了五种实验设定：（1）\textbf{Spatial}：它是一个空间注意力模型，对卷积网络最后一层特征图先计算空间注意力权重，然后对最后一层特征图的不同空间区域特征进行加权。对于VGG19和ResNet152网络，最后一层分别为$conv5\_4$和$res5c$。对最后一层进行加权之后，我们将加权后的特征图输入的原本的网络结构中。对于VGG19网络而言，$conv5\_4$层之后还有两个全连接层；对于ResNet152网络而言，$res5c$层之后是一个平均池化层。（2）\textbf{Channel}：它是一个通道注意力模型，和空间注意力模型Spatial基本相同，除了将空间注意力模型（公式~\eqref{ch5:eq:eq_3}）替换成通道注意力模型（公式~\eqref{ch5:eq:eq_4}）。（3）\textbf{Channel-Spatial}：第一种融合方式，先执行通道注意力模型，再执行空间注意力模型（公式~\eqref{ch5:eq:eq_8}）。（4）\textbf{Spatial-Channel}：第二种融合方法，先执行空间注意力模型，再执行通道注意力模型（公式~\eqref{ch5:eq:eq_9}）。（5）\textbf{HAT}：它是Xu等人~\cite{xu2015show}提出的“硬”注意力模型（Hard-ATtention, HAT）。HAT模型和Spatial模型一样，属于空间注意力模型。相比于Spatial模型，主要有两个区别：第一个是注意力权重和特征图的融合方式，第二个是是否将加权的特征图输入到候选的网络结构中。所有的实验结果都展示在表~\ref{ch5:tab:Q1}中。
+
 %%%%%%%%%%%%%%%%%%%%%% Q1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[htbp]
 \centering
-\scalebox{0.8}{
+\scalebox{0.75}{
 \begin{tabular}{|l| l |l| c c c c|}
 \hline
  Dataset & Network &Method & B@4 & MT & RG & CD\\
 \hline
 \multirow{10}{*}{Flickr8k} & \multirow{5}{*}{VGG} & Spatial & 23.0 & 21.0 & 49.1 & \textbf{60.6} \\
-&  & SAT & 21.3 & 20.3 & --- & --- \\
+&  & HAT & 21.3 & 20.3 & --- & --- \\
 &  & Channel & 22.6 & 20.3 & 48.7 & 58.7 \\
 & & Spatial-Channel &22.6 & 20.9 & 48.7 & \textbf{60.6}\\
 & & Channel-Spatial & \textbf{23.5} & \textbf{21.1} & \textbf{49.2} & 60.3\\
 \cline{2-7}
 & \multirow{5}{*}{ResNet} & Spatial & 20.5 & 19.6 & 47.4 & 49.9 \\
-&  & SAT & 21.7 & 20.1 & 48.4 & 55.5 \\
+&  & HAT & 21.7 & 20.1 & 48.4 & 55.5 \\
 &  & Channel & 24.4 & 21.5 & 50.0 & 65.5 \\
 & & Spatial-Channel &24.8 & \textbf{22.2} & 50.5& 65.1\\
 & & Channel-Spatial & \textbf{25.7} & 22.1& \textbf{50.9} & \textbf{66.5}\\
 \hline
 \multirow{10}{*}{Flickr30k} & \multirow{5}{*}{VGG} & Spatial & \textbf{21.1} & 18.4 & 43.1 & \textbf{39.5} \\
-&  & SAT & 19.9 & \textbf{18.5} &  --- & --- \\
+&  & HAT & 19.9 & \textbf{18.5} &  --- & --- \\
 &  & Channel & 20.1 & 18.0 & 42.7 & 38.0 \\
 & & Spatial-Channel & 20.8 & 17.8&42.9 & 38.2\\
 & & Channel-Spatial & 21.0 & 18.0& \textbf{43.3} & 38.5\\
 \cline{2-7}
 & \multirow{5}{*}{ResNet} & Spatial & 20.5 & 17.4 & 42.8 & 35.3 \\
-&  & SAT & 20.1 & 17.8 & 42.9 & 36.3 \\
+&  & HAT & 20.1 & 17.8 & 42.9 & 36.3 \\
 &  & Channel & 21.5 & 18.4 & 43.8 & 42.2 \\
 & & Spatial-Channel &21.9 & 18.5 & 44.0& \textbf{43.1}\\
 & & Channel-Spatial & \textbf{22.1} & \textbf{19.0} & \textbf{44.6} & 42.5 \\
 \hline
 \multirow{10}{*}{MS COCO} & \multirow{5}{*}{VGG} & Spatial & \textbf{28.2} & 23.3 & \textbf{51.0} & \textbf{85.7} \\
-&  & SAT & 25.0 & 23.0 & --- & --- \\
+&  & HAT & 25.0 & 23.0 & --- & --- \\
 &  & Channel & 27.3 & 22.7 & 50.1 & 83.4 \\
 & & Spatial-Channel &28.0 &23.0 & 50.6& 84.9\\
 & & Channel-Spatial & 28.1 & \textbf{23.5} & 50.9& 84.7\\
 \cline{2-7}
 & \multirow{5}{*}{ResNet} & Spatial & 28.3 & 23.1 & 51.2 & 84.0 \\
-&  & SAT & 28.4 & 23.2 & 51.2 & 84.9 \\
+&  & HAT & 28.4 & 23.2 & 51.2 & 84.9 \\
 &  & Channel & 29.5 & 23.7 & 51.8 & 91.0 \\
 & & Spatial-Channel &29.8 &23.9 & 52.0& 91.2\\
 & & Channel-Spatial & \textbf{30.4} & \textbf{24.5} & \textbf{52.5} & \textbf{91.7}\\
@@ -159,7 +197,8 @@ y_t & \sim p_t = \textrm{softmax} \left(\mathbf{h}_t, y_{t-1} \right).
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\subsection{多层注意力机制的性能分析}
+\textbf{实验结果}：从表~\ref{ch5:tab:Q1}中可以看出，（1）对于VGG19网络而言，Spatail模型的结果比HAT的好；但对于ResNet152网络，实验结果相反。这主要的原因在于VGG19网络中有全连接层，可以保持空间语义信息，而ResNet152网络中只有只有平均池化层，将会破坏原有的空间语义信息。（2）相比于VGG19网络，Channel模型在ResNet152中可以显著提升性能（与Spatial模型相比）。这主要的原因在于ResNet152的最后一个卷积特征图拥有更多的通道数（如：ResNet152有2048个通道相比于VGG19有512个通道）。（3）在ResNet152网络中，相比于Spatial模型，Channel-Spatial和Spatial-Channel都能显著提升性能。这说明通道注意力机制在特征图通道数足够大时能显著提升性能。（4）在VGG19和ResNet152网络中，Channel-Spatial和Spaital-Channel两个模型的效果都非常接近，其中Channel-Spatial稍微高一点，在之后的实验中，我们使用Channel-Spatial作为融合方式。
+
 
 %%%%%%%%%%%%%%%%%%%%%% Q2_1 %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[htbp]
@@ -199,6 +238,12 @@ y_t & \sim p_t = \textrm{softmax} \left(\mathbf{h}_t, y_{t-1} \right).
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+\subsection{多层注意力机制的性能分析}
+
+\textbf{实验设定}：本小节主要探讨对不同的卷积层使用空间注意力机制或通道注意力机制对模型性能的影响。我们分别对Spatial模型和Channel-Spatial模型进行了不同层数的实验：一层（1-layer）、两层（2-layer）、和三层（3-layer）。对于VGG19网络，这三层分别表示：$conv5\_4$、$conv5\_3$、$conv5\_2$；对于ResNet152网络，这三层分别表示$res5c$、$res5c\_branch2b$、$res5c\_branch2a$。在我们的实验中，对于更多的层，我们先使用已训练好的参数作为初始化，将极大地减小训练时间和收敛速度。
+
+
 %%%%%%%%%%%%%%%%%%%%% Q2_2 %%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[htbp]
 \centering
@@ -237,11 +282,13 @@ y_t & \sim p_t = \textrm{softmax} \left(\mathbf{h}_t, y_{t-1} \right).
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\textbf{实验结果}：从表~\ref{ch5:tab:Q2_1}和表~\ref{ch5:tab:Q2_2}可以看出：（1）在绝大多数的实验设定中，模型都可以通过在更多的卷积层上使用注意力机制来提升实验结果。这主要是因为在多层特征上使用注意力机制可以帮助模型在不同的层次的语义特征上进行关注。（2）在太多的卷积层上使用注意力机制也容易造成过拟合。例如：当注意力机制改变的层数增加时，Flickr8K更容易造成性能下降（Fickr8K有6000张训练图像，而MSCOCO有82783张训练图像）。
+
 
 
 \subsection{空间和通道注意力卷积神经网络的性能比较}
 
-Deep VS~\cite{karpathy2015deep}、NIC~\cite{vinyals2015show}、m-RNN~\cite{mao2015deep}、SAT~\cite{xu2015show}、HAT~\cite{xu2015show}、gLSTM~\cite{jia2015guiding}、ATT~\cite{you2016image}
+\textbf{实验设定}：我们与目前效果最好的图像描述语句算法进行对比，这些方法主要可以分为三类：（1）Deep VS~\cite{karpathy2015deep}、NIC~\cite{vinyals2015show}、m-RNN~\cite{mao2015deep}：这些都是端到端的编码-解码框架，模型中没有包含注意力机制。（2）SAT~\cite{xu2015show}和HAT~\cite{xu2015show}是空间注意力模型。其中SAT（Soft-ATtention）是在每步生成单词的过程中对所有的空间区域进行线性加权，而HAT（Hard-ATtention）是在每步生成单词的过程中对所有的区域只采样其中一个特征。（3）gLSTM~\cite{jia2015guiding}和ATT~\cite{you2016image}是属性注意力机制。其中gLSTM使用图像和生成的描述语句作为全局的属性信息，ATT使用图像额外检测的属性作为属性信息。表~\ref{ch5:tab:sota}的结果“ours(V)”和“ours(R)”分别表示VGG19和ResNet152网络中两层Channel-Spatial模型。另外，我们还将模型上传到MSCOCO在线服务器对官方测试集进行预测，结果展示在表~\ref{ch5:tab:server}中。
 
 %%%%%%%%%%%%%%%%%%%%%%% Q3 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table*}[htbp]
@@ -266,10 +313,9 @@ ours(R)  & \textbf{49.6} & \textbf{35.9} & \textbf{25.8} & \textbf{22.4} & \text
 \hline
 \end{tabular}}
 \caption{不同描述语句生成算法在数据集Flickr8k、Flickr30k和MSCOCO上的性能对比} 
-\label{ch5:tab:state}
+\label{ch5:tab:sota}
 \end{table*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 %%%%%%%%%%%%%%%%%%%%%%% sever %%%%%%%%%%%%%%%%%%%%%%%
 \begin{table*}[htbp]
@@ -295,15 +341,21 @@ NIC & 71.3 & 89.5 & 54.2& 80.2& 40.7& 69.4& 30.9& 58.7 & \textbf{25.4} & \textbf
 \end{table*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{空间和通道注意力机制的可视化}
+\textbf{实验结果}：从表~\ref{ch5:tab:sota}和表~\ref{ch5:tab:server}中可以看出，SCA-CNN可以超过目前现有的模型，这是因为SCA-CNN分别考虑了卷积神经网络特征层的三个维度：空间、通道和层级，而其他的方法只考虑了其中一个维度。在MSCOCO在线服务器上，SCA-CNN性能比ATT和NIC低的主要原因来自两个方面：（1）ATT和NIC都是集成模型（ensemble model）的结果，而SCA-CNN是单个模型的结果。（2）它们使用更强的卷积神经网络对输入图像提取特征，如NIC使用Inception-V3网络~\cite{szegedy2016rethinking}而SCA-CNN只使用ResNet152网络。
+
+
+\subsection{空间注意力和通道注意力权重的可视化}
+如图~\ref{ch5:fig:visualization}，我们还提供了一些SCA-CNN模型的注意力权重的在VGG19网络的可视化示例。其中“Layer-1”和“Layer-2”分别表示$conv5\_4$和$conv5\_3$层。每个示例包含三句描述语句：“Ours”（SCA-CNN）、“SAT”（Soft-ATtention）和“GT”（Ground Truth）。第二列的上部分是空间注意力权重，白色部分表示空间注意力权重较大，而灰色部分表示空间注意力权重较小。第二列下部分为所有通道权重的直方统计图。第三列的数字表示通道注意力权重最大的两个通道编号。后面的五张图像是数据集MSCOCO训练集中对同样通道编号响应最大的图像，其中红色框表示对应通道最强响应的感受野。为了简洁，我们只展示了预测语句中的其中一步。
 
 
 \begin{figure}[htbp]
     \centering
     \includegraphics[width=\linewidth]{chapter5/res/visualization.pdf}
-    \caption{空间和通道注意力机制的可视化结果}
+    \caption{空间注意力和通道注意力权重的可视化结果}
     \label{ch5:fig:visualization}
 \end{figure}
 
 
 \section{本章小结}
+
+在本章，我们提出了一种全新的基于注意力机制的卷积神经网络（SCA-CNN）对图像生成描述语句。SCA-CNN充分利用了句卷积神经网络特征图的三个维度：空间、通道和层级；并且在图像描述语句生成任务达到了目前最好的性能。本章的贡献不仅仅是提出了一个更强的注意力机制，同时帮助理解在语句生成过程中，注意力机制在卷积特征中的变化。

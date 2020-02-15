@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.12.18)  14 FEB 2020 20:22
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.12.18)  15 FEB 2020 21:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1782,13 +1782,13 @@ Package fontspec Info: Font family 'HeitiSC(0)' created for font 'Heiti SC'
 \openout6 = `chenlong_phd.toc'.
 
 
-[7] [8
-
-] (./chenlong_phd.lof)
+[7] [8] (./chenlong_phd.lof)
 \tf@lof=\write7
 \openout7 = `chenlong_phd.lof'.
 
- [9] [10
+ [9
+
+] [10
 
 ] (./chenlong_phd.lot)
 \tf@lot=\write8
@@ -1970,51 +1970,61 @@ Underfull \vbox (badness 4899) has occurred while \output is active []
 [41]
 File: chapter5/res/architecture.pdf Graphic file (type pdf)
 <use chapter5/res/architecture.pdf>
- [42] [43]
+ [42] [43] [44] [45]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [46]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [47]
+[48]
 File: chapter5/res/visualization.pdf Graphic file (type pdf)
 <use chapter5/res/visualization.pdf>
-) [44] [45] [46] [47] [48]
+) [49] [50]
 \openout2 = `./chapter6/chap6.aux'.
 
  (./chapter6/chap6.tex
 6
+[51
 
-Overfull \hbox (5.39864pt too wide) in paragraph at lines 31--32
+
+
+]
+File: chapter6/res/qbvl.pdf Graphic file (type pdf)
+<use chapter6/res/qbvl.pdf>
+ [52]
+Overfull \hbox (5.39864pt too wide) in paragraph at lines 49--50
 \TU/TimesNewRoman(0)/bx/n/12.045 R@N, IoU@$\OML/cmm/m/it/12.045 ^^R$\l_fontspec
 _font ：|  在 测 试 集 中，|  每 个 样 本 预 测 分 数 最 高 的 \TU/TimesNewRoman(0)/m/n/12.045 n 
 \l_fontspec_font 个 的 结 果 重 叠 度  |（\TU/TimesNewRoman(0)/m/n/12.045 Intersection-
 
  []
 
-[49
-
-
-
-]) [50]
+) [53]
 \openout2 = `./chapter7/chap7.aux'.
 
- (./chapter7/chap7.tex
-7
-) [51
+ (./chapter7/chap7.tex [54
 
 
 
 ]
+7
+) [55]
 \openout2 = `./chapter8/chap8.aux'.
 
- (./chapter8/chap8.tex [52
+ (./chapter8/chap8.tex [56
 
 
 
 ]
 8
-) [53] [54
+) [57] [58
 
 
 ] (./chenlong_phd.bbl
 Underfull \vbox (badness 6094) has occurred while \output is active []
 
- [55
+ [59
 
 ]
 Underfull \hbox (badness 8000) in paragraph at lines 89--93
@@ -2023,18 +2033,6 @@ Lu, Margaret Mitchell, Dhruv Batra,
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [56]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [57]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [58]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [59]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [60]
@@ -2052,8 +2050,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [64]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [65])
-[66]
+ [65]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [66]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [67]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [68]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [69])
+[70]
 \openout2 = `./chapter8/publications.aux'.
 
  (./chapter8/publications.tex
@@ -2062,13 +2072,13 @@ Overfull \hbox (15.33745pt too wide) in paragraph at lines 35--39
 sis and Machine Intelligence (TPAMI),
  []
 
-[67
+[71
 
 
-]) [68]
+]) [72]
 \openout2 = `./chapter8/thanks.aux'.
 
- (./chapter8/thanks.tex) [69
+ (./chapter8/thanks.tex) [73
 
 
 
@@ -2083,16 +2093,16 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 180.
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 180.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 180.
 Package rerunfilecheck Info: File `chenlong_phd.out' has not changed.
-(rerunfilecheck)             Checksum: 7B8A7FFA32983629CE1FE04580F84BF1.
+(rerunfilecheck)             Checksum: 880B6933524C2A2E8BD5547961ACEB2F.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 180.
  ) 
 Here is how much of TeX's memory you used:
- 52326 strings out of 492916
- 1218268 string characters out of 6133344
- 1465077 words of memory out of 5000000
- 55467 multiletter control sequences out of 15000+600000
+ 52376 strings out of 492916
+ 1220933 string characters out of 6133344
+ 1442077 words of memory out of 5000000
+ 55515 multiletter control sequences out of 15000+600000
  564594 words of font info for 213 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  65i,22n,96p,1037b,1187s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chenlong_phd.pdf (89 pages).
+Output written on chenlong_phd.pdf (93 pages).

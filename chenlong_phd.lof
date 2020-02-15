@@ -21,8 +21,9 @@
 \addvspace {10.0pt}
 \contentsline {figure}{\numberline {5-1}{\ignorespaces VGG19网络中$conv5\_4$层和$conv5\_3$层的通道注意力机制示例图\relax }}{40}{figure.caption.26}% 
 \contentsline {figure}{\numberline {5-2}{\ignorespaces 空间和通道注意力卷积神经网络流程图\relax }}{42}{figure.caption.27}% 
-\contentsline {figure}{\numberline {5-3}{\ignorespaces V空间和通道注意力机制的可视化结果\relax }}{48}{figure.caption.33}% 
+\contentsline {figure}{\numberline {5-3}{\ignorespaces 空间注意力和通道注意力权重的可视化结果\relax }}{50}{figure.caption.33}% 
 \addvspace {10.0pt}
+\contentsline {figure}{\numberline {6-1}{\ignorespaces 两种视频片段检索任务\relax }}{52}{figure.caption.34}% 
 \addvspace {10.0pt}
 \addvspace {10.0pt}
 \addvspace {10.0pt}

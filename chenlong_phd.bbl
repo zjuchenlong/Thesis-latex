@@ -959,6 +959,12 @@ Quanzeng You, Hailin Jin, Zhaowen Wang, Chen Fang, Jiebo Luo.
 \newblock Image captioning with semantic attention[C]. Proc. {IEEE} Conf. CVPR.
 \newblock 2016:4651--4659.
 
+\bibitem{szegedy2016rethinking}
+Christian Szegedy, Vincent Vanhoucke, Sergey Ioffe, Jon Shlens, Zbigniew Wojna.
+\newblock Rethinking the inception architecture for computer vision[C]. Proc.
+  {IEEE} Conf. CVPR.
+\newblock 2016:2818--2826.
+
 \bibitem{regneri2013grounding}
 Michaela Regneri, Marcus Rohrbach, Dominikus Wetzel, Stefan Thater, Bernt
   Schiele, Manfred Pinkal.
@@ -970,16 +976,16 @@ Ranjay Krishna, Kenji Hata, Frederic Ren, Li~Fei-Fei, Juan Carlos~Niebles.
 \newblock Dense-captioning events in videos[C]. Proc. {IEEE} ICCV.
 \newblock 2017:706--715.
 
+\bibitem{feng2018video}
+Yang Feng, Lin Ma, Wei Liu, Tong Zhang, Jiebo Luo.
+\newblock Video re-localization[C]. Proc. ECCV.
+\newblock Springer, 2018:51--66.
+
 \bibitem{yuan2019find}
 Yitian Yuan, Tao Mei, Wenwu Zhu.
 \newblock To find where you talk: Temporal sentence localization in video with
   attention based location regression[C]. Proc. AAAI.
 \newblock volume~33. 2019:9159--9166.
-
-\bibitem{feng2018video}
-Yang Feng, Lin Ma, Wei Liu, Tong Zhang, Jiebo Luo.
-\newblock Video re-localization[C]. Proc. ECCV.
-\newblock Springer, 2018:51--66.
 
 \bibitem{caba2015activitynet}
 Fabian Caba~Heilbron, Victor Escorcia, Bernard Ghanem, Juan Carlos~Niebles.
