@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.12.18)  15 FEB 2020 21:00
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.12.18)  18 FEB 2020 17:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1777,24 +1777,24 @@ Package fontspec Info: Font family 'HeitiSC(0)' created for font 'Heiti SC'
 ]) [3] [4
 
 
-] (./chenlong_phd.toc [5] [6])
+] (./chenlong_phd.toc [5] [6]
+[7])
 \tf@toc=\write6
 \openout6 = `chenlong_phd.toc'.
 
+ [8] (./chenlong_phd.lof [9
 
-[7] [8] (./chenlong_phd.lof)
+])
 \tf@lof=\write7
 \openout7 = `chenlong_phd.lof'.
 
- [9
-
-] [10
-
-] (./chenlong_phd.lot)
+ [10] (./chenlong_phd.lot)
 \tf@lot=\write8
 \openout8 = `chenlong_phd.lot'.
 
- [11] [12
+ [11
+
+] [12
 
 ]
 \openout2 = `./chapter1/chap1.aux'.
@@ -1831,16 +1831,19 @@ ng(0)/m/n/12.045 解 码 框 架 已 经 广 泛 的 应 用 在 许 多 的 多
 Underfull \vbox (badness 3907) has occurred while \output is active []
 
  [8])
-[9]
+Underfull \vbox (badness 5260) has occurred while \output is active []
+
+ [9]
+[10]
 \openout2 = `./chapter3/chap3.aux'.
 
- (./chapter3/chap3.tex [10
+ (./chapter3/chap3.tex
+3
+[11
 
 
 
 ]
-3
-[11]
 File: chapter3/res/zsl_paradigms.pdf Graphic file (type pdf)
 <use chapter3/res/zsl_paradigms.pdf>
 File: chapter3/res/reconstruction_visualization.pdf Graphic file (type pdf)
@@ -1850,7 +1853,7 @@ File: chapter3/res/reconstruction_visualization.pdf Graphic file (type pdf)
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [12]
-Overfull \hbox (14.26631pt too wide) in paragraph at lines 34--35
+Overfull \hbox (18.26631pt too wide) in paragraph at lines 34--35
 []\TU/STFangsong(0)/m/n/12.045 本 文 在 四 个 通 用 的 零 样 本 分 类 数 据 集 中 对 模 型 \TU/Time
 sNewRoman(0)/m/n/12.045 SP-AEN \TU/STFangsong(0)/m/n/12.045 的 效 果 进 行 验 证：| \TU
 /TimesNewRoman(0)/m/n/12.045 CUB$[]$\TU/STFangsong(0)/m/n/12.045 ，|
@@ -1993,38 +1996,94 @@ File: chapter5/res/visualization.pdf Graphic file (type pdf)
 File: chapter6/res/qbvl.pdf Graphic file (type pdf)
 <use chapter6/res/qbvl.pdf>
  [52]
-Overfull \hbox (5.39864pt too wide) in paragraph at lines 49--50
+File: chapter6/res/sparse_bu.pdf Graphic file (type pdf)
+<use chapter6/res/sparse_bu.pdf>
+ [53]
+File: chapter6/res/headnetwork_motivation.pdf Graphic file (type pdf)
+<use chapter6/res/headnetwork_motivation.pdf>
+
+Underfull \vbox (badness 6016) has occurred while \output is active []
+
+ [54]
+File: chapter6/res/dense_bu.pdf Graphic file (type pdf)
+<use chapter6/res/dense_bu.pdf>
+File: chapter6/res/qanet.pdf Graphic file (type pdf)
+<use chapter6/res/qanet.pdf>
+
+[55]
+Underfull \vbox (badness 7558) has occurred while \output is active []
+
+ [56]
+File: chapter6/res/graph_fpn.pdf Graphic file (type pdf)
+<use chapter6/res/graph_fpn.pdf>
+File: chapter6/res/head_network.pdf Graphic file (type pdf)
+<use chapter6/res/head_network.pdf>
+
+[57]
+File: chapter6/res/temporal_pooling.pdf Graphic file (type pdf)
+<use chapter6/res/temporal_pooling.pdf>
+ [58] [59]
+Overfull \hbox (5.39864pt too wide) in paragraph at lines 193--194
 \TU/TimesNewRoman(0)/bx/n/12.045 R@N, IoU@$\OML/cmm/m/it/12.045 ^^R$\l_fontspec
 _font ：|  在 测 试 集 中，|  每 个 样 本 预 测 分 数 最 高 的 \TU/TimesNewRoman(0)/m/n/12.045 n 
 \l_fontspec_font 个 的 结 果 重 叠 度  |（\TU/TimesNewRoman(0)/m/n/12.045 Intersection-
 
  []
 
-) [53]
+
+Overfull \hbox (2.28458pt too wide) in paragraph at lines 241--241
+[][] 
+ []
+
+
+Overfull \hbox (2.28458pt too wide) in paragraph at lines 241--241
+[][] 
+ []
+
+
+Overfull \hbox (2.47276pt too wide) in paragraph at lines 241--241
+[][] 
+ []
+
+File: chapter6/res/ablative_backbone.pdf Graphic file (type pdf)
+<use chapter6/res/ablative_backbone.pdf>
+
+Overfull \hbox (2.46689pt too wide) in paragraph at lines 354--354
+[][] 
+ []
+
+
+Overfull \hbox (2.46689pt too wide) in paragraph at lines 354--354
+[][] 
+ []
+
+File: chapter6/res/node_visualization.pdf Graphic file (type pdf)
+<use chapter6/res/node_visualization.pdf>
+) [60] [61] [62] [63]
 \openout2 = `./chapter7/chap7.aux'.
 
- (./chapter7/chap7.tex [54
+ (./chapter7/chap7.tex [64
 
 
 
 ]
 7
-) [55]
+) [65]
 \openout2 = `./chapter8/chap8.aux'.
 
- (./chapter8/chap8.tex [56
+ (./chapter8/chap8.tex [66
 
 
 
 ]
 8
-) [57] [58
+) [67] [68
 
 
 ] (./chenlong_phd.bbl
 Underfull \vbox (badness 6094) has occurred while \output is active []
 
- [59
+ [69
 
 ]
 Underfull \hbox (badness 8000) in paragraph at lines 89--93
@@ -2035,50 +2094,53 @@ Lu, Margaret Mitchell, Dhruv Batra,
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [60]
+ [70]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [61]
+ [71]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [62]
+ [72]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [63]
+ [73]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [64]
+ [74]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [65]
+ [75]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [66]
+ [76]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [67]
+ [77]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [68]
+ [78]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [69])
-[70]
+ [79]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [80])
+[81]
 \openout2 = `./chapter8/publications.aux'.
 
- (./chapter8/publications.tex
-Overfull \hbox (15.33745pt too wide) in paragraph at lines 35--39
-\TU/TimesNewRoman(0)/m/n/12.045 Tracking[J]. IEEE Transactions on Pattern Analy
-sis and Machine Intelligence (TPAMI),
+ (./chapter8/publications.tex [82
+
+
+]
+Overfull \hbox (3.28171pt too wide) in paragraph at lines 28--32
+[]\TU/TimesNewRoman(0)/m/n/12.045 Counterfactual Critic Multi-Agent Training fo
+r Scene Graph Generation[C]. In ICCV,
  []
 
-[71
-
-
-]) [72]
+[83]) [84]
 \openout2 = `./chapter8/thanks.aux'.
 
- (./chapter8/thanks.tex) [73
+ (./chapter8/thanks.tex) [85
 
 
 
@@ -2093,16 +2155,16 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 180.
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 180.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 180.
 Package rerunfilecheck Info: File `chenlong_phd.out' has not changed.
-(rerunfilecheck)             Checksum: 880B6933524C2A2E8BD5547961ACEB2F.
+(rerunfilecheck)             Checksum: 297D91EBCCE53F0763371CFF4786AE98.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 180.
  ) 
 Here is how much of TeX's memory you used:
- 52376 strings out of 492916
- 1220933 string characters out of 6133344
- 1442077 words of memory out of 5000000
- 55515 multiletter control sequences out of 15000+600000
+ 52548 strings out of 492916
+ 1225803 string characters out of 6133344
+ 1452077 words of memory out of 5000000
+ 55678 multiletter control sequences out of 15000+600000
  564594 words of font info for 213 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 65i,22n,96p,1037b,1187s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,22n,96p,1037b,1251s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chenlong_phd.pdf (93 pages).
+Output written on chenlong_phd.pdf (105 pages).

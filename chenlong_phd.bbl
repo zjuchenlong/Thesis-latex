@@ -514,6 +514,50 @@ Mengye Ren, Ryan Kiros, Richard Zemel.
   NeurIPS.
 \newblock 2015:2953--2961.
 
+\bibitem{liu2018attentive}
+Meng Liu, Xiang Wang, Liqiang Nie, Xiangnan He, Baoquan Chen, Tat-Seng Chua.
+\newblock Attentive moment retrieval in videos[C]. Proc. SIGIR.
+\newblock 2018:15--24.
+
+\bibitem{liu2018cross}
+Meng Liu, Xiang Wang, Liqiang Nie, Qi~Tian, Baoquan Chen, Tat-Seng Chua.
+\newblock Cross-modal moment localization in videos[C]. Proc. ACM Multimedia.
+\newblock 2018:843--851.
+
+\bibitem{chen2018temporally}
+Jingyuan Chen, Xinpeng Chen, Lin Ma, Zequn Jie, Tat-Seng Chua.
+\newblock
+\newblock Temporally grounding natural sentence in video[C].
+\newblock 2018:162--171.
+
+\bibitem{chen2019localizing}
+Jingyuan Chen, Lin Ma, Xinpeng Chen, Zequn Jie, Jiebo Luo.
+\newblock Localizing natural language in videos[C]. Proc. AAAI.
+\newblock volume~33. 2019:8175--8182.
+
+\bibitem{yuan2019find}
+Yitian Yuan, Tao Mei, Wenwu Zhu.
+\newblock To find where you talk: Temporal sentence localization in video with
+  attention based location regression[C]. Proc. AAAI.
+\newblock volume~33. 2019:9159--9166.
+
+\bibitem{he2019read}
+Dongliang He, Xiang Zhao, Jizhou Huang, Fu~Li, Xiao Liu, Shilei Wen.
+\newblock Read, watch, and move: Reinforcement learning for temporally
+  grounding natural language descriptions in videos[C]. Proc. AAAI.
+\newblock volume~33. 2019:8393--8400.
+
+\bibitem{wang2019language}
+Weining Wang, Yan Huang, Liang Wang.
+\newblock Language-driven temporal activity localization: A semantic matching
+  reinforcement learning model[C]. Proc. {IEEE} Conf. CVPR.
+\newblock 2019:334--343.
+
+\bibitem{feng2018video}
+Yang Feng, Lin Ma, Wei Liu, Tong Zhang, Jiebo Luo.
+\newblock Video re-localization[C]. Proc. ECCV.
+\newblock Springer, 2018:51--66.
+
 \bibitem{xian2017zero}
 Yongqin Xian, Bernt Schiele, Zeynep Akata.
 \newblock Zero-shot learning-the good, the bad and the ugly[C]. Proc. {IEEE}
@@ -976,21 +1020,116 @@ Ranjay Krishna, Kenji Hata, Frederic Ren, Li~Fei-Fei, Juan Carlos~Niebles.
 \newblock Dense-captioning events in videos[C]. Proc. {IEEE} ICCV.
 \newblock 2017:706--715.
 
-\bibitem{feng2018video}
-Yang Feng, Lin Ma, Wei Liu, Tong Zhang, Jiebo Luo.
-\newblock Video re-localization[C]. Proc. ECCV.
-\newblock Springer, 2018:51--66.
+\bibitem{anne2017localizing}
+Lisa Anne~Hendricks, Oliver Wang, Eli Shechtman, Josef Sivic, Trevor Darrell,
+  Bryan Russell.
+\newblock Localizing moments in video with natural language[C]. Proc. {IEEE}
+  ICCV.
+\newblock 2017:5803--5812.
 
-\bibitem{yuan2019find}
-Yitian Yuan, Tao Mei, Wenwu Zhu.
-\newblock To find where you talk: Temporal sentence localization in video with
-  attention based location regression[C]. Proc. AAAI.
-\newblock volume~33. 2019:9159--9166.
+\bibitem{ge2019mac}
+Runzhou Ge, Jiyang Gao, Kan Chen, Ram Nevatia.
+\newblock Mac: Mining activity concepts for language-based temporal
+  localization[C]. Proc. {IEEE} WACV.
+\newblock IEEE, 2019:245--253.
+
+\bibitem{chen2019semantic}
+Shaoxiang Chen, Yu-Gang Jiang.
+\newblock Semantic proposal for activity localization in videos via sentence
+  query[C]. Proc. AAAI.
+\newblock volume~33. 2019:8199--8206.
+
+\bibitem{xu2019multilevel}
+Huijuan Xu, Kun He, Bryan~A Plummer, Leonid Sigal, Stan Sclaroff, Kate Saenko.
+\newblock Multilevel language and vision integration for text-to-clip
+  retrieval[C]. Proc. AAAI.
+\newblock volume~33. 2019:9062--9069.
+
+\bibitem{zhang2019exploiting}
+Songyang Zhang, Jinsong Su, Jiebo Luo.
+\newblock Exploiting temporal relationships in video moment localization with
+  natural language[C]. Proc. ACM Multimedia.
+\newblock 2019:1230--1238.
+
+\bibitem{wu2019long}
+Chao-Yuan Wu, Christoph Feichtenhofer, Haoqi Fan, Kaiming He, Philipp
+  Krahenbuhl, Ross Girshick.
+\newblock Long-term feature banks for detailed video understanding[C]. Proc.
+  {IEEE} Conf. CVPR.
+\newblock 2019:284--293.
+
+\bibitem{zhang2019man}
+Da~Zhang, Xiyang Dai, Xin Wang, Yuan-Fang Wang, Larry~S Davis.
+\newblock Man: Moment alignment network for natural language moment retrieval
+  via iterative graph adjustment[C]. Proc. {IEEE} Conf. CVPR.
+\newblock 2019:1247--1257.
+
+\bibitem{xiong2017dynamic}
+Caiming Xiong, Victor Zhong, Richard Socher.
+\newblock Dynamic coattention networks for question answering[C]. Proc. ICLR.
+\newblock 2017.
+
+\bibitem{xiong2018dcn+}
+Caiming Xiong, Victor Zhong, Richard Socher.
+\newblock Dcn+: Mixed objective and deep residual coattention for question
+  answering[C]. Proc. ICLR.
+\newblock 2018.
+
+\bibitem{yu2018qanet}
+Adams~Wei Yu, David Dohan, Minh-Thang Luong, Rui Zhao, Kai Chen, Mohammad
+  Norouzi, Quoc~V Le.
+\newblock Qanet: Combining local convolution with global self-attention for
+  reading comprehension[C]. Proc. ICLR.
+\newblock 2018.
+
+\bibitem{chen2018encoder}
+Liang-Chieh Chen, Yukun Zhu, George Papandreou, Florian Schroff, Hartwig Adam.
+\newblock Encoder-decoder with atrous separable convolution for semantic image
+  segmentation[C]. Proc. ECCV.
+\newblock 2018:801--818.
+
+\bibitem{lin2017feature}
+Tsung-Yi Lin, Piotr Doll{\'a}r, Ross Girshick, Kaiming He, Bharath Hariharan,
+  Serge Belongie.
+\newblock Feature pyramid networks for object detection[C]. Proc. {IEEE} Conf.
+  CVPR.
+\newblock 2017:2117--2125.
+
+\bibitem{shou2018online}
+Zheng Shou, Junting Pan, Jonathan Chan, Kazuyuki Miyazawa, Hassan Mansour,
+  Anthony Vetro, Xavier Giro-i Nieto, Shih-Fu Chang.
+\newblock Online detection of action start in untrimmed, streaming videos[C].
+  Proc. ECCV.
+\newblock 2018:534--551.
+
+\bibitem{kipf2017semi}
+Thomas~N Kipf, Max Welling.
+\newblock Semi-supervised classification with graph convolutional networks[C].
+  Proc. ICLR.
+\newblock 2017.
 
 \bibitem{caba2015activitynet}
 Fabian Caba~Heilbron, Victor Escorcia, Bernard Ghanem, Juan Carlos~Niebles.
 \newblock Activitynet: A large-scale video benchmark for human activity
   understanding[C]. Proc. {IEEE} Conf. CVPR.
 \newblock 2015:961--970.
+
+\bibitem{karpathy2014large}
+Andrej Karpathy, George Toderici, Sanketh Shetty, Thomas Leung, Rahul
+  Sukthankar, Li~Fei-Fei.
+\newblock Large-scale video classification with convolutional neural
+  networks[C]. Proc. {IEEE} Conf. CVPR.
+\newblock 2014:1725--1732.
+
+\bibitem{tran2015learning}
+Du~Tran, Lubomir Bourdev, Rob Fergus, Lorenzo Torresani, Manohar Paluri.
+\newblock Learning spatiotemporal features with 3d convolutional networks[C].
+  Proc. {IEEE} ICCV.
+\newblock 2015:4489--4497.
+
+\bibitem{kingma2015adam}
+Diederik~P Kingma, Jimmy Ba.
+\newblock Adam: A method for stochastic optimization[C]. Proc. ICLR.
+\newblock 2015.
 
 \end{thebibliography}

@@ -26,12 +26,12 @@
 \contentsline {subsection}{\numberline {2.2.2}多智能体策略梯度}{8}{subsection.2.2.2}% 
 \contentsline {section}{\numberline {2.3}图像描述语句生成}{9}{section.2.3}% 
 \contentsline {section}{\numberline {2.4}视频片段检索}{9}{section.2.4}% 
-\contentsline {subsection}{\numberline {2.4.1}基于文本的视频片段检索}{9}{subsection.2.4.1}% 
-\contentsline {subsection}{\numberline {2.4.2}基于视频的视频片段检索}{9}{subsection.2.4.2}% 
-\contentsline {subsection}{\numberline {2.4.3}自上向下框架与自底向上框架}{9}{subsection.2.4.3}% 
-\contentsline {section}{\numberline {2.5}图像视觉问答}{9}{section.2.5}% 
-\contentsline {subsection}{\numberline {2.5.1}视觉问答模型的文本偏差}{9}{subsection.2.5.1}% 
-\contentsline {subsection}{\numberline {2.5.2}视觉问答模型的特性}{9}{subsection.2.5.2}% 
+\contentsline {subsection}{\numberline {2.4.1}基于语句查询的视频片段检索}{9}{subsection.2.4.1}% 
+\contentsline {subsection}{\numberline {2.4.2}基于视频查询的视频片段检索}{9}{subsection.2.4.2}% 
+\contentsline {subsection}{\numberline {2.4.3}自上向下框架与自底向上框架}{10}{subsection.2.4.3}% 
+\contentsline {section}{\numberline {2.5}图像视觉问答}{10}{section.2.5}% 
+\contentsline {subsection}{\numberline {2.5.1}视觉问答模型的文本偏差}{10}{subsection.2.5.1}% 
+\contentsline {subsection}{\numberline {2.5.2}视觉问答模型的特性}{10}{subsection.2.5.2}% 
 \contentsline {chapter}{\numberline {3\hspace {.3em}}基于属性保持的零样本物体分类方法}{11}{chapter.3}% 
 \contentsline {section}{\numberline {3.1}问题描述}{11}{section.3.1}% 
 \contentsline {section}{\numberline {3.2}属性保持的对抗网络学习}{13}{section.3.2}% 
@@ -75,20 +75,25 @@
 \contentsline {section}{\numberline {5.4}本章小结}{50}{section.5.4}% 
 \contentsline {chapter}{\numberline {6\hspace {.3em}}基于密集型自底向上网络的视频片段检索方法}{51}{chapter.6}% 
 \contentsline {section}{\numberline {6.1}问题描述}{51}{section.6.1}% 
-\contentsline {section}{\numberline {6.2}密集型自底向上框架}{52}{section.6.2}% 
-\contentsline {section}{\numberline {6.3}基于图结构的特征金字塔网络}{52}{section.6.3}% 
-\contentsline {section}{\numberline {6.4}实验设置与性能对比}{52}{section.6.4}% 
-\contentsline {subsection}{\numberline {6.4.1}视频片段检索数据集}{52}{subsection.6.4.1}% 
-\contentsline {subsection}{\numberline {6.4.2}评价指标}{53}{subsection.6.4.2}% 
-\contentsline {section}{\numberline {6.5}本章小结}{53}{section.6.5}% 
-\contentsline {chapter}{\numberline {7\hspace {.3em}}基于反事实样本生成的图像视觉问答方法}{55}{chapter.7}% 
-\contentsline {section}{\numberline {7.1}引言}{55}{section.7.1}% 
-\contentsline {section}{\numberline {7.2}反事实样本生成}{55}{section.7.2}% 
-\contentsline {section}{\numberline {7.3}实验设置与性能对比}{55}{section.7.3}% 
-\contentsline {section}{\numberline {7.4}本章小结}{55}{section.7.4}% 
-\contentsline {chapter}{\numberline {8\hspace {.3em}}总结和展望}{57}{chapter.8}% 
-\contentsline {section}{\numberline {8.1}本文工作总结}{57}{section.8.1}% 
-\contentsline {section}{\numberline {8.2}未来研究展望}{57}{section.8.2}% 
-\contentsline {chapter}{参考文献}{59}{chapter*.35}% 
-\contentsline {chapter}{作者简历及在学期间所取得的科研成果}{71}{chapter*.36}% 
-\contentsline {chapter}{致谢}{73}{chapter*.40}% 
+\contentsline {section}{\numberline {6.2}基于图特征金字塔的密集型预测}{55}{section.6.2}% 
+\contentsline {subsection}{\numberline {6.2.1}骨干网络}{55}{subsection.6.2.1}% 
+\contentsline {subsection}{\numberline {6.2.2}图特征金字塔层}{56}{subsection.6.2.2}% 
+\contentsline {subsection}{\numberline {6.2.3}密集型头网络}{57}{subsection.6.2.3}% 
+\contentsline {subsection}{\numberline {6.2.4}训练阶段和测试阶段}{58}{subsection.6.2.4}% 
+\contentsline {section}{\numberline {6.3}实验设置与性能对比}{59}{section.6.3}% 
+\contentsline {subsection}{\numberline {6.3.1}视频片段检索数据集}{59}{subsection.6.3.1}% 
+\contentsline {subsection}{\numberline {6.3.2}评价指标}{60}{subsection.6.3.2}% 
+\contentsline {subsection}{\numberline {6.3.3}实验设定}{60}{subsection.6.3.3}% 
+\contentsline {subsection}{\numberline {6.3.4}视频片段检索性能对比}{60}{subsection.6.3.4}% 
+\contentsline {section}{\numberline {6.4}本章小结}{60}{section.6.4}% 
+\contentsline {chapter}{\numberline {7\hspace {.3em}}基于反事实样本生成的图像视觉问答方法}{65}{chapter.7}% 
+\contentsline {section}{\numberline {7.1}引言}{65}{section.7.1}% 
+\contentsline {section}{\numberline {7.2}反事实样本生成}{65}{section.7.2}% 
+\contentsline {section}{\numberline {7.3}实验设置与性能对比}{65}{section.7.3}% 
+\contentsline {section}{\numberline {7.4}本章小结}{65}{section.7.4}% 
+\contentsline {chapter}{\numberline {8\hspace {.3em}}总结和展望}{67}{chapter.8}% 
+\contentsline {section}{\numberline {8.1}本文工作总结}{67}{section.8.1}% 
+\contentsline {section}{\numberline {8.2}未来研究展望}{67}{section.8.2}% 
+\contentsline {chapter}{参考文献}{69}{chapter*.49}% 
+\contentsline {chapter}{作者简历及在学期间所取得的科研成果}{83}{chapter*.50}% 
+\contentsline {chapter}{致谢}{85}{chapter*.53}% 

@@ -24,6 +24,15 @@
 \contentsline {figure}{\numberline {5-3}{\ignorespaces 空间注意力和通道注意力权重的可视化结果\relax }}{50}{figure.caption.33}% 
 \addvspace {10.0pt}
 \contentsline {figure}{\numberline {6-1}{\ignorespaces 两种视频片段检索任务\relax }}{52}{figure.caption.34}% 
+\contentsline {figure}{\numberline {6-2}{\ignorespaces 典型的稀疏型自底向上视频片段检索模型\relax }}{53}{figure.caption.35}% 
+\contentsline {figure}{\numberline {6-3}{\ignorespaces 一个基于语句的视频片段检索示例\relax }}{54}{figure.caption.36}% 
+\contentsline {figure}{\numberline {6-4}{\ignorespaces 典型的稀疏型自底向上视频片段检索模型\relax }}{55}{figure.caption.37}% 
+\contentsline {figure}{\numberline {6-5}{\ignorespaces 骨干网络QANet\relax }}{56}{figure.caption.38}% 
+\contentsline {figure}{\numberline {6-6}{\ignorespaces 图特征金字塔层\relax }}{57}{figure.caption.39}% 
+\contentsline {figure}{\numberline {6-7}{\ignorespaces 密集型头网络\relax }}{58}{figure.caption.40}% 
+\contentsline {figure}{\numberline {6-8}{\ignorespaces 时域池化示意图\relax }}{59}{figure.caption.41}% 
+\contentsline {figure}{\numberline {6-9}{\ignorespaces 同一骨干网络不同特征优化层的性能对比\relax }}{62}{figure.caption.44}% 
+\contentsline {figure}{\numberline {6-10}{\ignorespaces 场景空间中的节点可视化\relax }}{63}{figure.caption.48}% 
 \addvspace {10.0pt}
 \addvspace {10.0pt}
 \addvspace {10.0pt}
