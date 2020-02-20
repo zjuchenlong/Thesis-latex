@@ -16,17 +16,78 @@ Wei-Lun Chao, Soravit Changpinyo, Boqing Gong, Fei Sha.
   object recognition in the wild[C]. Proc. ECCV.
 \newblock Springer, 2016:52--68.
 
+\bibitem{lin2014microsoft}
+Tsung-Yi Lin, Michael Maire, Serge Belongie, James Hays, Pietro Perona, Deva
+  Ramanan, Piotr Doll{\'a}r, C~Lawrence Zitnick.
+\newblock Microsoft coco: Common objects in context[C]. Proc. ECCV.
+\newblock Springer, 2014:740--755.
+
 \bibitem{russakovsky2015imagenet}
 Olga Russakovsky, Jia Deng, Hao Su, Jonathan Krause, Sanjeev Satheesh, Sean Ma,
   Zhiheng Huang, Andrej Karpathy, Aditya Khosla, Michael Bernstein, et~al.
 \newblock Imagenet large scale visual recognition challenge[J].
 \newblock Int. J. Comput. Vis., 2015, 115(3):211--252.
 
+\bibitem{krishna2017visual}
+Ranjay Krishna, Yuke Zhu, Oliver Groth, Justin Johnson, Kenji Hata, Joshua
+  Kravitz, Stephanie Chen, Yannis Kalantidis, Li-Jia Li, David~A Shamma, et~al.
+\newblock Visual genome: Connecting language and vision using crowdsourced
+  dense image annotations[J].
+\newblock Int. J. Comput. Vis., 2017, 123(1):32--73.
+
+\bibitem{karpathy2014large}
+Andrej Karpathy, George Toderici, Sanketh Shetty, Thomas Leung, Rahul
+  Sukthankar, Li~Fei-Fei.
+\newblock Large-scale video classification with convolutional neural
+  networks[C]. Proc. {IEEE} Conf. CVPR.
+\newblock 2014:1725--1732.
+
+\bibitem{miech2019howto100m}
+Antoine Miech, Dimitri Zhukov, Jean-Baptiste Alayrac, Makarand Tapaswi, Ivan
+  Laptev, Josef Sivic.
+\newblock Howto100m: Learning a text-video embedding by watching hundred
+  million narrated video clips[C]. Proc. {IEEE} ICCV.
+\newblock 2019:2630--2640.
+
+\bibitem{lecun2015deep}
+Yann LeCun, Yoshua Bengio, Geoffrey Hinton.
+\newblock Deep learning[J].
+\newblock nature, 2015, 521(7553):436--444.
+
 \bibitem{krizhevsky2012imagenet}
 Alex Krizhevsky, Ilya Sutskever, Geoffrey~E Hinton.
 \newblock Imagenet classification with deep convolutional neural networks[C].
   Proc. NeurIPS.
 \newblock 2012:1097--1105.
+
+\bibitem{xie2019self}
+Qizhe Xie, Eduard Hovy, Minh-Thang Luong, Quoc~V Le.
+\newblock Self-training with noisy student improves imagenet classification[C].
+  arXiv.
+\newblock 2019.
+
+\bibitem{ren2015faster}
+Shaoqing Ren, Kaiming He, Ross Girshick, Jian Sun.
+\newblock Faster r-cnn: Towards real-time object detection with region proposal
+  networks[C]. Proc. NeurIPS.
+\newblock 2015:91--99.
+
+\bibitem{liu2016ssd}
+Wei Liu, Dragomir Anguelov, Dumitru Erhan, Christian Szegedy, Scott Reed,
+  Cheng-Yang Fu, Alexander~C Berg.
+\newblock Ssd: Single shot multibox detector[C]. Proc. ECCV.
+\newblock Springer, 2016:21--37.
+
+\bibitem{redmon2016you}
+Joseph Redmon, Santosh Divvala, Ross Girshick, Ali Farhadi.
+\newblock You only look once: Unified, real-time object detection[C]. Proc.
+  {IEEE} Conf. CVPR.
+\newblock 2016:779--788.
+
+\bibitem{he2017mask}
+Kaiming He, Georgia Gkioxari, Piotr Doll{\'a}r, Ross Girshick.
+\newblock Mask r-cnn[C]. Proc. {IEEE} ICCV.
+\newblock 2017:2961--2969.
 
 \bibitem{fei2006one}
 Li~Fei-Fei, Rob Fergus, Pietro Perona.
@@ -39,17 +100,6 @@ Christoph~H Lampert, Hannes Nickisch, Stefan Harmeling.
   transfer[C]. Proc. {IEEE} Conf. CVPR.
 \newblock 2009:951--958.
 
-\bibitem{ren2015faster}
-Shaoqing Ren, Kaiming He, Ross Girshick, Jian Sun.
-\newblock Faster r-cnn: Towards real-time object detection with region proposal
-  networks[C]. Proc. NeurIPS.
-\newblock 2015:91--99.
-
-\bibitem{he2017mask}
-Kaiming He, Georgia Gkioxari, Piotr Doll{\'a}r, Ross Girshick.
-\newblock Mask r-cnn[C]. Proc. {IEEE} ICCV.
-\newblock 2017:2961--2969.
-
 \bibitem{johnson2015image}
 Justin Johnson, Ranjay Krishna, Michael Stark, Li-Jia Li, David Shamma, Michael
   Bernstein, Li~Fei-Fei.
@@ -61,17 +111,6 @@ Alexander Kirillov, Kaiming He, Ross Girshick, Carsten Rother, Piotr
   Doll{\'a}r.
 \newblock Panoptic segmentation[C]. Proc. {IEEE} Conf. CVPR.
 \newblock 2019:9404--9413.
-
-\bibitem{hochreiter1997long}
-Sepp Hochreiter, J{\"u}rgen Schmidhuber.
-\newblock Long short-term memory[J].
-\newblock Neural Computation, 1997, 9(8):1735--1780.
-
-\bibitem{chung2014empirical}
-Junyoung Chung, Caglar Gulcehre, KyungHyun Cho, Yoshua Bengio.
-\newblock Empirical evaluation of gated recurrent neural networks on sequence
-  modeling[C]. arXiv.
-\newblock 2014.
 
 \bibitem{vinyals2015show}
 Oriol Vinyals, Alexander Toshev, Samy Bengio, Dumitru Erhan.
@@ -96,6 +135,17 @@ Abhishek Das, Satwik Kottur, Khushi Gupta, Avi Singh, Deshraj Yadav,
   Jos{\'e}~MF Moura, Devi Parikh, Dhruv Batra.
 \newblock Visual dialog[C]. Proc. {IEEE} Conf. CVPR.
 \newblock 2017:326--335.
+
+\bibitem{malinowski2014towards}
+Mateusz Malinowski, Mario Fritz.
+\newblock Towards a visual turing challenge[C]. arXiv.
+\newblock 2014.
+
+\bibitem{geman2015visual}
+Donald Geman, Stuart Geman, Neil Hallonquist, Laurent Younes.
+\newblock Visual turing test for computer vision systems[J].
+\newblock Proceedings of the National Academy of Sciences, 2015,
+  112(12):3618--3623.
 
 \bibitem{farhadi2009describing}
 Ali Farhadi, Ian Endres, Derek Hoiem, David Forsyth.
@@ -267,13 +317,6 @@ Ashish Mishra, Shiva Krishna~Reddy, Anurag Mittal, Hema~A Murthy.
 Cewu Lu, Ranjay Krishna, Michael Bernstein, Li~Fei-Fei.
 \newblock Visual relationship detection with language priors[C]. Proc. ECCV.
 \newblock Springer, 2016:852--869.
-
-\bibitem{krishna2017visual}
-Ranjay Krishna, Yuke Zhu, Oliver Groth, Justin Johnson, Kenji Hata, Joshua
-  Kravitz, Stephanie Chen, Yannis Kalantidis, Li-Jia Li, David~A Shamma, et~al.
-\newblock Visual genome: Connecting language and vision using crowdsourced
-  dense image annotations[J].
-\newblock Int. J. Comput. Vis., 2017, 123(1):32--73.
 
 \bibitem{zhang2017visual}
 Hanwang Zhang, Zawlin Kyaw, Shih-Fu Chang, Tat-Seng Chua.
@@ -676,12 +719,6 @@ Soravit Changpinyo, Wei-Lun Chao, Boqing Gong, Fei Sha.
   CVPR.
 \newblock 2016:5327--5336.
 
-\bibitem{liu2016ssd}
-Wei Liu, Dragomir Anguelov, Dumitru Erhan, Christian Szegedy, Scott Reed,
-  Cheng-Yang Fu, Alexander~C Berg.
-\newblock Ssd: Single shot multibox detector[C]. Proc. ECCV.
-\newblock Springer, 2016:21--37.
-
 \bibitem{long2015fully}
 Jonathan Long, Evan Shelhamer, Trevor Darrell.
 \newblock Fully convolutional networks for semantic segmentation[C]. Proc.
@@ -952,12 +989,6 @@ Peter Young, Alice Lai, Micah Hodosh, Julia Hockenmaier.
   for semantic inference over event descriptions[J].
 \newblock Trans. Assoc. Comp. Lingui., 2014, 2:67--78.
 
-\bibitem{lin2014microsoft}
-Tsung-Yi Lin, Michael Maire, Serge Belongie, James Hays, Pietro Perona, Deva
-  Ramanan, Piotr Doll{\'a}r, C~Lawrence Zitnick.
-\newblock Microsoft coco: Common objects in context[C]. Proc. ECCV.
-\newblock Springer, 2014:740--755.
-
 \bibitem{papineni2002bleu}
 Kishore Papineni, Salim Roukos, Todd Ward, Wei-Jing Zhu.
 \newblock Bleu: a method for automatic evaluation of machine translation[C].
@@ -980,6 +1011,11 @@ Ramakrishna Vedantam, C~Lawrence~Zitnick, Devi Parikh.
 Chin-Yew Lin, Eduard Hovy.
 \newblock Manual and automatic evaluation of summaries[C]. Proc. ACL.
 \newblock Association for Computational Linguistics, 2002:45--51.
+
+\bibitem{hochreiter1997long}
+Sepp Hochreiter, J{\"u}rgen Schmidhuber.
+\newblock Long short-term memory[J].
+\newblock Neural Computation, 1997, 9(8):1735--1780.
 
 \bibitem{zeiler2012adadelta}
 Matthew~D Zeiler.
@@ -1113,13 +1149,6 @@ Fabian Caba~Heilbron, Victor Escorcia, Bernard Ghanem, Juan Carlos~Niebles.
 \newblock Activitynet: A large-scale video benchmark for human activity
   understanding[C]. Proc. {IEEE} Conf. CVPR.
 \newblock 2015:961--970.
-
-\bibitem{karpathy2014large}
-Andrej Karpathy, George Toderici, Sanketh Shetty, Thomas Leung, Rahul
-  Sukthankar, Li~Fei-Fei.
-\newblock Large-scale video classification with convolutional neural
-  networks[C]. Proc. {IEEE} Conf. CVPR.
-\newblock 2014:1725--1732.
 
 \bibitem{tran2015learning}
 Du~Tran, Lubomir Bourdev, Rob Fergus, Lorenzo Torresani, Manohar Paluri.

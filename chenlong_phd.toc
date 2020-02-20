@@ -8,92 +8,92 @@
 \contentsline {chapter}{表\CTEX@spaceChar \CTEX@spaceChar 格}{XI}{chapter*.5}% 
 \contentsline {chapter}{\numberline {1\hspace {.3em}}绪论}{1}{chapter.1}% 
 \contentsline {section}{\numberline {1.1}研究背景}{1}{section.1.1}% 
-\contentsline {section}{\numberline {1.2}研究内容}{3}{section.1.2}% 
-\contentsline {subsection}{\numberline {1.2.1}基于属性保持对抗学习的零样本物体分类}{3}{subsection.1.2.1}% 
-\contentsline {subsection}{\numberline {1.2.2}基于反事实多智能体学习的场景图生成}{3}{subsection.1.2.2}% 
-\contentsline {subsection}{\numberline {1.2.3}基于通道注意力机制的视觉描述生成}{3}{subsection.1.2.3}% 
-\contentsline {subsection}{\numberline {1.2.4}基于密集型自底向上框架的视觉检索}{3}{subsection.1.2.4}% 
-\contentsline {subsection}{\numberline {1.2.5}基于反事实样本生成的视觉问答}{3}{subsection.1.2.5}% 
-\contentsline {section}{\numberline {1.3}本文组织结构}{3}{section.1.3}% 
-\contentsline {section}{\numberline {1.4}本章小结}{5}{section.1.4}% 
-\contentsline {chapter}{\numberline {2\hspace {.3em}}相关研究综述}{7}{chapter.2}% 
-\contentsline {section}{\numberline {2.1}零样本物体识别}{7}{section.2.1}% 
-\contentsline {subsection}{\numberline {2.1.1}零样本学习}{7}{subsection.2.1.1}% 
-\contentsline {subsection}{\numberline {2.1.2}域偏移问题}{7}{subsection.2.1.2}% 
-\contentsline {subsection}{\numberline {2.1.3}对抗生成网络}{8}{subsection.2.1.3}% 
-\contentsline {section}{\numberline {2.2}图像场景图生成}{8}{section.2.2}% 
-\contentsline {subsection}{\numberline {2.2.1}场景图生成}{8}{subsection.2.2.1}% 
-\contentsline {subsection}{\numberline {2.2.2}多智能体策略梯度}{8}{subsection.2.2.2}% 
-\contentsline {section}{\numberline {2.3}图像描述语句生成}{9}{section.2.3}% 
-\contentsline {section}{\numberline {2.4}视频片段检索}{9}{section.2.4}% 
-\contentsline {subsection}{\numberline {2.4.1}基于语句查询的视频片段检索}{9}{subsection.2.4.1}% 
-\contentsline {subsection}{\numberline {2.4.2}基于视频查询的视频片段检索}{9}{subsection.2.4.2}% 
-\contentsline {subsection}{\numberline {2.4.3}自上向下框架与自底向上框架}{10}{subsection.2.4.3}% 
-\contentsline {section}{\numberline {2.5}图像视觉问答}{10}{section.2.5}% 
-\contentsline {subsection}{\numberline {2.5.1}视觉问答模型的文本偏差}{10}{subsection.2.5.1}% 
-\contentsline {subsection}{\numberline {2.5.2}视觉问答模型的特性}{10}{subsection.2.5.2}% 
-\contentsline {chapter}{\numberline {3\hspace {.3em}}基于属性保持的零样本物体分类方法}{11}{chapter.3}% 
-\contentsline {section}{\numberline {3.1}问题描述}{11}{section.3.1}% 
-\contentsline {section}{\numberline {3.2}属性保持的对抗网络学习}{13}{section.3.2}% 
-\contentsline {subsection}{\numberline {3.2.1}零样本分类预备知识}{13}{subsection.3.2.1}% 
-\contentsline {subsection}{\numberline {3.2.2}分类任务优化目标}{14}{subsection.3.2.2}% 
-\contentsline {subsection}{\numberline {3.2.3}重建任务优化目标}{15}{subsection.3.2.3}% 
-\contentsline {subsection}{\numberline {3.2.4}对抗学习优化目标}{15}{subsection.3.2.4}% 
-\contentsline {subsection}{\numberline {3.2.5}总体优化目标}{16}{subsection.3.2.5}% 
-\contentsline {section}{\numberline {3.3}实验设置与性能分析}{16}{section.3.3}% 
-\contentsline {subsection}{\numberline {3.3.1}零样本物体分类数据集}{16}{subsection.3.3.1}% 
-\contentsline {subsection}{\numberline {3.3.2}实验设定与零样本物体分类评价指标}{17}{subsection.3.3.2}% 
-\contentsline {subsection}{\numberline {3.3.3}网络模型与参数设置}{17}{subsection.3.3.3}% 
-\contentsline {subsection}{\numberline {3.3.4}零样本物体分类的性能对比}{17}{subsection.3.3.4}% 
-\contentsline {subsection}{\numberline {3.3.5}零样本物体分类方法分析}{18}{subsection.3.3.5}% 
-\contentsline {section}{\numberline {3.4}本章小结}{21}{section.3.4}% 
-\contentsline {chapter}{\numberline {4\hspace {.3em}}基于反事实的多智能体学习的图像场景图生成方法}{23}{chapter.4}% 
-\contentsline {section}{\numberline {4.1}问题描述}{23}{section.4.1}% 
-\contentsline {section}{\numberline {4.2}反事实的多智能体学习}{26}{section.4.2}% 
-\contentsline {subsection}{\numberline {4.2.1}场景图生成中的多智能体通信}{27}{subsection.4.2.1}% 
-\contentsline {subsection}{\numberline {4.2.2}反事实多智能体学习}{30}{subsection.4.2.2}% 
-\contentsline {section}{\numberline {4.3}实验设置与性能对比}{33}{section.4.3}% 
-\contentsline {subsection}{\numberline {4.3.1}图像场景图生成数据集与实验设定}{33}{subsection.4.3.1}% 
-\contentsline {subsection}{\numberline {4.3.2}实验细节}{33}{subsection.4.3.2}% 
-\contentsline {subsection}{\numberline {4.3.3}场景图生成性能分析}{34}{subsection.4.3.3}% 
-\contentsline {subsection}{\numberline {4.3.4}场景图生成性能对比}{36}{subsection.4.3.4}% 
-\contentsline {section}{\numberline {4.4}本章小结}{38}{section.4.4}% 
-\contentsline {chapter}{\numberline {5\hspace {.3em}}基于空间和通道注意力机制的图像描述语句生成方法}{39}{chapter.5}% 
-\contentsline {section}{\numberline {5.1}问题描述}{39}{section.5.1}% 
-\contentsline {section}{\numberline {5.2}空间和通道注意力机制}{41}{section.5.2}% 
-\contentsline {subsection}{\numberline {5.2.1}概述}{41}{subsection.5.2.1}% 
-\contentsline {subsection}{\numberline {5.2.2}空间注意力机制}{42}{subsection.5.2.2}% 
-\contentsline {subsection}{\numberline {5.2.3}通道注意力机制}{43}{subsection.5.2.3}% 
-\contentsline {section}{\numberline {5.3}实验设置与性能对比}{44}{section.5.3}% 
-\contentsline {subsection}{\numberline {5.3.1}图像描述语句生成数据集}{44}{subsection.5.3.1}% 
-\contentsline {subsection}{\numberline {5.3.2}评价指标}{44}{subsection.5.3.2}% 
-\contentsline {subsection}{\numberline {5.3.3}实验设定}{45}{subsection.5.3.3}% 
-\contentsline {subsection}{\numberline {5.3.4}通道注意力机制的性能分析}{45}{subsection.5.3.4}% 
-\contentsline {subsection}{\numberline {5.3.5}多层注意力机制的性能分析}{47}{subsection.5.3.5}% 
-\contentsline {subsection}{\numberline {5.3.6}空间和通道注意力卷积神经网络的性能比较}{48}{subsection.5.3.6}% 
-\contentsline {subsection}{\numberline {5.3.7}空间注意力和通道注意力权重的可视化}{49}{subsection.5.3.7}% 
-\contentsline {section}{\numberline {5.4}本章小结}{50}{section.5.4}% 
-\contentsline {chapter}{\numberline {6\hspace {.3em}}基于密集型自底向上网络的视频片段检索方法}{51}{chapter.6}% 
-\contentsline {section}{\numberline {6.1}问题描述}{51}{section.6.1}% 
-\contentsline {section}{\numberline {6.2}基于图特征金字塔的密集型预测}{55}{section.6.2}% 
-\contentsline {subsection}{\numberline {6.2.1}骨干网络}{55}{subsection.6.2.1}% 
-\contentsline {subsection}{\numberline {6.2.2}图特征金字塔层}{56}{subsection.6.2.2}% 
-\contentsline {subsection}{\numberline {6.2.3}密集型头网络}{57}{subsection.6.2.3}% 
-\contentsline {subsection}{\numberline {6.2.4}训练阶段和测试阶段}{58}{subsection.6.2.4}% 
-\contentsline {section}{\numberline {6.3}实验设置与性能对比}{59}{section.6.3}% 
-\contentsline {subsection}{\numberline {6.3.1}视频片段检索数据集}{59}{subsection.6.3.1}% 
-\contentsline {subsection}{\numberline {6.3.2}评价指标}{60}{subsection.6.3.2}% 
-\contentsline {subsection}{\numberline {6.3.3}实验设定}{60}{subsection.6.3.3}% 
-\contentsline {subsection}{\numberline {6.3.4}视频片段检索性能对比}{60}{subsection.6.3.4}% 
-\contentsline {section}{\numberline {6.4}本章小结}{60}{section.6.4}% 
-\contentsline {chapter}{\numberline {7\hspace {.3em}}基于反事实样本生成的图像视觉问答方法}{65}{chapter.7}% 
-\contentsline {section}{\numberline {7.1}引言}{65}{section.7.1}% 
-\contentsline {section}{\numberline {7.2}反事实样本生成}{65}{section.7.2}% 
-\contentsline {section}{\numberline {7.3}实验设置与性能对比}{65}{section.7.3}% 
-\contentsline {section}{\numberline {7.4}本章小结}{65}{section.7.4}% 
-\contentsline {chapter}{\numberline {8\hspace {.3em}}总结和展望}{67}{chapter.8}% 
-\contentsline {section}{\numberline {8.1}本文工作总结}{67}{section.8.1}% 
-\contentsline {section}{\numberline {8.2}未来研究展望}{67}{section.8.2}% 
-\contentsline {chapter}{参考文献}{69}{chapter*.49}% 
-\contentsline {chapter}{作者简历及在学期间所取得的科研成果}{83}{chapter*.50}% 
-\contentsline {chapter}{致谢}{85}{chapter*.53}% 
+\contentsline {section}{\numberline {1.2}研究内容}{4}{section.1.2}% 
+\contentsline {subsection}{\numberline {1.2.1}基于属性保持对抗学习的零样本物体分类}{4}{subsection.1.2.1}% 
+\contentsline {subsection}{\numberline {1.2.2}基于反事实多智能体学习的场景图生成}{5}{subsection.1.2.2}% 
+\contentsline {subsection}{\numberline {1.2.3}基于多层空间和通道注意力网络的视觉描述生成}{5}{subsection.1.2.3}% 
+\contentsline {subsection}{\numberline {1.2.4}基于密集型自底向上框架的视觉检索}{6}{subsection.1.2.4}% 
+\contentsline {subsection}{\numberline {1.2.5}基于反事实样本生成的视觉问答}{6}{subsection.1.2.5}% 
+\contentsline {section}{\numberline {1.3}本文组织结构}{6}{section.1.3}% 
+\contentsline {section}{\numberline {1.4}本章小结}{8}{section.1.4}% 
+\contentsline {chapter}{\numberline {2\hspace {.3em}}相关研究综述}{9}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}零样本物体识别}{9}{section.2.1}% 
+\contentsline {subsection}{\numberline {2.1.1}零样本学习}{9}{subsection.2.1.1}% 
+\contentsline {subsection}{\numberline {2.1.2}域偏移问题}{9}{subsection.2.1.2}% 
+\contentsline {subsection}{\numberline {2.1.3}对抗生成网络}{10}{subsection.2.1.3}% 
+\contentsline {section}{\numberline {2.2}图像场景图生成}{10}{section.2.2}% 
+\contentsline {subsection}{\numberline {2.2.1}场景图生成}{10}{subsection.2.2.1}% 
+\contentsline {subsection}{\numberline {2.2.2}多智能体策略梯度}{10}{subsection.2.2.2}% 
+\contentsline {section}{\numberline {2.3}图像描述语句生成}{11}{section.2.3}% 
+\contentsline {section}{\numberline {2.4}视频片段检索}{11}{section.2.4}% 
+\contentsline {subsection}{\numberline {2.4.1}基于语句查询的视频片段检索}{11}{subsection.2.4.1}% 
+\contentsline {subsection}{\numberline {2.4.2}基于视频查询的视频片段检索}{11}{subsection.2.4.2}% 
+\contentsline {subsection}{\numberline {2.4.3}自上向下框架与自底向上框架}{12}{subsection.2.4.3}% 
+\contentsline {section}{\numberline {2.5}图像视觉问答}{12}{section.2.5}% 
+\contentsline {subsection}{\numberline {2.5.1}视觉问答模型的文本偏差}{12}{subsection.2.5.1}% 
+\contentsline {subsection}{\numberline {2.5.2}视觉问答模型的特性}{12}{subsection.2.5.2}% 
+\contentsline {chapter}{\numberline {3\hspace {.3em}}基于属性保持的对抗网络学习的零样本物体分类方法}{13}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}问题描述}{13}{section.3.1}% 
+\contentsline {section}{\numberline {3.2}属性保持的对抗网络学习}{15}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}零样本分类预备知识}{15}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.2}分类任务优化目标}{16}{subsection.3.2.2}% 
+\contentsline {subsection}{\numberline {3.2.3}重建任务优化目标}{17}{subsection.3.2.3}% 
+\contentsline {subsection}{\numberline {3.2.4}对抗学习优化目标}{17}{subsection.3.2.4}% 
+\contentsline {subsection}{\numberline {3.2.5}总体优化目标}{18}{subsection.3.2.5}% 
+\contentsline {section}{\numberline {3.3}实验设置与性能分析}{18}{section.3.3}% 
+\contentsline {subsection}{\numberline {3.3.1}零样本物体分类数据集}{18}{subsection.3.3.1}% 
+\contentsline {subsection}{\numberline {3.3.2}实验设定与零样本物体分类评价指标}{19}{subsection.3.3.2}% 
+\contentsline {subsection}{\numberline {3.3.3}网络模型与参数设置}{19}{subsection.3.3.3}% 
+\contentsline {subsection}{\numberline {3.3.4}零样本物体分类的性能对比}{19}{subsection.3.3.4}% 
+\contentsline {subsection}{\numberline {3.3.5}零样本物体分类方法分析}{20}{subsection.3.3.5}% 
+\contentsline {section}{\numberline {3.4}本章小结}{23}{section.3.4}% 
+\contentsline {chapter}{\numberline {4\hspace {.3em}}基于反事实的多智能体学习的图像场景图生成方法}{25}{chapter.4}% 
+\contentsline {section}{\numberline {4.1}问题描述}{25}{section.4.1}% 
+\contentsline {section}{\numberline {4.2}反事实的多智能体学习}{28}{section.4.2}% 
+\contentsline {subsection}{\numberline {4.2.1}场景图生成中的多智能体通信}{29}{subsection.4.2.1}% 
+\contentsline {subsection}{\numberline {4.2.2}反事实多智能体学习}{32}{subsection.4.2.2}% 
+\contentsline {section}{\numberline {4.3}实验设置与性能对比}{35}{section.4.3}% 
+\contentsline {subsection}{\numberline {4.3.1}图像场景图生成数据集与实验设定}{35}{subsection.4.3.1}% 
+\contentsline {subsection}{\numberline {4.3.2}实验细节}{35}{subsection.4.3.2}% 
+\contentsline {subsection}{\numberline {4.3.3}场景图生成性能分析}{36}{subsection.4.3.3}% 
+\contentsline {subsection}{\numberline {4.3.4}场景图生成性能对比}{38}{subsection.4.3.4}% 
+\contentsline {section}{\numberline {4.4}本章小结}{40}{section.4.4}% 
+\contentsline {chapter}{\numberline {5\hspace {.3em}}基于多层空间和通道注意力网络的图像描述语句生成方法}{41}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}问题描述}{41}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}空间和通道注意力机制}{43}{section.5.2}% 
+\contentsline {subsection}{\numberline {5.2.1}概述}{43}{subsection.5.2.1}% 
+\contentsline {subsection}{\numberline {5.2.2}空间注意力机制}{44}{subsection.5.2.2}% 
+\contentsline {subsection}{\numberline {5.2.3}通道注意力机制}{45}{subsection.5.2.3}% 
+\contentsline {section}{\numberline {5.3}实验设置与性能对比}{46}{section.5.3}% 
+\contentsline {subsection}{\numberline {5.3.1}图像描述语句生成数据集}{46}{subsection.5.3.1}% 
+\contentsline {subsection}{\numberline {5.3.2}评价指标}{46}{subsection.5.3.2}% 
+\contentsline {subsection}{\numberline {5.3.3}实验设定}{47}{subsection.5.3.3}% 
+\contentsline {subsection}{\numberline {5.3.4}通道注意力机制的性能分析}{47}{subsection.5.3.4}% 
+\contentsline {subsection}{\numberline {5.3.5}多层注意力机制的性能分析}{49}{subsection.5.3.5}% 
+\contentsline {subsection}{\numberline {5.3.6}空间和通道注意力卷积神经网络的性能比较}{50}{subsection.5.3.6}% 
+\contentsline {subsection}{\numberline {5.3.7}空间注意力和通道注意力权重的可视化}{51}{subsection.5.3.7}% 
+\contentsline {section}{\numberline {5.4}本章小结}{52}{section.5.4}% 
+\contentsline {chapter}{\numberline {6\hspace {.3em}}基于密集型自底向上网络的视频片段检索方法}{53}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}问题描述}{53}{section.6.1}% 
+\contentsline {section}{\numberline {6.2}基于图特征金字塔的密集型预测}{57}{section.6.2}% 
+\contentsline {subsection}{\numberline {6.2.1}骨干网络}{57}{subsection.6.2.1}% 
+\contentsline {subsection}{\numberline {6.2.2}图特征金字塔层}{58}{subsection.6.2.2}% 
+\contentsline {subsection}{\numberline {6.2.3}密集型头网络}{59}{subsection.6.2.3}% 
+\contentsline {subsection}{\numberline {6.2.4}训练阶段和测试阶段}{60}{subsection.6.2.4}% 
+\contentsline {section}{\numberline {6.3}实验设置与性能对比}{61}{section.6.3}% 
+\contentsline {subsection}{\numberline {6.3.1}视频片段检索数据集}{61}{subsection.6.3.1}% 
+\contentsline {subsection}{\numberline {6.3.2}评价指标}{62}{subsection.6.3.2}% 
+\contentsline {subsection}{\numberline {6.3.3}实验设定}{62}{subsection.6.3.3}% 
+\contentsline {subsection}{\numberline {6.3.4}视频片段检索性能对比}{62}{subsection.6.3.4}% 
+\contentsline {section}{\numberline {6.4}本章小结}{62}{section.6.4}% 
+\contentsline {chapter}{\numberline {7\hspace {.3em}}基于反事实样本生成的图像视觉问答方法}{67}{chapter.7}% 
+\contentsline {section}{\numberline {7.1}引言}{67}{section.7.1}% 
+\contentsline {section}{\numberline {7.2}反事实样本生成}{67}{section.7.2}% 
+\contentsline {section}{\numberline {7.3}实验设置与性能对比}{67}{section.7.3}% 
+\contentsline {section}{\numberline {7.4}本章小结}{67}{section.7.4}% 
+\contentsline {chapter}{\numberline {8\hspace {.3em}}总结和展望}{69}{chapter.8}% 
+\contentsline {section}{\numberline {8.1}本文工作总结}{69}{section.8.1}% 
+\contentsline {section}{\numberline {8.2}未来研究展望}{69}{section.8.2}% 
+\contentsline {chapter}{参考文献}{71}{chapter*.52}% 
+\contentsline {chapter}{作者简历及在学期间所取得的科研成果}{85}{chapter*.53}% 
+\contentsline {chapter}{致谢}{87}{chapter*.56}% 

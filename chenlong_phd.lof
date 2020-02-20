@@ -1,38 +1,41 @@
 \addvspace {10.0pt}
 \addvspace {10.0pt}
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {1-1}{\ignorespaces 复杂场景感知和理解的关键技术路线\relax }}{2}{figure.caption.6}% 
+\contentsline {figure}{\numberline {1-1}{\ignorespaces 大数据时代下图像视频等媒体数据呈现爆炸式增长\relax }}{1}{figure.caption.6}% 
+\contentsline {figure}{\numberline {1-2}{\ignorespaces 众多大规模人工标注的图像和视频数据集推动计算机视觉的发展\relax }}{2}{figure.caption.7}% 
+\contentsline {figure}{\numberline {1-3}{\ignorespaces 复杂场景识别、检测和推理的关键技术路线\relax }}{3}{figure.caption.8}% 
+\contentsline {figure}{\numberline {1-4}{\ignorespaces 复杂场景识别、检测和推理的关键技术研究方法\relax }}{5}{figure.caption.9}% 
 \addvspace {10.0pt}
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {3-1}{\ignorespaces 三种典型的零样本学习框架\relax }}{12}{figure.caption.7}% 
-\contentsline {figure}{\numberline {3-2}{\ignorespaces 现有模型SAE\nobreakspace {}\cite {kodirov2017semantic}和提出模型SP-AEN的图像重建结果对比\relax }}{13}{figure.caption.8}% 
-\contentsline {figure}{\numberline {3-3}{\ignorespaces 模型SP-AEN的整体结构流程图\relax }}{14}{figure.caption.9}% 
-\contentsline {figure}{\numberline {3-4}{\ignorespaces 三种图像重建网络框架\relax }}{19}{figure.caption.11}% 
-\contentsline {figure}{\numberline {3-5}{\ignorespaces 不同图像重建网络框架在数据集CUB、SUN、AWA、aPY上的重建结果\relax }}{20}{figure.caption.13}% 
-\contentsline {figure}{\numberline {3-6}{\ignorespaces 在数据集SUN、CUB、AWA和aPY中的已见-未见准确率曲线下区域面积\nobreakspace {}\cite {chao2016empirical}\relax }}{21}{figure.caption.14}% 
+\contentsline {figure}{\numberline {3-1}{\ignorespaces 三种典型的零样本学习框架\relax }}{14}{figure.caption.10}% 
+\contentsline {figure}{\numberline {3-2}{\ignorespaces 现有模型SAE\nobreakspace {}\cite {kodirov2017semantic}和提出模型SP-AEN的图像重建结果对比\relax }}{15}{figure.caption.11}% 
+\contentsline {figure}{\numberline {3-3}{\ignorespaces 模型SP-AEN的整体结构流程图\relax }}{16}{figure.caption.12}% 
+\contentsline {figure}{\numberline {3-4}{\ignorespaces 三种图像重建网络框架\relax }}{21}{figure.caption.14}% 
+\contentsline {figure}{\numberline {3-5}{\ignorespaces 不同图像重建网络框架在数据集CUB、SUN、AWA、aPY上的重建结果\relax }}{22}{figure.caption.16}% 
+\contentsline {figure}{\numberline {3-6}{\ignorespaces 在数据集SUN、CUB、AWA和aPY中的已见-未见准确率曲线下区域面积\nobreakspace {}\cite {chao2016empirical}\relax }}{23}{figure.caption.17}% 
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {4-1}{\ignorespaces 一个图像场景图生成任务示例\relax }}{24}{figure.caption.15}% 
-\contentsline {figure}{\numberline {4-2}{\ignorespaces 场景图生成中优化目标的整体一致性和局部敏感性\relax }}{25}{figure.caption.16}% 
-\contentsline {figure}{\numberline {4-3}{\ignorespaces 模型CMAT的总体流程图\relax }}{27}{figure.caption.17}% 
-\contentsline {figure}{\numberline {4-4}{\ignorespaces 智能体通信示意图\relax }}{28}{figure.caption.18}% 
-\contentsline {figure}{\numberline {4-5}{\ignorespaces 局部敏感性的重要性\relax }}{31}{figure.caption.19}% 
-\contentsline {figure}{\numberline {4-6}{\ignorespaces CMAT中反事实基准模型\relax }}{32}{figure.caption.20}% 
-\contentsline {figure}{\numberline {4-7}{\ignorespaces CMAT和MOTIFS在数据集VG上的场景图生成结果对比\relax }}{37}{figure.caption.25}% 
+\contentsline {figure}{\numberline {4-1}{\ignorespaces 一个图像场景图生成任务示例\relax }}{26}{figure.caption.18}% 
+\contentsline {figure}{\numberline {4-2}{\ignorespaces 场景图生成中优化目标的整体一致性和局部敏感性\relax }}{27}{figure.caption.19}% 
+\contentsline {figure}{\numberline {4-3}{\ignorespaces 模型CMAT的总体流程图\relax }}{29}{figure.caption.20}% 
+\contentsline {figure}{\numberline {4-4}{\ignorespaces 智能体通信示意图\relax }}{30}{figure.caption.21}% 
+\contentsline {figure}{\numberline {4-5}{\ignorespaces 局部敏感性的重要性\relax }}{33}{figure.caption.22}% 
+\contentsline {figure}{\numberline {4-6}{\ignorespaces CMAT中反事实基准模型\relax }}{34}{figure.caption.23}% 
+\contentsline {figure}{\numberline {4-7}{\ignorespaces CMAT和MOTIFS在数据集VG上的场景图生成结果对比\relax }}{39}{figure.caption.28}% 
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {5-1}{\ignorespaces VGG19网络中$conv5\_4$层和$conv5\_3$层的通道注意力机制示例图\relax }}{40}{figure.caption.26}% 
-\contentsline {figure}{\numberline {5-2}{\ignorespaces 空间和通道注意力卷积神经网络流程图\relax }}{42}{figure.caption.27}% 
-\contentsline {figure}{\numberline {5-3}{\ignorespaces 空间注意力和通道注意力权重的可视化结果\relax }}{50}{figure.caption.33}% 
+\contentsline {figure}{\numberline {5-1}{\ignorespaces VGG19网络中$conv5\_4$层和$conv5\_3$层的通道注意力机制示例图\relax }}{42}{figure.caption.29}% 
+\contentsline {figure}{\numberline {5-2}{\ignorespaces 空间和通道注意力卷积神经网络流程图\relax }}{44}{figure.caption.30}% 
+\contentsline {figure}{\numberline {5-3}{\ignorespaces 空间注意力和通道注意力权重的可视化结果\relax }}{52}{figure.caption.36}% 
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {6-1}{\ignorespaces 两种视频片段检索任务\relax }}{52}{figure.caption.34}% 
-\contentsline {figure}{\numberline {6-2}{\ignorespaces 典型的稀疏型自底向上视频片段检索模型\relax }}{53}{figure.caption.35}% 
-\contentsline {figure}{\numberline {6-3}{\ignorespaces 一个基于语句的视频片段检索示例\relax }}{54}{figure.caption.36}% 
-\contentsline {figure}{\numberline {6-4}{\ignorespaces 典型的稀疏型自底向上视频片段检索模型\relax }}{55}{figure.caption.37}% 
-\contentsline {figure}{\numberline {6-5}{\ignorespaces 骨干网络QANet\relax }}{56}{figure.caption.38}% 
-\contentsline {figure}{\numberline {6-6}{\ignorespaces 图特征金字塔层\relax }}{57}{figure.caption.39}% 
-\contentsline {figure}{\numberline {6-7}{\ignorespaces 密集型头网络\relax }}{58}{figure.caption.40}% 
-\contentsline {figure}{\numberline {6-8}{\ignorespaces 时域池化示意图\relax }}{59}{figure.caption.41}% 
-\contentsline {figure}{\numberline {6-9}{\ignorespaces 同一骨干网络不同特征优化层的性能对比\relax }}{62}{figure.caption.44}% 
-\contentsline {figure}{\numberline {6-10}{\ignorespaces 场景空间中的节点可视化\relax }}{63}{figure.caption.48}% 
+\contentsline {figure}{\numberline {6-1}{\ignorespaces 两种视频片段检索任务\relax }}{54}{figure.caption.37}% 
+\contentsline {figure}{\numberline {6-2}{\ignorespaces 典型的稀疏型自底向上视频片段检索模型\relax }}{55}{figure.caption.38}% 
+\contentsline {figure}{\numberline {6-3}{\ignorespaces 一个基于语句的视频片段检索示例\relax }}{56}{figure.caption.39}% 
+\contentsline {figure}{\numberline {6-4}{\ignorespaces 典型的稀疏型自底向上视频片段检索模型\relax }}{57}{figure.caption.40}% 
+\contentsline {figure}{\numberline {6-5}{\ignorespaces 骨干网络QANet\relax }}{58}{figure.caption.41}% 
+\contentsline {figure}{\numberline {6-6}{\ignorespaces 图特征金字塔层\relax }}{59}{figure.caption.42}% 
+\contentsline {figure}{\numberline {6-7}{\ignorespaces 密集型头网络\relax }}{60}{figure.caption.43}% 
+\contentsline {figure}{\numberline {6-8}{\ignorespaces 时域池化示意图\relax }}{61}{figure.caption.44}% 
+\contentsline {figure}{\numberline {6-9}{\ignorespaces 同一骨干网络不同特征优化层的性能对比\relax }}{64}{figure.caption.47}% 
+\contentsline {figure}{\numberline {6-10}{\ignorespaces 场景空间中的节点可视化\relax }}{65}{figure.caption.51}% 
 \addvspace {10.0pt}
 \addvspace {10.0pt}
 \addvspace {10.0pt}

@@ -3,25 +3,25 @@
 \addvspace {10.0pt}
 \addvspace {10.0pt}
 \addvspace {10.0pt}
-\contentsline {table}{\numberline {3-1}{\ignorespaces 不同零样本物体分类方法在4个数据集上的性能对比\relax }}{18}{table.caption.10}% 
-\contentsline {table}{\numberline {3-2}{\ignorespaces 不同重建网络下重建图像与输入图像之间的平均像素差平方\relax }}{19}{table.caption.12}% 
+\contentsline {table}{\numberline {3-1}{\ignorespaces 不同零样本物体分类方法在4个数据集上的性能对比\relax }}{20}{table.caption.13}% 
+\contentsline {table}{\numberline {3-2}{\ignorespaces 不同重建网络下重建图像与输入图像之间的平均像素差平方\relax }}{21}{table.caption.15}% 
 \addvspace {10.0pt}
-\contentsline {table}{\numberline {4-1}{\ignorespaces 不同全局奖励函数的选择对性能的影响\relax }}{34}{table.caption.21}% 
-\contentsline {table}{\numberline {4-2}{\ignorespaces 不同基准模型对性能的影响\relax }}{35}{table.caption.22}% 
-\contentsline {table}{\numberline {4-3}{\ignorespaces 不同多智能体通信步数对性能的影响\relax }}{35}{table.caption.23}% 
-\contentsline {table}{\numberline {4-4}{\ignorespaces 不同场景图生成方法在VG数据集上的性能对比\relax }}{36}{table.caption.24}% 
+\contentsline {table}{\numberline {4-1}{\ignorespaces 不同全局奖励函数的选择对性能的影响\relax }}{36}{table.caption.24}% 
+\contentsline {table}{\numberline {4-2}{\ignorespaces 不同基准模型对性能的影响\relax }}{37}{table.caption.25}% 
+\contentsline {table}{\numberline {4-3}{\ignorespaces 不同多智能体通信步数对性能的影响\relax }}{37}{table.caption.26}% 
+\contentsline {table}{\numberline {4-4}{\ignorespaces 不同场景图生成方法在VG数据集上的性能对比\relax }}{38}{table.caption.27}% 
 \addvspace {10.0pt}
-\contentsline {table}{\numberline {5-1}{\ignorespaces VGG-19网络和ResNet-152网络单层注意力机制的性能对比\relax }}{46}{table.caption.28}% 
-\contentsline {table}{\numberline {5-2}{\ignorespaces 空间注意力模型在VGG-19网络和ResNet-152网络下不同层的性能对比\relax }}{47}{table.caption.29}% 
-\contentsline {table}{\numberline {5-3}{\ignorespaces 空间和通道注意力模型在VGG-19网络和ResNet-152网络下不同层的性能对比\relax }}{48}{table.caption.30}% 
-\contentsline {table}{\numberline {5-4}{\ignorespaces 不同描述语句生成算法在数据集Flickr8k、Flickr30k和MSCOCO上的性能对比\relax }}{49}{table.caption.31}% 
-\contentsline {table}{\numberline {5-5}{\ignorespaces 不同图像描述语句生成算法在数据集MSCOCO的在线服务器上的性能对比\relax }}{49}{table.caption.32}% 
+\contentsline {table}{\numberline {5-1}{\ignorespaces VGG-19网络和ResNet-152网络单层注意力机制的性能对比\relax }}{48}{table.caption.31}% 
+\contentsline {table}{\numberline {5-2}{\ignorespaces 空间注意力模型在VGG-19网络和ResNet-152网络下不同层的性能对比\relax }}{49}{table.caption.32}% 
+\contentsline {table}{\numberline {5-3}{\ignorespaces 空间和通道注意力模型在VGG-19网络和ResNet-152网络下不同层的性能对比\relax }}{50}{table.caption.33}% 
+\contentsline {table}{\numberline {5-4}{\ignorespaces 不同描述语句生成算法在数据集Flickr8k、Flickr30k和MSCOCO上的性能对比\relax }}{51}{table.caption.34}% 
+\contentsline {table}{\numberline {5-5}{\ignorespaces 不同图像描述语句生成算法在数据集MSCOCO的在线服务器上的性能对比\relax }}{51}{table.caption.35}% 
 \addvspace {10.0pt}
-\contentsline {table}{\numberline {6-1}{\ignorespaces 不同基于语句查询的视频片段检索方法的性能对比\relax }}{61}{table.caption.42}% 
-\contentsline {table}{\numberline {6-2}{\ignorespaces 不同基于视频查询的视频片段检索方法的性能对比\relax }}{61}{table.caption.43}% 
-\contentsline {table}{\numberline {6-3}{\ignorespaces 基于语句查询的视频片段检索任务中模型A、B、C、D的性能对比\relax }}{61}{table.caption.45}% 
-\contentsline {table}{\numberline {6-4}{\ignorespaces 基于视频查询的视频片段检索任务中模型A、B、C、D的性能对比\relax }}{62}{table.caption.46}% 
-\contentsline {table}{\numberline {6-5}{\ignorespaces 密集型头网络和稀疏型头网络对比\relax }}{63}{table.caption.47}% 
+\contentsline {table}{\numberline {6-1}{\ignorespaces 不同基于语句查询的视频片段检索方法的性能对比\relax }}{63}{table.caption.45}% 
+\contentsline {table}{\numberline {6-2}{\ignorespaces 不同基于视频查询的视频片段检索方法的性能对比\relax }}{63}{table.caption.46}% 
+\contentsline {table}{\numberline {6-3}{\ignorespaces 基于语句查询的视频片段检索任务中模型A、B、C、D的性能对比\relax }}{63}{table.caption.48}% 
+\contentsline {table}{\numberline {6-4}{\ignorespaces 基于视频查询的视频片段检索任务中模型A、B、C、D的性能对比\relax }}{64}{table.caption.49}% 
+\contentsline {table}{\numberline {6-5}{\ignorespaces 密集型头网络和稀疏型头网络对比\relax }}{65}{table.caption.50}% 
 \addvspace {10.0pt}
 \addvspace {10.0pt}
 \addvspace {10.0pt}
