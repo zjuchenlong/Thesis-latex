@@ -204,12 +204,15 @@ s^*_i=\left\{
 给定一个视频序列$\mathcal{V}$，我们首先对视频进行下采样，用Sports-1M数据集~\cite{karpathy2014large}预训练的网络提取C3D特征~\cite{tran2015learning}，然后利用PCA将特征维度降低到500维作为初始的视频特征。当查询为自然语句时，我们先将语句的最大长度设为15，然后每个单词用300维的Glove向量~\cite{pennington2014glove}作为初始的编码，然后利用一个可学习的映射矩阵将维度也映射到500维。当查询为视频片段时，我们使用和之前参考视频同样的预处理。中间所有层的维度都设为128，节点数$N_1$、$N_2$和$N_3$分别设为10。这个网络利用Adam~\cite{kingma2015adam}对模型进行优化，整个模型训练100个数据集周期，初始的学习率设为0.0001，训练的批量大小设为16。
 
 
-\subsection{视频片段检索性能对比}
+\begin{figure}[tbp]
+    \centering
+    \includegraphics[width=0.7\linewidth]{chapter6/res/qualtative_results.pdf}
+    \caption{GDP模型在数据集ActivityNet Captions（上）和Activity-VRL（下）的检索结果}
+    \label{ch6:fig:qualtative_results}
+\end{figure}
 
-\textbf{基于语句查询的视频片段检索}
 
 %%%%%%%%%%%%%%%%%%% SOTA NLVL %%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{table*}[tbp]
     \centering
     \scalebox{0.75}{
@@ -243,10 +246,6 @@ s^*_i=\left\{
     \label{ch6:tab:sota_nlvl}
 \end{table*}
 
-
-\textbf{基于视频查询的视频片段检索}
-
-
 %%%%%%%%%%%%%%%%%%%%% SOTA VRL %%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[tbp]
     \centering
@@ -268,6 +267,21 @@ s^*_i=\left\{
 \end{table}
 
 
+\subsection{视频片段检索性能对比}
+
+\textbf{基于语句查询的视频片段检索}：本节将本章方法GDP与目前最先进的语句查询的视频片段检索方法进行对比。按照自顶向下和自底向上框架划分，这些方法可以分为三类：1）自顶向下模型：\textbf{VSA-RNN}~\cite{gao2017tall}、\textbf{VSA-STV}~\cite{gao2017tall}、\textbf{CTRL}~\cite{gao2017tall}、\textbf{ROLE}~\cite{liu2018cross}、\textbf{ACRN}~\cite{liu2018attentive}、\textbf{MCF}~\cite{wu2018multi}、\textbf{TGN}~\cite{chen2018temporally}、\textbf{ACL}~\cite{ge2019mac}、\textbf{SAP}~\cite{chen2019semantic}和\textbf{QSPN}~\cite{xu2019multilevel}；2)基于强化学习的模型：\textbf{RWM}~\cite{he2019read}、\textbf{SM-RL}~\cite{wang2019language}；3)自底向上模型：\textbf{L-Net}~\cite{chen2019localizing}、\textbf{ABLR-af}、\textbf{ABLR-aw}~\cite{yuan2019find}。
+
+表~\ref{ch6:tab:sota_nlvl}展示了模型GDP的定量实验结果。从表~\ref{ch6:tab:sota_nlvl}可以看出，GDP在所有的数据集下都可以达到目前最好的性能。对于更加严格的评价指标，性能增益往往更加明显。例如，在数据集TACoS和ActivityNet中，mIoU可以分别提升2.77\%和2.81\%；在数据集Charades-STA中，IoU@0.7可以提升2.69\%。
+
+图~\ref{ch6:fig:qualtative_results}展示了模型GDP的定性实验结果。由图~\ref{ch6:fig:qualtative_results}可以看出，分数最高的视频帧往往接近与人工标注的检索片段中心位置。这也刚好符合我们的模型设计，将检索片段中心帧的置信分数设为最高。
+
+
+
+\textbf{基于视频查询的视频片段检索}：本节将本章方法GDP与目前最先进的视频查询的视频片段检索方法进行对比。同样，我们可以将这些方法分为两类：1）自顶向下模型：\textbf{Frame-level}~\cite{feng2018video}、\textbf{video-level}~\cite{feng2018video}、\textbf{SST}~\cite{buch2017sst}；2）自底向上模型：\textbf{CGBM}~\cite{feng2018video}。
+
+从表~\ref{ch6:tab:sota_vrl}可以看出，GDP在所有的评价指标下都超过目前最好的模型。尤其对于高质量的预测，性能增益更加明显。例如：在tIoU阈值为0.9时，GDP的性能相比提升接近100\%。
+
+
 \begin{figure}[tbp]
     \centering
     \includegraphics[width=0.9\linewidth]{chapter6/res/ablative_backbone.pdf}
@@ -275,9 +289,12 @@ s^*_i=\left\{
     \label{ch6:fig:ablative_backbone}
 \end{figure}
 
+\subsection{视频片段检索性能分析}
 
-%%%%%%%%%%%%%%%%%%% Ablation about Backbone NLVL %%%%%%%%%%%%%%%%
-\begin{table*}[htbp]
+\textbf{图特征金字塔层的有效性}：为了验证图特征金字塔层对视频片段检索的作用，我们设计了三种基准模型进行对比。如图~\ref{ch6:fig:ablative_backbone}所示，模型A（a）包含一个骨干网络和一个密集头网络；模型B（b）用骨干网络的输出特征序列构建一个特征金字塔，然后直接将不同尺度的特征进行拼接融合；模型C（c）参考特征金字塔网络（Feature Pyramid Network, FPN）~\cite{lin2017feature}使用一个自顶向下的支路网络将不同尺度的特征进行融合；模型D（d）即为GDP模型。其中，四个对比模型中骨干网络和密集头网络结构都完全相同。
+
+%%%%%%%%%%%% Ablation about Backbone NLVL %%%%%%%%%%%%%%%%
+\begin{table*}[tbp]
     \centering
     \scalebox{0.9}{
         \begin{tabular}{|c | c c c c| c c c c| c c c c|}
@@ -298,9 +315,10 @@ s^*_i=\left\{
     \label{ch6:tab:nlvl_ablation_backbone}
 \end{table*}
 
+基于语句查询和视频查询的视频片段检索的结果分别展示在表~\ref{ch6:tab:nlvl_ablation_backbone}和表~\ref{ch6:tab:vrl_ablation_backbone}中。根据实验结果，我们可以发现：1）特征金字塔结构可以显著地提升视频片段检索任务的性能（即：模型B、C、D的性能明显好于模型A的性能）；2）利用自顶向下的支路将连续两个尺度的特征进行融合并不能有效地融合多尺度特征。例如，模型B和模型C的性能十分接近；3）GDP模型（模型D）在绝大多数的数据集和评价指标下都能取得最好的结果，说明了图特征金字塔层的有效性。
 
-%%%%%%%%%%%%%%%%%%% Ablation about Backbone VRL %%%%%%%%%%%%%%%%
-\begin{table*}[htbp]
+%%%%%%%%%% Ablation about Backbone VRL %%%%%%%%%%%%%%%
+\begin{table*}[tbp]
     \centering
     \scalebox{0.9}{
         \begin{tabular}{|c |c c c c c|}
@@ -322,11 +340,10 @@ s^*_i=\left\{
 %%%%%%%%%%%%%%%% Ablation Head Network %%%%%%%%%%%%%%
 \begin{table}[tbp]
     \centering
-    \scalebox{0.85}{
+    \scalebox{0.9}{
         \begin{tabular}{|l|l|l| c c c|}
             \hline
-            & \multirow{2}{*}{Dataset} & \multirow{2}{*}{Metric} & \multicolumn{3}{c|}{Head Network} \\
-            &  &  & Sparse & Dense$^*$ & Dense \\
+            & Dataset & Metric & Sparse & Dense$^*$ & Dense \\
             \hline
             \parbox[t]{2mm}{\multirow{12}{*}{\rotatebox[origin=c]{90}{NLVL}}} &\multirow{4}{*}{TACoS} & IoU@0.1 & 32.3 & 36.5 & \textbf{39.7} \\
             & & IoU@0.3 & 18.7 & 22.9 & \textbf{24.1}  \\
@@ -356,13 +373,21 @@ s^*_i=\left\{
     \label{ch6:tab:ablation_head}
 \end{table}
 
+\textbf{密集头网络的有效性}：为了评估密集头网络的有效性，我们设计了一个基准模型：它使用和GDP完全相同的骨干网络和图卷积特征层，然后将密集头网络换成稀疏型头网络（即直接预测两端边界的概率）。
 
-\begin{figure}[tbp]
+基于语句查询和视频查询的视频片段检索的结果展示在表~\ref{ch6:tab:ablation_head}中，其中DEBUG$^*$表示模型在测试阶段没有使用时域池化。由表~\ref{ch6:tab:ablation_head}可以看出，密集头网络可以显著提升模型性能，尤其对于长视频数据集（如：TACoS），性能提升更加明显，这也间接说明密集头网络能够缓解稀疏头网络存在在问题，如正负训练样本极度不均等。
+
+
+\textbf{场景空间节点的可视化}：我们随机选取了同一个尺度下的四个节点，然后每个节点选取了三个视频帧来表示。如图~\ref{ch6:fig:node_visualization}所示，同一个节点中的视频帧通常包含一个特定的视觉场景或相似的场景内容。
+
+
+\begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.8\linewidth]{chapter6/res/node_visualization.pdf}
+    \includegraphics[width=0.9\linewidth]{chapter6/res/node_visualization.pdf}
     \caption{场景空间中的节点可视化}
     \label{ch6:fig:node_visualization}
 \end{figure}
 
-\section{本章小结}
 
+\section{本章小结}
+在本章，我们详细地分析了目前的视频片段检索算法，尤其是稀疏型自底向上框架的缺点。基于分析结果，我们提出了一种全新的密集型自底向上网络：基于图特征金字塔的密集型预测（Graph-FPN with Dense Prediction, GDP）。GDP通过引入一个图特征金字塔层来充分编码视频中多个场景之间的内在联系。GDP将稀疏头网络替换成密集头网络，避免训练正负样本极度不均的问题。在两种查询形式下（基于自然语句和视频片段），GDP能取得了目前最好的性能。

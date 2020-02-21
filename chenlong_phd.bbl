@@ -513,11 +513,34 @@ Shayegan Omidshafiei, Jason Pazis, Christopher Amato, Jonathan~P How, John
   under partial observability[C]. Proc. ICML.
 \newblock 2017:2681--2690.
 
+\bibitem{sutskever2014sequence}
+Ilya Sutskever, Oriol Vinyals, Quoc~V Le.
+\newblock Sequence to sequence learning with neural networks[C]. Proc. NeurIPS.
+\newblock 2014:3104--3112.
+
 \bibitem{karpathy2015deep}
 Andrej Karpathy, Li~Fei-Fei.
 \newblock Deep visual-semantic alignments for generating image descriptions[C].
   Proc. {IEEE} Conf. CVPR.
 \newblock 2015:3128--3137.
+
+\bibitem{simonyan2015very}
+Karen Simonyan, Andrew Zisserman.
+\newblock Very deep convolutional networks for large-scale image
+  recognition[C]. Proc. ICLR.
+\newblock 2015.
+
+\bibitem{szegedy2015going}
+Christian Szegedy, Wei Liu, Yangqing Jia, Pierre Sermanet, Scott Reed, Dragomir
+  Anguelov, Dumitru Erhan, Vincent Vanhoucke, Andrew Rabinovich.
+\newblock Going deeper with convolutions[C]. Proc. {IEEE} Conf. CVPR.
+\newblock 2015:1--9.
+
+\bibitem{he2016deep}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun.
+\newblock Deep residual learning for image recognition[C]. Proc. {IEEE} Conf.
+  CVPR.
+\newblock 2016:770--778.
 
 \bibitem{donahue2015long}
 Jeffrey Donahue, Lisa Anne~Hendricks, Sergio Guadarrama, Marcus Rohrbach,
@@ -526,36 +549,66 @@ Jeffrey Donahue, Lisa Anne~Hendricks, Sergio Guadarrama, Marcus Rohrbach,
   description[C]. Proc. {IEEE} Conf. CVPR.
 \newblock 2015:2625--2634.
 
-\bibitem{venugopalan2015sequence}
-Subhashini Venugopalan, Marcus Rohrbach, Jeffrey Donahue, Raymond Mooney,
-  Trevor Darrell, Kate Saenko.
-\newblock Sequence to sequence-video to text[C]. Proc. {IEEE} ICCV.
-\newblock 2015:4534--4542.
-
-\bibitem{venugopalan2014translating}
-Subhashini Venugopalan, Huijuan Xu, Jeff Donahue, Marcus Rohrbach, Raymond
-  Mooney, Kate Saenko.
-\newblock Translating videos to natural language using deep recurrent neural
-  networks[C]. NAACL-HLT.
+\bibitem{mao2015deep}
+Junhua Mao, Wei Xu, Yi~Yang, Jiang Wang, Zhiheng Huang, Alan Yuille.
+\newblock Deep captioning with multimodal recurrent neural networks (m-rnn)[C].
+  Proc. ICLR.
 \newblock 2015.
 
-\bibitem{malinowski2015ask}
-Mateusz Malinowski, Marcus Rohrbach, Mario Fritz.
-\newblock Ask your neurons: A neural-based approach to answering questions
-  about images[C]. Proc. {IEEE} ICCV.
-\newblock 2015:1--9.
+\bibitem{wang2016image}
+Cheng Wang, Haojin Yang, Christian Bartz, Christoph Meinel.
+\newblock Image captioning with deep bidirectional lstms[C]. Proc. ACM
+  Multimedia.
+\newblock 2016:988--997.
 
-\bibitem{gao2015you}
-Haoyuan Gao, Junhua Mao, Jie Zhou, Zhiheng Huang, Lei Wang, Wei Xu.
-\newblock Are you talking to a machine? dataset and methods for multilingual
-  image question[C]. Proc. NeurIPS.
-\newblock 2015:2296--2304.
+\bibitem{hochreiter1997long}
+Sepp Hochreiter, J{\"u}rgen Schmidhuber.
+\newblock Long short-term memory[J].
+\newblock Neural Computation, 1997, 9(8):1735--1780.
 
-\bibitem{ren2015exploring}
-Mengye Ren, Ryan Kiros, Richard Zemel.
-\newblock Exploring models and data for image question answering[C]. Proc.
-  NeurIPS.
-\newblock 2015:2953--2961.
+\bibitem{bahdanau2014neural}
+Dzmitry Bahdanau, Kyunghyun Cho, Yoshua Bengio.
+\newblock Neural machine translation by jointly learning to align and
+  translate[C]. Proc. ICLR.
+\newblock 2014.
+
+\bibitem{xu2015show}
+Kelvin Xu, Jimmy Ba, Ryan Kiros, Kyunghyun Cho, Aaron Courville, Ruslan
+  Salakhudinov, Rich Zemel, Yoshua Bengio.
+\newblock Show, attend and tell: Neural image caption generation with visual
+  attention[C]. Proc. ICML.
+\newblock 2015:2048--2057.
+
+\bibitem{zhu2016visual7w}
+Yuke Zhu, Oliver Groth, Michael Bernstein, Li~Fei-Fei.
+\newblock Visual7w: Grounded question answering in images[C]. Proc. {IEEE}
+  Conf. CVPR.
+\newblock 2016:4995--5004.
+
+\bibitem{yang2016stacked}
+Zichao Yang, Xiaodong He, Jianfeng Gao, Li~Deng, Alex Smola.
+\newblock Stacked attention networks for image question answering[C]. Proc.
+  {IEEE} Conf. CVPR.
+\newblock 2016:21--29.
+
+\bibitem{xu2016ask}
+Huijuan Xu, Kate Saenko.
+\newblock Ask, attend and answer: Exploring question-guided spatial attention
+  for visual question answering[C]. Proc. ECCV.
+\newblock Springer, 2016:451--466.
+
+\bibitem{anderson2018bottom}
+Peter Anderson, Xiaodong He, Chris Buehler, Damien Teney, Mark Johnson, Stephen
+  Gould, Lei Zhang.
+\newblock Bottom-up and top-down attention for image captioning and visual
+  question answering[C]. Proc. {IEEE} Conf. CVPR.
+\newblock 2018:6077--6086.
+
+\bibitem{li2016visual}
+Ruiyu Li, Jiaya Jia.
+\newblock Visual question answering with question representation update
+  (qru)[C]. Proc. NeurIPS.
+\newblock 2016:4655--4663.
 
 \bibitem{liu2018attentive}
 Meng Liu, Xiang Wang, Liqiang Nie, Xiangnan He, Baoquan Chen, Tat-Seng Chua.
@@ -663,18 +716,6 @@ Genevieve Patterson, James Hays.
 \newblock Sun attribute database: Discovering, annotating, and recognizing
   scene attributes[C]. Proc. {IEEE} Conf. CVPR.
 \newblock 2012:2751--2758.
-
-\bibitem{he2016deep}
-Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun.
-\newblock Deep residual learning for image recognition[C]. Proc. {IEEE} Conf.
-  CVPR.
-\newblock 2016:770--778.
-
-\bibitem{simonyan2015very}
-Karen Simonyan, Andrew Zisserman.
-\newblock Very deep convolutional networks for large-scale image
-  recognition[C]. Proc. ICLR.
-\newblock 2015.
 
 \bibitem{johnson2016perceptual}
 Justin Johnson, Alexandre Alahi, Li~Fei-Fei.
@@ -889,13 +930,6 @@ Volodymyr Mnih, Adria~Puigdomenech Badia, Mehdi Mirza, Alex Graves, Timothy
 \newblock Asynchronous methods for deep reinforcement learning[C]. Proc. ICML.
 \newblock 2016:1928--1937.
 
-\bibitem{xu2015show}
-Kelvin Xu, Jimmy Ba, Ryan Kiros, Kyunghyun Cho, Aaron Courville, Ruslan
-  Salakhudinov, Rich Zemel, Yoshua Bengio.
-\newblock Show, attend and tell: Neural image caption generation with visual
-  attention[C]. Proc. ICML.
-\newblock 2015:2048--2057.
-
 \bibitem{newell2017pixels}
 Alejandro Newell, Jia Deng.
 \newblock Pixels to graphs by associative embedding[C]. Proc. NeurIPS.
@@ -942,18 +976,6 @@ Kan Chen, Jiang Wang, Liang-Chieh Chen, Haoyuan Gao, Wei Xu, Ram Nevatia.
 \newblock Abc-cnn: An attention based convolutional neural network for visual
   question answering[C]. Proc. {IEEE} Conf. CVPR.
 \newblock 2016.
-
-\bibitem{yang2016stacked}
-Zichao Yang, Xiaodong He, Jianfeng Gao, Li~Deng, Alex Smola.
-\newblock Stacked attention networks for image question answering[C]. Proc.
-  {IEEE} Conf. CVPR.
-\newblock 2016:21--29.
-
-\bibitem{xu2016ask}
-Huijuan Xu, Kate Saenko.
-\newblock Ask, attend and answer: Exploring question-guided spatial attention
-  for visual question answering[C]. Proc. ECCV.
-\newblock Springer, 2016:451--466.
 
 \bibitem{corbetta2002control}
 Maurizio Corbetta, Gordon~L Shulman.
@@ -1007,26 +1029,21 @@ Ramakrishna Vedantam, C~Lawrence~Zitnick, Devi Parikh.
   Conf. CVPR.
 \newblock 2015:4566--4575.
 
+\bibitem{robertson2004understanding}
+Stephen Robertson.
+\newblock Understanding inverse document frequency: on theoretical arguments
+  for idf[J].
+\newblock Journal of documentation, 2004.
+
 \bibitem{lin2002manual}
 Chin-Yew Lin, Eduard Hovy.
 \newblock Manual and automatic evaluation of summaries[C]. Proc. ACL.
 \newblock Association for Computational Linguistics, 2002:45--51.
 
-\bibitem{hochreiter1997long}
-Sepp Hochreiter, J{\"u}rgen Schmidhuber.
-\newblock Long short-term memory[J].
-\newblock Neural Computation, 1997, 9(8):1735--1780.
-
 \bibitem{zeiler2012adadelta}
 Matthew~D Zeiler.
 \newblock Adadelta: an adaptive learning rate method[C]. arXiv.
 \newblock 2012.
-
-\bibitem{mao2015deep}
-Junhua Mao, Wei Xu, Yi~Yang, Jiang Wang, Zhiheng Huang, Alan Yuille.
-\newblock Deep captioning with multimodal recurrent neural networks (m-rnn)[C].
-  Proc. ICLR.
-\newblock 2015.
 
 \bibitem{jia2015guiding}
 Xu~Jia, Efstratios Gavves, Basura Fernando, Tinne Tuytelaars.
@@ -1160,5 +1177,18 @@ Du~Tran, Lubomir Bourdev, Rob Fergus, Lorenzo Torresani, Manohar Paluri.
 Diederik~P Kingma, Jimmy Ba.
 \newblock Adam: A method for stochastic optimization[C]. Proc. ICLR.
 \newblock 2015.
+
+\bibitem{wu2018multi}
+Aming Wu, Yahong Han.
+\newblock Multi-modal circulant fusion for video-to-language and backward.[C].
+  Proc. IJCAI.
+\newblock volume~3. 2018:8.
+
+\bibitem{buch2017sst}
+Shyamal Buch, Victor Escorcia, Chuanqi Shen, Bernard Ghanem, Juan
+  Carlos~Niebles.
+\newblock Sst: Single-stream temporal action proposals[C]. Proc. {IEEE} Conf.
+  CVPR.
+\newblock 2017:2911--2920.
 
 \end{thebibliography}

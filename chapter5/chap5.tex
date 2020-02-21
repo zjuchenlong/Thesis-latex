@@ -125,16 +125,16 @@ y_t & \sim p_t = \textrm{softmax} \left(\mathbf{h}_t, y_{t-1} \right).
 
 
 \subsection{评价指标}
-\noindent\textbf{BLEU}~\cite{papineni2002bleu} (B@1, B@2, B@3, B@4):
+\noindent\textbf{BLEU}~\cite{papineni2002bleu} (B@1, B@2, B@3, B@4)：BLEU（Bilingual evaluation understudy）比较生成语句和所有人工标注语句中的n元词组（n-gram）的准确率，然后对所有的n元词组计算几何平均数。其中，实验表明使用四元词组（即$n=4$）计算得到的评估结果与人工的评估结果最接近。
 
-\noindent\textbf{METEOR}~\cite{banerjee2005meteor} (MT):
+\noindent\textbf{METEOR}~\cite{banerjee2005meteor} (MT)：METEOR（Metric for Evaluation of Translation with Explicit ORdering）是基于生成语句和人工标注语句中一元词组的对齐关系。先对所有的一元词组进行精确匹配、近义词匹配、词干匹配之后，计算所有一元词组匹配的F分数（F-measure）。同时，METEOR引入一个权重系数，对生成过长的语句减小权重系数，通过对F分数进行加权得到每个生成语句的分数。对于多个人工标注语句，METEOR分别用生成语句和每个标注语句单独计算分数，然后选取其中的最高分作为最终的分数。
 
-\noindent\textbf{CIDEr}~\cite{vedantam2015cider} (CD):
+\noindent\textbf{CIDEr}~\cite{vedantam2015cider} (CD)：CIDEr（Consensus-based Image Description Evaluation）先将所有单词进行词干提取（stemming），然后对所有预处理后的语句中的n元词组利用TF-IDF~\cite{robertson2004understanding}进行加权，
+最后利用所有n元词组的余弦相似度得到分数。
 
-\noindent\textbf{ROUGE-L}~\cite{lin2002manual} (RG):
+\noindent\textbf{ROUGE-L}~\cite{lin2002manual} (RG)：ROUGE(Recall-Oriented Understudy for Gisting Evaluation)先找到生成语句和人工标注语句之间最长的相同序列，然后基于最长的相同序列计算匹配的F分数。同样，对于多个人工标注语句，ROUGE-L分别单独计算与每个标注语句的分数，然后选取最高分作为最终分数。
 
-
-对于所有的四种评价指标来说，他们都是通过比较生成语句中的n元词组在人工标注的语句中出现的频率。所有的评价指标都是采用MSCOCO官方的测评工具\footnote{https://github/tylin/coco-caption.}。
+总之，这四种评价指标都是通过比较生成语句和人工标注语句中n元词组的匹配程度。所有实验中这些评价指标的计算都是采用MSCOCO官方的测评工具（https://github/tylin/coco-caption）。
 
 
 
