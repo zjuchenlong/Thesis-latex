@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.12.18)  21 FEB 2020 19:54
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.12.18)  29 FEB 2020 15:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -913,23 +913,32 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 \@float@every@algorithm=\toks32
 \c@algorithm=\count317
 )
-(/usr/local/texlive/2019/texmf-dist/tex/latex/paralist/paralist.sty
-Package: paralist 2017/01/22 v2.7 Extended list environments
-\pltopsep=\skip133
-\plpartopsep=\skip134
-\plitemsep=\skip135
-\plparsep=\skip136
-\pl@lab=\toks33
+(/usr/local/texlive/2019/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+Package: algpseudocode 
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count318
+\c@ALG@rem=\count319
+\c@ALG@nested=\count320
+\ALG@tlm=\skip133
+\ALG@thistlm=\skip134
+\c@ALG@Lnr=\count321
+\c@ALG@blocknr=\count322
+\c@ALG@storecount=\count323
+\c@ALG@tmpcounter=\count324
+\ALG@tmplength=\skip135
 )
-(/usr/local/texlive/2019/texmf-dist/tex/latex/algorithms/algorithmic.sty
-Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
-Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
-\c@ALC@unique=\count318
-\c@ALC@line=\count319
-\c@ALC@rem=\count320
-\c@ALC@depth=\count321
-\ALC@tlm=\skip137
-\algorithmicindent=\skip138
+Document Style - pseudocode environments for use with the `algorithmicx' style
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/paralist/paralist.sty
+Package: paralist 2017/01/22 v2.7 Extended list environments
+\pltopsep=\skip136
+\plpartopsep=\skip137
+\plitemsep=\skip138
+\plparsep=\skip139
+\pl@lab=\toks33
 )
 (/usr/local/texlive/2019/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
@@ -938,7 +947,7 @@ Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
 \TX@old@col=\dimen284
 \TX@target=\dimen285
 \TX@delta=\dimen286
-\TX@cols=\count322
+\TX@cols=\count325
 \TX@ftn=\toks34
 )
 (/usr/local/texlive/2019/texmf-dist/tex/latex/cleveref/cleveref.sty
@@ -955,6 +964,7 @@ LaTeX Info: Redefining \Cpagerefrange on input line 2370.
 LaTeX Info: Redefining \labelcref on input line 2370.
 LaTeX Info: Redefining \labelcpageref on input line 2370.
 Package cleveref Info: `amsthm' support loaded on input line 3026.
+Package cleveref Info: `algorithmicx' support loaded on input line 3120.
 )
 (/usr/local/texlive/2019/texmf-dist/tex/latex/adjustbox/adjustbox.sty
 Package: adjustbox 2019/01/04 v1.2 Adjusting TeX boxes (trim, clip, ...)
@@ -967,7 +977,7 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 \XKV@toks=\toks35
 \XKV@tempa@toks=\toks36
 )
-\XKV@depth=\count323
+\XKV@depth=\count326
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/local/texlive/2019/texmf-dist/tex/latex/adjustbox/adjcalc.sty
@@ -1001,12 +1011,12 @@ File: tc-xetex.def 2019/01/04 v2.2 Clipping driver for xetex
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
-\c@checkoddpage=\count324
+\c@checkoddpage=\count327
 )
 (/usr/local/texlive/2019/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
 \@vwid@box=\box64
-\sift@deathcycles=\count325
+\sift@deathcycles=\count328
 \@vwid@loff=\dimen299
 \@vwid@roff=\dimen300
 ))
@@ -1054,14 +1064,14 @@ ode.tex
 \pgf@yc=\dimen310
 \w@pgf@writea=\write4
 \r@pgf@reada=\read2
-\c@pgf@counta=\count326
-\c@pgf@countb=\count327
-\c@pgf@countc=\count328
-\c@pgf@countd=\count329
+\c@pgf@counta=\count329
+\c@pgf@countb=\count330
+\c@pgf@countc=\count331
+\c@pgf@countd=\count332
 \t@pgf@toka=\toks41
 \t@pgf@tokb=\toks42
 \t@pgf@tokc=\toks43
-\pgf@sys@id@count=\count330
+\pgf@sys@id@count=\count333
 
 (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2019/04/04 v3.1.2 (3.1.2)
@@ -1080,13 +1090,13 @@ File: pgfsys-dvipdfmx.def 2019/04/04 v3.1.2 (3.1.2)
 df.def
 File: pgfsys-common-pdf.def 2019/04/04 v3.1.2 (3.1.2)
 )
-\pgfsys@objnum=\count331
+\pgfsys@objnum=\count334
 )))
 (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
 code.tex
 File: pgfsyssoftpath.code.tex 2019/04/04 v3.1.2 (3.1.2)
-\pgfsyssoftpath@smallbuffer@items=\count332
-\pgfsyssoftpath@bigbuffer@items=\count333
+\pgfsyssoftpath@smallbuffer@items=\count335
+\pgfsyssoftpath@bigbuffer@items=\count336
 )
 (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
 code.tex
@@ -1099,7 +1109,7 @@ Package: pgfcore 2019/04/04 v3.1.2 (3.1.2)
 (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen311
-\pgfmath@count=\count334
+\pgfmath@count=\count337
 \pgfmath@box=\box66
 \pgfmath@toks=\toks44
 \pgfmath@stack@operand=\toks45
@@ -1124,7 +1134,7 @@ code.tex)
 (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
 erarithmetics.code.tex)))
 (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count335
+\c@pgfmathroundto@lastzeros=\count338
 ))
 (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
 de.tex
@@ -1162,7 +1172,7 @@ File: pgfcorescopes.code.tex 2019/04/04 v3.1.2 (3.1.2)
 \pgfpic=\box67
 \pgf@hbox=\box68
 \pgf@layerbox@main=\box69
-\pgf@picture@serial@count=\count336
+\pgf@picture@serial@count=\count339
 )
 (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
 ate.code.tex
@@ -1197,8 +1207,8 @@ File: pgfcorearrows.code.tex 2019/04/04 v3.1.2 (3.1.2)
 e.tex
 File: pgfcoreshade.code.tex 2019/04/04 v3.1.2 (3.1.2)
 \pgf@max=\dimen335
-\pgf@sys@shading@range@num=\count337
-\pgf@shadingcount=\count338
+\pgf@sys@shading@range@num=\count340
+\pgf@shadingcount=\count341
 )
 (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
 e.tex
@@ -1265,7 +1275,7 @@ Package: tikz 2019/04/04 v3.1.2 (3.1.2)
 (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2019/04/04 v3.1.2 (3.1.2)
-\pgf@plot@mark@count=\count339
+\pgf@plot@mark@count=\count342
 \pgfplotmarksize=\dimen340
 )
 \tikz@lastx=\dimen341
@@ -1278,19 +1288,19 @@ File: pgflibraryplothandlers.code.tex 2019/04/04 v3.1.2 (3.1.2)
 \tikz@figbox@bg=\box73
 \tikz@tempbox=\box74
 \tikz@tempbox@bg=\box75
-\tikztreelevel=\count340
-\tikznumberofchildren=\count341
-\tikznumberofcurrentchild=\count342
-\tikz@fig@count=\count343
+\tikztreelevel=\count343
+\tikznumberofchildren=\count344
+\tikznumberofcurrentchild=\count345
+\tikz@fig@count=\count346
 
 (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
 File: pgfmodulematrix.code.tex 2019/04/04 v3.1.2 (3.1.2)
-\pgfmatrixcurrentrow=\count344
-\pgfmatrixcurrentcolumn=\count345
-\pgf@matrix@numberofcolumns=\count346
+\pgfmatrixcurrentrow=\count347
+\pgfmatrixcurrentcolumn=\count348
+\pgf@matrix@numberofcolumns=\count349
 )
-\tikz@expandcount=\count347
+\tikz@expandcount=\count350
 
 (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
@@ -1305,8 +1315,8 @@ Package: pgfplots 2018/03/28 v1.16 Data Visualization (1.16)
 \t@pgfplots@tokb=\toks50
 \t@pgfplots@tokc=\toks51
 \pgfplots@tmpa=\dimen347
-\c@pgfplots@coordindex=\count348
-\c@pgfplots@scanlineindex=\count349
+\c@pgfplots@coordindex=\count351
+\c@pgfplots@scanlineindex=\count352
 
 (/usr/local/texlive/2019/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric
 .code.tex))
@@ -1322,7 +1332,7 @@ Package pgfplots: loading complementary arithmetics for your pgf version...
 soldpgfsupp_pgflibraryfpu.code.tex)
 (/usr/local/texlive/2019/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplot
 soldpgfsupp_pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count350
+\c@pgfmathroundto@lastzeros=\count353
 ))
 (/usr/local/texlive/2019/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code
 .tex
@@ -1332,13 +1342,13 @@ liststructure.code.tex)
 liststructureext.code.tex)
 (/usr/local/texlive/2019/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 array.code.tex
-\c@pgfplotsarray@tmp=\count351
+\c@pgfplotsarray@tmp=\count354
 )
 (/usr/local/texlive/2019/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
 matrix.code.tex)
 (/usr/local/texlive/2019/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstable
 shared.code.tex
-\c@pgfplotstable@counta=\count352
+\c@pgfplotstable@counta=\count355
 \t@pgfplotstable@a=\toks52
 )
 (/usr/local/texlive/2019/texmf-dist/tex/generic/pgfplots/liststructure/pgfplots
@@ -1351,13 +1361,13 @@ ta.code.tex))
 .code.tex)
 (/usr/local/texlive/2019/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplot
 s.surfshading.code.tex
-\c@pgfplotslibrarysurf@no=\count353
+\c@pgfplotslibrarysurf@no=\count356
 
 (/usr/local/texlive/2019/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots
 .surfshading.pgfsys-xetex.def
 (/usr/local/texlive/2019/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots
 .surfshading.pgfsys-dvipdfmx.def
-\c@pgfplotslibrarysurf@streamlen=\count354
+\c@pgfplotslibrarysurf@streamlen=\count357
 ))))
 (/usr/local/texlive/2019/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.
 code.tex
@@ -1392,7 +1402,7 @@ s.code.tex
 \pgfdecoratedinputsegmentcompleteddistance=\dimen350
 \pgfdecoratedinputsegmentremainingdistance=\dimen351
 \pgf@decorate@distancetomove=\dimen352
-\pgf@decorate@repeatstate=\count355
+\pgf@decorate@repeatstate=\count358
 \pgfdecorationsegmentamplitude=\dimen353
 \pgfdecorationsegmentlength=\dimen354
 )
@@ -1406,7 +1416,7 @@ brarydecorations.pathmorphing.code.tex))
 s/tikzlibrarydecorations.pathreplacing.code.tex
 (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/libraries/decorations/pgfli
 brarydecorations.pathreplacing.code.tex))
-\pgfplots@numplots=\count356
+\pgfplots@numplots=\count359
 \pgfplots@xmin@reg=\dimen355
 \pgfplots@xmax@reg=\dimen356
 \pgfplots@ymin@reg=\dimen357
@@ -1429,10 +1439,30 @@ ts.colormaps.code.tex)
 (/usr/local/texlive/2019/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen361
 \WF@size=\dimen362
-\c@WF@wrappedlines=\count357
+\c@WF@wrappedlines=\count360
 \WF@box=\box77
 \WF@everypar=\toks53
 Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count361
+\l_MT_multwidth_dim=\dimen363
+\origjot=\skip140
+\l_MT_shortvdotswithinadjustabove_dim=\dimen364
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen365
+\l_MT_above_intertext_sep=\dimen366
+\l_MT_below_intertext_sep=\dimen367
+\l_MT_above_shortintertext_sep=\dimen368
+\l_MT_below_shortintertext_sep=\dimen369
 )
 (./chenlong_phd.aux (./chapter0/abstractC.aux) (./chapter0/abstractE.aux)
 (./chapter1/chap1.aux) (./chapter2/chap2.aux) (./chapter3/chap3.aux)
@@ -1441,93 +1471,93 @@ Package: wrapfig 2003/01/31  v 3.6
 (./chapter8/thanks.aux))
 \openout1 = `chenlong_phd.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
  ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 48.
+LaTeX Info: Redefining \selectfont on input line 56.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
 \symlegacymaths=\mathgroup10
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 48.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 48.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 48.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 48.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 48.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 48.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 48.
-LaTeX Font Info:    Redeclaring math accent \check on input line 48.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 48.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 48.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 48.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 48.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 48.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 48.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 48.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 48.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 48.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 48.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 48.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 48.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 48.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 48.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 48.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 48.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 56.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 56.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 56.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 56.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 56.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 56.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 56.
+LaTeX Font Info:    Redeclaring math accent \check on input line 56.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 56.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 56.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 56.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 56.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 56.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 56.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 56.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 56.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 56.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 56.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 56.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 56.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 56.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 56.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 56.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 56.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 48.
+(Font)              `operators' in the math version `normal' on input line 56.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(0)/m/n on input line 4
-8.
+(Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(0)/m/n on input line 5
+6.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 48.
+(Font)              `operators' in the math version `bold' on input line 56.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/m/n on input line 
-48.
+56.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/m/n on 
-input line 48.
+input line 56.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line
- 48.
+ 56.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/bx/n on input line
- 48.
+ 56.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 48.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 56.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 48.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 56.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/bx/n on
- input line 48.
+ input line 56.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> TU/TimesNewRoman(0)/bx/it on input li
-ne 48.
+ne 56.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 48.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 56.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 48.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 56.
 \AtBeginShipoutBox=\box78
-Package hyperref Info: Link coloring OFF on input line 48.
+Package hyperref Info: Link coloring OFF on input line 56.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1535,11 +1565,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count358
+\c@section@level=\count362
 )
-LaTeX Info: Redefining \ref on input line 48.
-LaTeX Info: Redefining \pageref on input line 48.
-LaTeX Info: Redefining \nameref on input line 48.
+LaTeX Info: Redefining \ref on input line 56.
+LaTeX Info: Redefining \pageref on input line 56.
+LaTeX Info: Redefining \nameref on input line 56.
 
 (./chenlong_phd.out) (./chenlong_phd.out)
 \@outlinefile=\write5
@@ -1552,13 +1582,13 @@ Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
  (./ZJUthesis.cfg
 File: ZJUthesis.cfg 2006/04/15 v1.0 ZJUthesis configuration file
-\c@algo=\count359
-\c@thm=\count360
-\c@defn=\count361
-\c@conj=\count362
-\c@exmp=\count363
-\c@rem=\count364
-\c@case=\count365
+\c@algo=\count363
+\c@thm=\count364
+\c@defn=\count365
+\c@conj=\count366
+\c@exmp=\count367
+\c@rem=\count368
+\c@case=\count369
 )
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1657,11 +1687,11 @@ Package fontspec Info: Font family 'SongtiSC(1)' created for font 'Songti SC'
 (fontspec)             Light/BI/OT"
 (fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 137.
+LaTeX Font Info:    Try loading font information for U+msa on input line 145.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 137.
+LaTeX Font Info:    Try loading font information for U+msb on input line 145.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1671,7 +1701,7 @@ File: ./chapter0/res/ZJDX.jpg Graphic file (type bmp)
 File: ./chapter0/res/QSY.jpg Graphic file (type bmp)
 <./chapter0/res/QSY.jpg>
 
-Overfull \hbox (18.9152pt too wide) in paragraph at lines 137--137
+Overfull \hbox (18.9152pt too wide) in paragraph at lines 145--145
  [] 
  []
 
@@ -1689,12 +1719,12 @@ File: ./chapter0/res/QSY.jpg Graphic file (type bmp)
 File: ./chapter0/res/QSY.jpg Graphic file (type bmp)
 <./chapter0/res/QSY.jpg>
 
-Overfull \hbox (1.64453pt too wide) in paragraph at lines 139--139
+Overfull \hbox (1.64453pt too wide) in paragraph at lines 147--147
 [][] 
  []
 
 
-Overfull \hbox (4.52316pt too wide) in paragraph at lines 139--139
+Overfull \hbox (4.52316pt too wide) in paragraph at lines 147--147
 [] 
  []
 
@@ -1788,15 +1818,13 @@ Package fontspec Info: Font family 'HeitiSC(0)' created for font 'Heiti SC'
 \tf@lof=\write7
 \openout7 = `chenlong_phd.lof'.
 
- [10] (./chenlong_phd.lot)
+ [10] (./chenlong_phd.lot [11
+
+])
 \tf@lot=\write8
 \openout8 = `chenlong_phd.lot'.
 
- [11
-
-] [12
-
-]
+ [12]
 \openout2 = `./chapter1/chap1.aux'.
 
 
@@ -1805,6 +1833,7 @@ Package fontspec Info: Font family 'HeitiSC(0)' created for font 'Heiti SC'
 File: chapter1/res/media_statistics.pdf Graphic file (type pdf)
 <use chapter1/res/media_statistics.pdf>
 [1
+
 
 
 ]
@@ -2073,22 +2102,83 @@ File: chapter6/res/node_visualization.pdf Graphic file (type pdf)
 
 ]
 7
-) [71]
+[71]
+File: chapter7/res/motivation.pdf Graphic file (type pdf)
+<use chapter7/res/motivation.pdf>
+
+Underfull \vbox (badness 5696) has occurred while \output is active []
+
+ [72]
+File: chapter7/res/V-CSS_Q-CSS.pdf Graphic file (type pdf)
+<use chapter7/res/V-CSS_Q-CSS.pdf>
+
+Underfull \vbox (badness 2495) has occurred while \output is active []
+
+ [73]
+Overfull \hbox (26.09283pt too wide) in paragraph at lines 35--36
+[]\l_fontspec_font 在 本 节，|  我 们 先 介 绍 基 本 的 自 底 向 上 和 自 顶 向 下 模 型$[]$，|  以 及 复 
+合 模 型  |（第 []\TU/TimesNewRoman(0)/m/n/12.045 7.2.1[]\l_fontspec_font 节） ；|
+ []
+
+[74]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 56.
+
+
+LaTeX Font Warning: Font shape `TU/TimesNewRoman(0)/m/sc' undefined
+(Font)              using `TU/TimesNewRoman(0)/m/n' instead on input line 58.
+
+
+Overfull \hbox (9.59193pt too wide) in paragraph at lines 78--79
+[]\l_fontspec_font 用 \TU/TimesNewRoman(0)/m/n/12.045 V-CSS \l_fontspec_font 生 成
+ 反 事 实 样 本 $\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 I[]; Q; a[]\OT1/cmr/m/n/1
+2.045 )$ \l_fontspec_font 或 用 \TU/TimesNewRoman(0)/m/n/12.045 Q-CSS \l_fontspec
+_font 生 成 反 事 实 样 本 $\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 I; Q[]; a[]\OT1/
+cmr/m/n/12.045 )$\l_fontspec_font ；| 
+ []
+
+[75] [76]
+File: chapter7/res/IQ+-.pdf Graphic file (type pdf)
+<use chapter7/res/IQ+-.pdf>
+ [77]
+File: chapter7/res/ablative_studies.pdf Graphic file (type pdf)
+<use chapter7/res/ablative_studies.pdf>
+ [78]
+Overfull \hbox (2.8374pt too wide) in paragraph at lines 222--222
+[][] 
+ []
+
+
+Overfull \hbox (2.8374pt too wide) in paragraph at lines 222--222
+[][] 
+ []
+
+[79] [80]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [81]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [82]
+File: chapter7/res/visualization.pdf Graphic file (type pdf)
+<use chapter7/res/visualization.pdf>
+)
+[83] [84]
 \openout2 = `./chapter8/chap8.aux'.
 
- (./chapter8/chap8.tex [72
-
-
-
-]
+ (./chapter8/chap8.tex
 8
-) [73] [74
+[85
+
+
+
+] [86]) [87] [88
 
 
 ] (./chenlong_phd.bbl
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [75
+ [89
 
 ]
 Underfull \hbox (badness 8000) in paragraph at lines 128--132
@@ -2099,80 +2189,96 @@ Lu, Margaret Mitchell, Dhruv Batra,
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [76]
+ [90]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [77]
+ [91]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [78]
+ [92]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [79]
+ [93]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [80]
+ [94]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [81]
+ [95]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [82]
+ [96]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [83]
+ [97]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [84]
+ [98]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [85]
+ [99]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [86]
+ [100]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [87])
-[88]
+ [101]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [102]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [103])
+[104]
 \openout2 = `./chapter8/publications.aux'.
 
  (./chapter8/publications.tex
-Overfull \hbox (3.28171pt too wide) in paragraph at lines 28--32
-[]\TU/TimesNewRoman(0)/m/n/12.045 Counterfactual Critic Multi-Agent Training fo
-r Scene Graph Generation[C]. In ICCV,
+Overfull \hbox (9.25613pt too wide) in paragraph at lines 21--26
+\TU/TimesNewRoman(0)/m/sc/12.045 Networks[C]. IEEE Conference on Computer Visio
+n and Pattern Recognition (CVPR),
  []
 
-[89
+
+Overfull \hbox (11.57263pt too wide) in paragraph at lines 45--50
+[]\TU/TimesNewRoman(0)/m/sc/12.045 Rethinking the Bottom-Up Framework for Query
+-based Video Localization[C]. Thirty-
+ []
+
+[105
 
 
-]) [90]
+]) [106]
 \openout2 = `./chapter8/thanks.aux'.
 
- (./chapter8/thanks.tex) [91
+ (./chapter8/thanks.tex [107
 
 
 
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 185.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 185.
+]) [108]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 192.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 192.
  (./chenlong_phd.aux
 (./chapter0/abstractC.aux) (./chapter0/abstractE.aux) (./chapter1/chap1.aux)
 (./chapter2/chap2.aux) (./chapter3/chap3.aux) (./chapter4/chap4.aux)
 (./chapter5/chap5.aux) (./chapter6/chap6.aux) (./chapter7/chap7.aux)
 (./chapter8/chap8.aux) (./chapter8/publications.aux) (./chapter8/thanks.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 185.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 185.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 192.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 192.
 Package rerunfilecheck Info: File `chenlong_phd.out' has not changed.
-(rerunfilecheck)             Checksum: 7A7DADA1A45FDE5DF464C63F7C226992.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 185.
+(rerunfilecheck)             Checksum: 0721FC6B6FA14C3B88B1D9391108109C.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 192.
  ) 
 Here is how much of TeX's memory you used:
- 52633 strings out of 492916
- 1228886 string characters out of 6133344
- 1456077 words of memory out of 5000000
- 55759 multiletter control sequences out of 15000+600000
+ 53729 strings out of 492916
+ 1252948 string characters out of 6133344
+ 1461515 words of memory out of 5000000
+ 56840 multiletter control sequences out of 15000+600000
  564594 words of font info for 213 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 65i,22n,96p,1037b,1307s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,22n,96p,1037b,1427s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chenlong_phd.pdf (111 pages).
+Output written on chenlong_phd.pdf (128 pages).

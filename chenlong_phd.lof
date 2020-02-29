@@ -38,6 +38,11 @@
 \contentsline {figure}{\numberline {6-10}{\ignorespaces 同一骨干网络不同特征优化层的性能对比\relax }}{67}{figure.caption.48}% 
 \contentsline {figure}{\numberline {6-11}{\ignorespaces 场景空间中的节点可视化\relax }}{69}{figure.caption.52}% 
 \addvspace {10.0pt}
+\contentsline {figure}{\numberline {7-1}{\ignorespaces VQA模型必备的视觉可解释性和文本敏感性\relax }}{72}{figure.caption.53}% 
+\contentsline {figure}{\numberline {7-2}{\ignorespaces V-CSS和Q-CSS示意图\relax }}{73}{figure.caption.54}% 
+\contentsline {figure}{\numberline {7-3}{\ignorespaces $I^+$、$I^-$、$Q^+$和$Q^-$的示例图\relax }}{77}{figure.caption.55}% 
+\contentsline {figure}{\numberline {7-4}{\ignorespaces \textbf {消融实验}：不同超参数对V-CSS和Q-CSS性能的影响\relax }}{79}{figure.caption.56}% 
+\contentsline {figure}{\numberline {7-5}{\ignorespaces 可视化结果\relax }}{83}{figure.caption.63}% 
 \addvspace {10.0pt}
 \addvspace {10.0pt}
 \addvspace {10.0pt}

@@ -13,9 +13,11 @@
 %\usepackage{ccmap} %解决生成pdf的中文复制文字后乱码问题
 %\usepackage[sectionbib]{chapterbib}
 \usepackage[chapter]{algorithm}
+\usepackage{algpseudocode}
 \floatname{algorithm}{算法}
+
 \usepackage{paralist}
-\usepackage{algorithmic}
+% \usepackage{algorithmic}
 \usepackage{tabularx}
 \usepackage{multirow}
 \usepackage{cleveref}
@@ -28,16 +30,22 @@
 
 \usepackage{caption}
 \usepackage{wrapfig}
+\usepackage{mathtools} % for \coloneqq
 
-\renewcommand{\algorithmicrepeat}{\textbf{重复}}
-\renewcommand{\algorithmicuntil}{\textbf{直到}}
-\renewcommand{\algorithmicfor}{\textbf{对于}}
-\renewcommand{\algorithmicdo}{\textbf{}}
-\renewcommand{\algorithmicend}{\textbf{结束}}
 
-\newcommand{\crefrangeconjunction}{至}
-\newcommand{\crefpairconjunction}{和}
-\newcommand{\creflastgroupconjunction}{和}
+% \renewcommand{\algorithmicrepeat}{\textbf{重复}}
+% \renewcommand{\algorithmicuntil}{\textbf{直到}}
+% \renewcommand{\algorithmicfor}{\textbf{对于}}
+% \renewcommand{\algorithmicdo}{\textbf{}}
+% \renewcommand{\algorithmicfunction}{\textbf{函数}}
+% \renewcommand{\algorithmicif}{\textbf{假如}}
+% \renewcommand{\algorithmicthen}{\textbf{则}}
+% \renewcommand{\algorithmicelse}{\textbf{否则}}
+% \renewcommand{\algorithmicend}{\textbf{结束}}
+
+% \newcommand{\crefrangeconjunction}{至}
+% \newcommand{\crefpairconjunction}{和}
+% \newcommand{\creflastgroupconjunction}{和}
 \crefname{figure}{图}{图}
 \crefname{equation}{公式}{公式}
 \crefname{table}{表}{表}
@@ -160,9 +168,6 @@
 \include{./chapter3/chap3}
 \include{./chapter4/chap4}
 \include{./chapter5/chap5}
-
-
-
 \include{./chapter6/chap6}
 \include{./chapter7/chap7}
 \include{./chapter8/chap8}

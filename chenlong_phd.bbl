@@ -220,8 +220,7 @@ Tomas Mikolov, Ilya Sutskever, Kai Chen, Greg~S Corrado, Jeff Dean.
 
 \bibitem{pennington2014glove}
 Jeffrey Pennington, Richard Socher, Christopher~D Manning.
-\newblock
-\newblock Glove: Global vectors for word representation[C].
+\newblock Glove: Global vectors for word representation[C]. Proc. EMNLP.
 \newblock 2014:1532--1543.
 
 \bibitem{lei2015predicting}
@@ -622,8 +621,7 @@ Meng Liu, Xiang Wang, Liqiang Nie, Qi~Tian, Baoquan Chen, Tat-Seng Chua.
 
 \bibitem{chen2018temporally}
 Jingyuan Chen, Xinpeng Chen, Lin Ma, Zequn Jie, Tat-Seng Chua.
-\newblock
-\newblock Temporally grounding natural sentence in video[C].
+\newblock Temporally grounding natural sentence in video[C]. Proc. EMNLP.
 \newblock 2018:162--171.
 
 \bibitem{chen2019localizing}
@@ -1190,5 +1188,155 @@ Shyamal Buch, Victor Escorcia, Chuanqi Shen, Bernard Ghanem, Juan
 \newblock Sst: Single-stream temporal action proposals[C]. Proc. {IEEE} Conf.
   CVPR.
 \newblock 2017:2911--2920.
+
+\bibitem{clark2019don}
+Christopher Clark, Mark Yatskar, Luke Zettlemoyer.
+\newblock Don't take the easy way out: Ensemble based methods for avoiding
+  known dataset biases[C]. Proc. EMNLP.
+\newblock 2019.
+
+\bibitem{goyal2017making}
+Yash Goyal, Tejas Khot, Douglas Summers-Stay, Dhruv Batra, Devi Parikh.
+\newblock Making the v in vqa matter: Elevating the role of image understanding
+  in visual question answering[C]. Proc. {IEEE} Conf. CVPR.
+\newblock 2017:6904--6913.
+
+\bibitem{agrawal2016analyzing}
+Aishwarya Agrawal, Dhruv Batra, Devi Parikh.
+\newblock Analyzing the behavior of visual question answering models[C]. Proc.
+  EMNLP.
+\newblock 2016.
+
+\bibitem{zhang2016yin}
+Peng Zhang, Yash Goyal, Douglas Summers-Stay, Dhruv Batra, Devi Parikh.
+\newblock Yin and yang: Balancing and answering binary visual questions[C].
+  Proc. {IEEE} Conf. CVPR.
+\newblock 2016:5014--5022.
+
+\bibitem{johnson2017clevr}
+Justin Johnson, Bharath Hariharan, Laurens van~der Maaten, Li~Fei-Fei,
+  C~Lawrence~Zitnick, Ross Girshick.
+\newblock Clevr: A diagnostic dataset for compositional language and elementary
+  visual reasoning[C]. Proc. {IEEE} Conf. CVPR.
+\newblock 2017:2901--2910.
+
+\bibitem{agrawal2018don}
+Aishwarya Agrawal, Dhruv Batra, Devi Parikh, Aniruddha Kembhavi.
+\newblock Don't just assume; look and answer: Overcoming priors for visual
+  question answering[C]. Proc. {IEEE} Conf. CVPR.
+\newblock 2018:4971--4980.
+
+\bibitem{andreas2016neural}
+Jacob Andreas, Marcus Rohrbach, Trevor Darrell, Dan Klein.
+\newblock Neural module networks[C]. Proc. {IEEE} Conf. CVPR.
+\newblock 2016:39--48.
+
+\bibitem{fukui2016multimodal}
+Akira Fukui, Dong~Huk Park, Daylen Yang, Anna Rohrbach, Trevor Darrell, Marcus
+  Rohrbach.
+\newblock Multimodal compact bilinear pooling for visual question answering and
+  visual grounding[C]. Proc. EMNLP.
+\newblock 2016.
+
+\bibitem{ramakrishnan2018overcoming}
+Sainandan Ramakrishnan, Aishwarya Agrawal, Stefan Lee.
+\newblock Overcoming language priors in visual question answering with
+  adversarial regularization[C]. Proc. NeurIPS.
+\newblock 2018:1541--1551.
+
+\bibitem{grand2019adversarial}
+Gabriel Grand, Yonatan Belinkov.
+\newblock Adversarial regularization for visual question answering: Strengths,
+  shortcomings, and side effects[C]. Proc. ACL Workshop.
+\newblock 2019.
+
+\bibitem{belinkov2019don}
+Yonatan Belinkov, Adam Poliak, Stuart~M Shieber, Benjamin Van~Durme,
+  Alexander~M Rush.
+\newblock Don't take the premise for granted: Mitigating artifacts in natural
+  language inference[C]. Proc. ACL.
+\newblock 2019.
+
+\bibitem{cadene2019rubi}
+Remi Cadene, Corentin Dancette, Matthieu Cord, Devi Parikh, et~al.
+\newblock Rubi: Reducing unimodal biases for visual question answering[C].
+  Proc. NeurIPS.
+\newblock 2019:839--850.
+
+\bibitem{mahabadi2019simple}
+Rabeeh~Karimi Mahabadi, James Henderson.
+\newblock simple but effective techniques to reduce biases[C]. arXiv.
+\newblock 2019.
+
+\bibitem{ross2017right}
+Andrew~Slavin Ross, Michael~C Hughes, Finale Doshi-Velez.
+\newblock Right for the right reasons: Training differentiable models by
+  constraining their explanations[C]. Proc. IJCAI.
+\newblock 2017.
+
+\bibitem{wu2019self}
+Jialin Wu, Raymond Mooney.
+\newblock Self-critical reasoning for robust visual question answering[C].
+  Proc. NeurIPS.
+\newblock 2019:8601--8611.
+
+\bibitem{honnibal2017spacy}
+Matthew Honnibal, Ines Montani.
+\newblock spacy 2: Natural language understanding with bloom embeddings,
+  convolutional neural networks and incremental parsing[J].
+\newblock To appear, 2017, 7(1).
+
+\bibitem{jain2019attention}
+Sarthak Jain, Byron~C Wallace.
+\newblock Attention is not explanation[C]. Proc. NAACL.
+\newblock 2019.
+
+\bibitem{selvaraju2019taking}
+Ramprasaath~R Selvaraju, Stefan Lee, Yilin Shen, Hongxia Jin, Shalini Ghosh,
+  Larry Heck, Dhruv Batra, Devi Parikh.
+\newblock Taking a hint: Leveraging explanations to make vision and language
+  models more grounded[C]. Proc. {IEEE} ICCV.
+\newblock 2019:2591--2600.
+
+\bibitem{selvaraju2017grad}
+Ramprasaath~R Selvaraju, Michael Cogswell, Abhishek Das, Ramakrishna Vedantam,
+  Devi Parikh, Dhruv Batra.
+\newblock Grad-cam: Visual explanations from deep networks via gradient-based
+  localization[C]. Proc. {IEEE} ICCV.
+\newblock 2017:618--626.
+
+\bibitem{cadene2019murel}
+Remi Cadene, Hedi Ben-Younes, Matthieu Cord, Nicolas Thome.
+\newblock Murel: Multimodal relational reasoning for visual question
+  answering[C]. Proc. {IEEE} Conf. CVPR.
+\newblock 2019:1989--1998.
+
+\bibitem{malinowski2018learning}
+Mateusz Malinowski, Carl Doersch, Adam Santoro, Peter Battaglia.
+\newblock Learning visual question answering by bootstrapping hard
+  attention[C]. Proc. ECCV.
+\newblock 2018:3--20.
+
+\bibitem{li2019relation}
+Linjie Li, Zhe Gan, Yu~Cheng, Jingjing Liu.
+\newblock Relation-aware graph attention network for visual question
+  answering[C]. Proc. {IEEE} ICCV.
+\newblock 2019:10313--10322.
+
+\bibitem{hudson2019learning}
+Drew Hudson, Christopher~D Manning.
+\newblock Learning by abstraction: The neural state machine[C]. Proc. NeurIPS.
+\newblock 2019:5901--5914.
+
+\bibitem{ben2019block}
+Hedi Ben-Younes, Remi Cadene, Nicolas Thome, Matthieu Cord.
+\newblock Block: Bilinear superdiagonal fusion for visual question answering
+  and visual relationship detection[C]. Proc. AAAI.
+\newblock volume~33. 2019:8102--8109.
+
+\bibitem{kim2018bilinear}
+Jin-Hwa Kim, Jaehyun Jun, Byoung-Tak Zhang.
+\newblock Bilinear attention networks[C]. Proc. NeurIPS.
+\newblock 2018:1564--1574.
 
 \end{thebibliography}

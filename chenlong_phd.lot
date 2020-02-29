@@ -23,6 +23,12 @@
 \contentsline {table}{\numberline {6-4}{\ignorespaces 基于视频查询的视频片段检索任务中模型A、B、C、D的性能对比\relax }}{68}{table.caption.50}% 
 \contentsline {table}{\numberline {6-5}{\ignorespaces 密集型头网络和稀疏型头网络对比\relax }}{68}{table.caption.51}% 
 \addvspace {10.0pt}
+\contentsline {table}{\numberline {7-1}{\ignorespaces CSS机制对不同VQA模型的提升作用\relax }}{80}{table.caption.57}% 
+\contentsline {table}{\numberline {7-2}{\ignorespaces 不同模型在VQA-CP v2和VQA v2数据集上的性能对比\relax }}{81}{table.caption.58}% 
+\contentsline {table}{\numberline {7-3}{\ignorespaces 不同模型在VQA-CP v1数据集上的性能对比\relax }}{81}{table.caption.59}% 
+\contentsline {table}{\numberline {7-4}{\ignorespaces VQA-CP v2测试集的准确率\relax }}{82}{table.caption.60}% 
+\contentsline {table}{\numberline {7-5}{\ignorespaces VQA-CP v2测试集的$\mathcal {AI}$分数\relax }}{82}{table.caption.61}% 
+\contentsline {table}{\numberline {7-6}{\ignorespaces 左：VQA-CP-Rephrasing数据集中的$CS(k)$；右：VQA-CP v2测试集中$\mathcal {CI}$分数\relax }}{82}{table.caption.62}% 
 \addvspace {10.0pt}
 \addvspace {10.0pt}
 \addvspace {10.0pt}

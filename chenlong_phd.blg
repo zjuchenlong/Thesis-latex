@@ -14,18 +14,14 @@ A level-1 auxiliary file: ./chapter8/chap8.aux
 The style file: ZJUthesis.bst
 A level-1 auxiliary file: ./chapter8/publications.aux
 A level-1 auxiliary file: ./chapter8/thanks.aux
-Reallocated field_info (elt_size=4) to 11965 items from 5000.
+Reallocated field_info (elt_size=4) to 12840 items from 5000.
 Database file #1: ZJUthesis.bib
 Warning--string name "tpmai" is undefined
---line 105 of file ZJUthesis.bib
-Warning--string name "emnlp" is undefined
---line 431 of file ZJUthesis.bib
-I was expecting a `,' or a `}'---line 1661 of file ZJUthesis.bib
+--line 141 of file ZJUthesis.bib
+I was expecting a `,' or a `}'---line 1945 of file ZJUthesis.bib
  :   pages={1378--1386}
  :                     ，
 I'm skipping whatever remains of this entry
-Warning--string name "emnlp" is undefined
---line 2353 of file ZJUthesis.bib
 Warning--empty pages in xie2019self
 Warning--empty pages in malinowski2014towards
 Warning--empty pages in norouzi2014zero
@@ -55,45 +51,53 @@ Warning--empty pages in yu2018qanet
 Warning--empty pages in kipf2017semi
 Warning--empty pages in kingma2015adam
 Warning--can't use both volume and number fields in wu2018multi
-You've used 199 entries,
+Warning--empty pages in clark2019don
+Warning--empty pages in agrawal2016analyzing
+Warning--empty pages in fukui2016multimodal
+Warning--empty pages in grand2019adversarial
+Warning--empty pages in belinkov2019don
+Warning--empty pages in mahabadi2019simple
+Warning--empty pages in ross2017right
+Warning--empty pages in jain2019attention
+You've used 224 entries,
             2586 wiz_defined-function locations,
-            1441 strings with 37795 characters,
-and the built_in function-call counts, 94850 in all, are:
-= -- 6854
-> -- 2821
-< -- 6
-+ -- 1073
-- -- 874
-* -- 4396
-:= -- 10200
-add.period$ -- 605
-call.type$ -- 199
-change.case$ -- 198
+            1539 strings with 41998 characters,
+and the built_in function-call counts, 105647 in all, are:
+= -- 7597
+> -- 3137
+< -- 7
++ -- 1195
+- -- 971
+* -- 4880
+:= -- 11360
+add.period$ -- 679
+call.type$ -- 224
+change.case$ -- 223
 chr.to.int$ -- 0
-cite$ -- 228
-duplicate$ -- 9263
-empty$ -- 8996
-format.name$ -- 1070
-if$ -- 21625
+cite$ -- 261
+duplicate$ -- 10362
+empty$ -- 10047
+format.name$ -- 1192
+if$ -- 24070
 int.to.chr$ -- 0
-int.to.str$ -- 199
-missing$ -- 2443
-newline$ -- 1003
-num.names$ -- 199
-pop$ -- 4135
+int.to.str$ -- 224
+missing$ -- 2735
+newline$ -- 1126
+num.names$ -- 224
+pop$ -- 4658
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 3472
+skip$ -- 3867
 stack$ -- 0
-substring$ -- 6068
-swap$ -- 6134
-text.length$ -- 6
+substring$ -- 6663
+swap$ -- 6825
+text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 29
-while$ -- 695
-width$ -- 202
-write$ -- 1856
+warning$ -- 37
+while$ -- 768
+width$ -- 227
+write$ -- 2080
 (There was 1 error message)

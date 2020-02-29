@@ -90,13 +90,19 @@
 \contentsline {subsection}{\numberline {6.3.5}视频片段检索性能分析}{66}{subsection.6.3.5}% 
 \contentsline {section}{\numberline {6.4}本章小结}{69}{section.6.4}% 
 \contentsline {chapter}{\numberline {7\hspace {.3em}}基于反事实样本生成的图像视觉问答方法}{71}{chapter.7}% 
-\contentsline {section}{\numberline {7.1}引言}{71}{section.7.1}% 
-\contentsline {section}{\numberline {7.2}反事实样本生成}{71}{section.7.2}% 
-\contentsline {section}{\numberline {7.3}实验设置与性能对比}{71}{section.7.3}% 
-\contentsline {section}{\numberline {7.4}本章小结}{71}{section.7.4}% 
-\contentsline {chapter}{\numberline {8\hspace {.3em}}总结和展望}{73}{chapter.8}% 
-\contentsline {section}{\numberline {8.1}本文工作总结}{73}{section.8.1}% 
-\contentsline {section}{\numberline {8.2}未来研究展望}{73}{section.8.2}% 
-\contentsline {chapter}{参考文献}{75}{chapter*.53}% 
-\contentsline {chapter}{作者简历及在学期间所取得的科研成果}{89}{chapter*.54}% 
-\contentsline {chapter}{致谢}{91}{chapter*.57}% 
+\contentsline {section}{\numberline {7.1}问题描述}{71}{section.7.1}% 
+\contentsline {section}{\numberline {7.2}反事实样本生成}{74}{section.7.2}% 
+\contentsline {subsection}{\numberline {7.2.1}引言}{74}{subsection.7.2.1}% 
+\contentsline {subsection}{\numberline {7.2.2}反事实样本生成}{75}{subsection.7.2.2}% 
+\contentsline {section}{\numberline {7.3}实验设置与性能对比}{78}{section.7.3}% 
+\contentsline {subsection}{\numberline {7.3.1}CSS对视觉问答的性能分析}{78}{subsection.7.3.1}% 
+\contentsline {subsection}{\numberline {7.3.2}视觉问题方法性能对比}{79}{subsection.7.3.2}% 
+\contentsline {subsection}{\numberline {7.3.3}CSS对视觉可解释性的帮助}{82}{subsection.7.3.3}% 
+\contentsline {subsection}{\numberline {7.3.4}CSS对文本敏感性的帮助}{83}{subsection.7.3.4}% 
+\contentsline {section}{\numberline {7.4}本章小结}{83}{section.7.4}% 
+\contentsline {chapter}{\numberline {8\hspace {.3em}}总结和展望}{85}{chapter.8}% 
+\contentsline {section}{\numberline {8.1}本文工作总结}{85}{section.8.1}% 
+\contentsline {section}{\numberline {8.2}未来研究展望}{86}{section.8.2}% 
+\contentsline {chapter}{参考文献}{89}{chapter*.64}% 
+\contentsline {chapter}{作者简历及在学期间所取得的科研成果}{105}{chapter*.65}% 
+\contentsline {chapter}{致谢}{107}{chapter*.68}% 
