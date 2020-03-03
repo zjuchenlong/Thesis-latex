@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.12.18)  29 FEB 2020 15:58
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.12.18)  2 MAR 2020 22:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -886,14 +886,14 @@ Package fontspec Info: Font family 'TimesNewRoman(0)' created for font 'Times
 (fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
 
 LaTeX Info: Redefining \rmfamily on input line 117.
-LaTeX Info: Redefining \citenum on input line 666.
+LaTeX Info: Redefining \citenum on input line 671.
 \@indexfile=\write3
 \openout3 = `chenlong_phd.idx'.
 
 
 Writing index file chenlong_phd.idx
 )
-Package hyperref Info: Option `colorlinks' set `false' on input line 12.
+Package hyperref Info: Option `colorlinks' set `false' on input line 11.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/algorithms/algorithm.sty
 Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
@@ -1471,93 +1471,93 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 (./chapter8/thanks.aux))
 \openout1 = `chenlong_phd.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 55.
  ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 56.
+LaTeX Info: Redefining \selectfont on input line 55.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
 \symlegacymaths=\mathgroup10
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 56.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 56.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 56.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 56.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 56.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 56.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 56.
-LaTeX Font Info:    Redeclaring math accent \check on input line 56.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 56.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 56.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 56.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 56.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 55.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 55.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 55.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 55.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 55.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 55.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 55.
+LaTeX Font Info:    Redeclaring math accent \check on input line 55.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 55.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 55.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 55.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 55.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 55.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 55.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 55.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 55.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 55.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 55.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 55.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 55.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 55.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 55.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 55.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 55.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 56.
+(Font)              `operators' in the math version `normal' on input line 55.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(0)/m/n on input line 5
-6.
+5.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 56.
+(Font)              `operators' in the math version `bold' on input line 55.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/m/n on input line 
-56.
+55.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/m/n on 
-input line 56.
+input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line
- 56.
+ 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/bx/n on input line
- 56.
+ 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 56.
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 56.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 55.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/bx/n on
- input line 56.
+ input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> TU/TimesNewRoman(0)/bx/it on input li
-ne 56.
+ne 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 56.
+(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 55.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 56.
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 55.
 \AtBeginShipoutBox=\box78
-Package hyperref Info: Link coloring OFF on input line 56.
+Package hyperref Info: Link coloring OFF on input line 55.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1567,9 +1567,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count362
 )
-LaTeX Info: Redefining \ref on input line 56.
-LaTeX Info: Redefining \pageref on input line 56.
-LaTeX Info: Redefining \nameref on input line 56.
+LaTeX Info: Redefining \ref on input line 55.
+LaTeX Info: Redefining \pageref on input line 55.
+LaTeX Info: Redefining \nameref on input line 55.
 
 (./chenlong_phd.out) (./chenlong_phd.out)
 \@outlinefile=\write5
@@ -1687,11 +1687,11 @@ Package fontspec Info: Font family 'SongtiSC(1)' created for font 'Songti SC'
 (fontspec)             Light/BI/OT"
 (fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 145.
+LaTeX Font Info:    Try loading font information for U+msa on input line 144.
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 145.
+LaTeX Font Info:    Try loading font information for U+msb on input line 144.
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1701,7 +1701,7 @@ File: ./chapter0/res/ZJDX.jpg Graphic file (type bmp)
 File: ./chapter0/res/QSY.jpg Graphic file (type bmp)
 <./chapter0/res/QSY.jpg>
 
-Overfull \hbox (18.9152pt too wide) in paragraph at lines 145--145
+Overfull \hbox (18.9152pt too wide) in paragraph at lines 144--144
  [] 
  []
 
@@ -1719,12 +1719,12 @@ File: ./chapter0/res/QSY.jpg Graphic file (type bmp)
 File: ./chapter0/res/QSY.jpg Graphic file (type bmp)
 <./chapter0/res/QSY.jpg>
 
-Overfull \hbox (1.64453pt too wide) in paragraph at lines 147--147
+Overfull \hbox (1.64453pt too wide) in paragraph at lines 146--146
 [][] 
  []
 
 
-Overfull \hbox (4.52316pt too wide) in paragraph at lines 147--147
+Overfull \hbox (4.52316pt too wide) in paragraph at lines 146--146
 [] 
  []
 
@@ -1765,7 +1765,10 @@ Package fontspec Info: Font family 'KaitiSC(0)' created for font 'Kaiti SC'
 ]
 \openout2 = `./chapter0/abstractC.aux'.
 
- (./chapter0/abstractC.tex
+ (./chapter0/abstractC.tex [1
+
+
+]
 
 Package fontspec Warning: Font "Heiti SC" does not contain requested Script
 (fontspec)                "CJK".
@@ -1794,25 +1797,22 @@ Package fontspec Info: Font family 'HeitiSC(0)' created for font 'Heiti SC'
 (fontspec)             SC/BI/OT"
 (fontspec)             - 'bold italic small caps'  (bx/itsc) with NFSS spec.: 
 
-) [1
-
-
-]
+) [2]
 \openout2 = `./chapter0/abstractE.aux'.
 
- (./chapter0/abstractE.tex [2
+ (./chapter0/abstractE.tex) [3
 
 
 
-]) [3] [4
+] [4
 
 
-] (./chenlong_phd.toc [5] [6]
-[7])
+] (./chenlong_phd.toc [5] [6] [7])
 \tf@toc=\write6
 \openout6 = `chenlong_phd.toc'.
 
- [8] (./chenlong_phd.lof [9
+
+[8] (./chenlong_phd.lof [9
 
 ])
 \tf@lof=\write7
@@ -1860,16 +1860,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-]
-Underfull \vbox (badness 3907) has occurred while \output is active []
-
- [10]
-[11]) [12]
+] [10] [11] [12] [13] [14] [15]) [16]
 \openout2 = `./chapter3/chap3.aux'.
 
  (./chapter3/chap3.tex
 3
-[13
+[17
 
 
 
@@ -1882,47 +1878,47 @@ File: chapter3/res/reconstruction_visualization.pdf Graphic file (type pdf)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14]
-Overfull \hbox (17.96944pt too wide) in paragraph at lines 34--35
+[18]
+Overfull \hbox (18.26631pt too wide) in paragraph at lines 34--35
 []\TU/STFangsong(0)/m/n/12.045 本 文 在 四 个 通 用 的 零 样 本 分 类 数 据 集 中 对 模 型 \TU/Time
 sNewRoman(0)/m/n/12.045 SP-AEN \TU/STFangsong(0)/m/n/12.045 的 效 果 进 行 验 证：| \TU
 /TimesNewRoman(0)/m/n/12.045 CUB$[]$\TU/STFangsong(0)/m/n/12.045 ，|
  []
 
-[15]
+[19]
 File: chapter3/res/sp_aen.pdf Graphic file (type pdf)
 <use chapter3/res/sp_aen.pdf>
- [16]
+ [20]
 Underfull \vbox (badness 1888) has occurred while \output is active []
 
- [17]
-[18] [19]
+ [21]
+[22] [23]
 Overfull \hbox (3.28566pt too wide) in paragraph at lines 175--176
  [][] 
  []
 
 File: chapter3/res/conflict.pdf Graphic file (type pdf)
 <use chapter3/res/conflict.pdf>
-[20]
+[24]
 File: chapter3/res/conflict_visualization.pdf Graphic file (type pdf)
 <use chapter3/res/conflict_visualization.pdf>
 
 Underfull \vbox (badness 6157) has occurred while \output is active []
 
- [21]
-[22]
+ [25]
+[26]
 File: chapter3/res/ausuc.pdf Graphic file (type pdf)
 <use chapter3/res/ausuc.pdf>
-) [23]
+) [27]
 \openout2 = `./chapter4/chap4.aux'.
 
- (./chapter4/chap4.tex [24
+ (./chapter4/chap4.tex [28
 
 
 
 ]
 4
-[25]
+[29]
 File: chapter4/res/sgg.pdf Graphic file (type pdf)
 <use chapter4/res/sgg.pdf>
 
@@ -1932,21 +1928,21 @@ Package fontspec Warning: Font "STFangsong" does not contain requested Script
 
 File: chapter4/res/motivation.pdf Graphic file (type pdf)
 <use chapter4/res/motivation.pdf>
-[26]
+[30]
 Underfull \vbox (badness 5077) has occurred while \output is active []
 
- [27]
+ [31]
 File: chapter4/res/architecture.pdf Graphic file (type pdf)
 <use chapter4/res/architecture.pdf>
 
-[28]
+[32]
 File: chapter4/res/communication.pdf Graphic file (type pdf)
 <use chapter4/res/communication.pdf>
- [29]
+ [33]
 Underfull \vbox (badness 2393) has occurred while \output is active []
 
- [30]
-[31] [32]
+ [34]
+[35] [36]
 File: chapter4/res/local_sensitive.pdf Graphic file (type pdf)
 <use chapter4/res/local_sensitive.pdf>
 File: chapter4/res/baseline.pdf Graphic file (type pdf)
@@ -1964,10 +1960,10 @@ L/cmm/m/it/12.045 i$ \l_fontspec_font 个 智 能 体 动 作 的 反 事 实 �
 
  []
 
-[33] [34] [35] [36]
+[37] [38] [39] [40]
 Underfull \vbox (badness 1953) has occurred while \output is active []
 
- [37]
+ [41]
 Overfull \hbox (3.88133pt too wide) in paragraph at lines 352--352
 [][] 
  []
@@ -1980,16 +1976,16 @@ Overfull \hbox (1.78683pt too wide) in paragraph at lines 352--352
 
 Underfull \vbox (badness 2941) has occurred while \output is active []
 
- [38]
+ [42]
 File: chapter4/res/visualization.pdf Graphic file (type pdf)
 <use chapter4/res/visualization.pdf>
 
-[39]) [40]
+[43]) [44]
 \openout2 = `./chapter5/chap5.aux'.
 
  (./chapter5/chap5.tex
 5
-[41
+[45
 
 
 
@@ -1999,53 +1995,53 @@ File: chapter5/res/motivation.pdf Graphic file (type pdf)
 
 Underfull \vbox (badness 4899) has occurred while \output is active []
 
- [42]
-[43]
+ [46]
+[47]
 File: chapter5/res/architecture.pdf Graphic file (type pdf)
 <use chapter5/res/architecture.pdf>
- [44] [45] [46] [47] [48] [49]
+ [48] [49] [50] [51] [52] [53]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [50]
-[51]
+ [54]
+[55]
 File: chapter5/res/visualization.pdf Graphic file (type pdf)
 <use chapter5/res/visualization.pdf>
-) [52] [53]
+) [56] [57]
 \openout2 = `./chapter6/chap6.aux'.
 
- (./chapter6/chap6.tex [54
+ (./chapter6/chap6.tex [58
 
 
 
 ]
 6
-[55]
+[59]
 File: chapter6/res/qbvl.pdf Graphic file (type pdf)
 <use chapter6/res/qbvl.pdf>
- [56]
+ [60]
 File: chapter6/res/sparse_bu.pdf Graphic file (type pdf)
 <use chapter6/res/sparse_bu.pdf>
- [57]
+ [61]
 File: chapter6/res/headnetwork_motivation.pdf Graphic file (type pdf)
 <use chapter6/res/headnetwork_motivation.pdf>
 
 Underfull \vbox (badness 6016) has occurred while \output is active []
 
- [58]
+ [62]
 File: chapter6/res/dense_bu.pdf Graphic file (type pdf)
 <use chapter6/res/dense_bu.pdf>
 File: chapter6/res/qanet.pdf Graphic file (type pdf)
 <use chapter6/res/qanet.pdf>
 
-[59] [60]
+[63] [64]
 File: chapter6/res/graph_fpn.pdf Graphic file (type pdf)
 <use chapter6/res/graph_fpn.pdf>
 File: chapter6/res/head_network.pdf Graphic file (type pdf)
 <use chapter6/res/head_network.pdf>
- [61]
+ [65]
 File: chapter6/res/temporal_pooling.pdf Graphic file (type pdf)
 <use chapter6/res/temporal_pooling.pdf>
- [62] [63]
+ [66] [67]
 Overfull \hbox (5.39864pt too wide) in paragraph at lines 193--194
 \TU/TimesNewRoman(0)/bx/n/12.045 R@N, IoU@$\OML/cmm/m/it/12.045 ^^R$\l_fontspec
 _font ：|  在 测 试 集 中，|  每 个 样 本 预 测 分 数 最 高 的 \TU/TimesNewRoman(0)/m/n/12.045 n 
@@ -2070,13 +2066,13 @@ Overfull \hbox (2.47276pt too wide) in paragraph at lines 244--244
 [][] 
  []
 
-[64]
+[68]
 File: chapter6/res/ablative_backbone.pdf Graphic file (type pdf)
 <use chapter6/res/ablative_backbone.pdf>
- [65]
+ [69]
 Underfull \vbox (badness 2903) has occurred while \output is active []
 
- [66]
+ [70]
 Overfull \hbox (2.46689pt too wide) in paragraph at lines 371--371
 [][] 
  []
@@ -2089,38 +2085,38 @@ Overfull \hbox (2.46689pt too wide) in paragraph at lines 371--371
 
 Underfull \vbox (badness 4543) has occurred while \output is active []
 
- [67]
-[68]
+ [71]
+[72]
 File: chapter6/res/node_visualization.pdf Graphic file (type pdf)
 <use chapter6/res/node_visualization.pdf>
-) [69]
+) [73]
 \openout2 = `./chapter7/chap7.aux'.
 
- (./chapter7/chap7.tex [70
+ (./chapter7/chap7.tex [74
 
 
 
 ]
 7
-[71]
+[75]
 File: chapter7/res/motivation.pdf Graphic file (type pdf)
 <use chapter7/res/motivation.pdf>
 
-Underfull \vbox (badness 5696) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [72]
+ [76]
 File: chapter7/res/V-CSS_Q-CSS.pdf Graphic file (type pdf)
 <use chapter7/res/V-CSS_Q-CSS.pdf>
 
 Underfull \vbox (badness 2495) has occurred while \output is active []
 
- [73]
+ [77]
 Overfull \hbox (26.09283pt too wide) in paragraph at lines 35--36
 []\l_fontspec_font 在 本 节，|  我 们 先 介 绍 基 本 的 自 底 向 上 和 自 顶 向 下 模 型$[]$，|  以 及 复 
 合 模 型  |（第 []\TU/TimesNewRoman(0)/m/n/12.045 7.2.1[]\l_fontspec_font 节） ；|
  []
 
-[74]
+[78]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 56.
 
@@ -2137,48 +2133,48 @@ _font 生 成 反 事 实 样 本 $\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 I; 
 cmr/m/n/12.045 )$\l_fontspec_font ；| 
  []
 
-[75] [76]
+[79] [80]
 File: chapter7/res/IQ+-.pdf Graphic file (type pdf)
 <use chapter7/res/IQ+-.pdf>
- [77]
+ [81]
 File: chapter7/res/ablative_studies.pdf Graphic file (type pdf)
 <use chapter7/res/ablative_studies.pdf>
- [78]
-Overfull \hbox (2.8374pt too wide) in paragraph at lines 222--222
-[][] 
- []
-
-
-Overfull \hbox (2.8374pt too wide) in paragraph at lines 222--222
-[][] 
- []
-
-[79] [80]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [81]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [82]
+Overfull \hbox (2.8374pt too wide) in paragraph at lines 222--222
+[][] 
+ []
+
+
+Overfull \hbox (2.8374pt too wide) in paragraph at lines 222--222
+[][] 
+ []
+
+[83] [84]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [85]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [86]
 File: chapter7/res/visualization.pdf Graphic file (type pdf)
 <use chapter7/res/visualization.pdf>
 )
-[83] [84]
+[87] [88]
 \openout2 = `./chapter8/chap8.aux'.
 
  (./chapter8/chap8.tex
 8
-[85
+[89
 
 
 
-] [86]) [87] [88
+] [90]) [91] [92
 
 
 ] (./chenlong_phd.bbl
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [89
+ [93
 
 ]
 Underfull \hbox (badness 8000) in paragraph at lines 128--132
@@ -2187,18 +2183,6 @@ Lu, Margaret Mitchell, Dhruv Batra,
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [90]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [91]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [92]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [93]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [94]
@@ -2220,6 +2204,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [100]
+
+LaTeX Warning: Command \^ invalid in math mode on input line 787.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [101]
@@ -2228,57 +2216,75 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [102]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [103])
-[104]
+ [103]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [104]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [105]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [106]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [107]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [108]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [109])
+[110]
 \openout2 = `./chapter8/publications.aux'.
 
  (./chapter8/publications.tex
-Overfull \hbox (9.25613pt too wide) in paragraph at lines 21--26
+Overfull \hbox (9.25613pt too wide) in paragraph at lines 22--27
 \TU/TimesNewRoman(0)/m/sc/12.045 Networks[C]. IEEE Conference on Computer Visio
 n and Pattern Recognition (CVPR),
  []
 
 
-Overfull \hbox (11.57263pt too wide) in paragraph at lines 45--50
+Overfull \hbox (11.57263pt too wide) in paragraph at lines 46--51
 []\TU/TimesNewRoman(0)/m/sc/12.045 Rethinking the Bottom-Up Framework for Query
 -based Video Localization[C]. Thirty-
  []
 
-[105
+[111
 
 
-]) [106]
+]) [112]
 \openout2 = `./chapter8/thanks.aux'.
 
- (./chapter8/thanks.tex [107
+ (./chapter8/thanks.tex [113
 
 
 
-]) [108]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 192.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 192.
+]) [114]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 188.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 188.
  (./chenlong_phd.aux
 (./chapter0/abstractC.aux) (./chapter0/abstractE.aux) (./chapter1/chap1.aux)
 (./chapter2/chap2.aux) (./chapter3/chap3.aux) (./chapter4/chap4.aux)
 (./chapter5/chap5.aux) (./chapter6/chap6.aux) (./chapter7/chap7.aux)
 (./chapter8/chap8.aux) (./chapter8/publications.aux) (./chapter8/thanks.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 192.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 192.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 188.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 188.
 Package rerunfilecheck Info: File `chenlong_phd.out' has not changed.
-(rerunfilecheck)             Checksum: 0721FC6B6FA14C3B88B1D9391108109C.
+(rerunfilecheck)             Checksum: C87C2A26B54386F356C7CF3EF5B23795.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 192.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 188.
  ) 
 Here is how much of TeX's memory you used:
- 53729 strings out of 492916
- 1252948 string characters out of 6133344
+ 53921 strings out of 492916
+ 1257630 string characters out of 6133344
  1461515 words of memory out of 5000000
- 56840 multiletter control sequences out of 15000+600000
- 564594 words of font info for 213 fonts, out of 8000000 for 9000
+ 57031 multiletter control sequences out of 15000+600000
+ 564602 words of font info for 214 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 65i,22n,96p,1037b,1427s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,22n,96p,1332b,1624s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chenlong_phd.pdf (128 pages).
+Output written on chenlong_phd.pdf (134 pages).

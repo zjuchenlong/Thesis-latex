@@ -605,6 +605,11 @@ includehead, includefoot]{geometry}
 \renewcommand{\listfigurename}{插\texorpdfstring{\ZJUspace}{}图}			% 重命名插图目录名。
 \renewcommand{\listtablename}{表\texorpdfstring{\ZJUspace}{}格}				% 重命名表目录名。
 
+% \renewcommand{\contentsname}{目录} % 重命名章节目录名。
+% \renewcommand{\listfigurename}{图目录} %重命名插图目录名。
+% \renewcommand{\listtablename}{表目录}% 重命名表目录名。
+
+
 % 生成目录（论文中称目次）
 \newcommand\ZJUcontents{%
 	% 修改目录的格式

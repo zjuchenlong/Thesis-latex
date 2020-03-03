@@ -1,6 +1,6 @@
 \chapter{相关研究综述}
 
-本章将就零样本物体分类、图像场景图生成、图像描述生成、视频片段检索和图像视觉问答几方面的相关工作和本文的关系进行综述。
+本章将就零样本物体分类、图像场景图生成、图像描述语句生成、视频片段检索和图像视觉问答几方面的相关工作和本文的关系进行综述。
 
 本文提出的算法和其相关工作的具体细节和对比将在之后各章节中展示。
 
@@ -8,28 +8,37 @@
 \section{零样本物体分类}
 
 \subsection{零样本学习}
-零样本物体识别的主流方法是借助类别属性对物体进行零样本学习~\cite{farhadi2009describing,lampert2009learning,romera2015embarrassingly,norouzi2014zero,demirel2017attributes2classname,jiang2017learning}：这类方法通常将类别属性看成是一个共同语义空间的中间特征，从而实现对不同类别之间的语义迁移。为了扩大零样本迁移能力，目前的大多数方法都是基于嵌入映射的~\cite{frome2013devise,akata2015label,akata2015evaluation,romera2015embarrassingly,xian2016latent,socher2013zero,kodirov2017semantic,li2017zero}。它们通过将图像特征从视觉空间直接映射到语义空间，然后在语义空间与类别属性的嵌入向量进行相似度对比。语义空间中的嵌入向量既可以来自于单词~\cite{mikolov2013distributed,pennington2014glove}，也可以来自于语句~\cite{lei2015predicting,elhoseiny2013write}。我们提出的零样本算法模型算法模型SP-AEN也是一种基于嵌入映射的方法。然而，据我们了解，我们是第一个零样本分类算法，可以用语义空间的嵌入向量来重建原始图像。另外，与零样本学习非常接近的两个任务是少样本学习~\cite{hariharan2017low}和领域自适应~\cite{motiian2017unified,panareda2017open}。这两个任务在训练阶段都能有少量测试类别的图像，相反，零样本学习在训练阶段没有任何测试类别的信息。
+零样本物体分类，或零样本学习，通过利用所有类别（即：已见类别和未见类别）在属性空间的关联性~\cite{farhadi2009describing,lampert2009learning,romera2015embarrassingly,norouzi2014zero,demirel2017attributes2classname,jiang2017learning}，将类别属性看成是一个共同语义空间的中间特征，实现知识从已见类别到未见类别之间的迁移。早期的零样本学习模型通常为二阶段模型~\cite{lampert2013attribute,norouzi2014zero,al2016recovering,jayaraman2014zero,kankuekul2012online}。在第一阶段，模型预测出图像包含的属性特征；在第二阶段，模型根据预测的属性特征推测出物体的类别。
+
+为了扩大零样本迁移能力，目前的大多数方法都是基于嵌入映射的~\cite{palatucci2009zero,frome2013devise,akata2015label,akata2015evaluation,romera2015embarrassingly,xian2016latent,socher2013zero,kodirov2017semantic,li2017zero}：通过学习图像的视觉特征向量和类别的语义嵌入向量之间的映射函数，实现零样本分类。最早的基于嵌入映射的模型是SOC~\cite{palatucci2009zero}。SOC通过将图像特征从视觉空间直接映射到语义空间，然后在语义空间与类别属性的嵌入向量进行相似度对比。之后，ALE~\cite{akata2015label}和DeViSE~\cite{frome2013devise}开始提出使用排序损失函数（ranking loss）作为优化目标。除了将视觉图像特征线性地映射到语义空间，LatEm~\cite{xian2016latent}开始使用非线性的映射函数。CMT~\cite{socher2013zero}使用两层神经网络的将视觉图像特征映射到语义空间中。为了进一步提升图像视觉特征的表达能力，Ba等人~\cite{lei2015predicting}提出要让图像编码网络和映射网络一起端到端训练。同样地，Zhang等人~\cite{zhang2017learning}认为图像的视觉特征空间比类别的语义空间具有更强的区分能力，通过将类别属性的嵌入向量映射到视觉空间中，然后通过端到端训练可以进一步提升零样本分类效果。与此同时，部分模型开始提出将图像的视觉特征和类别的语义特征都映射到其他的共同空间。例如：SSE~\cite{zhang2015zero}直接将已见类别的线性组合作为共同空间。JLSE~\cite{zhang2016zero}分别讲图像的视觉特征和类别的语义特征分别映射到两个单独的子空间，然后计算两个子空间的相似度。
+
+类别在语义空间中的嵌入向量主要来自于属性标注，但是由于属性信息需要大量的人工标注。一些工作开始研究使用其他的辅助信息来减少模型需要的属性标注。如SJE~\cite{akata2015evaluation}使用了四种嵌入向量：属性、word2vec~\cite{mikolov2013distributed}、GloVe~\cite{pennington2014glove}和wordnet~\cite{miller1995wordnet}。另外，嵌入向量不仅可以来自于单词，也可以来自于图像的描述语句~\cite{reed2016learning,lei2015predicting,elhoseiny2013write}。
 
 
-\subsection{域偏移问题}
-语义损失在其他的文献中也常常被称为域偏移问题~\cite{fu2015transductive,saenko2010adapting}。
-域偏移问题是所有物体识别任务中一个非常普遍的问题。只要训练集数据和测试集数据分布不同，就存在域偏移问题。目前，需要的研究工作都发现重建原始信号可以缓解域偏移问题~\cite{kim2017learning}。在本文，我们发现同时进行重建任务和分类任务~\cite{kodirov2017semantic}对于保持语义特征并不是很有效。另一种缓解语义损失的办法是增加一个单独的属性分类器~\cite{morgado2017semantically}，但是这个方法需要额外的属性标注信息。
+\subsection{通用型零样本学习}
+在之前的零样本物体分类（即：传统型零样本学习）中，测试阶段的所有图像都只来自于未见类别，即模型预测类别的选择空间只限于未见类别。这种实验设定大大降低了零样本学习的难度以及在实际场景中的运用价值。随着通用型零样本学习~\cite{scheirer2012toward}的提出，模型在测试阶段需要对所有类别（已见类别和未见类别）的图像进行类别预测。Bendale等人~\cite{bendale2016towards}首次将通用型零样本分类问题看成异常检测问题，利用一个网络先判断图像是否来自未见类别。对于通用型零样本学习，由于训练时使用了大量的已见类别图像而没有使用任何未见类别图像，模型往往倾向于将图像分类成已见类别。为了更好的评估通用型零样本分类，许多工作提出了不同的评价指标~\cite{chao2016empirical,xian2018zero}来权衡已见类别和未见类别。
 
+在本文，我们也重点研究通用型零样本物体分类。据我们了解，本文提出的属性保持的对抗网络学习模型（SP-AEN）是零样本分类算法中，第一个可以用语义空间的嵌入向量来重建原始图像。
 
-\subsection{对抗生成网络}
-对抗生成网络~\cite{goodfellow2014generative}主要是训练一个生成器，使得生成器生成的样本和真实数据非常“相似”，可以“骗过”判别器。理论上，这种对抗的训练过程可以让生成器生成的样本分布和真实的样本分布完全相同。我们的零样本分类模型SP-AEN将这种对抗思想运用到特征层面上~\cite{odena2017conditional,tzeng2017adversarial,makhzani2015adversarial,shrivastava2017learning}。与此同时，少数零样本分类的模型借助于对抗生成网络来生成更多的训练样本，从而将零样本分类问题转化为普通的分类问题~\cite{mishra2018generative}。但是这类方法违背了零样本分类问题中的一个基本假设：训练阶段中测试集的类别信息是无法知道的。
+\subsection{零样本学习中的域偏移问题}
+属性损失问题，也常常被称为域偏移问题（domain shift）~\cite{fu2015transductive,saenko2010adapting}，是零样本学习、少样本学习~\cite{hariharan2017low}或领域自适应~\cite{motiian2017unified,panareda2017open}
+等任务中一个非常普遍存在的问题。只要训练集数据和测试集数据的分布不同，就存在域偏移。目前的研究工作都发现重建原始信号可以缓解域偏移问题~\cite{kim2017learning}。在零样本分类领域，Kodirov等人~\cite{kodirov2017semantic}通过同时进行图像分类和语义属性重建来缓解属性丢失问题。在本文，我们通过实验发现利用同一个网络同时进行重建和分类这两个相互冲突的任务对于保持语义特征并不是很有效。与此同时，另一种缓解语义损失的办法是增加一个单独的属性分类器~\cite{morgado2017semantically}，但是这个方法需要额外的属性标注信息。
+
+\subsection{零样本学习和对抗生成网络}
+对抗生成网络~\cite{goodfellow2014generative}主要是训练一个生成器，使得生成器生成的样本和真实数据非常“相似”，可以“骗过”判别器。理论上，这种对抗的训练过程可以让生成器生成的样本分布和真实的样本分布完全相同。对于零样本分类问题，一些模型开始借助于对抗生成网络来生成更多的训练样本，从而将零样本分类问题转化为普通的分类问题~\cite{mishra2018generative,xian2018feature,xian2019f}。尽管这类方法目前已经取得很好的实验性能，但是它们违背了零样本分类问题的一个基本假设：训练阶段中测试集的类别信息是无法知道的。相反，本文提出的零样本分类模型SP-AEN只是将对抗网络中的对抗思想运用到特征层面上~\cite{odena2017conditional,tzeng2017adversarial,makhzani2015adversarial,shrivastava2017learning}，使得分类特征向量的分布向重建特征向量的分布靠近，进而让分类特征向量尽可能地保持更多的属性特征，提升模型的迁移能力。
+
 
 
 \section{图像场景图生成}
 
 \subsection{场景图生成}
-在第一个视觉关系检测工作~\cite{lu2016visual}以及大规模图像场景图数据集~\cite{krishna2017visual}出现之后，图像场景图生成任务逐渐成为一个新的研究热点。在早期阶段，许多场景图生成任务将物体和视觉关系拆分成两个独立的任务~\cite{lu2016visual,zhang2017visual,zhuang2017towards,zhu2018deep,zhang2017relationship}。但是这些方法忽略了场景中所有物体与视觉关系之间内在联系。为了利用所有物体与视觉关系的联系，最近的一些场景图生成算法都利用信息传递机制（Message Passing）~\cite{xu2017scene,dai2017detecting,li2017scene,li2018factorizable,yin2018zoom,jae2018tensorize,yang2018graph,tang2019learning,gu2019scene,qi2019attentive,wang2019exploring}。但是由于这些方法仍然是利用交叉熵作为模型的优化目标，在整个图结构层面不具备整体一致性。与现有方法不同，本文提出的CMAT模型可以同时满足场景图生成优化目标的两个要求：整体一致性和局部敏感性。
+随着视觉关系检测任务~\cite{lu2016visual}和大规模图像场景图数据集~\cite{krishna2017visual}的出现，图像场景图生成任务逐渐成为一个新的研究热点。目前，绝大多数的场景图生成模型都是将场景图生成任务分为两个步骤：1）利用预训练好的目标检测器~\cite{lu2016visual,zhuang2017towards,zhang2017visual,dai2017detecting,yang2018shuffle,yu2017visual}或在图像场景图生成数据重新微调的目标检测器~\cite{li2017vip,xu2017scene,yin2018zoom,zellers2018neural,zhang2017relationship,zhang2019large}对图像进行目标检测。2）对于所有检测的物体的类别以及两两物体间的视觉关系类别进行预测。在早期阶段，许多模型都将物体类别预测和视觉关系类别预测拆分成两个独立的任务~\cite{lu2016visual,zhang2017visual,zhuang2017towards,zhu2018deep,zhang2017relationship}。这样的拆分忽略了场景内所有所有物体间的内在联系。为了充分利用场景内所有物体间的诱导偏置（inductive bias），一些场景图生成模型开始利用信息传递机制（message passing）~\cite{xu2017scene,dai2017detecting,li2017scene,li2018factorizable,yin2018zoom,jae2018tensorize,yang2018graph,tang2019learning,gu2019scene,qi2019attentive,wang2019exploring}。例如：Xu等人~\cite{xu2017scene}将物体和视觉关系分别看成两个独立的递归神经网络的节点，在递归神经网络的每个迭代过程中两个节点互相传递信息，每个物体节点和视觉关系节点通过接收传递的信息来更新自身节点的内部特征表达，从而充分利用图像的上下文全局信息。Li等人~\cite{li2017scene}通过引入图像密集描述生成任务，构建三层语义节点（物体、视觉关系以及密集描述框），然后同样利用信息传递机制更新三种节点的特征表达。Yang等人~\cite{yang2018graph}利用图卷积，对每个物体周围的特征进行加权。之后，Zellers等人~\cite{zellers2018neural}发现目前数据集中标注的视觉关系包含大量的文本偏置，即利用物体类别和视觉关系类别之间的统计频率就可以得到较高的视觉关系预测准确率。目前，最新的模型都将训练集图像中视觉关系的统计频率作为场景图中视觉关系的先验知识。
 
+然后，之前所有的方法都关注于如何编码周围的信息来增强物体特征，所有的这些模型都使用物体和视觉关系分类的交叉熵作为模型最终的优化目标。这个优化目标将图像中所有的物体的重要性看成完全相同，即忽略了不同物体间的重要性，容易让模型陷入局部最优解。本文，首次将最终的场景图生成质量作为整体优化目标，并首次将场景图生成任务看成多智能体协同合作的决策问题。
 
 \subsection{多智能体策略梯度}
 
-策略梯度是一种对不可导优化目标进行优化的方法，已经广泛应用在多个场景理解的任务中，如：图像描述生成~\cite{ranzato2016sequence,ren2017deep,liu2017improved,rennie2017self,zhang2017actor,liu2018context}，图像视觉问答~\cite{hu2017learning,johnson2017inferring}，图文匹配~\cite{chen2017query,yu2017joint}，视觉对话~\cite{das2017learning}，和物体检测~\cite{caicedo2015active,mathe2016reinforcement,jie2016tree}。Liang等人~\cite{liang2017deep}将图像场景图生成任务看成一个单智能体决策过程。相反，本文将图像场景图生成任务看成一个多智能体协同决策过程，并且将优化目标设成最终的图像场景图生成质量，利用多智能体策略梯度进行优化。与此同时，与目前许多现有的多智能体工作不同~\cite{foerster2016learning,omidshafiei2017deep}，本文提出的CMAT模型里智能体的数量（64个物体）与动作空间（151个物体类别）都非常大。
-
+策略梯度即是一种强化学习的优化策略，同样也是一种对不可导优化目标进行优化的方法。在视觉场景理解任务中，策略梯度已经广泛应用在多种任务中，如：图像描述生成~\cite{ranzato2016sequence,ren2017deep,liu2017improved,rennie2017self,zhang2017actor,liu2018context}，图像视觉问答~\cite{hu2017learning,johnson2017inferring}，图文匹配~\cite{chen2017query,yu2017joint}，视觉对话~\cite{das2017learning}，和目标检测~\cite{caicedo2015active,mathe2016reinforcement,jie2016tree}。目前，所有的场景图生成模型中，只有Liang等人~\cite{liang2017deep}将图像场景图生成任务看成一个单智能体的序列决策过程。它首先根据文本的先验信息构建一个有向的语义图，在决策过程的每一个步骤中，选取新的物体和视觉关系，逐渐构建视觉场景图。相反，本文将图像场景图生成任务看成一个多智能体协同决策过程。通过构建成多智能体协同决策过程，我们可以直接使用整体场景图生成质量作为优化目标。另外，与目前许多现有的多智能体协同工作不同~\cite{foerster2016learning,omidshafiei2017deep}，本文的模型中，单个图像中智能体的数量（64个检测物体）与动作空间范围（151个物体类别）都非常大。
 
 
 \section{图像描述生成}
@@ -46,46 +55,59 @@
 
 \textbf{空间注意力机制}：Xu等人~\cite{xu2015show}首次将注意力机制应用于图像描述生成任务中。具体来说，Xu等人在卷积神经网络的最后一层特征图中引入空间注意力机制，让模型在每个时刻动态地关注不同的空间区域，合成新的视觉特征。类似地，Zhu等人将同样的空间注意力机制也运用到图像视觉问答任务~\cite{zhu2016visual7w}。除了在最后一层特征图只使用一次空间注意力加权，Yang等人~\cite{yang2016stacked}和Xu等人~\cite{xu2016ask}提出通过叠加使用多次空间注意力加权来提升模型性能。相比于之前的模型只在卷积神经网络的特征图中使用空间注意力加权，Anderson等人~\cite{anderson2018bottom}和Li等人~\cite{li2016visual}提出先对图像进行目标检测，然后对物体级别特征使用空间注意力机制可以进一步提升模型性能。
 
-\textbf{属性注意力机制}
+\textbf{语义注意力机制}：除了对图像的不同视觉区域加权，一些模型开始引入图像包含的属性，作为额外的语义信息，来引导语句的生成~\cite{wu2016what,you2016image,pan2017video,yao2017boosting}。其中，You等人~\cite{you2016image}提出语义注意力机制，通过对不同的属性赋予不同的权重，在生成单词的过程中不断关注相关的属性。Yao等人~\cite{yao2017boosting}不仅引入属性来提升图像的描述语句生成，同时研究如何设计网络结构使得模型在生成描述语句过程中能够更好的利用属性信息。Jia等人~\cite{jia2015guiding}通过将图像和当前生成语句的相关性看成一个全局的语义信息，来引导语句生成。但是，这些模型需要额外地提取语义信息，如属性等。在本文提出的多层空间和通道注意力网络中，每个卷积核可以看成是多个语义检测器~\cite{zeiler2014visualizing}。因此，通道注意力机制可以看成是一种特定的语义注意力机制。
 
 
-
-\textbf{自注意力机制}
-
-
-
-
-
-
-
-
-
+\textbf{自注意力机制}：自注意力机制~\cite{vaswani2017attention}先将特征集合（如图像区域特征）通过不同的映射矩阵分别映射为查询特征矩阵（query）、键特征矩阵（key）和值特征矩阵（value）。通过查询特征矩阵和键特征矩阵计算相似度得到注意力权重矩阵，然后对值特征矩阵进行加权，得到加权后的特征向量。基于自注意力机制的图像描述生成主要是利用Transformer结构~\cite{vaswani2017attention}：用编码网络对图像进行编码，解码网络对编码特征进行解码。其中编码网络和解码网络中都包含大量的自注意力机制模块。Herdade等人~\cite{herdade2019image}首次基于Transformer结构，并且将图像中物体间的几何位置作为重要的语义信息，帮助生成描述语句。与此同时，Li等人~\cite{li2019entangled}通过引入外部的语义标签来增强图像描述的内容。Huang等人~\cite{huang2019attention}引入额外的注意力机制对加权后的特征进行再一次加权。不同于之前的模型都只基于原始的Transformer结构，Cornia等人~\cite{cornia2020m}通过将编码网络中所有层级的特征都作为每层解码网络的输入，对Transformer结果进行改进，进一步提升描述语句生成质量。
 
 
 
 \section{视频片段检索}
 
-\subsection{基于语句查询的视频片段检索}
+\subsection{视频片段检索}
+
+\textbf{基于语句查询的视频片段检索}：
 基于语句查询的视频片段检索，是一个典型的多模态问题。目前，主流的方法都是基于自顶向下的框架，这些方法主要关注如何设计更强的多模态融合模型，如基于视频的查询注意力机制~\cite{liu2018attentive}、基于查询的视频注意力机制~\cite{liu2018cross}、查询-视频的协同注意力机制~\cite{chen2018temporally,chen2019localizing,yuan2019find}。据我们了解，绝大多数的模型都是自顶向下或自底向上框架，只有两个例外：RWM~\cite{he2019read}和SM-RL~\cite{wang2019language}。这两个方法都是将视频片段检索问题转换成时序决策问题，然后利用梯度策略进行优化，其中的动作空间为时序窗口的变化或帧的跳变。
 
-
-\subsection{基于视频查询的视频片段检索}
+\textbf{基于视频查询的视频片段检索}：
 基于视频查询的视频片段检索的主要困难来自于查询视频和参考视频之间巨大的场景差异，包括背景、物体、视角等不同。目前最好的视频查询的视频片段检索是CGBM~\cite{feng2018video}，它也是基于稀疏型自底向上模型。
 
 
-\subsection{自上向下框架与自底向上框架}
+\subsection{自顶向下与自底向上}
+自顶向下和自底向上方法，是计算机视觉研究领域解决问题的两种重要的思考哲学。与本文提出的自底向上框架最为接近的概念是：
 
+\textbf{目标检测}：随着目标检测器Faster R-CNN~\cite{ren2015faster}的出现，目前绝大多数的目标检测算法都是基于自顶向下的框架，即在每个位置上预先定义大量的锚框，然后对每个锚框进行类别分类和坐标位置回归。这类自顶向下的模型拥有和自顶向下的视频片段查询方法一致的缺点。随着第一个性能相当的自底向上目标检测器的出现：CornerNet~\cite{law2018cornernet}，自底向上的目标检测模型开始逐渐受到关注，近期也推出了大量的自底向上的目标检测器~\cite{zhou2019bottom,zhou2019objects,duan2019centernet,tian2019fcos}。
 
-
-
-
+\textbf{注意力机制}：自底向上注意力机制在许多的视觉-文本等多模态任务中发挥重要的作用，例如：图像描述生成~\cite{xu2015show,chen2017sca}，视觉问答~\cite{xu2016ask,ye2017video}等。最近，Anderson等人~\cite{anderson2018bottom}提出融合自底向上和自顶向下的注意力机制，进一步提升了多个任务的模型性能。因此，如何更好的融合或权衡自顶向下与自底向上两种方法，将是未来的一个重要的研究方向。
 
 
 \section{图像视觉问答}
 
+\subsection{视觉问答模型}
 
-\subsection{视觉问答模型的文本偏差}
+典型的图像视觉问答模型通常包含一个图像编码模块、一个文本编码模块、一个融合模块和一个分类器。图像编码模块和文本编码模块分别对图像和问句进行编码，然后利用融合模块将两个模态的编码向量进行融合，最后分类器直接基于融合后的多模态特征进行答案预测~\cite{zhou2015simple,antol2015vqa,kim2016multimodal}。由于每个不同的问句往往涉及到图像的不同区域，之前的模型利用图像编码模块对图像提取统一的全局特征容易忽略一些重要的细节。为了避免上述问题，一些视觉问答模型开始引入注意力机制来动态提取视觉特征。Chen等人~\cite{chen2016abc}将问句的特征向量映射成一个卷积核，然后对图像的视觉特征卷积层进行卷积。Yang等人~\cite{yang2016stacked}通过迭代多个空间注意力机制，逐渐优化空间注意力的权重。Fukui等人~\cite{fukui2016multimodal}、Kim等人~\cite{kim2017hadamard,kim2018bilinear}、Yu等人~\cite{yu2017multi,yu2018beyond}、Ben等人~\cite{ben2017mutan,ben2019block}分别提出了不同的多模态双线性融合方式来融合文本特征（即问句）和不同图像区域特征。Anderson等人~\cite{anderson2018bottom}提出自底向上和自顶向下注意力机制，通过对物体框进行注意力机制，而不是直接对图像的不同特征层区域使用注意力机制。
 
+除了对图像进行充分的理解外，视觉问答同时还需要对问句进行理解。因此，对问句使用注意力机制同样可以提取更加重要的文本信息。Lu等人~\cite{lu2017hierarchical}提出协同注意力机制（co-attention mechanism）同时对图像和问句进行注意力加权。Yu等人~\cite{yu2018beyond}通过在问句中使用自注意力机制对协同注意力机制进行简化。早期的协同注意力机制只是在单个模态下分别进行注意力加权，之后，Nguyen等人~\cite{nguyen2018improved}、Kim等人~\cite{kim2018bilinear}、Gao等人~\cite{gao2019dynamic}、Yu等人~\cite{yu2019deep}分别提出“密集型”协同注意力机制，充分计算每一个单词特征和每一个图像视觉特征之间的交互，进一步提升视觉问答性能。
+
+
+\subsection{视觉问答模型的文本偏置}
+
+尽管所有的视觉问答模型都在融合了多模态的特征之后进行答案预测，但是大量的研究工作表明~\cite{jabri2016revisiting,agrawal2016analyzing,zhang2016yin,goyal2017making}，目前的视觉问答模型预测答案时往往都依赖文本偏置。为了减少文本偏置对视觉问答的影响，主要有两种解决方案：
+
+\begin{asparaenum}
+
+\item \textbf{收集更平衡的数据集}：减少文本偏置最简单的方法就是收集更加平衡的数据集。例如：Zhang等人~\cite{zhang2016yin}通过对抽象数据集中所有的判断题收集互补的场景图像，使得判断题的答案刚好完全相反。Goyal等人~\cite{goyal2017making}对真实图像数据集的所有类型的问题都收集互补的图像，使得标准答案与原始图像不同。虽然这些数据集在一定程度上可以缓解文本偏置的问题，但是由于训练集和测试集的问题答案分布基本一致，目前的模型仍然可以通过统计的偏置得到较高的准确率~\cite{agrawal2018don}。例如，在数据集VQA-CP中，当训练集和测试集的问题答案分布不同时，模型都会出现明显的性能下降。本文，我们同样是参考这个思路，来生成更多的互补样本。相反，本文提出的反事实样本生成机制（Counterfactual Samples Synthesizing, CSS）不需要任何额外的人工标注。
+
+\item \textbf{设计更合理的去偏置模型}：另一种减少文本偏置的方法就是设计更合理的去偏置模型。到目前为止，效果最后的去偏置模型就是复合模型~\cite{ramakrishnan2018overcoming,grand2019adversarial,belinkov2019don,cadene2019rubi,clark2019don,mahabadi2019simple}：通过引入一个辅助网络来约束视觉问答网络的训练，其中的辅助网络只用文本（即问题语句）作为输入。在本文，我们提出的反事实样本生成机制可以无缝地应用于复合模型中，进一步减少文本偏置的影响。
+
+\end{asparaenum}
 
 \subsection{视觉问答模型的特性}
 
+视觉可解释性和文本敏感性是一个理想的视觉问答模型必不可少的两个特性：
+\begin{asparaenum}
+\item \textbf{视觉可解释性}：为了提升视觉可解释性，早期的视觉问答模型~\cite{qiao2018exploring,liu2017attention,zhang2019interpretable}都直接使用人类关注的区域作为额外的监督信息。然而，由于强大的文本偏置，即使模块关注到正确的图像区域，后续的网络结构仍然会忽视这部分视觉信号~\cite{selvaraju2019taking}。因此，最近的一些视觉问答工作~\cite{selvaraju2019taking,wu2019self}开始使用工具Grad-CAM~\cite{selvaraju2017grad}来计算每个物体对正确答案的贡献，然后让不同物体的贡献度与人工标注的一致。但是，这类方法有两个明显的缺点：1）它们需要额外的人工标注，即每个物体的贡献度大小或者排序；2）目前这类方法都不是端到端训练的。
+
+\item \textbf{文本敏感性}：如果一个视觉问答模型能够充分理解问题的含义，那么这个模型应该对问题的变化十分的敏感，即具备文本敏感性。据我们所知，目前只有一个工作讨论了视觉问答模型的文本敏感性~\cite{shah2019cycle}。具体来说，Shah等人~\cite{shah2019cycle}对于视觉问答和视觉问题生成两个对偶任务设计了一个循环一致的损失函数，然后通过引入随机噪声来生成不同的问题。然后，他们只考虑了对不同语句表达时的鲁棒性。相反，本文提出的反事实样本生成机制帮助模型能够感知重要单词的改变，提升文本敏感性。
+\end{asparaenum}
+目前的方法都只关注于视觉可解释性或着文本敏感性。相反，本文提出的反事实样本生成机制可以提升着两个特性。
