@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.12.18)  2 MAR 2020 22:03
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.12.18)  3 MAR 2020 20:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1842,16 +1842,13 @@ File: chapter1/res/datasets_examples.pdf Graphic file (type pdf)
 File: chapter1/res/scene_understanding.pdf Graphic file (type pdf)
 <use chapter1/res/scene_understanding.pdf>
  [2]
-Underfull \vbox (badness 1796) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
 File: chapter1/res/technique_summary.pdf Graphic file (type pdf)
 <use chapter1/res/technique_summary.pdf>
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[4] [5] [6]) [7] [8]
+[4] [5] [6] [7]) [8]
 \openout2 = `./chapter2/chap2.aux'.
 
  (./chapter2/chap2.tex
@@ -2177,7 +2174,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [93
 
 ]
-Underfull \hbox (badness 8000) in paragraph at lines 128--132
+Underfull \hbox (badness 8000) in paragraph at lines 157--161
 []\TU/TimesNewRoman(0)/m/n/10.53937 Stanislaw Antol, Aishwarya Agrawal, Jiasen 
 Lu, Margaret Mitchell, Dhruv Batra,
  []
@@ -2205,7 +2202,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [100]
 
-LaTeX Warning: Command \^ invalid in math mode on input line 787.
+LaTeX Warning: Command \^ invalid in math mode on input line 798.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2234,11 +2231,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [108]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [109])
-[110]
+ [109]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [110])
+[111]
 \openout2 = `./chapter8/publications.aux'.
 
- (./chapter8/publications.tex
+ (./chapter8/publications.tex [112
+
+
+]
 Overfull \hbox (9.25613pt too wide) in paragraph at lines 22--27
 \TU/TimesNewRoman(0)/m/sc/12.045 Networks[C]. IEEE Conference on Computer Visio
 n and Pattern Recognition (CVPR),
@@ -2250,17 +2253,14 @@ Overfull \hbox (11.57263pt too wide) in paragraph at lines 46--51
 -based Video Localization[C]. Thirty-
  []
 
-[111
-
-
-]) [112]
+[113]) [114]
 \openout2 = `./chapter8/thanks.aux'.
 
- (./chapter8/thanks.tex [113
+ (./chapter8/thanks.tex [115
 
 
 
-]) [114]
+]) [116]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 188.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 188.
  (./chenlong_phd.aux
@@ -2271,7 +2271,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 188.
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 188.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 188.
 Package rerunfilecheck Info: File `chenlong_phd.out' has not changed.
-(rerunfilecheck)             Checksum: C87C2A26B54386F356C7CF3EF5B23795.
+(rerunfilecheck)             Checksum: 3E433207C19758B81D49CAD3E19115EF.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2279,12 +2279,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 188.
  ) 
 Here is how much of TeX's memory you used:
- 53921 strings out of 492916
- 1257630 string characters out of 6133344
+ 53959 strings out of 492916
+ 1259869 string characters out of 6133344
  1461515 words of memory out of 5000000
- 57031 multiletter control sequences out of 15000+600000
+ 57069 multiletter control sequences out of 15000+600000
  564602 words of font info for 214 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 65i,22n,96p,1332b,1624s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,22n,96p,1332b,1690s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chenlong_phd.pdf (134 pages).
+Output written on chenlong_phd.pdf (136 pages).

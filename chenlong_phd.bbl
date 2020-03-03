@@ -66,6 +66,35 @@ Qizhe Xie, Eduard Hovy, Minh-Thang Luong, Quoc~V Le.
   arXiv.
 \newblock 2019.
 
+\bibitem{simonyan2015very}
+Karen Simonyan, Andrew Zisserman.
+\newblock Very deep convolutional networks for large-scale image
+  recognition[C]. Proc. ICLR.
+\newblock 2015.
+
+\bibitem{szegedy2015going}
+Christian Szegedy, Wei Liu, Yangqing Jia, Pierre Sermanet, Scott Reed, Dragomir
+  Anguelov, Dumitru Erhan, Vincent Vanhoucke, Andrew Rabinovich.
+\newblock Going deeper with convolutions[C]. Proc. {IEEE} Conf. CVPR.
+\newblock 2015:1--9.
+
+\bibitem{he2016deep}
+Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun.
+\newblock Deep residual learning for image recognition[C]. Proc. {IEEE} Conf.
+  CVPR.
+\newblock 2016:770--778.
+
+\bibitem{xie2017aggregated}
+Saining Xie, Ross Girshick, Piotr Dollar, Zhuowen Tu, Kaiming He.
+\newblock Aggregated residual transformations for deep neural networks[C].
+  Proc. {IEEE} Conf. CVPR.
+\newblock July 2017.
+
+\bibitem{hu2018squeeze}
+Jie Hu, Li~Shen, Gang Sun.
+\newblock Squeeze-and-excitation networks[C]. Proc. {IEEE} Conf. CVPR.
+\newblock June 2018.
+
 \bibitem{ren2015faster}
 Shaoqing Ren, Kaiming He, Ross Girshick, Jian Sun.
 \newblock Faster r-cnn: Towards real-time object detection with region proposal
@@ -100,17 +129,17 @@ Christoph~H Lampert, Hannes Nickisch, Stefan Harmeling.
   transfer[C]. Proc. {IEEE} Conf. CVPR.
 \newblock 2009:951--958.
 
-\bibitem{johnson2015image}
-Justin Johnson, Ranjay Krishna, Michael Stark, Li-Jia Li, David Shamma, Michael
-  Bernstein, Li~Fei-Fei.
-\newblock Image retrieval using scene graphs[C]. Proc. {IEEE} Conf. CVPR.
-\newblock 2015:3668--3678.
-
 \bibitem{kirillov2019panoptic}
 Alexander Kirillov, Kaiming He, Ross Girshick, Carsten Rother, Piotr
   Doll{\'a}r.
 \newblock Panoptic segmentation[C]. Proc. {IEEE} Conf. CVPR.
 \newblock 2019:9404--9413.
+
+\bibitem{johnson2015image}
+Justin Johnson, Ranjay Krishna, Michael Stark, Li-Jia Li, David Shamma, Michael
+  Bernstein, Li~Fei-Fei.
+\newblock Image retrieval using scene graphs[C]. Proc. {IEEE} Conf. CVPR.
+\newblock 2015:3668--3678.
 
 \bibitem{vinyals2015show}
 Oriol Vinyals, Alexander Toshev, Samy Bengio, Dumitru Erhan.
@@ -641,24 +670,6 @@ Andrej Karpathy, Li~Fei-Fei.
 \newblock Deep visual-semantic alignments for generating image descriptions[C].
   Proc. {IEEE} Conf. CVPR.
 \newblock 2015:3128--3137.
-
-\bibitem{simonyan2015very}
-Karen Simonyan, Andrew Zisserman.
-\newblock Very deep convolutional networks for large-scale image
-  recognition[C]. Proc. ICLR.
-\newblock 2015.
-
-\bibitem{szegedy2015going}
-Christian Szegedy, Wei Liu, Yangqing Jia, Pierre Sermanet, Scott Reed, Dragomir
-  Anguelov, Dumitru Erhan, Vincent Vanhoucke, Andrew Rabinovich.
-\newblock Going deeper with convolutions[C]. Proc. {IEEE} Conf. CVPR.
-\newblock 2015:1--9.
-
-\bibitem{he2016deep}
-Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun.
-\newblock Deep residual learning for image recognition[C]. Proc. {IEEE} Conf.
-  CVPR.
-\newblock 2016:770--778.
 
 \bibitem{donahue2015long}
 Jeffrey Donahue, Lisa Anne~Hendricks, Sergio Guadarrama, Marcus Rohrbach,
