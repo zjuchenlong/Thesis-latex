@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.12.18)  3 MAR 2020 20:13
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.12.18)  4 MAR 2020 17:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1800,14 +1800,14 @@ Package fontspec Info: Font family 'HeitiSC(0)' created for font 'Heiti SC'
 ) [2]
 \openout2 = `./chapter0/abstractE.aux'.
 
- (./chapter0/abstractE.tex) [3
+ (./chapter0/abstractE.tex [3
 
 
 
-] [4
+]) [4] (./chenlong_phd.toc [5
 
 
-] (./chenlong_phd.toc [5] [6] [7])
+] [6] [7])
 \tf@toc=\write6
 \openout6 = `chenlong_phd.toc'.
 

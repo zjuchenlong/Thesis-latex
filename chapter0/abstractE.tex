@@ -1,13 +1,22 @@
 %# -*- coding:utf-8 -*- 
 \begin{englishabstract}
-%
-xx
+
+With the appearance of large scale human-annotated image and video datasets, deep-learning-based computer vision techniques have achieved impressive progress. However, for complex visual scene understanding, today's computer vision models still perform far behind human, and cannot be applied in daily life on a large scale. Unfortunately, complex visual scenes are ubiquitous in our daily visual data. To fully take advantage of the massive amounts of visual data, complex visual scene understanding is becoming one of the hottest research areas in computer vision.
+
+In this thesis, we focus on visual recognition, detection, and reasoning for complex visual scene understanding. Specifically, we try to solve four different levels of visual scene understanding problems, including instance-level recognition, scene-level recognition, scene-level understanding, and scene-level reasoning. The related tasks consist of zero-shot visual recognition, scene graph generation, image captioning, query-based video localization, and visual question answering. In summary, this thesis makes five technical contributions:
 
 \begin{asparaenum} 
-\item xx
+\item For the ubiquitous semantic loss problem in current zero-shot visual recognition models, we propose a novel zero-shot learning framework: Semantics-Preserving Adversarial Embedding Networks (SP-AEN). SP-AEN introduces two independent embedding networks for classification and reconstruction respectively. Thanks to this design, we can disentangle these two conflict tasks. Then, SP-AEN resorts to adversarial learning to transfer attributes from reconstruction embeddings to classification embeddings, which helps to preserve semantics in classification embeddings and mitigate the semantic loss problem.
+
+\item The prevailing training object for scene graph generation is the sum of cross-entropy loss of all objects and visual relationships, which overlooks the different contributions of different objects. In this thesis, we propose a novel training scheme: Counterfactual critic Multi-Agent Training (CMAT), which formulate scene graph generation as a multi-agent cooperative decision-making problem. Based on this formulation, we can directly utilize the whole scene graph generation quality as the training objective. Meanwhile, we propose a counterfactual baseline, which can approximate the contribution of each local prediction. CMAT can not only improve the accuracy of object classification, but also improve the whole scene graph generation quality.
+
+\item Based on the existing spatial attention mechanism in the encoder-decoder framework, we propose a novel network for image captioning: Spatial and Channel-wise Convolutional Networks (SCA-CNN). SCA-CNN take full advantage of the three characteristics of CNN features, and attend to different visual regions and channels during the sentence generation. The contribution of SCA-CNN is not only the more powerful attention model, but also a better understanding of where (ie, spatial) and what (ie, channel-wise) the attention looks like in a CNN that evolves during sentence generation.
+
+\item According to the weakness of the sparse bottom-up framework for query-based video localization, we propose a novel dense bottom-up model. Specifically, we disentangle the boundary prediction problem into two sub-problems: relatedness prediction and boundary regression. Meanwhile, we propose a Graph Feature Pyramid Network (Graph-FPN) layer to boost the feature from the backbone network. The proposed model significantly improves the localization accuracy.
+
+\item Current Visual Question Answering (VQA) models overlook two indispensable characteristics of an ideal VQA model: visual-explainable and question-sensitive. In this thesis, we propose a model-agnostic Counterfactual Samples Synthesizing (CSS) mechanism. The CSS generates numerous counterfactual training samples by masking critical objects in images or words in questions, and assigning different ground-truth answers. After training with the complementary samples (ie, the original and generated samples), the VQA models are forced to focus on all critical objects and words, which significantly improve the accuracy and robustness of VQA models.
 \end{asparaenum}
 
 
-
-\englishkeywords{Object perception, object detection, object tracking, object recognition, deep learning}
+\englishkeywords{Complex Visual Scene Understanding, Zero-Shot Visual Recognition, Scene Graph Generation, Image Captioning, Query-based Video Localization, Visual Question Answering}
 \end{englishabstract}
