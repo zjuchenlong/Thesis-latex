@@ -4,18 +4,6 @@
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
 
-\bibitem{kodirov2017semantic}
-Elyor Kodirov, Tao Xiang, Shaogang Gong.
-\newblock Semantic autoencoder for zero-shot learning[C]. Proc. {IEEE} Conf.
-  CVPR.
-\newblock 2017:3174--3183.
-
-\bibitem{chao2016empirical}
-Wei-Lun Chao, Soravit Changpinyo, Boqing Gong, Fei Sha.
-\newblock An empirical study and analysis of generalized zero-shot learning for
-  object recognition in the wild[C]. Proc. ECCV.
-\newblock Springer, 2016:52--68.
-
 \bibitem{lin2014microsoft}
 Tsung-Yi Lin, Michael Maire, Serge Belongie, James Hays, Pietro Perona, Deva
   Ramanan, Piotr Doll{\'a}r, C~Lawrence Zitnick.
@@ -85,15 +73,15 @@ Kaiming He, Xiangyu Zhang, Shaoqing Ren, Jian Sun.
 \newblock 2016:770--778.
 
 \bibitem{xie2017aggregated}
-Saining Xie, Ross Girshick, Piotr Dollar, Zhuowen Tu, Kaiming He.
+Saining Xie, Ross Girshick, Piotr Doll{\'a}r, Zhuowen Tu, Kaiming He.
 \newblock Aggregated residual transformations for deep neural networks[C].
   Proc. {IEEE} Conf. CVPR.
-\newblock July 2017.
+\newblock 2017:1492--1500.
 
 \bibitem{hu2018squeeze}
 Jie Hu, Li~Shen, Gang Sun.
 \newblock Squeeze-and-excitation networks[C]. Proc. {IEEE} Conf. CVPR.
-\newblock June 2018.
+\newblock 2018:7132--7141.
 
 \bibitem{ren2015faster}
 Shaoqing Ren, Kaiming He, Ross Girshick, Jian Sun.
@@ -263,6 +251,12 @@ Richard Socher, Milind Ganjoo, Christopher~D Manning, Andrew Ng.
 \newblock Zero-shot learning through cross-modal transfer[C]. Proc. NeurIPS.
 \newblock 2013:935--943.
 
+\bibitem{kodirov2017semantic}
+Elyor Kodirov, Tao Xiang, Shaogang Gong.
+\newblock Semantic autoencoder for zero-shot learning[C]. Proc. {IEEE} Conf.
+  CVPR.
+\newblock 2017:3174--3183.
+
 \bibitem{li2017zero}
 Yanan Li, Donghui Wang, Huanhang Hu, Yuetan Lin, Yueting Zhuang.
 \newblock Zero-shot recognition using dual visual-semantic mapping paths[C].
@@ -332,6 +326,12 @@ Walter~J Scheirer, Anderson de~Rezende~Rocha, Archana Sapkota, Terrance~E
 Abhijit Bendale, Terrance~E Boult.
 \newblock Towards open set deep networks[C]. Proc. {IEEE} Conf. CVPR.
 \newblock 2016:1563--1572.
+
+\bibitem{chao2016empirical}
+Wei-Lun Chao, Soravit Changpinyo, Boqing Gong, Fei Sha.
+\newblock An empirical study and analysis of generalized zero-shot learning for
+  object recognition in the wild[C]. Proc. ECCV.
+\newblock Springer, 2016:52--68.
 
 \bibitem{xian2018zero}
 Yongqin Xian, Christoph~H Lampert, Bernt Schiele, Zeynep Akata.
@@ -754,7 +754,7 @@ Quanzeng You, Hailin Jin, Zhaowen Wang, Chen Fang, Jiebo Luo.
 Yingwei Pan, Ting Yao, Houqiang Li, Tao Mei.
 \newblock Video captioning with transferred semantic attributes[C]. Proc.
   {IEEE} Conf. CVPR.
-\newblock July 2017.
+\newblock 2017:6504--6512.
 
 \bibitem{yao2017boosting}
 Ting Yao, Yingwei Pan, Yehao Li, Zhaofan Qiu, Tao Mei.
@@ -845,7 +845,7 @@ Yang Feng, Lin Ma, Wei Liu, Tong Zhang, Jiebo Luo.
 \bibitem{law2018cornernet}
 Hei Law, Jia Deng.
 \newblock Cornernet: Detecting objects as paired keypoints[C]. Proc. ECCV.
-\newblock 2018.
+\newblock 2018:734--750.
 
 \bibitem{zhou2019bottom}
 Xingyi Zhou, Jiacheng Zhuo, Philipp Kr{\"a}henb{\"u}hl.
@@ -934,7 +934,7 @@ Zhou Yu, Jun Yu, Chenchao Xiang, Jianping Fan, Dacheng Tao.
 Hedi Ben-younes, Remi Cadene, Matthieu Cord, Nicolas Thome.
 \newblock Mutan: Multimodal tucker fusion for visual question answering[C].
   Proc. {IEEE} ICCV.
-\newblock 2017.
+\newblock 2017:2612--2620.
 
 \bibitem{ben2019block}
 Hedi Ben-Younes, Remi Cadene, Nicolas Thome, Matthieu Cord.
@@ -946,21 +946,21 @@ Hedi Ben-Younes, Remi Cadene, Nicolas Thome, Matthieu Cord.
 Jiasen Lu, Jianwei Yang, Dhruv Batra, Devi Parikh.
 \newblock Hierarchical question-image co-attention for visual question
   answering[C]. Proc. NeurIPS.
-\newblock 2016.
+\newblock 2016:289--297.
 
 \bibitem{nguyen2018improved}
 Duy-Kien Nguyen, Takayuki Okatani.
 \newblock Improved fusion of visual and language representations by dense
   symmetric co-attention for visual question answering[C]. Proc. {IEEE} Conf.
   CVPR.
-\newblock June 2018.
+\newblock 2018:6087--6096.
 
 \bibitem{gao2019dynamic}
-Peng Gao, Zhengkai Jiang, Haoxuan You, Pan Lu, Steven C.~H. Hoi, Xiaogang Wang,
+Peng Gao, Zhengkai Jiang, Haoxuan You, Pan Lu, Steven~CH Hoi, Xiaogang Wang,
   Hongsheng Li.
-\newblock Dynamic fusion with intra- and inter-modality attention flow for
+\newblock Dynamic fusion with intra-and inter-modality attention flow for
   visual question answering[C]. Proc. {IEEE} Conf. CVPR.
-\newblock June 2019.
+\newblock 2019:6639--6648.
 
 \bibitem{yu2019deep}
 Zhou Yu, Jun Yu, Yuhao Cui, Dacheng Tao, Qi~Tian.
@@ -971,7 +971,7 @@ Zhou Yu, Jun Yu, Yuhao Cui, Dacheng Tao, Qi~Tian.
 \bibitem{jabri2016revisiting}
 Allan Jabri, Armand Joulin, Laurens Van Der~Maaten.
 \newblock Revisiting visual question answering baselines[C]. Proc. ECCV.
-\newblock 2016.
+\newblock Springer, 2016:727--739.
 
 \bibitem{agrawal2016analyzing}
 Aishwarya Agrawal, Dhruv Batra, Devi Parikh.
@@ -1048,7 +1048,7 @@ Chenxi Liu, Junhua Mao, Fei Sha, Alan Yuille.
 Yundong Zhang, Juan~Carlos Niebles, Alvaro Soto.
 \newblock Interpretable visual question answering by visual grounding from
   attention supervision mining[C]. Proc. {IEEE} WACV.
-\newblock 2019.
+\newblock IEEE, 2019:349--357.
 
 \bibitem{selvaraju2019taking}
 Ramprasaath~R Selvaraju, Stefan Lee, Yilin Shen, Hongxia Jin, Shalini Ghosh,
@@ -1072,8 +1072,9 @@ Ramprasaath~R Selvaraju, Michael Cogswell, Abhishek Das, Ramakrishna Vedantam,
 
 \bibitem{shah2019cycle}
 Meet Shah, Xinlei Chen, Marcus Rohrbach, Devi Parikh.
-\newblock Cycle-consistency for robust visual question answering[C]. CVPR.
-\newblock 2019.
+\newblock Cycle-consistency for robust visual question answering[C]. Proc.
+  {IEEE} Conf. CVPR.
+\newblock 2019:6649--6658.
 
 \bibitem{xian2017zero}
 Yongqin Xian, Bernt Schiele, Zeynep Akata.
@@ -1180,11 +1181,6 @@ Jonathan Long, Evan Shelhamer, Trevor Darrell.
 \newblock Fully convolutional networks for semantic segmentation[C]. Proc.
   {IEEE} Conf. CVPR.
 \newblock 2015:3431--3440.
-
-\bibitem{yao2018exploring}
-Ting Yao, Yingwei Pan, Yehao Li, Tao Mei.
-\newblock Exploring visual relationship for image captioning[C]. Proc. ECCV.
-\newblock Springer, 2018:684--699.
 
 \bibitem{yang2019auto}
 Xu~Yang, Kaihua Tang, Hanwang Zhang, Jianfei Cai.
@@ -1333,7 +1329,7 @@ Roei Herzig, Moshiko Raboh, Gal Chechik, Jonathan Berant, Amir Globerson.
 \bibitem{redmon2017yolo9000}
 Joseph Redmon, Ali Farhadi.
 \newblock Yolo9000: better, faster, stronger[C]. Proc. {IEEE} Conf. CVPR.
-\newblock 2017.
+\newblock 2017:7263--7271.
 
 \bibitem{zhang2019graphical}
 Ji~Zhang, Kevin~J Shih, Ahmed Elgammal, Andrew Tao, Bryan Catanzaro.
@@ -1584,7 +1580,7 @@ Matthew Honnibal, Ines Montani.
 
 \bibitem{jain2019attention}
 Sarthak Jain, Byron~C Wallace.
-\newblock Attention is not explanation[C]. Proc. NAACL.
+\newblock Attention is not explanation[C]. Proc. NAACL-HLT.
 \newblock 2019.
 
 \bibitem{cadene2019murel}
