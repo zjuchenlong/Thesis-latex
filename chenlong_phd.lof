@@ -23,9 +23,9 @@
 \contentsline {figure}{\numberline {4-6}{\ignorespaces 优化目标局部敏感性的重要性示例图\relax }}{39}{figure.caption.25}% 
 \contentsline {figure}{\numberline {4-7}{\ignorespaces 模型CMAT和模型MOTIFS在数据集VG上的场景图生成结果对比\relax }}{46}{figure.caption.30}% 
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {5-1}{\ignorespaces VGG19网络中$conv5\_4$层和$conv5\_3$层的通道注意力机制示例图\relax }}{50}{figure.caption.31}% 
+\contentsline {figure}{\numberline {5-1}{\ignorespaces VGG19网络中conv5\_4层和conv5\_3层的通道注意力机制示意图\relax }}{50}{figure.caption.31}% 
 \contentsline {figure}{\numberline {5-2}{\ignorespaces 空间和通道注意力卷积神经网络流程图\relax }}{52}{figure.caption.32}% 
-\contentsline {figure}{\numberline {5-3}{\ignorespaces 空间注意力和通道注意力权重的可视化结果\relax }}{61}{figure.caption.38}% 
+\contentsline {figure}{\numberline {5-3}{\ignorespaces 空间注意力和通道注意力权重的可视化结果\relax }}{60}{figure.caption.36}% 
 \addvspace {10.0pt}
 \contentsline {figure}{\numberline {6-1}{\ignorespaces 两种视频片段检索任务\relax }}{64}{figure.caption.39}% 
 \contentsline {figure}{\numberline {6-2}{\ignorespaces 典型的稀疏型自底向上视频片段检索模型\relax }}{65}{figure.caption.40}% 
