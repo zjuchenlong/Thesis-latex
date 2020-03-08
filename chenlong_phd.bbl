@@ -1182,6 +1182,11 @@ Jonathan Long, Evan Shelhamer, Trevor Darrell.
   {IEEE} Conf. CVPR.
 \newblock 2015:3431--3440.
 
+\bibitem{yao2018exploring}
+Ting Yao, Yingwei Pan, Yehao Li, Tao Mei.
+\newblock Exploring visual relationship for image captioning[C]. Proc. ECCV.
+\newblock 2018:684--699.
+
 \bibitem{yang2019auto}
 Xu~Yang, Kaihua Tang, Hanwang Zhang, Jianfei Cai.
 \newblock Auto-encoding scene graphs for image captioning[C]. Proc. {IEEE}
@@ -1330,6 +1335,17 @@ Roei Herzig, Moshiko Raboh, Gal Chechik, Jonathan Berant, Amir Globerson.
 Joseph Redmon, Ali Farhadi.
 \newblock Yolo9000: better, faster, stronger[C]. Proc. {IEEE} Conf. CVPR.
 \newblock 2017:7263--7271.
+
+\bibitem{girshick2014rich}
+Ross Girshick, Jeff Donahue, Trevor Darrell, Jitendra Malik.
+\newblock Rich feature hierarchies for accurate object detection and semantic
+  segmentation[C]. Proc. {IEEE} Conf. CVPR.
+\newblock 2014:580--587.
+
+\bibitem{girshick2015fast}
+Ross Girshick.
+\newblock Fast r-cnn[C]. Proc. {IEEE} ICCV.
+\newblock 2015:1440--1448.
 
 \bibitem{zhang2019graphical}
 Ji~Zhang, Kevin~J Shih, Ahmed Elgammal, Andrew Tao, Bryan Catanzaro.

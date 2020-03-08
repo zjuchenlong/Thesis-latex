@@ -15,35 +15,35 @@
 \contentsline {figure}{\numberline {3-6}{\ignorespaces 在四个零样本分类数据集中的已见-未见准确率曲线下区域面积\relax }}{28}{figure.caption.17}% 
 \contentsline {figure}{\numberline {3-7}{\ignorespaces 图像重建结果随优化目标权重$\alpha $的影响\relax }}{29}{figure.caption.19}% 
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {4-1}{\ignorespaces 一个图像场景图生成任务示例\relax }}{32}{figure.caption.20}% 
+\contentsline {figure}{\numberline {4-1}{\ignorespaces 图像场景图生成任务示例\relax }}{32}{figure.caption.20}% 
 \contentsline {figure}{\numberline {4-2}{\ignorespaces 场景图生成中优化目标的整体一致性和局部敏感性\relax }}{33}{figure.caption.21}% 
 \contentsline {figure}{\numberline {4-3}{\ignorespaces 模型CMAT的总体流程图\relax }}{35}{figure.caption.22}% 
-\contentsline {figure}{\numberline {4-4}{\ignorespaces 智能体通信示意图\relax }}{36}{figure.caption.23}% 
-\contentsline {figure}{\numberline {4-5}{\ignorespaces 局部敏感性的重要性\relax }}{39}{figure.caption.24}% 
-\contentsline {figure}{\numberline {4-6}{\ignorespaces CMAT中反事实基准模型\relax }}{40}{figure.caption.25}% 
-\contentsline {figure}{\numberline {4-7}{\ignorespaces CMAT和MOTIFS在数据集VG上的场景图生成结果对比\relax }}{45}{figure.caption.30}% 
+\contentsline {figure}{\numberline {4-4}{\ignorespaces 单步智能体通信示意图\relax }}{36}{figure.caption.23}% 
+\contentsline {figure}{\numberline {4-5}{\ignorespaces CMAT中反事实基准模型\relax }}{39}{figure.caption.24}% 
+\contentsline {figure}{\numberline {4-6}{\ignorespaces 优化目标局部敏感性的重要性示例图\relax }}{39}{figure.caption.25}% 
+\contentsline {figure}{\numberline {4-7}{\ignorespaces 模型CMAT和模型MOTIFS在数据集VG上的场景图生成结果对比\relax }}{46}{figure.caption.30}% 
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {5-1}{\ignorespaces VGG19网络中$conv5\_4$层和$conv5\_3$层的通道注意力机制示例图\relax }}{48}{figure.caption.31}% 
-\contentsline {figure}{\numberline {5-2}{\ignorespaces 空间和通道注意力卷积神经网络流程图\relax }}{50}{figure.caption.32}% 
-\contentsline {figure}{\numberline {5-3}{\ignorespaces 空间注意力和通道注意力权重的可视化结果\relax }}{59}{figure.caption.38}% 
+\contentsline {figure}{\numberline {5-1}{\ignorespaces VGG19网络中$conv5\_4$层和$conv5\_3$层的通道注意力机制示例图\relax }}{50}{figure.caption.31}% 
+\contentsline {figure}{\numberline {5-2}{\ignorespaces 空间和通道注意力卷积神经网络流程图\relax }}{52}{figure.caption.32}% 
+\contentsline {figure}{\numberline {5-3}{\ignorespaces 空间注意力和通道注意力权重的可视化结果\relax }}{61}{figure.caption.38}% 
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {6-1}{\ignorespaces 两种视频片段检索任务\relax }}{62}{figure.caption.39}% 
-\contentsline {figure}{\numberline {6-2}{\ignorespaces 典型的稀疏型自底向上视频片段检索模型\relax }}{63}{figure.caption.40}% 
-\contentsline {figure}{\numberline {6-3}{\ignorespaces 一个基于语句的视频片段检索示例\relax }}{64}{figure.caption.41}% 
-\contentsline {figure}{\numberline {6-4}{\ignorespaces 典型的稀疏型自底向上视频片段检索模型\relax }}{65}{figure.caption.42}% 
-\contentsline {figure}{\numberline {6-5}{\ignorespaces 骨干网络QANet\relax }}{66}{figure.caption.43}% 
-\contentsline {figure}{\numberline {6-6}{\ignorespaces 图特征金字塔层\relax }}{67}{figure.caption.44}% 
-\contentsline {figure}{\numberline {6-7}{\ignorespaces 密集型头网络\relax }}{68}{figure.caption.45}% 
-\contentsline {figure}{\numberline {6-8}{\ignorespaces 时域池化示意图\relax }}{69}{figure.caption.46}% 
-\contentsline {figure}{\numberline {6-9}{\ignorespaces GDP模型在数据集ActivityNet Captions（上）和Activity-VRL（下）的检索结果\relax }}{71}{figure.caption.47}% 
-\contentsline {figure}{\numberline {6-10}{\ignorespaces 同一骨干网络不同特征优化层的性能对比\relax }}{73}{figure.caption.50}% 
-\contentsline {figure}{\numberline {6-11}{\ignorespaces 场景空间中的节点可视化\relax }}{75}{figure.caption.54}% 
+\contentsline {figure}{\numberline {6-1}{\ignorespaces 两种视频片段检索任务\relax }}{64}{figure.caption.39}% 
+\contentsline {figure}{\numberline {6-2}{\ignorespaces 典型的稀疏型自底向上视频片段检索模型\relax }}{65}{figure.caption.40}% 
+\contentsline {figure}{\numberline {6-3}{\ignorespaces 一个基于语句的视频片段检索示例\relax }}{66}{figure.caption.41}% 
+\contentsline {figure}{\numberline {6-4}{\ignorespaces 典型的稀疏型自底向上视频片段检索模型\relax }}{67}{figure.caption.42}% 
+\contentsline {figure}{\numberline {6-5}{\ignorespaces 骨干网络QANet\relax }}{68}{figure.caption.43}% 
+\contentsline {figure}{\numberline {6-6}{\ignorespaces 图特征金字塔层\relax }}{69}{figure.caption.44}% 
+\contentsline {figure}{\numberline {6-7}{\ignorespaces 密集型头网络\relax }}{70}{figure.caption.45}% 
+\contentsline {figure}{\numberline {6-8}{\ignorespaces 时域池化示意图\relax }}{71}{figure.caption.46}% 
+\contentsline {figure}{\numberline {6-9}{\ignorespaces GDP模型在数据集ActivityNet Captions（上）和Activity-VRL（下）的检索结果\relax }}{73}{figure.caption.47}% 
+\contentsline {figure}{\numberline {6-10}{\ignorespaces 同一骨干网络不同特征优化层的性能对比\relax }}{75}{figure.caption.50}% 
+\contentsline {figure}{\numberline {6-11}{\ignorespaces 场景空间中的节点可视化\relax }}{77}{figure.caption.54}% 
 \addvspace {10.0pt}
-\contentsline {figure}{\numberline {7-1}{\ignorespaces VQA模型必备的视觉可解释性和文本敏感性\relax }}{78}{figure.caption.55}% 
-\contentsline {figure}{\numberline {7-2}{\ignorespaces V-CSS和Q-CSS示意图\relax }}{79}{figure.caption.56}% 
-\contentsline {figure}{\numberline {7-3}{\ignorespaces $I^+$、$I^-$、$Q^+$和$Q^-$的示例图\relax }}{83}{figure.caption.57}% 
-\contentsline {figure}{\numberline {7-4}{\ignorespaces \textbf {消融实验}：不同超参数对V-CSS和Q-CSS性能的影响\relax }}{85}{figure.caption.58}% 
-\contentsline {figure}{\numberline {7-5}{\ignorespaces 可视化结果\relax }}{89}{figure.caption.65}% 
+\contentsline {figure}{\numberline {7-1}{\ignorespaces VQA模型必备的视觉可解释性和文本敏感性\relax }}{80}{figure.caption.55}% 
+\contentsline {figure}{\numberline {7-2}{\ignorespaces V-CSS和Q-CSS示意图\relax }}{81}{figure.caption.56}% 
+\contentsline {figure}{\numberline {7-3}{\ignorespaces $I^+$、$I^-$、$Q^+$和$Q^-$的示例图\relax }}{85}{figure.caption.57}% 
+\contentsline {figure}{\numberline {7-4}{\ignorespaces \textbf {消融实验}：不同超参数对V-CSS和Q-CSS性能的影响\relax }}{87}{figure.caption.58}% 
+\contentsline {figure}{\numberline {7-5}{\ignorespaces 可视化结果\relax }}{91}{figure.caption.65}% 
 \addvspace {10.0pt}
 \addvspace {10.0pt}
 \addvspace {10.0pt}

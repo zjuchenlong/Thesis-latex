@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.12.18)  5 MAR 2020 15:49
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.12.18)  8 MAR 2020 16:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1917,139 +1917,123 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 4
-
-Package natbib Warning: Citation `yao2018exploring' on page 31 undefined on inp
-ut line 10.
-
 [31]
 File: chapter4/res/sgg.pdf Graphic file (type pdf)
 <use chapter4/res/sgg.pdf>
-
-
-Package fontspec Warning: Font "STFangsong" does not contain requested Script
-(fontspec)                "CJK".
-
 File: chapter4/res/motivation.pdf Graphic file (type pdf)
 <use chapter4/res/motivation.pdf>
-[32]
-Underfull \vbox (badness 5077) has occurred while \output is active []
+ [32]
+Underfull \vbox (badness 3861) has occurred while \output is active []
 
  [33]
+Underfull \vbox (badness 3148) has occurred while \output is active []
+
+ [34]
 File: chapter4/res/architecture.pdf Graphic file (type pdf)
 <use chapter4/res/architecture.pdf>
-
-[34]
 File: chapter4/res/communication.pdf Graphic file (type pdf)
 <use chapter4/res/communication.pdf>
- [35]
-Underfull \vbox (badness 2393) has occurred while \output is active []
 
- [36]
-[37] [38]
-File: chapter4/res/local_sensitive.pdf Graphic file (type pdf)
-<use chapter4/res/local_sensitive.pdf>
+[35] [36] [37] [38]
 File: chapter4/res/baseline.pdf Graphic file (type pdf)
 <use chapter4/res/baseline.pdf>
+File: chapter4/res/local_sensitive.pdf Graphic file (type pdf)
+<use chapter4/res/local_sensitive.pdf>
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \hbox (12.71895pt too wide) in paragraph at lines 182--183
-[]\l_fontspec_font 给 定 一 个 全 局 的 奖 励 $\OML/cmm/m/it/12.045 R\OT1/cmr/m/n/12.045
- (\OML/cmm/m/it/12.045 H[]; V[]\OT1/cmr/m/n/12.045 )$ \l_fontspec_font 和 第 $\OM
-L/cmm/m/it/12.045 i$ \l_fontspec_font 个 智 能 体 动 作 的 反 事 实 基 准 $[][]\OT1/cmr/m/n
-/12.045 (\OML/cmm/m/it/12.045 H[]; V[]\OT1/cmr/m/n/12.045 )$\l_fontspec_font ，|
-
+ [39]
+Overfull \hbox (12.71895pt too wide) in paragraph at lines 174--175
+[]\TU/STFangsong(0)/m/n/12.045 给 定 一 个 全 局 的 奖 励 $\OML/cmm/m/it/12.045 R\OT1/cm
+r/m/n/12.045 (\OML/cmm/m/it/12.045 H[]; V[]\OT1/cmr/m/n/12.045 )$ \TU/STFangson
+g(0)/m/n/12.045 和 第 $\OML/cmm/m/it/12.045 i$ \TU/STFangsong(0)/m/n/12.045 个 智 能
+ 体 动 作 的 反 事 实 基 准 $[][]\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 H[]; V[]\OT1/
+cmr/m/n/12.045 )$\TU/STFangsong(0)/m/n/12.045 ，|
  []
 
-[39] [40] [41] [42]
-Underfull \vbox (badness 1953) has occurred while \output is active []
+[40] [41] [42]
+Underfull \vbox (badness 3942) has occurred while \output is active []
 
  [43]
-Overfull \hbox (3.88133pt too wide) in paragraph at lines 352--352
+[44]
+Overfull \hbox (3.88133pt too wide) in paragraph at lines 340--340
 [][] 
  []
 
 
-Overfull \hbox (1.78683pt too wide) in paragraph at lines 352--352
+Overfull \hbox (1.78683pt too wide) in paragraph at lines 340--340
 [][] 
  []
 
-
-Underfull \vbox (badness 2941) has occurred while \output is active []
-
- [44]
 File: chapter4/res/visualization.pdf Graphic file (type pdf)
 <use chapter4/res/visualization.pdf>
-
-[45]) [46]
+[45]) [46] [47]
 \openout2 = `./chapter5/chap5.aux'.
 
- (./chapter5/chap5.tex
-5
-[47
+ (./chapter5/chap5.tex [48
 
 
 
 ]
+5
+[49]
 File: chapter5/res/motivation.pdf Graphic file (type pdf)
 <use chapter5/res/motivation.pdf>
 
 Underfull \vbox (badness 4899) has occurred while \output is active []
 
- [48]
-[49]
+ [50]
+[51]
 File: chapter5/res/architecture.pdf Graphic file (type pdf)
 <use chapter5/res/architecture.pdf>
- [50] [51] [52] [53] [54] [55]
+ [52] [53] [54] [55] [56] [57]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [56]
-[57]
+ [58]
+[59]
 File: chapter5/res/visualization.pdf Graphic file (type pdf)
 <use chapter5/res/visualization.pdf>
-) [58] [59]
+) [60] [61]
 \openout2 = `./chapter6/chap6.aux'.
 
- (./chapter6/chap6.tex [60
+ (./chapter6/chap6.tex [62
 
 
 
 ]
 6
-[61]
+[63]
 File: chapter6/res/qbvl.pdf Graphic file (type pdf)
 <use chapter6/res/qbvl.pdf>
- [62]
+ [64]
 File: chapter6/res/sparse_bu.pdf Graphic file (type pdf)
 <use chapter6/res/sparse_bu.pdf>
- [63]
+ [65]
 File: chapter6/res/headnetwork_motivation.pdf Graphic file (type pdf)
 <use chapter6/res/headnetwork_motivation.pdf>
 
 Underfull \vbox (badness 6016) has occurred while \output is active []
 
- [64]
+ [66]
 File: chapter6/res/dense_bu.pdf Graphic file (type pdf)
 <use chapter6/res/dense_bu.pdf>
 File: chapter6/res/qanet.pdf Graphic file (type pdf)
 <use chapter6/res/qanet.pdf>
 
-[65] [66]
+[67] [68]
 File: chapter6/res/graph_fpn.pdf Graphic file (type pdf)
 <use chapter6/res/graph_fpn.pdf>
 File: chapter6/res/head_network.pdf Graphic file (type pdf)
 <use chapter6/res/head_network.pdf>
- [67]
+ [69]
 File: chapter6/res/temporal_pooling.pdf Graphic file (type pdf)
 <use chapter6/res/temporal_pooling.pdf>
- [68] [69]
+ [70] [71]
 Overfull \hbox (5.39864pt too wide) in paragraph at lines 193--194
-\TU/TimesNewRoman(0)/bx/n/12.045 R@N, IoU@$\OML/cmm/m/it/12.045 ^^R$\l_fontspec
-_font ：|  在 测 试 集 中，|  每 个 样 本 预 测 分 数 最 高 的 \TU/TimesNewRoman(0)/m/n/12.045 n 
-\l_fontspec_font 个 的 结 果 重 叠 度  |（\TU/TimesNewRoman(0)/m/n/12.045 Intersection-
-
+\TU/TimesNewRoman(0)/bx/n/12.045 R@N, IoU@$\OML/cmm/m/it/12.045 ^^R$\TU/STFangs
+ong(0)/m/n/12.045 ：|  在 测 试 集 中，|  每 个 样 本 预 测 分 数 最 高 的 \TU/TimesNewRoman(0)/m
+/n/12.045 n \TU/STFangsong(0)/m/n/12.045 个 的 结 果 重 叠 度  |（\TU/TimesNewRoman(0)/
+m/n/12.045 Intersection-
  []
 
 File: chapter6/res/qualtative_results.pdf Graphic file (type pdf)
@@ -2069,13 +2053,13 @@ Overfull \hbox (2.47276pt too wide) in paragraph at lines 244--244
 [][] 
  []
 
-[70]
+[72]
 File: chapter6/res/ablative_backbone.pdf Graphic file (type pdf)
 <use chapter6/res/ablative_backbone.pdf>
- [71]
+ [73]
 Underfull \vbox (badness 2903) has occurred while \output is active []
 
- [72]
+ [74]
 Overfull \hbox (2.46689pt too wide) in paragraph at lines 371--371
 [][] 
  []
@@ -2088,38 +2072,39 @@ Overfull \hbox (2.46689pt too wide) in paragraph at lines 371--371
 
 Underfull \vbox (badness 4543) has occurred while \output is active []
 
- [73]
-[74]
+ [75]
+[76]
 File: chapter6/res/node_visualization.pdf Graphic file (type pdf)
 <use chapter6/res/node_visualization.pdf>
-) [75]
+) [77]
 \openout2 = `./chapter7/chap7.aux'.
 
- (./chapter7/chap7.tex [76
+ (./chapter7/chap7.tex [78
 
 
 
 ]
 7
-[77]
+[79]
 File: chapter7/res/motivation.pdf Graphic file (type pdf)
 <use chapter7/res/motivation.pdf>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [78]
+ [80]
 File: chapter7/res/V-CSS_Q-CSS.pdf Graphic file (type pdf)
 <use chapter7/res/V-CSS_Q-CSS.pdf>
 
 Underfull \vbox (badness 2495) has occurred while \output is active []
 
- [79]
+ [81]
 Overfull \hbox (26.09283pt too wide) in paragraph at lines 35--36
-[]\l_fontspec_font 在 本 节，|  我 们 先 介 绍 基 本 的 自 底 向 上 和 自 顶 向 下 模 型$[]$，|  以 及 复 
-合 模 型  |（第 []\TU/TimesNewRoman(0)/m/n/12.045 7.2.1[]\l_fontspec_font 节） ；|
+[]\TU/STFangsong(0)/m/n/12.045 在 本 节，|  我 们 先 介 绍 基 本 的 自 底 向 上 和 自 顶 向 下 模 型$[
+]$，|  以 及 复 合 模 型  |（第 []\TU/TimesNewRoman(0)/m/n/12.045 7.2.1[]\TU/STFangsong(
+0)/m/n/12.045 节） ；|
  []
 
-[80]
+[82]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 56.
 
@@ -2129,20 +2114,21 @@ LaTeX Font Warning: Font shape `TU/TimesNewRoman(0)/m/sc' undefined
 
 
 Overfull \hbox (9.59193pt too wide) in paragraph at lines 78--79
-[]\l_fontspec_font 用 \TU/TimesNewRoman(0)/m/n/12.045 V-CSS \l_fontspec_font 生 成
- 反 事 实 样 本 $\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 I[]; Q; a[]\OT1/cmr/m/n/1
-2.045 )$ \l_fontspec_font 或 用 \TU/TimesNewRoman(0)/m/n/12.045 Q-CSS \l_fontspec
-_font 生 成 反 事 实 样 本 $\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 I; Q[]; a[]\OT1/
-cmr/m/n/12.045 )$\l_fontspec_font ；| 
+[]\TU/STFangsong(0)/m/n/12.045 用 \TU/TimesNewRoman(0)/m/n/12.045 V-CSS \TU/STFa
+ngsong(0)/m/n/12.045 生 成 反 事 实 样 本 $\OT1/cmr/m/n/12.045 (\OML/cmm/m/it/12.045 I
+[]; Q; a[]\OT1/cmr/m/n/12.045 )$ \TU/STFangsong(0)/m/n/12.045 或 用 \TU/TimesNewR
+oman(0)/m/n/12.045 Q-CSS \TU/STFangsong(0)/m/n/12.045 生 成 反 事 实 样 本 $\OT1/cmr/m
+/n/12.045 (\OML/cmm/m/it/12.045 I; Q[]; a[]\OT1/cmr/m/n/12.045 )$\TU/STFangsong
+(0)/m/n/12.045 ；| 
  []
 
-[81] [82]
+[83] [84]
 File: chapter7/res/IQ+-.pdf Graphic file (type pdf)
 <use chapter7/res/IQ+-.pdf>
- [83]
+ [85]
 File: chapter7/res/ablative_studies.pdf Graphic file (type pdf)
 <use chapter7/res/ablative_studies.pdf>
- [84]
+ [86]
 Overfull \hbox (2.8374pt too wide) in paragraph at lines 222--222
 [][] 
  []
@@ -2152,32 +2138,32 @@ Overfull \hbox (2.8374pt too wide) in paragraph at lines 222--222
 [][] 
  []
 
-[85] [86]
+[87] [88]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [87]
+ [89]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [88]
+ [90]
 File: chapter7/res/visualization.pdf Graphic file (type pdf)
 <use chapter7/res/visualization.pdf>
 )
-[89] [90]
+[91] [92]
 \openout2 = `./chapter8/chap8.aux'.
 
  (./chapter8/chap8.tex
 8
-[91
+[93
 
 
 
-] [92]) [93] [94
+] [94]) [95] [96
 
 
 ] (./chenlong_phd.bbl
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [95
+ [97
 
 ]
 Underfull \hbox (badness 8000) in paragraph at lines 145--149
@@ -2186,12 +2172,6 @@ Lu, Margaret Mitchell, Dhruv Batra,
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [96]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [97]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [98]
@@ -2207,16 +2187,16 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [102]
-
-LaTeX Warning: Command \^ invalid in math mode on input line 798.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [103]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [104]
+
+LaTeX Warning: Command \^ invalid in math mode on input line 798.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [105]
@@ -2240,11 +2220,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [111]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [112])
-[113]
+ [112]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [113]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [114])
+[115]
 \openout2 = `./chapter8/publications.aux'.
 
- (./chapter8/publications.tex [114
+ (./chapter8/publications.tex [116
 
 
 ]
@@ -2259,28 +2245,25 @@ Overfull \hbox (11.57263pt too wide) in paragraph at lines 46--51
 -based Video Localization[C]. Thirty-
  []
 
-[115]) [116]
+[117]) [118]
 \openout2 = `./chapter8/thanks.aux'.
 
- (./chapter8/thanks.tex [117
+ (./chapter8/thanks.tex [119
 
 
 
-]) [118]
-
-Package natbib Warning: There were undefined citations.
-
+]) [120]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 191.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 191.
-(./chenlong_phd.aux (./chapter0/abstractC.aux) (./chapter0/abstractE.aux)
-(./chapter1/chap1.aux) (./chapter2/chap2.aux) (./chapter3/chap3.aux)
-(./chapter4/chap4.aux) (./chapter5/chap5.aux) (./chapter6/chap6.aux)
-(./chapter7/chap7.aux) (./chapter8/chap8.aux) (./chapter8/publications.aux)
-(./chapter8/thanks.aux))
+ (./chenlong_phd.aux
+(./chapter0/abstractC.aux) (./chapter0/abstractE.aux) (./chapter1/chap1.aux)
+(./chapter2/chap2.aux) (./chapter3/chap3.aux) (./chapter4/chap4.aux)
+(./chapter5/chap5.aux) (./chapter6/chap6.aux) (./chapter7/chap7.aux)
+(./chapter8/chap8.aux) (./chapter8/publications.aux) (./chapter8/thanks.aux))
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 191.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 191.
 Package rerunfilecheck Info: File `chenlong_phd.out' has not changed.
-(rerunfilecheck)             Checksum: A5E785BCB93FEA1A8CA69388DA8D44D2.
+(rerunfilecheck)             Checksum: 531EBFC264BD40A9E0BDEFC7C5A84B5C.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2288,12 +2271,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 191.
  ) 
 Here is how much of TeX's memory you used:
- 54032 strings out of 492916
- 1262218 string characters out of 6133344
+ 54068 strings out of 492916
+ 1264627 string characters out of 6133344
  1464515 words of memory out of 5000000
- 57137 multiletter control sequences out of 15000+600000
- 564602 words of font info for 214 fonts, out of 8000000 for 9000
+ 57176 multiletter control sequences out of 15000+600000
+ 564586 words of font info for 212 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 65i,22n,96p,1332b,1686s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,22n,96p,1332b,1666s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chenlong_phd.pdf (138 pages).
+Output written on chenlong_phd.pdf (140 pages).
