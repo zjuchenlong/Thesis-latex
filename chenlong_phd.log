@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.12.18)  8 MAR 2020 20:25
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.12.18)  10 MAR 2020 15:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2015,80 +2015,63 @@ File: chapter6/res/sparse_bu.pdf Graphic file (type pdf)
 File: chapter6/res/headnetwork_motivation.pdf Graphic file (type pdf)
 <use chapter6/res/headnetwork_motivation.pdf>
 
-Underfull \vbox (badness 6016) has occurred while \output is active []
+Underfull \vbox (badness 2351) has occurred while \output is active []
 
  [66]
 File: chapter6/res/dense_bu.pdf Graphic file (type pdf)
 <use chapter6/res/dense_bu.pdf>
+
+[67]
 File: chapter6/res/qanet.pdf Graphic file (type pdf)
 <use chapter6/res/qanet.pdf>
-
-[67] [68]
 File: chapter6/res/graph_fpn.pdf Graphic file (type pdf)
 <use chapter6/res/graph_fpn.pdf>
+
+Underfull \vbox (badness 4205) has occurred while \output is active []
+
+ [68]
+[69]
 File: chapter6/res/head_network.pdf Graphic file (type pdf)
 <use chapter6/res/head_network.pdf>
- [69]
 File: chapter6/res/temporal_pooling.pdf Graphic file (type pdf)
 <use chapter6/res/temporal_pooling.pdf>
- [70] [71]
-Overfull \hbox (5.39864pt too wide) in paragraph at lines 193--194
-\TU/TimesNewRoman(0)/bx/n/12.045 R@N, IoU@$\OML/cmm/m/it/12.045 ^^R$\TU/STFangs
-ong(0)/m/n/12.045 ：|  在 测 试 集 中，|  每 个 样 本 预 测 分 数 最 高 的 \TU/TimesNewRoman(0)/m
-/n/12.045 n \TU/STFangsong(0)/m/n/12.045 个 的 结 果 重 叠 度  |（\TU/TimesNewRoman(0)/
-m/n/12.045 Intersection-
- []
-
+ [70] [71] [72]
 File: chapter6/res/qualtative_results.pdf Graphic file (type pdf)
 <use chapter6/res/qualtative_results.pdf>
 
-Overfull \hbox (2.28458pt too wide) in paragraph at lines 244--244
+Overfull \hbox (2.28458pt too wide) in paragraph at lines 225--225
 [][] 
  []
 
 
-Overfull \hbox (2.28458pt too wide) in paragraph at lines 244--244
+Overfull \hbox (2.28458pt too wide) in paragraph at lines 225--225
 [][] 
  []
 
 
-Overfull \hbox (2.47276pt too wide) in paragraph at lines 244--244
+Overfull \hbox (2.47276pt too wide) in paragraph at lines 225--225
 [][] 
  []
 
-[72]
+[73] [74]
 File: chapter6/res/ablative_backbone.pdf Graphic file (type pdf)
 <use chapter6/res/ablative_backbone.pdf>
- [73]
-Underfull \vbox (badness 2903) has occurred while \output is active []
-
- [74]
-Overfull \hbox (2.46689pt too wide) in paragraph at lines 371--371
-[][] 
- []
-
-
-Overfull \hbox (2.46689pt too wide) in paragraph at lines 371--371
-[][] 
- []
-
-
-Underfull \vbox (badness 4543) has occurred while \output is active []
-
- [75]
-[76]
 File: chapter6/res/node_visualization.pdf Graphic file (type pdf)
 <use chapter6/res/node_visualization.pdf>
-) [77]
+ [75] [76]
+Underfull \vbox (badness 1231) has occurred while \output is active []
+
+ [77])
+[78]
 \openout2 = `./chapter7/chap7.aux'.
 
- (./chapter7/chap7.tex [78
+ (./chapter7/chap7.tex
+7
+[79
 
 
 
 ]
-7
-[79]
 File: chapter7/res/motivation.pdf Graphic file (type pdf)
 <use chapter7/res/motivation.pdf>
 
@@ -2256,30 +2239,30 @@ Overfull \hbox (11.57263pt too wide) in paragraph at lines 46--51
 
 
 ]) [120]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 191.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 191.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 192.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 192.
  (./chenlong_phd.aux
 (./chapter0/abstractC.aux) (./chapter0/abstractE.aux) (./chapter1/chap1.aux)
 (./chapter2/chap2.aux) (./chapter3/chap3.aux) (./chapter4/chap4.aux)
 (./chapter5/chap5.aux) (./chapter6/chap6.aux) (./chapter7/chap7.aux)
 (./chapter8/chap8.aux) (./chapter8/publications.aux) (./chapter8/thanks.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 191.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 191.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 192.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 192.
 Package rerunfilecheck Info: File `chenlong_phd.out' has not changed.
-(rerunfilecheck)             Checksum: EAC943E1FADE7FE0A90C1BA22056EB86.
+(rerunfilecheck)             Checksum: 42E8FFFF246B016E3359CC8057BD0441.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 191.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 192.
  ) 
 Here is how much of TeX's memory you used:
- 54055 strings out of 492916
- 1263698 string characters out of 6133344
+ 54043 strings out of 492916
+ 1262476 string characters out of 6133344
  1458515 words of memory out of 5000000
- 57163 multiletter control sequences out of 15000+600000
+ 57151 multiletter control sequences out of 15000+600000
  564586 words of font info for 212 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 65i,22n,96p,1332b,1666s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,22n,96p,1332b,1662s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on chenlong_phd.pdf (140 pages).

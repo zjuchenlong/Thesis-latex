@@ -79,16 +79,15 @@
 \contentsline {section}{\numberline {6.1}问题描述}{63}{section.6.1}% 
 \contentsline {section}{\numberline {6.2}基于图特征金字塔的密集型预测}{67}{section.6.2}% 
 \contentsline {subsection}{\numberline {6.2.1}骨干网络}{67}{subsection.6.2.1}% 
-\contentsline {subsection}{\numberline {6.2.2}图特征金字塔层}{68}{subsection.6.2.2}% 
-\contentsline {subsection}{\numberline {6.2.3}密集型头网络}{69}{subsection.6.2.3}% 
-\contentsline {subsection}{\numberline {6.2.4}训练阶段和测试阶段}{70}{subsection.6.2.4}% 
+\contentsline {subsection}{\numberline {6.2.2}图特征金字塔层}{69}{subsection.6.2.2}% 
+\contentsline {subsection}{\numberline {6.2.3}密集型头网络}{70}{subsection.6.2.3}% 
+\contentsline {subsection}{\numberline {6.2.4}训练阶段和测试阶段}{71}{subsection.6.2.4}% 
 \contentsline {section}{\numberline {6.3}实验设置与性能对比}{71}{section.6.3}% 
-\contentsline {subsection}{\numberline {6.3.1}视频片段检索数据集}{71}{subsection.6.3.1}% 
-\contentsline {subsection}{\numberline {6.3.2}评价指标}{72}{subsection.6.3.2}% 
-\contentsline {subsection}{\numberline {6.3.3}实验设定}{72}{subsection.6.3.3}% 
-\contentsline {subsection}{\numberline {6.3.4}视频片段检索性能对比}{72}{subsection.6.3.4}% 
-\contentsline {subsection}{\numberline {6.3.5}视频片段检索性能分析}{74}{subsection.6.3.5}% 
-\contentsline {section}{\numberline {6.4}本章小结}{77}{section.6.4}% 
+\contentsline {subsection}{\numberline {6.3.1}视频片段检索数据集和评价指标}{71}{subsection.6.3.1}% 
+\contentsline {subsection}{\numberline {6.3.2}实验设定}{72}{subsection.6.3.2}% 
+\contentsline {subsection}{\numberline {6.3.3}视频片段检索性能对比}{73}{subsection.6.3.3}% 
+\contentsline {subsection}{\numberline {6.3.4}视频片段检索性能分析}{75}{subsection.6.3.4}% 
+\contentsline {section}{\numberline {6.4}本章小结}{78}{section.6.4}% 
 \contentsline {chapter}{\numberline {7\hspace {.3em}}基于反事实样本生成的图像视觉问答方法}{79}{chapter.7}% 
 \contentsline {section}{\numberline {7.1}问题描述}{79}{section.7.1}% 
 \contentsline {section}{\numberline {7.2}反事实样本生成}{82}{section.7.2}% 

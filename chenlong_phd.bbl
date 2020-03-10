@@ -1452,6 +1452,19 @@ Ranjay Krishna, Kenji Hata, Frederic Ren, Li~Fei-Fei, Juan Carlos~Niebles.
 \newblock Dense-captioning events in videos[C]. Proc. {IEEE} ICCV.
 \newblock 2017:706--715.
 
+\bibitem{monfort2018moments}
+Mathew Monfort, Alex Andonian, Bolei Zhou, Kandan Ramakrishnan, Sarah~Adel
+  Bargal, Tom Yan, Lisa Brown, Quanfu Fan, Dan Gutfruend, Carl Vondrick, et~al.
+\newblock Moments in time dataset: one million videos for event
+  understanding[C]. arXiv.
+\newblock 2018.
+
+\bibitem{xu2019self}
+Dejing Xu, Jun Xiao, Zhou Zhao, Jian Shao, Di~Xie, Yueting Zhuang.
+\newblock Self-supervised spatiotemporal learning via video clip order
+  prediction[C]. Proc. {IEEE} Conf. CVPR.
+\newblock 2019:10334--10343.
+
 \bibitem{anne2017localizing}
 Lisa Anne~Hendricks, Oliver Wang, Eli Shechtman, Josef Sivic, Trevor Darrell,
   Bryan Russell.

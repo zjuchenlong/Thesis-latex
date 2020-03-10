@@ -14,7 +14,7 @@ A level-1 auxiliary file: ./chapter8/chap8.aux
 The style file: ZJUthesis.bst
 A level-1 auxiliary file: ./chapter8/publications.aux
 A level-1 auxiliary file: ./chapter8/thanks.aux
-Reallocated field_info (elt_size=4) to 14555 items from 5000.
+Reallocated field_info (elt_size=4) to 14625 items from 5000.
 Database file #1: ZJUthesis.bib
 Warning--string name "tpmai" is undefined
 --line 151 of file ZJUthesis.bib
@@ -22,7 +22,7 @@ I was expecting a `,' or a `}'---line 2287 of file ZJUthesis.bib
  :   pages={1378--1386}
  :                     ，
 I'm skipping whatever remains of this entry
-Repeated entry---line 4527 of file ZJUthesis.bib
+Repeated entry---line 4561 of file ZJUthesis.bib
  : @inproceedings{yao2017boosting
  :                               ,
 I'm skipping whatever remains of this entry
@@ -63,6 +63,7 @@ Warning--empty pages in bahdanau2017actor
 Warning--missing address in sutton2018reinforcement
 Warning--empty pages in weaver2013optimal
 Warning--empty pages in zeiler2012adadelta
+Warning--empty pages in monfort2018moments
 Warning--empty pages in xiong2017dynamic
 Warning--empty pages in xiong2018dcn+
 Warning--empty pages in yu2018qanet
@@ -71,45 +72,45 @@ Warning--empty pages in kingma2015adam
 Warning--can't use both volume and number fields in wu2018multi
 Warning--empty pages in ross2017right
 Warning--empty pages in jain2019attention
-You've used 273 entries,
+You've used 275 entries,
             2586 wiz_defined-function locations,
-            1735 strings with 49247 characters,
-and the built_in function-call counts, 128467 in all, are:
-= -- 9268
-> -- 3771
+            1742 strings with 49703 characters,
+and the built_in function-call counts, 129528 in all, are:
+= -- 9327
+> -- 3824
 < -- 8
-+ -- 1439
-- -- 1166
-* -- 5934
-:= -- 13799
-add.period$ -- 827
-call.type$ -- 273
-change.case$ -- 272
++ -- 1458
+- -- 1183
+* -- 5991
+:= -- 13920
+add.period$ -- 833
+call.type$ -- 275
+change.case$ -- 274
 chr.to.int$ -- 0
-cite$ -- 318
-duplicate$ -- 12593
-empty$ -- 12236
-format.name$ -- 1434
-if$ -- 29272
+cite$ -- 321
+duplicate$ -- 12698
+empty$ -- 12329
+format.name$ -- 1453
+if$ -- 29503
 int.to.chr$ -- 0
-int.to.str$ -- 273
-missing$ -- 3316
-newline$ -- 1371
-num.names$ -- 273
-pop$ -- 5647
+int.to.str$ -- 275
+missing$ -- 3348
+newline$ -- 1381
+num.names$ -- 275
+pop$ -- 5697
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 4705
+skip$ -- 4737
 stack$ -- 0
-substring$ -- 8176
-swap$ -- 8297
+substring$ -- 8224
+swap$ -- 8369
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 45
-while$ -- 935
-width$ -- 276
-write$ -- 2534
+warning$ -- 46
+while$ -- 940
+width$ -- 278
+write$ -- 2552
 (There were 2 error messages)
