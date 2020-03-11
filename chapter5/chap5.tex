@@ -88,7 +88,7 @@ y_t & \sim p_t = \textrm{softmax} \left(\bm{h}_t, y_{t-1} \right).
 
 根据空间注意力模型和通道注意力模型的使用顺序，总共有两种不同的组合形式：
 
-\textbf{通道-空间模型（Channel-Spatial）}：第一类是先使用通道注意力机制再使用空间注意力机制。对于这类，如图~\ref{ch5:fig:architecture}所示，给定一个初始的视觉特征图$\bm{V}$，我们先使用通道注意力模型$\Phi_c$得到通道注意力权重$\beta$，然后利用$\beta$对$\bm{V}$进行线性加权。之后，我们将加权的特征图输入到空间注意力模型$\Phi_s$得到空间注意力权重$\alpha$。在得到注意力权重$\alpha$和$\beta$之后，我们可以得到最终的特征图$\bm{X}$：
+\textbf{\kaishu{通道-空间模型}}（Channel-Spatial）：第一类是先使用通道注意力机制再使用空间注意力机制。对于这类，如图~\ref{ch5:fig:architecture}所示，给定一个初始的视觉特征图$\bm{V}$，我们先使用通道注意力模型$\Phi_c$得到通道注意力权重$\beta$，然后利用$\beta$对$\bm{V}$进行线性加权。之后，我们将加权的特征图输入到空间注意力模型$\Phi_s$得到空间注意力权重$\alpha$。在得到注意力权重$\alpha$和$\beta$之后，我们可以得到最终的特征图$\bm{X}$：
 \begin{equation} \label{ch5:eq:eq_8}
 \begin{split}
 \beta &= \Phi_c \left(\bm{h}_{t-1},\bm{V} \right), \\
@@ -99,7 +99,7 @@ y_t & \sim p_t = \textrm{softmax} \left(\bm{h}_t, y_{t-1} \right).
 其中，$f_c(\cdot)$表示特征图通道与通道注意力权重在通道维度上进行乘积。
 
 
-\textbf{空间-通道模型（Spatial-Channel）}：第二类是先使用空间注意力机制再使用通道注意力机制。对于这类，给定一个初始的视觉特征图$\bm{V}$，我们先使用空间注意力模型$\Phi_s$得到空间注意力权重$\alpha$。通过注意力权重、线性函数$f_s(\cdot)$和通道注意力模型$\Phi_c$，我们可以得到最终的特征图$\bm{X}$：
+\textbf{\kaishu{空间-通道模型}}（Spatial-Channel）：第二类是先使用空间注意力机制再使用通道注意力机制。对于这类，给定一个初始的视觉特征图$\bm{V}$，我们先使用空间注意力模型$\Phi_s$得到空间注意力权重$\alpha$。通过注意力权重、线性函数$f_s(\cdot)$和通道注意力模型$\Phi_c$，我们可以得到最终的特征图$\bm{X}$：
 \begin{equation} \label{ch5:eq:eq_9}
 \begin{split}
 \alpha &= \Phi_s \left(\bm{h}_{t-1}, \bm{V} \right), \\

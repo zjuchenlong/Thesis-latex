@@ -88,20 +88,20 @@
 \contentsline {subsection}{\numberline {6.3.3}视频片段检索性能对比}{73}{subsection.6.3.3}% 
 \contentsline {subsection}{\numberline {6.3.4}视频片段检索性能分析}{75}{subsection.6.3.4}% 
 \contentsline {section}{\numberline {6.4}本章小结}{78}{section.6.4}% 
-\contentsline {chapter}{\numberline {7\hspace {.3em}}基于反事实样本生成的图像视觉问答方法}{79}{chapter.7}% 
+\contentsline {chapter}{\numberline {7\hspace {.3em}}基于反事实样本生成的视觉问答方法}{79}{chapter.7}% 
 \contentsline {section}{\numberline {7.1}问题描述}{79}{section.7.1}% 
 \contentsline {section}{\numberline {7.2}反事实样本生成}{82}{section.7.2}% 
 \contentsline {subsection}{\numberline {7.2.1}引言}{82}{subsection.7.2.1}% 
 \contentsline {subsection}{\numberline {7.2.2}反事实样本生成}{83}{subsection.7.2.2}% 
 \contentsline {section}{\numberline {7.3}实验设置与性能对比}{86}{section.7.3}% 
-\contentsline {subsection}{\numberline {7.3.1}CSS对视觉问答的性能分析}{86}{subsection.7.3.1}% 
-\contentsline {subsection}{\numberline {7.3.2}视觉问题方法性能对比}{87}{subsection.7.3.2}% 
+\contentsline {subsection}{\numberline {7.3.1}CSS对视觉问答的性能分析}{87}{subsection.7.3.1}% 
+\contentsline {subsection}{\numberline {7.3.2}视觉问题方法性能对比}{88}{subsection.7.3.2}% 
 \contentsline {subsection}{\numberline {7.3.3}CSS对视觉可解释性的帮助}{90}{subsection.7.3.3}% 
-\contentsline {subsection}{\numberline {7.3.4}CSS对文本敏感性的帮助}{91}{subsection.7.3.4}% 
-\contentsline {section}{\numberline {7.4}本章小结}{91}{section.7.4}% 
-\contentsline {chapter}{\numberline {8\hspace {.3em}}总结和展望}{93}{chapter.8}% 
-\contentsline {section}{\numberline {8.1}本文工作总结}{93}{section.8.1}% 
-\contentsline {section}{\numberline {8.2}未来研究展望}{94}{section.8.2}% 
-\contentsline {chapter}{参考文献}{97}{chapter*.66}% 
-\contentsline {chapter}{攻读博士学位期间主要研究成果}{117}{chapter*.67}% 
-\contentsline {chapter}{致谢}{119}{chapter*.69}% 
+\contentsline {subsection}{\numberline {7.3.4}CSS对问题敏感性的帮助}{91}{subsection.7.3.4}% 
+\contentsline {section}{\numberline {7.4}本章小结}{93}{section.7.4}% 
+\contentsline {chapter}{\numberline {8\hspace {.3em}}总结和展望}{95}{chapter.8}% 
+\contentsline {section}{\numberline {8.1}本文工作总结}{95}{section.8.1}% 
+\contentsline {section}{\numberline {8.2}未来研究展望}{96}{section.8.2}% 
+\contentsline {chapter}{参考文献}{99}{chapter*.66}% 
+\contentsline {chapter}{攻读博士学位期间主要研究成果}{119}{chapter*.67}% 
+\contentsline {chapter}{致谢}{121}{chapter*.69}% 
