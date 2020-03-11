@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.12.18)  11 MAR 2020 11:10
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.12.18)  11 MAR 2020 11:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2230,28 +2230,28 @@ Overfull \hbox (11.57263pt too wide) in paragraph at lines 46--51
 
 
 ]) [122]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 191.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 191.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 189.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 189.
  (./chenlong_phd.aux
 (./chapter0/abstractC.aux) (./chapter0/abstractE.aux) (./chapter1/chap1.aux)
 (./chapter2/chap2.aux) (./chapter3/chap3.aux) (./chapter4/chap4.aux)
 (./chapter5/chap5.aux) (./chapter6/chap6.aux) (./chapter7/chap7.aux)
 (./chapter8/chap8.aux) (./chapter8/publications.aux) (./chapter8/thanks.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 191.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 191.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 189.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 189.
 Package rerunfilecheck Info: File `chenlong_phd.out' has not changed.
-(rerunfilecheck)             Checksum: 914A43720C274F71BE2B0DE514F002E9.
+(rerunfilecheck)             Checksum: F1B05007B4174A785A5CBA24735E0111.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 191.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 189.
  ) 
 Here is how much of TeX's memory you used:
- 54039 strings out of 492916
- 1262400 string characters out of 6133344
+ 54019 strings out of 492916
+ 1261006 string characters out of 6133344
  1457515 words of memory out of 5000000
- 57147 multiletter control sequences out of 15000+600000
+ 57127 multiletter control sequences out of 15000+600000
  564586 words of font info for 212 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  65i,22n,96p,1332b,1662s stack positions out of 5000i,500n,10000p,200000b,80000s

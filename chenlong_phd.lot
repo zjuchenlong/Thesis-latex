@@ -29,7 +29,7 @@
 \contentsline {table}{\numberline {7-3}{\ignorespaces 不同视觉问答模型在VQA-CP v1上的性能对比\relax }}{90}{table.caption.61}% 
 \contentsline {table}{\numberline {7-4}{\ignorespaces VQA-CP v2测试集的准确率\relax }}{91}{table.caption.62}% 
 \contentsline {table}{\numberline {7-5}{\ignorespaces VQA-CP v2测试集的$\mathcal {AI}$分数\relax }}{91}{table.caption.63}% 
-\contentsline {table}{\numberline {7-6}{\ignorespaces 左：VQA-CP-Rephrasing数据集中的$CS(k)$；右：VQA-CP v2测试集中$\mathcal {CI}$分数\relax }}{91}{table.caption.64}% 
+\contentsline {table}{\numberline {7-6}{\ignorespaces VQA-CP-Rephrasing测试集的$CS(k)$和VQA-CP v2测试集的$\mathcal {CI}$分数\relax }}{91}{table.caption.64}% 
 \addvspace {10.0pt}
 \addvspace {10.0pt}
 \addvspace {10.0pt}
