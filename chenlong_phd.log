@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.12.18)  11 MAR 2020 11:55
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2019.12.18)  11 MAR 2020 22:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1862,19 +1862,19 @@ File: chapter1/res/technique_summary.pdf Graphic file (type pdf)
 
 
 
-] [10] [11] [12] [13] [14] [15]) [16]
+] [10] [11] [12] [13] [14] [15] [16] [17]) [18]
 \openout2 = `./chapter3/chap3.aux'.
 
  (./chapter3/chap3.tex
 3
-[17
+[19
 
 
 
 ]
 File: chapter3/res/zsl_paradigms.pdf Graphic file (type pdf)
 <use chapter3/res/zsl_paradigms.pdf>
- [18]
+ [20]
 File: chapter3/res/reconstruction_visualization.pdf Graphic file (type pdf)
 <use chapter3/res/reconstruction_visualization.pdf>
 
@@ -1886,20 +1886,20 @@ Roman(0)/m/n/12.045 CUB$[]$\TU/STFangsong(0)/m/n/12.045 、| \TU/TimesNewRoman(0
 []$
  []
 
-[19]
+[21]
 File: chapter3/res/sp_aen.pdf Graphic file (type pdf)
 <use chapter3/res/sp_aen.pdf>
- [20] [21] [22] [23]
+ [22] [23] [24] [25]
 Overfull \hbox (3.28549pt too wide) in paragraph at lines 172--173
  [][] 
  []
 
-[24] [25]
+[26] [27]
 File: chapter3/res/conflict.pdf Graphic file (type pdf)
 <use chapter3/res/conflict.pdf>
 File: chapter3/res/conflict_visualization.pdf Graphic file (type pdf)
 <use chapter3/res/conflict_visualization.pdf>
- [26] [27]
+ [28] [29]
 File: chapter3/res/ausuc.pdf Graphic file (type pdf)
 <use chapter3/res/ausuc.pdf>
 File: chapter3/res/alpha_influence.pdf Graphic file (type pdf)
@@ -1907,34 +1907,34 @@ File: chapter3/res/alpha_influence.pdf Graphic file (type pdf)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [28])
-[29]
+ [30])
+[31]
 \openout2 = `./chapter4/chap4.aux'.
 
- (./chapter4/chap4.tex [30
+ (./chapter4/chap4.tex [32
 
 
 
 ]
 4
-[31]
+[33]
 File: chapter4/res/sgg.pdf Graphic file (type pdf)
 <use chapter4/res/sgg.pdf>
 File: chapter4/res/motivation.pdf Graphic file (type pdf)
 <use chapter4/res/motivation.pdf>
- [32]
+ [34]
 Underfull \vbox (badness 3861) has occurred while \output is active []
 
- [33]
+ [35]
 Underfull \vbox (badness 3148) has occurred while \output is active []
 
- [34]
+ [36]
 File: chapter4/res/architecture.pdf Graphic file (type pdf)
 <use chapter4/res/architecture.pdf>
 File: chapter4/res/communication.pdf Graphic file (type pdf)
 <use chapter4/res/communication.pdf>
 
-[35] [36] [37] [38]
+[37] [38] [39] [40]
 File: chapter4/res/baseline.pdf Graphic file (type pdf)
 <use chapter4/res/baseline.pdf>
 File: chapter4/res/local_sensitive.pdf Graphic file (type pdf)
@@ -1942,7 +1942,7 @@ File: chapter4/res/local_sensitive.pdf Graphic file (type pdf)
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [39]
+ [41]
 Overfull \hbox (12.71895pt too wide) in paragraph at lines 174--175
 []\TU/STFangsong(0)/m/n/12.045 给 定 一 个 全 局 的 奖 励 $\OML/cmm/m/it/12.045 R\OT1/cm
 r/m/n/12.045 (\OML/cmm/m/it/12.045 H[]; V[]\OT1/cmr/m/n/12.045 )$ \TU/STFangson
@@ -1951,11 +1951,11 @@ g(0)/m/n/12.045 和 第 $\OML/cmm/m/it/12.045 i$ \TU/STFangsong(0)/m/n/12.045 �
 cmr/m/n/12.045 )$\TU/STFangsong(0)/m/n/12.045 ，|
  []
 
-[40] [41] [42]
+[42] [43] [44]
 Underfull \vbox (badness 3942) has occurred while \output is active []
 
- [43]
-[44]
+ [45]
+[46]
 Overfull \hbox (3.88133pt too wide) in paragraph at lines 340--340
 [][] 
  []
@@ -1967,61 +1967,61 @@ Overfull \hbox (1.78683pt too wide) in paragraph at lines 340--340
 
 File: chapter4/res/visualization.pdf Graphic file (type pdf)
 <use chapter4/res/visualization.pdf>
-[45]) [46] [47]
+[47]) [48] [49]
 \openout2 = `./chapter5/chap5.aux'.
 
- (./chapter5/chap5.tex [48
+ (./chapter5/chap5.tex [50
 
 
 
 ]
 5
-[49]
+[51]
 File: chapter5/res/motivation.pdf Graphic file (type pdf)
 <use chapter5/res/motivation.pdf>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [50]
-[51]
+ [52]
+[53]
 File: chapter5/res/architecture.pdf Graphic file (type pdf)
 <use chapter5/res/architecture.pdf>
- [52] [53] [54] [55] [56] [57] [58]
+ [54] [55] [56] [57] [58] [59] [60]
 File: chapter5/res/visualization.pdf Graphic file (type pdf)
 <use chapter5/res/visualization.pdf>
- [59]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [60])
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
  [61]
-[62]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [62])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [63]
+[64]
 \openout2 = `./chapter6/chap6.aux'.
 
  (./chapter6/chap6.tex
 6
-[63
+[65
 
 
 
 ]
 File: chapter6/res/qbvl.pdf Graphic file (type pdf)
 <use chapter6/res/qbvl.pdf>
- [64]
+ [66]
 File: chapter6/res/sparse_bu.pdf Graphic file (type pdf)
 <use chapter6/res/sparse_bu.pdf>
- [65]
+ [67]
 File: chapter6/res/headnetwork_motivation.pdf Graphic file (type pdf)
 <use chapter6/res/headnetwork_motivation.pdf>
 
 Underfull \vbox (badness 2351) has occurred while \output is active []
 
- [66]
+ [68]
 File: chapter6/res/dense_bu.pdf Graphic file (type pdf)
 <use chapter6/res/dense_bu.pdf>
 
-[67]
+[69]
 File: chapter6/res/qanet.pdf Graphic file (type pdf)
 <use chapter6/res/qanet.pdf>
 File: chapter6/res/graph_fpn.pdf Graphic file (type pdf)
@@ -2029,13 +2029,13 @@ File: chapter6/res/graph_fpn.pdf Graphic file (type pdf)
 
 Underfull \vbox (badness 4205) has occurred while \output is active []
 
- [68]
-[69]
+ [70]
+[71]
 File: chapter6/res/head_network.pdf Graphic file (type pdf)
 <use chapter6/res/head_network.pdf>
 File: chapter6/res/temporal_pooling.pdf Graphic file (type pdf)
 <use chapter6/res/temporal_pooling.pdf>
- [70] [71] [72]
+ [72] [73] [74]
 File: chapter6/res/qualtative_results.pdf Graphic file (type pdf)
 <use chapter6/res/qualtative_results.pdf>
 
@@ -2053,35 +2053,35 @@ Overfull \hbox (2.47276pt too wide) in paragraph at lines 225--225
 [][] 
  []
 
-[73] [74]
+[75] [76]
 File: chapter6/res/ablative_backbone.pdf Graphic file (type pdf)
 <use chapter6/res/ablative_backbone.pdf>
 File: chapter6/res/node_visualization.pdf Graphic file (type pdf)
 <use chapter6/res/node_visualization.pdf>
- [75] [76]
+ [77] [78]
 Underfull \vbox (badness 1231) has occurred while \output is active []
 
- [77])
-[78]
+ [79])
+[80]
 \openout2 = `./chapter7/chap7.aux'.
 
  (./chapter7/chap7.tex
 7
-[79
+[81
 
 
 
 ]
 File: chapter7/res/motivation.pdf Graphic file (type pdf)
 <use chapter7/res/motivation.pdf>
- [80]
+ [82]
 File: chapter7/res/V-CSS_Q-CSS.pdf Graphic file (type pdf)
 <use chapter7/res/V-CSS_Q-CSS.pdf>
 
 Underfull \vbox (badness 3058) has occurred while \output is active []
 
- [81]
-[82]
+ [83]
+[84]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 56.
 
@@ -2099,10 +2099,10 @@ oman(0)/m/n/12.045 Q-CSS \TU/STFangsong(0)/m/n/12.045 生 成 反 事 实 样 �
 (0)/m/n/12.045 ；| 
  []
 
-[83] [84]
+[85] [86]
 File: chapter7/res/IQ+-.pdf Graphic file (type pdf)
 <use chapter7/res/IQ+-.pdf>
- [85] [86]
+ [87] [88]
 File: chapter7/res/ablative_studies.pdf Graphic file (type pdf)
 <use chapter7/res/ablative_studies.pdf>
 
@@ -2118,29 +2118,29 @@ Overfull \hbox (2.8374pt too wide) in paragraph at lines 221--221
 
 Underfull \vbox (badness 2932) has occurred while \output is active []
 
- [87]
+ [89]
 Underfull \vbox (badness 5374) has occurred while \output is active []
 
- [88]
-[89] [90]
+ [90]
+[91] [92]
 File: chapter7/res/visualization.pdf Graphic file (type pdf)
 <use chapter7/res/visualization.pdf>
- [91] [92]) [93]
+ [93] [94]) [95]
 \openout2 = `./chapter8/chap8.aux'.
 
- (./chapter8/chap8.tex [94
+ (./chapter8/chap8.tex [96
 
 
 
 ]
 8
-[95] [96]) [97] [98
+[97] [98]) [99] [100
 
 
 ] (./chenlong_phd.bbl
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [99
+ [101
 
 ]
 Underfull \hbox (badness 8000) in paragraph at lines 145--149
@@ -2149,12 +2149,6 @@ Lu, Margaret Mitchell, Dhruv Batra,
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [100]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [101]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [102]
@@ -2170,16 +2164,16 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [106]
-
-LaTeX Warning: Command \^ invalid in math mode on input line 798.
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [107]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [108]
+
+LaTeX Warning: Command \^ invalid in math mode on input line 792.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [109]
@@ -2203,11 +2197,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [115]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [116])
-[117]
+ [116]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [117]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [118])
+[119]
 \openout2 = `./chapter8/publications.aux'.
 
- (./chapter8/publications.tex [118
+ (./chapter8/publications.tex [120
 
 
 ]
@@ -2222,38 +2222,38 @@ Overfull \hbox (11.57263pt too wide) in paragraph at lines 46--51
 -based Video Localization[C]. Thirty-
  []
 
-[119]) [120]
+[121]) [122]
 \openout2 = `./chapter8/thanks.aux'.
 
- (./chapter8/thanks.tex [121
+ (./chapter8/thanks.tex [123
 
 
 
-]) [122]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 189.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 189.
+]) [124]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 191.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 191.
  (./chenlong_phd.aux
 (./chapter0/abstractC.aux) (./chapter0/abstractE.aux) (./chapter1/chap1.aux)
 (./chapter2/chap2.aux) (./chapter3/chap3.aux) (./chapter4/chap4.aux)
 (./chapter5/chap5.aux) (./chapter6/chap6.aux) (./chapter7/chap7.aux)
 (./chapter8/chap8.aux) (./chapter8/publications.aux) (./chapter8/thanks.aux))
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 189.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 189.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 191.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 191.
 Package rerunfilecheck Info: File `chenlong_phd.out' has not changed.
-(rerunfilecheck)             Checksum: F1B05007B4174A785A5CBA24735E0111.
+(rerunfilecheck)             Checksum: A265E6DF86D708B6C32E638310D63024.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 189.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 191.
  ) 
 Here is how much of TeX's memory you used:
- 54019 strings out of 492916
- 1261006 string characters out of 6133344
+ 54015 strings out of 492916
+ 1260887 string characters out of 6133344
  1457515 words of memory out of 5000000
- 57127 multiletter control sequences out of 15000+600000
+ 57123 multiletter control sequences out of 15000+600000
  564586 words of font info for 212 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 65i,22n,96p,1332b,1662s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 65i,22n,96p,1082b,1664s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chenlong_phd.pdf (142 pages).
+Output written on chenlong_phd.pdf (144 pages).

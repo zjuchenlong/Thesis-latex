@@ -374,12 +374,6 @@ Taeksoo Kim, Moonsu Cha, Hyunsoo Kim, Jung~Kwon Lee, Jiwon Kim.
   adversarial networks[C]. Proc. ICML.
 \newblock JMLR. org, 2017:1857--1865.
 
-\bibitem{morgado2017semantically}
-Pedro Morgado, Nuno Vasconcelos.
-\newblock Semantically consistent regularization for zero-shot recognition[C].
-  Proc. {IEEE} Conf. CVPR.
-\newblock 2017:6060--6069.
-
 \bibitem{goodfellow2014generative}
 Ian Goodfellow, Jean Pouget-Abadie, Mehdi Mirza, Bing Xu, David Warde-Farley,
   Sherjil Ozair, Aaron Courville, Yoshua Bengio.

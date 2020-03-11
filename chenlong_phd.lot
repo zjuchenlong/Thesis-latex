@@ -3,33 +3,33 @@
 \addvspace {10.0pt}
 \addvspace {10.0pt}
 \addvspace {10.0pt}
-\contentsline {table}{\numberline {3-1}{\ignorespaces 不同零样本分类模型在通用的四个零样本分类数据集上的性能对比\relax }}{25}{table.caption.13}% 
-\contentsline {table}{\numberline {3-2}{\ignorespaces 不同重建网络下重建图像与输入图像之间的平均像素差平方\relax }}{26}{table.caption.14}% 
-\contentsline {table}{\numberline {3-3}{\ignorespaces SP-AEN在不同优化目标条件下的性能对比\relax }}{28}{table.caption.18}% 
+\contentsline {table}{\numberline {3-1}{\ignorespaces 不同零样本分类模型在通用的四个零样本分类数据集上的性能对比\relax }}{27}{table.caption.13}% 
+\contentsline {table}{\numberline {3-2}{\ignorespaces 不同重建网络下重建图像与输入图像之间的平均像素差平方\relax }}{28}{table.caption.14}% 
+\contentsline {table}{\numberline {3-3}{\ignorespaces SP-AEN在不同优化目标条件下的性能对比\relax }}{30}{table.caption.18}% 
 \addvspace {10.0pt}
-\contentsline {table}{\numberline {4-1}{\ignorespaces 不同全局奖励函数的选择对性能的影响\relax }}{43}{table.caption.26}% 
-\contentsline {table}{\numberline {4-2}{\ignorespaces 不同基准模型对性能的影响\relax }}{43}{table.caption.27}% 
-\contentsline {table}{\numberline {4-3}{\ignorespaces 不同多智能体通信步数对性能的影响\relax }}{43}{table.caption.28}% 
-\contentsline {table}{\numberline {4-4}{\ignorespaces 不同场景图生成方法在VG数据集上的性能对比\relax }}{45}{table.caption.29}% 
+\contentsline {table}{\numberline {4-1}{\ignorespaces 不同全局奖励函数的选择对性能的影响\relax }}{45}{table.caption.26}% 
+\contentsline {table}{\numberline {4-2}{\ignorespaces 不同基准模型对性能的影响\relax }}{45}{table.caption.27}% 
+\contentsline {table}{\numberline {4-3}{\ignorespaces 不同多智能体通信步数对性能的影响\relax }}{45}{table.caption.28}% 
+\contentsline {table}{\numberline {4-4}{\ignorespaces 不同场景图生成方法在VG数据集上的性能对比\relax }}{47}{table.caption.29}% 
 \addvspace {10.0pt}
-\contentsline {table}{\numberline {5-1}{\ignorespaces VGG-19网络和ResNet-152网络中单层注意力机制的性能对比\relax }}{57}{table.caption.33}% 
-\contentsline {table}{\numberline {5-2}{\ignorespaces 空间注意力模型在VGG-19网络和ResNet-152网络下不同层的性能对比\relax }}{58}{table.caption.34}% 
-\contentsline {table}{\numberline {5-3}{\ignorespaces 空间和通道注意力模型在VGG-19网络和ResNet-152网络下不同层的性能对比\relax }}{59}{table.caption.35}% 
-\contentsline {table}{\numberline {5-4}{\ignorespaces 不同描述语句生成算法在数据集Flickr8k、Flickr30k和MSCOCO上的性能对比\relax }}{61}{table.caption.37}% 
-\contentsline {table}{\numberline {5-5}{\ignorespaces 不同图像描述语句生成算法在数据集MSCOCO的在线服务器上的性能对比\relax }}{61}{table.caption.38}% 
+\contentsline {table}{\numberline {5-1}{\ignorespaces VGG-19网络和ResNet-152网络中单层注意力机制的性能对比\relax }}{59}{table.caption.33}% 
+\contentsline {table}{\numberline {5-2}{\ignorespaces 空间注意力模型在VGG-19网络和ResNet-152网络下不同层的性能对比\relax }}{60}{table.caption.34}% 
+\contentsline {table}{\numberline {5-3}{\ignorespaces 空间和通道注意力模型在VGG-19网络和ResNet-152网络下不同层的性能对比\relax }}{61}{table.caption.35}% 
+\contentsline {table}{\numberline {5-4}{\ignorespaces 不同描述语句生成算法在数据集Flickr8k、Flickr30k和MSCOCO上的性能对比\relax }}{63}{table.caption.37}% 
+\contentsline {table}{\numberline {5-5}{\ignorespaces 不同图像描述语句生成算法在数据集MSCOCO的在线服务器上的性能对比\relax }}{63}{table.caption.38}% 
 \addvspace {10.0pt}
-\contentsline {table}{\numberline {6-1}{\ignorespaces 不同基于语句查询的视频片段检索方法的性能对比\relax }}{74}{table.caption.48}% 
-\contentsline {table}{\numberline {6-2}{\ignorespaces 不同基于视频查询的视频片段检索方法的性能对比\relax }}{74}{table.caption.49}% 
-\contentsline {table}{\numberline {6-3}{\ignorespaces 基于语句查询的视频片段检索任务中模型A、B、C、D的性能对比\relax }}{76}{table.caption.51}% 
-\contentsline {table}{\numberline {6-4}{\ignorespaces 基于视频查询的视频片段检索任务中模型A、B、C、D的性能对比\relax }}{76}{table.caption.52}% 
-\contentsline {table}{\numberline {6-5}{\ignorespaces 密集型头网络和稀疏型头网络的性能对比\relax }}{77}{table.caption.54}% 
+\contentsline {table}{\numberline {6-1}{\ignorespaces 不同基于语句查询的视频片段检索方法的性能对比\relax }}{76}{table.caption.48}% 
+\contentsline {table}{\numberline {6-2}{\ignorespaces 不同基于视频查询的视频片段检索方法的性能对比\relax }}{76}{table.caption.49}% 
+\contentsline {table}{\numberline {6-3}{\ignorespaces 基于语句查询的视频片段检索任务中模型A、B、C、D的性能对比\relax }}{78}{table.caption.51}% 
+\contentsline {table}{\numberline {6-4}{\ignorespaces 基于视频查询的视频片段检索任务中模型A、B、C、D的性能对比\relax }}{78}{table.caption.52}% 
+\contentsline {table}{\numberline {6-5}{\ignorespaces 密集型头网络和稀疏型头网络的性能对比\relax }}{79}{table.caption.54}% 
 \addvspace {10.0pt}
-\contentsline {table}{\numberline {7-1}{\ignorespaces CSS机制对不同VQA模型的性能影响\relax }}{88}{table.caption.59}% 
-\contentsline {table}{\numberline {7-2}{\ignorespaces 不同视觉问答模型在VQA-CP v2和VQA v2上的性能对比\relax }}{89}{table.caption.60}% 
-\contentsline {table}{\numberline {7-3}{\ignorespaces 不同视觉问答模型在VQA-CP v1上的性能对比\relax }}{90}{table.caption.61}% 
-\contentsline {table}{\numberline {7-4}{\ignorespaces VQA-CP v2测试集的准确率\relax }}{91}{table.caption.62}% 
-\contentsline {table}{\numberline {7-5}{\ignorespaces VQA-CP v2测试集的$\mathcal {AI}$分数\relax }}{91}{table.caption.63}% 
-\contentsline {table}{\numberline {7-6}{\ignorespaces VQA-CP-Rephrasing测试集的$CS(k)$和VQA-CP v2测试集的$\mathcal {CI}$分数\relax }}{91}{table.caption.64}% 
+\contentsline {table}{\numberline {7-1}{\ignorespaces CSS机制对不同VQA模型的性能影响\relax }}{90}{table.caption.59}% 
+\contentsline {table}{\numberline {7-2}{\ignorespaces 不同视觉问答模型在VQA-CP v2和VQA v2上的性能对比\relax }}{91}{table.caption.60}% 
+\contentsline {table}{\numberline {7-3}{\ignorespaces 不同视觉问答模型在VQA-CP v1上的性能对比\relax }}{92}{table.caption.61}% 
+\contentsline {table}{\numberline {7-4}{\ignorespaces VQA-CP v2测试集的准确率\relax }}{93}{table.caption.62}% 
+\contentsline {table}{\numberline {7-5}{\ignorespaces VQA-CP v2测试集的$\mathcal {AI}$分数\relax }}{93}{table.caption.63}% 
+\contentsline {table}{\numberline {7-6}{\ignorespaces VQA-CP-Rephrasing测试集的$CS(k)$和VQA-CP v2测试集的$\mathcal {CI}$分数\relax }}{93}{table.caption.64}% 
 \addvspace {10.0pt}
 \addvspace {10.0pt}
 \addvspace {10.0pt}

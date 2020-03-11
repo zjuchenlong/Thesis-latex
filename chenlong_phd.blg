@@ -14,7 +14,7 @@ A level-1 auxiliary file: ./chapter8/chap8.aux
 The style file: ZJUthesis.bst
 A level-1 auxiliary file: ./chapter8/publications.aux
 A level-1 auxiliary file: ./chapter8/thanks.aux
-Reallocated field_info (elt_size=4) to 14625 items from 5000.
+Reallocated field_info (elt_size=4) to 14590 items from 5000.
 Database file #1: ZJUthesis.bib
 Warning--string name "tpmai" is undefined
 --line 151 of file ZJUthesis.bib
@@ -72,45 +72,45 @@ Warning--empty pages in kingma2015adam
 Warning--can't use both volume and number fields in wu2018multi
 Warning--empty pages in ross2017right
 Warning--empty pages in jain2019attention
-You've used 275 entries,
+You've used 274 entries,
             2586 wiz_defined-function locations,
-            1742 strings with 49703 characters,
-and the built_in function-call counts, 129528 in all, are:
-= -- 9327
-> -- 3824
+            1738 strings with 49570 characters,
+and the built_in function-call counts, 129053 in all, are:
+= -- 9286
+> -- 3817
 < -- 8
-+ -- 1458
-- -- 1183
-* -- 5991
-:= -- 13920
-add.period$ -- 833
-call.type$ -- 275
-change.case$ -- 274
++ -- 1455
+- -- 1181
+* -- 5972
+:= -- 13872
+add.period$ -- 830
+call.type$ -- 274
+change.case$ -- 273
 chr.to.int$ -- 0
-cite$ -- 321
-duplicate$ -- 12698
-empty$ -- 12329
-format.name$ -- 1453
-if$ -- 29503
+cite$ -- 320
+duplicate$ -- 12653
+empty$ -- 12282
+format.name$ -- 1450
+if$ -- 29390
 int.to.chr$ -- 0
-int.to.str$ -- 275
-missing$ -- 3348
-newline$ -- 1381
-num.names$ -- 275
-pop$ -- 5697
+int.to.str$ -- 274
+missing$ -- 3338
+newline$ -- 1376
+num.names$ -- 274
+pop$ -- 5678
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 4737
+skip$ -- 4715
 stack$ -- 0
-substring$ -- 8224
-swap$ -- 8369
+substring$ -- 8184
+swap$ -- 8340
 text.length$ -- 8
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 46
-while$ -- 940
-width$ -- 278
-write$ -- 2552
+while$ -- 936
+width$ -- 277
+write$ -- 2543
 (There were 2 error messages)
