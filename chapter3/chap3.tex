@@ -38,7 +38,7 @@
 \subsection{零样本物体分类预备知识}
 给定一个训练集$\{x_i, l_i\}$，其中$x_i\in\mathcal{V}$是图像在视觉空间的映射向量，$l_i\in \mathcal{L}_s$是已见类别的类别标签。零样本物体分类任务的目标是学习一个分类器，不仅可以预测已见类别的图像（$\mathcal{L}_s$），也可以预测未见类别的图像（$\mathcal{L}_u$）。按照之前零样本物体分类方法的总结~\cite{xian2017zero,lei2015predicting}，几乎所有先进的零样本分类方法都是基于嵌入映射框架的。这类方法旨在找到一个映射函数$E$：$\mathcal{V}\rightarrow \mathcal{S}$，其中所有的类别标签在语义空间$\mathcal{S}$都是编码成$\bm{y}_l\in\mathbb{R}^d$。因此，预测类别标签$l^*$时，可以直接通过简单的最近邻查找得到：
 \begin{equation}\label{ch3:eq:eq_1}
-l^* = \max_{l\in\mathcal{L}}~\bm{y}^T_l E(x)
+l^* = \max_{l\in\mathcal{L}}~\bm{y}^T_l E(x).
 \end{equation}
 特别地，如果$l\in\mathcal{L}_u$，这类零样本分类问题称为\textbf{传统型零样本分类}（conventional ZSL）；如果$l \in\mathcal{L}_s\cup \mathcal{L}_u$，这类零样本分类问题称为\textbf{通用型零样本分类}（generalized ZSL）。另外，公式~\eqref{ch3:eq:eq_1}中映射函数$E$即可以是线性函数，也可以是基于深度神经网络的非线性函数。
 
@@ -54,7 +54,7 @@ l^* = \max_{l\in\mathcal{L}}~\bm{y}^T_l E(x)
 \subsection{分类任务优化目标}
 因为公式~\eqref{ch3:eq:eq_1}的类别预测问题本质上是一个排序问题，所以我们直接使用排序损失函数（ranking loss）作为分类任务的优化目标~\cite{frome2013devise,weston2010large}。具体来说，给定一个训练样本$(x, l)$，我们希望$\bm{y}_l$和$E(x)$之间的点积相似度较大。对于负样本$(x,l')$，$\bm{y}_{l'}$和$E(x)$之间的点积相似度较小。同时正样本的相似度相比负样本的相似度要大于一定的阈值$\gamma$：
 \begin{equation} \label{ch3:eq:eq_2}
-L_{cls} = \sum\limits_{l\neq l'}~\max\{0, \gamma - \bm{y}_l^T E(x) + \bm{y}^T_{l'} E(x)\}
+L_{cls} = \sum\limits_{l\neq l'}~\max\{0, \gamma - \bm{y}_l^T E(x) + \bm{y}^T_{l'} E(x)\},
 \end{equation}
 其中，阈值$\gamma$是一个大于0的超参数。在每次训练迭代过程中，$l'$是从所有错误的类别标签中随机任选的一个。
 
@@ -67,7 +67,7 @@ L_{cls} = \sum\limits_{l\neq l'}~\max\{0, \gamma - \bm{y}_l^T E(x) + \bm{y}^T_{l
 
 为了最小化重建损失，映射向量$F(x)$需要保持尽可能多的属性，以便于能够重建回原始的输入图像。我们参考最新的图像生成工作~\cite{johnson2016perceptual,dosovitskiy2016generating,ledig2017photo}，将重建任务的优化目标定义为：
 \begin{equation}\label{ch3:eq:eq_3}
-L_{rec} = L_{feat}+\lambda_p L_{pixel}
+L_{rec} = L_{feat}+\lambda_p L_{pixel},
 \end{equation}
 其中$L_{feat} = \|\phi\left(G\left(F(x)\right)\right)-\phi(x)\|^2_2$是特征空间上的重建损失函数，帮助图像能够保持细节感知上的相似度。我们使用卷积神经网络AlexNet~\cite{krizhevsky2012imagenet}中conv5层来表示函数$\phi$。$L_{pixel} = \|G(F(x))-x\|^2_2$是像素空间上的重建损失函数，有利于重建算法训练过程的稳定性。
 
@@ -75,7 +75,7 @@ L_{rec} = L_{feat}+\lambda_p L_{pixel}
 \subsection{对抗学习优化目标}
 到目前为止，语义向量$E(x)$和$F(x)$之间还没有进行知识迁移。我们的目标是让$E(x)$从$F(x)$中迁移部分丢失的属性特征。因为手工直接定义$E(x)$与$F(x)$之间的迁移方式比较困难，所以我们借助对抗学习的思想，来鼓励$E(x)$的分布向$F(x)$的分布靠近，通过“欺骗”判别网络$D$，来实现$F(x)$的知识向$E(x)$迁移：
 \begin{equation} \label{ch3:eq:eq_4}
-L_{adv} = \mathbb{E}_{x}\left( \log D(F(x)) \right) + \mathbb{E}_{x'}\left( \log \left[1-D(E(x'))\right] \right)
+L_{adv} = \mathbb{E}_{x}\left( \log D(F(x)) \right) + \mathbb{E}_{x'}\left( \log \left[1-D(E(x'))\right] \right),
 \end{equation}
 其中网络$E$为了减少优化目标$L_{adv}$，而网络$D$希望增大优化目标$L_{adv}$，即：$E^* = \arg\min_E \max_D L_{adv}$。
 
@@ -85,11 +85,11 @@ L_{adv} = \mathbb{E}_{x}\left( \log D(F(x)) \right) + \mathbb{E}_{x'}\left( \log
 \subsection{总体优化目标}
 将前文提到的分类任务优化目标、重建任务优化目标、以及对抗学习优化目标整合在一起，得到模型SP-AEN最终的优化目标：
 \begin{equation} \label{ch3:eq:eq_5}
-L (E, F, G, D) = L_{cls}(E) + \alpha L_{rec} (E, F, G) + \beta L_{adv}(E, F, G, D)
+L (E, F, G, D) = L_{cls}(E) + \alpha L_{rec} (E, F, G) + \beta L_{adv}(E, F, G, D),
 \end{equation}
 其中，$\alpha$和$\beta$是超参数用于权衡不同优化目标函数的权重。最终，我们可以得到：
 \begin{equation}\label{ch3:eq:eq_6}
-E^* = \arg\min\limits_{E, F, G}\max\limits_{D} L(E, F, G, D)
+E^* = \arg\min\limits_{E, F, G}\max\limits_{D} L(E, F, G, D).
 \end{equation}
 
 如图~\ref{ch3:fig:sp_aen}所示，网络$F$是重建编码网络，网络$G$是重建解码网络，重建映射向量$F(x)$可以看成是瓶颈层，来约束分类映射向量$E(x)$。另外，模型SP-AEN也可以无缝地运用到其他实验设定下的零样本物体分类问题，例如在半监督条件下，我们只需要给$F(x)$增加一个额外的对抗学习优化目标来近似先验的映射空间。
@@ -124,7 +124,7 @@ E^* = \arg\min\limits_{E, F, G}\max\limits_{D} L(E, F, G, D)
 
 \textbf{\kaishu{评价指标}}：我们参考之前的工作~\cite{xian2017zero}，使用每个类别的平均准确率作为三种实验设定下的评价指标（即：$Acc_{U\rightarrow U}$、$Acc_{S\rightarrow T}$和$Acc_{U\rightarrow T}$）。对于通用型零样本分类，我们另外使用常用的$H$值作为主要的评价指标，其中$H$值是已见类别的准确率$Acc_{S\rightarrow T}$和未见类别的准确率$Acc_{U\rightarrow T}$的调和平均数：
 \begin{equation} \label{ch3:eq:eq_7}
-H = 2\times Acc_{S\rightarrow T}\times Acc_{U\rightarrow T} /(Acc_{S\rightarrow T}+Acc_{U\rightarrow T})
+H = 2\times Acc_{S\rightarrow T}\times Acc_{U\rightarrow T} /(Acc_{S\rightarrow T}+Acc_{U\rightarrow T}).
 \end{equation}
 
 \subsection{网络模型与训练细节}
@@ -217,7 +217,7 @@ SP-AEN & \textbf{0.053}  & \textbf{0.040}& \textbf{0.047} & \textbf{0.055} \\
 
 \textbf{\kaishu{网络D和网络G的有效性}}：由于训练过程模型“见过”大量的已见类别图像，模型往往倾向于给已见类别赋予更高的分数。为了解决这个问题，通常使用“校准规则”（calibrated stacking rule）~\cite{chao2016empirical}，即对已见类别的分数减掉一个常数偏置，然后再和未见类别的分数一起进行排序比较：
 \begin{equation} \label{ch3:eq:eq_8}
-    l^* = \max_{l\in \mathcal{L}_u \cup \mathcal{L}_s }~\bm{y}^T_l E(x) - \gamma \mathbf{1} \left[ l \in \mathcal{L}_s \right]
+    l^* = \max_{l\in \mathcal{L}_u \cup \mathcal{L}_s }~\bm{y}^T_l E(x) - \gamma \mathbf{1} \left[ l \in \mathcal{L}_s \right],
 \end{equation}
 其中指示函数$\mathbf{1} \left[ \cdot \right]$用于判断类别$l$是否是已见类别，$\gamma \in \mathbb{R}$是校准系数。这个校准规则能够有效地实现对已见类别和未见类别预测之间的权衡。通过不同调整校准系数$\gamma$，可以得到一系列分类准确率（$Acc_{U \to T}$和$Acc_{S \to T}$）和已见-未见准确率曲线（Seen-Unseen accuracy Curve, SUC）。已见-未见准确率曲线下区域面积（Area Under Seen-Unseen accuracy Curve, AUSUC）也是通用型零样本分类问题中一个常用评价指标，用来评估$Acc_{U \to T}$和$Acc_{S \to T}$之间的权衡。
 
