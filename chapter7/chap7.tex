@@ -1,6 +1,6 @@
 \chapter{基于反事实样本生成的视觉问答方法}
 
-随着计算机视觉和自然语言处理等技术的发展，视觉问答技术在过去的十年间取得了长足的进步。然而，目前的视觉问答模型仍然过于依赖问题与答案之间的联系（即文本偏置）。为了缓解这一问题，近期的一些视觉问答模型开始通过引入一个辅助网络来约束视觉问答模型的训练。这种复合模型在标准视觉问答数据集VQA-CP上取得了目前最好的实验性能。但是，由于这类复合模型设计的复杂性，它们往往难以满足一个理想视觉问答模型应该具备的两个特性：（1）视觉可解释性（visual-explainable ability）：当预测答案时，模型应该基于正确的视觉图像区域。（2）问题敏感性（question-sensitive ability）：当改变问题时，模型应该能够感知问题的变化，并对预测结果做出相应的调整。因此，在本章，我们提出了一种通用的反事实样本生成机制（Counterfactual Samples Synthesizing, CSS）。CSS机制通过遮盖图像中的重要区域或问题中的重要单词来合成新的反事实训练样本，并且对这些反事实样本赋予不同的标准答案。通过使用原始训练样本和新合成的反事实样本一起对模型进行训练，能够迫使模型关注被遮盖的重要区域和单词，进而提升模型的视觉可解释性和问题敏感性。另一方面，随着模型的视觉可解释性和问题敏感性得到提升，模型更减少对文本偏置的依赖，进一步提升模型视觉问答性能。在视觉问答数据集VQA-CP中，我们通过大量的对比实验验证了CSS机制的有效性。值得注意的是，当对目前最好的视觉问答模型LMH~\cite{clark2019don}使用CSS机制进行训练后，模型在数据集VQA-CP v2上可以提升6.5\%的准确率，达到破纪录的58.95\%。
+随着计算机视觉和自然语言处理等技术的发展，视觉问答技术在过去的十年间取得了长足的进步。然而，目前的视觉问答模型仍然过于依赖问题与答案之间的联系（即文本偏置）。为了缓解这一问题，近期的一些视觉问答模型开始通过引入一个辅助网络来约束视觉问答模型的训练。这种复合模型在标准视觉问答数据集VQA-CP上取得了当时最好的实验性能。但是，由于这类复合模型设计的复杂性，它们往往难以满足一个理想视觉问答模型应该具备的两个特性：（1）视觉可解释性（visual-explainable ability）：当预测答案时，模型应该基于正确的视觉图像区域。（2）问题敏感性（question-sensitive ability）：当改变问题时，模型应该能够感知问题的变化，并对预测结果做出相应的调整。因此，在本章，我们提出了一种通用的反事实样本生成机制（Counterfactual Samples Synthesizing, CSS）。CSS机制通过遮盖图像中的重要区域或问题中的重要单词来合成新的反事实训练样本，并且对这些反事实样本赋予不同的标准答案。通过使用原始训练样本和新合成的反事实样本一起对模型进行训练，能够迫使模型关注被遮盖的重要区域和单词，进而提升模型的视觉可解释性和问题敏感性。另一方面，随着模型的视觉可解释性和问题敏感性得到提升，模型更减少对文本偏置的依赖，进一步提升模型视觉问答性能。在视觉问答数据集VQA-CP中，我们通过大量的对比实验验证了CSS机制的有效性。值得注意的是，当对视觉问答模型LMH~\cite{clark2019don}使用CSS机制进行训练后，模型在数据集VQA-CP v2上可以提升6.5\%的准确率，达到破纪录的58.95\%。
 
 \section{问题描述} \label{ch7:sec:introduction}
 视觉问答（Visual Question Answering, VQA）是视觉场景推理中一个重要的任务，也是人类迈向真正人工智能时代至关重要的一步。视觉问答任务是给定一个图像和一个关于图像场景的问题，模型需要在充分理解图像和问题之后给出正确的答案预测。随着大量视觉问答数据集的出现（如：VQA v1~\cite{antol2015vqa}、VQA v2~\cite{goyal2017making}等），视觉问答任务在近年来取得了前所未有的关注。然而，由于在真实图像数据集的收集和标注过程中不可避免地会引入文本偏置，并且目前的视觉问答模型往往过于依赖这种文本偏置（即问题和答案之间的直接联系）~\cite{agrawal2016analyzing,zhang2016yin,johnson2017clevr,goyal2017making}。例如，对于所有以“How many”开头的问题，模型都回答“2”就可以在测试集评估中取得较好的实验结果。为了尽可能地去除这种文本偏置对视觉问答模型的影响，Agrawal等人~\cite{agrawal2018don}提出了一个新的视觉问答数据集VQA-CP（VQA under Changing Priors）。数据集VQA-CP通过故意让训练集和测试集中问题和答案之间的分布不同，让过于依赖文本偏置的视觉问答模型无法在测试集中得到较好的实验结果。与此同时，大量的视觉问答模型在数据集VQA-CP上都出现了明显的性能下降~\cite{andreas2016neural,fukui2016multimodal,yang2016stacked,anderson2018bottom}。
@@ -21,11 +21,11 @@
     \label{ch7:fig:V-CSS_Q-CSS}
 \end{figure}
 
-尽管这些复合模型在数据集VQA-CP上取得了最佳的实验性能，但是由于目前复合模型这些复杂的网络设计，使得这类模型难以满足一个理想视觉问答模型应该具体的两个特性：（1）\textbf{视觉可解释性}：在预测答案时，模型应该关注正确的视觉图像区域~\cite{ross2017right}。如图~\ref{ch7:fig:motivation}（a）所示，尽管两个模型（LMH和LMH+CSS）都可以预测出正确的答案“surfing”，但实际上这两个模型在做决策时是依据完全不同的视觉区域。（2）\textbf{问题敏感性}：当改变问题时，模型应该能够感知问题的变化，并相应地调整预测结果。如图~\ref{ch7:fig:motivation}（b）所示，当两个问题的句式结构十分接近时（如只替换问题对象“luggage”为“bus”），当两个问题的意思已经完全不同时，模型应该能够感知这两个问题的差异，并将预测从“blue”变成“red”。
+尽管这些复合模型在数据集VQA-CP上取得了最佳的实验性能，但是由于目前复合模型这些复杂的网络设计，使得这类模型难以满足一个理想视觉问答模型应该具体的两个特性：（1）\textbf{视觉可解释性}：在预测答案时，模型应该关注正确的视觉图像区域~\cite{ross2017right}。如图~\ref{ch7:fig:motivation}（a）所示，尽管两个模型（LMH和LMH-CSS）都可以预测出正确的答案“surfing”，但实际上这两个模型在做决策时是依据完全不同的视觉区域。（2）\textbf{问题敏感性}：当改变问题时，模型应该能够感知问题的变化，并相应地调整预测结果。如图~\ref{ch7:fig:motivation}（b）所示，当两个问题的句式结构十分接近时（如只替换问题对象“luggage”为“bus”），当两个问题的意思已经完全不同时，模型应该能够感知这两个问题的差异，并将预测从“blue”变成“red”。
 
 在本章，我们提出了一个全新的反事实样本生成机制（CSS），来提升视觉问答模型的视觉可解释性和问题敏感性。如图~\ref{ch7:fig:V-CSS_Q-CSS}所示，CSS机制包含两种不同的样本生成方法：V-CSS和Q-CSS。对于V-CSS而言，我们通过遮盖图像中的重要区域，得到反事实图像。这些“重要区域”是指针对回答该问题时模型需要依据或者关注的图像区域。生成的反事实图像和原始问题就组成了一个新的图像问题对。对于Q-CSS而言，我们通过将原始问题中的重要单词替换成一个特定的词“[MASK]”，得到反事实问题。同样，生成的反事实问题和原始图像也组成了一个新的图像问题对。除了图像问题对，一个标准的视觉问答训练样本还需要相应的标准答案。为了避免大量的人工标注，我们设计了一个动态的答案生成机制，对新合成的图像问题对分配合理的“标准”答案（如：图~\ref{ch7:fig:V-CSS_Q-CSS}中的“not green”）。最后，通过使用原始训练样本和新生成的训练样本一起对视觉问答模型进行训练，迫使模型更加关注被遮盖的重要区域和重要单词。
 
-我们在VQA-CP数据集上通过大量的定性和定量实验都验证了CSS机制的有效性。CSS机制可以无缝地运用在任何视觉问答模型中，包括复合模型。它不仅可以提升模型的视觉可解释性和问题敏感性，同时可以进一步提升模型在VQA-CP上的准确率。值得注意的是，当对目前最好的视觉问答模型LMH~\cite{clark2019don}使用CSS机制后，模型在数据集VQA-CP v2上可以达到58.95\%的准确率。
+我们在VQA-CP数据集上通过大量的定性和定量实验都验证了CSS机制的有效性。CSS机制可以无缝地运用在任何视觉问答模型中，包括复合模型。它不仅可以提升模型的视觉可解释性和问题敏感性，同时可以进一步提升模型在VQA-CP上的准确率。值得注意的是，当对视觉问答模型LMH~\cite{clark2019don}使用CSS机制后，模型在数据集VQA-CP v2上可以达到58.95\%的准确率。
 
 
 \section{反事实样本生成}
@@ -223,9 +223,9 @@ s(a, \bm{w}_i) = \mathcal{S}(P_{vqa}(a), \bm{w}_i) \coloneqq (\nabla_{\bm{w}_i} 
 \subsection{视觉问题方法性能对比}
 
 \textbf{\kaishu{数据集VQA-CP v2和VQA v2上性能对比}}：
-我们将CSS机制应用于模型LMH~\cite{clark2019don}中，然后将模型标记为\textbf{LMH-CSS}。我们将LMH-CSS与其他目前性能最好的视觉问答模型在数据集VQA-CP v2和VQA v2上进行性能对比。根据模型的骨干网络不同，我们可以将模型分为两大类：（1）\textbf{AReg}~\cite{ramakrishnan2018overcoming}、\textbf{MuRel}~\cite{cadene2019murel}、\textbf{GRL}~\cite{grand2019adversarial}、\textbf{RUBi}~\cite{cadene2019rubi}、\textbf{SCR}~\cite{wu2019self}、\textbf{LMH}~\cite{clark2019don}和\textbf{HINT}~\cite{selvaraju2019taking}。这些模型都是将模型\textbf{UpDn}~\cite{anderson2018bottom}作为骨干网络。（2）\textbf{HAN}~\cite{malinowski2018learning}、\textbf{GVQA}~\cite{agrawal2018don}、\textbf{ReGAT}~\cite{li2019relation}、\textbf{NSM}~\cite{hudson2019learning}。这些模型都是使用其他不同的骨干网络。例如：模型\textbf{BLOCK}~\cite{ben2019block}、模型\textbf{BAN}~\cite{kim2018bilinear} 等。特别地，模型AReg、GRL、RUBi和LMH都是复合模型。
+我们将CSS机制应用于模型LMH~\cite{clark2019don}中，然后将模型标记为模型\textbf{LMH-CSS}。我们将模型LMH-CSS与其他目前性能最好的视觉问答模型在数据集VQA-CP v2和VQA v2上进行性能对比。根据模型的骨干网络不同，我们可以将模型分为两大类：（1）\textbf{AReg}~\cite{ramakrishnan2018overcoming}、\textbf{MuRel}~\cite{cadene2019murel}、\textbf{GRL}~\cite{grand2019adversarial}、\textbf{RUBi}~\cite{cadene2019rubi}、\textbf{SCR}~\cite{wu2019self}、\textbf{LMH}~\cite{clark2019don}和\textbf{HINT}~\cite{selvaraju2019taking}。这些模型都是将模型\textbf{UpDn}~\cite{anderson2018bottom}作为骨干网络。（2）\textbf{HAN}~\cite{malinowski2018learning}、\textbf{GVQA}~\cite{agrawal2018don}、\textbf{ReGAT}~\cite{li2019relation}、\textbf{NSM}~\cite{hudson2019learning}。这些模型都是使用其他不同的骨干网络。例如：模型\textbf{BLOCK}~\cite{ben2019block}、模型\textbf{BAN}~\cite{kim2018bilinear} 等。特别地，模型AReg、GRL、RUBi和LMH都是复合模型。
 
-实验结果都展示在表~\ref{ch7:tab:SOTA_v2}中。当在数据集VQA-CP v2上进行训练和测试时，模型LMH-CSS在所有的问题类别上都可以达到目前最好实验性能。特别地，CSS机制可以大幅提升模型LMH6.5\%的准确率（58.95\%相比于52.45\%）。当在数据集VQA v2上进行训练和测试时，CSS机制会造成细微的性能下降（1.74\%）。为了评估不同模型对文本偏置的依赖，我们对比了模型在两个不同数据集中性能的差异。相比于之前的模型过于依赖文本偏置（例如：模型UpDn和模型LMH在数据集VQA-CP v2和数据集VQA v2的性能差分别为23.74\%和9.19\%），模型LMH-CSS可以显著地减少模型间的性能差异至0.96\%，说明CSS机制可以显著地缓解模型对文本偏置的依赖。
+实验结果都展示在表~\ref{ch7:tab:SOTA_v2}中。当在数据集VQA-CP v2上进行训练和测试时，模型LMH-CSS在所有的问题类别上都可以达到当时最好实验性能。特别地，CSS机制可以大幅提升模型LMH6.5\%的准确率（58.95\%相比于52.45\%）。当在数据集VQA v2上进行训练和测试时，CSS机制会造成细微的性能下降（1.74\%）。为了评估不同模型对文本偏置的依赖，我们对比了模型在两个不同数据集中性能的差异。相比于之前的模型过于依赖文本偏置（例如：模型UpDn和模型LMH在数据集VQA-CP v2和数据集VQA v2的性能差分别为23.74\%和9.19\%），模型LMH-CSS可以显著地减少模型间的性能差异至0.96\%，说明CSS机制可以显著地缓解模型对文本偏置的依赖。
 
 
 %%%%%%%%%%%%% STOA on VQA-CP v2 %%%%%%%%%%%%%%%%
@@ -264,9 +264,9 @@ s(a, \bm{w}_i) = \mathcal{S}(P_{vqa}(a), \bm{w}_i) \coloneqq (\nabla_{\bm{w}_i} 
 \end{table*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\textbf{\kaishu{数据集VQA-CP v1上性能对比}}：我们同时将模型LMH-CSS与目前最好的视觉问答模型在数据集VQA-CP v1上进行性能评估。同样，根据骨干网络的不同，我们可以将这些模型分为：（1） \textbf{GVQA}。它是使用模型\textbf{SAN}~\cite{yang2016stacked}模型作为骨干网络。（2）\textbf{AReg}、\textbf{GRL}、\textbf{RUBi}和\textbf{LMH}。这些模型都是使用模型\textbf{UpDn}作为骨干网络。
+\textbf{\kaishu{数据集VQA-CP v1上性能对比}}：我们同时将模型LMH-CSS与当时最好的视觉问答模型在数据集VQA-CP v1上进行性能评估。同样，根据骨干网络的不同，我们可以将这些模型分为：（1） \textbf{GVQA}。它是使用模型\textbf{SAN}~\cite{yang2016stacked}模型作为骨干网络。（2）\textbf{AReg}、\textbf{GRL}、\textbf{RUBi}和\textbf{LMH}。这些模型都是使用模型\textbf{UpDn}作为骨干网络。
 
-所有的实验结果都展示在表~\ref{ch7:tab:SOTA_v1}中。通过和其他视觉问答模型对比，模型LMH-CSS在数据集VQA-CP v1上可以达到目前最好的实验性能。特别地，CSS机制可以提升模型LMH5.68\%的准确率（60.95\%相比于55.27\%）。
+所有的实验结果都展示在表~\ref{ch7:tab:SOTA_v1}中。通过和其他视觉问答模型对比，模型LMH-CSS在数据集VQA-CP v1上可以达到当时最好的实验性能。特别地，CSS机制可以提升模型LMH5.68\%的准确率（60.95\%相比于55.27\%）。
 
 %%%%%%%%%%%%% STOA on VQA-CP v1 %%%%%%%%%%%%%%%%
 \begin{table}[tbp]
@@ -298,9 +298,9 @@ s(a, \bm{w}_i) = \mathcal{S}(P_{vqa}(a), \bm{w}_i) \coloneqq (\nabla_{\bm{w}_i} 
 
 为了验证CSS机制对提升视觉问答模型视觉可解释性的有效性，我们主要回答两个问题：\textbf{Q1}：现有的具备视觉可解释性的模型能否嵌入复合模型的框架？\textbf{Q2}：CSS机制如何提升视觉可解释性的有效性？
 
-\textbf{\kaishu{CSS vs. SCR}}（Q1）：我们将目前最好的视觉可解释性模型SCR~\cite{wu2019self}直接嵌入到最好的复合模型LMH中，然后和CSS机制进行对比。实验结果展示在表~\ref{ch7:tab:ablative_q1}中。
+\textbf{\kaishu{CSS vs. SCR}}（Q1）：我们将当时最好的视觉可解释性模型SCR~\cite{wu2019self}直接嵌入到最好的复合模型LMH中，然后和CSS机制进行对比。实验结果展示在表~\ref{ch7:tab:ablative_q1}中。
 
-因为目前最好的视觉可解释性模型（如：SCR、HINT）都不是端到端直接训练的。为了公平地对比，我们使用一个训练好的LMH模型（VQA-CP v2上达到52.45\%的准确率）作为模型的初始化。然而，实验结果发现，随着模型的训练，模型的性能逐渐降低，这表明这些具备视觉可解释性的模型都不能嵌入到复合模型的框架中。相反，CSS机制可以无缝地嵌入复合模型并进一步提升性能。
+因为当时最好的视觉可解释性模型（如：SCR、HINT）都不是端到端直接训练的。为了公平地对比，我们使用一个训练好的LMH模型（VQA-CP v2上达到52.45\%的准确率）作为模型的初始化。然而，实验结果发现，随着模型的训练，模型的性能逐渐降低，这表明这些具备视觉可解释性的模型都不能嵌入到复合模型的框架中。相反，CSS机制可以无缝地嵌入复合模型并进一步提升性能。
 
 \textbf{\kaishu{视觉可解释性评估}}（Q2）：我们分别定量和定性地评估CSS机制对提升视觉可解释性的有效性。对于定量结果，由于数据集中缺少人工的标注（即哪些物体为重要物体），我们直接将$\mathcal{SIM}$分数当成人工标注的重要物体。然后我们设计了一个新的评价指标$\mathcal{AI}$（Average Importance）：$|s(a, \bm{v})|$分数最高的前K个物体中的平均$\mathcal{SIM}$分数。定量实验结果展示在表~\ref{ch7:tab:ablative_q2}中。对于定性结果，我们将结果展示在图~\ref{ch7:fig:visualization}（a）中。其中绿色框表示分数$s(\hat{a}, \bm{v})$大于0，即对最终预测的答案有正面的贡献的物体；而红色框表示$s(\hat{a}, \bm{v})$小于0，即对最终预测的答案有反面的贡献的物体。只有与问题答案对相关性较大的物体才展示出来（即$\mathcal{SIM}$大于等于0.6）。
 

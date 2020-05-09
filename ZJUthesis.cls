@@ -461,7 +461,7 @@ includehead, includefoot]{geometry}
 		
 		% 答辩委员会名单（英文）
 		~\\[1.2mm]
-		Committee of oral defence:\\[1.2mm]
+		Committee of oral defense:\\[1.2mm]
 		\begin{tabular}{rrc}
 			\hspace{1em}\quad&Committee Chairman: &\ZJUunderline[260pt]{\ZJU@value@Echairman} \\[1.2mm]
 			\hspace{1em}\quad&Committeeman 1: &\ZJUunderline[260pt]{\ZJU@value@EcommissionerA}\\[1.2mm]
@@ -475,7 +475,7 @@ includehead, includefoot]{geometry}
 		\vfill
 		% 答辩日期  
 		\begin{center}
-		{Date of oral defence:\ZJUunderline[150pt]{\ZJU@value@defenddateE}}
+		{Date of oral defense:\ZJUunderline[150pt]{\ZJU@value@defenddateE}}
 		\end{center}
 	}
 }

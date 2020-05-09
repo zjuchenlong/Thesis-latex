@@ -38,7 +38,7 @@
 图像场景图生成任务（Scene Graph Generation, SGG）或视觉关系检测任务（Visual Relationship Detection, VRD），是指在检测出图像中所有物体的基础上，同时对两两物体间的视觉关系进行分类。随着大规模图像场景图数据集~\cite{krishna2017visual}的出现，图像场景图生成任务逐渐成为视觉场景理解领域中一个新的研究热点。目前，绝大多数的场景图生成模型都是将场景图生成任务分为两个步骤：（1）利用预训练好的目标检测器~\cite{lu2016visual,zhuang2017towards,zhang2017visual,dai2017detecting,yang2018shuffle,yu2017visual}或在图像场景图生成数据集上重新微调的目标检测器~\cite{li2017vip,xu2017scene,yin2018zoom,zellers2018neural,zhang2017relationship,zhang2019large}对图像进行物体定位。（2）对于所有定位物体的类别以及两两物体间的视觉关系类别进行预测。通常这些方法都会直接将第一步检测出的物体位置作为模型最终预测的物体位置，而只对物体类别和视觉关系类别进行预测。
 
 
-在早期阶段，场景图生成模型都将物体类别预测和视觉关系类别预测拆分成两个独立的任务~\cite{lu2016visual,zhang2017visual,zhuang2017towards,zhu2018deep,zhang2017relationship}。这样的拆分忽略了场景内所有物体的内在联系。为了充分地利用场景内所有物体间的诱导偏置（inductive bias），一些场景图生成模型~\cite{xu2017scene,dai2017detecting,li2017scene,li2018factorizable,yin2018zoom,jae2018tensorize,yang2018graph,tang2019learning,gu2019scene,qi2019attentive,wang2019exploring}开始利用信息传递机制（message passing）来融合周围的信息。例如：Xu等人~\cite{xu2017scene}将物体和视觉关系分别看成两个独立的递归神经网络的节点，在递归神经网络的每个迭代时刻中两个节点（物体节点和视觉关系节点）互相传递信息，每个物体节点和视觉关系节点通过接收传递的周围场景信息来更新自身节点的内部特征表达，从而充分利用图像中视觉场景的全局信息。Li等人~\cite{li2017scene}通过引入图像密集描述生成任务（dense captioning），来构建三种不同的节点（物体、视觉关系以及密集描述框），然后利用同样的信息传递机制来编码周围场景信息，更新不同节点的特征表达。Yang等人~\cite{yang2018graph}只将物体看成节点，然后利用图卷积（graph convolution）来融合每个物体周围的场景信息。Zellers等人~\cite{zellers2018neural}使用递归神经网络直接将所有的物体节点串接在一起，来融合所有物体的特征。与此同时，Zellers等人~\cite{zellers2018neural}发现目前数据集（如：数据集Visual Genome）中标注的视觉关系包含大量的文本偏置，即利用物体类别和视觉关系类别之间的统计频率就可以得到较高的视觉关系分类准确率。之后，这种文本偏置常作为视觉关系预测的一种先验知识。
+在早期阶段，场景图生成模型都将物体类别预测和视觉关系类别预测拆分成两个独立的任务~\cite{lu2016visual,zhang2017visual,zhuang2017towards,zhu2018deep,zhang2017relationship}。这样的拆分忽略了场景内所有物体的内在联系。为了充分地利用场景内所有物体间的诱导偏置（inductive bias），一些场景图生成模型~\cite{xu2017scene,dai2017detecting,li2017scene,li2018factorizable,yin2018zoom,jae2018tensorize,yang2018graph,tang2019learning,gu2019scene,qi2019attentive,wang2019exploring}开始利用信息传递机制（message passing）来融合周围的信息。例如：Xu等人~\cite{xu2017scene}将物体和视觉关系分别看成两个独立的递归神经网络的节点，在递归神经网络的每个迭代时刻中两个节点（物体节点和视觉关系节点）互相传递信息，每个物体节点和视觉关系节点通过接收传递的周围场景信息来更新自身节点的内部特征表达，从而充分利用图像中视觉场景的全局信息。Li等人~\cite{li2017scene}通过引入图像密集描述生成任务（dense captioning），来构建三种不同的节点（物体、视觉关系以及密集描述框），然后利用同样的信息传递机制来编码周围场景信息，更新不同节点的特征表达。Yang等人~\cite{yang2018graph}只将物体看成节点，然后利用图卷积（graph convolution）来融合每个物体周围的场景信息。Zellers等人~\cite{zellers2018neural}使用递归神经网络直接将所有的物体节点串接在一起，来融合所有物体的特征。与此同时，Zellers等人~\cite{zellers2018neural}发现目前数据集（如：数据集Visual Genome~\cite{krishna2017visual}）中标注的视觉关系包含大量的文本偏置，即利用物体类别和视觉关系类别之间的统计频率就可以得到较高的视觉关系分类准确率。之后，这种文本偏置常作为视觉关系预测的一种先验知识。
 
 目前的图像场景图生成方法都在关注于如何更好地编码物体周围的视觉场景信息，并且它们都是直接利用所有物体和视觉关系分类的交叉熵之和作为模型的优化目标。在本文，我们分析了当前优化目标的缺陷，首次将图像场景图生成任务转化成一个多智能体协同决策问题，并直接将最终的场景图整体生成质量作为模型的优化目标。
 
@@ -79,7 +79,7 @@
 基于语句查询的视频片段检索是一个典型的多模态问题，它需要模型同时对视频序列和自然语句都进行充分的理解。目前，主流的方法都是基于自顶向下或自底向上框架。这些方法主要集中在关注如何设计更强的多模态融合模型，例如：基于视频的查询注意力模型~\cite{liu2018attentive}、基于查询的视频注意力模型~\cite{liu2018cross}和查询-视频的协同注意力模型~\cite{chen2018temporally,chen2019localizing,yuan2019find}。除了典型的自顶向下或自底向上框架外，还有两个例外（RWM~\cite{he2019read}和SM-RL~\cite{wang2019language}），它们将视频片段检索问题转换成时序决策问题，然后利用梯度策略对模型进行优化。这些模型通常将时序滑窗的变化或视频帧的跳变设为智能体的动作空间。
 
 \textbf{\kaishu{基于视频查询的视频片段检索}}：
-当查询为视频片段时，尽管模型不需要对多模态特征进行融合，但是查询视频和参考视频之间同样存在巨大的视觉场景差异，包括背景、物体、视角等。目前最好的基于视频查询的视频片段检索是模型CGBM~\cite{feng2018video}，它也是一种典型的稀疏型自底向上模型，直接对视频片段的边界帧概率进行预测。
+当查询为视频片段时，尽管模型不需要对多模态特征进行融合，但是查询视频和参考视频之间同样存在巨大的视觉场景差异，包括背景、物体、视角等。当时最好的基于视频查询的视频片段检索是模型CGBM~\cite{feng2018video}，它也是一种典型的稀疏型自底向上模型，直接对视频片段的边界帧概率进行预测。
 
 
 \subsection{自顶向下与自底向上思想}

@@ -115,11 +115,11 @@ y_t & \sim \bm{p}_t = \textrm{softmax} \left(\bm{h}_t, y_{t-1} \right).
 
 \textbf{\kaishu{图像描述生成数据集}}：我们在三个通用的图像描述生成数据集对模型SCA-CNN的性能进行评估。各个数据集具体的细节如下：
 
-\textbf{Flickr8k}~\cite{hodosh2013framing}：它一共包含8000张图像。按照官方的数据集划分，其中6000张图像作为训练集，1000张图像为验证集，1000张图像为测试集。
+\textbf{Flickr8k}~\cite{hodosh2013framing}：它一共包含8,000张图像。按照官方的数据集划分，其中6,000张图像作为训练集，1,000张图像为验证集，1,000张图像为测试集。
 
-\textbf{Flickr30k}~\cite{young2014image}: 它一共包含31000张图像。由于这个数据集缺少官方的数据集划分，我们参考Karpathy等人~\cite{karpathy2015deep}的数据集划分，将其中29000张图像作为训练集，1000张图像作为验证集，1000张图像作为测试集。
+\textbf{Flickr30k}~\cite{young2014image}: 它一共包含31000张图像。由于这个数据集缺少官方的数据集划分，我们参考Karpathy等人~\cite{karpathy2015deep}的数据集划分，将其中29,000张图像作为训练集，1,000张图像作为验证集，1,000张图像作为测试集。
 
-\textbf{MSCOCO}~\cite{lin2014microsoft}：根据该数据集的官方划分，训练集包含82783张图像，验证集包含40504张图像，以及测试集包含40775张图像。由于官方测试集中所有的图像都没有公开其中的人工标注信息。我们同样参考Karpathy等人~\cite{karpathy2015deep}的数据集划分，其中验证集和测试集各包含5000张图像。
+\textbf{MSCOCO}~\cite{lin2014microsoft}：根据该数据集的官方划分，训练集包含82,783张图像，验证集包含40,504张图像，以及测试集包含40,775张图像。由于官方测试集中所有的图像都没有公开其中的人工标注信息。我们同样参考Karpathy等人~\cite{karpathy2015deep}的数据集划分，其中验证集和测试集各包含5000张图像。
 
 \textbf{\kaishu{图像描述生成评价指标}}：我们在四个常用的图像描述生成评价指标对模型SCA-CNN的性能进行评估。各个评价指标具体的细节如下：
 
@@ -136,7 +136,7 @@ y_t & \sim \bm{p}_t = \textrm{softmax} \left(\bm{h}_t, y_{t-1} \right).
 
 
 \subsection{实验细节设定}
-对于图像编码部分，我们采用两种卷积神经网络：VGG-19~\cite{simonyan2015very}和ResNet-152~\cite{he2016deep}。对于文本解码部分，我们使用递归神经网络LSTM~\cite{hochreiter1997long}来生成描述语句。单词编码向量的维度和LSTM的隐含状态的维度分别设定为100和1000。用于计算注意力权重的共同空间维度设置为512。对于Flickr8k数据集，批处理大小设置为16；对于Flickr30k和MSCOCO，批处理大小设置为64。为了避免模型过拟合，我们采用dropout和early stopping机制。整个SCA-CNN模型直接采用端到端的训练方式，用优化算法Adadelta~\cite{zeiler2012adadelta}进行参数优化。当模型刚好预测一个特定的“END”字符或者达到了预先设定的句子最长的长度（30个单词）时，整个语句的生成过程将会终止。在测试阶段，我们采用BeamSearch~\cite{vinyals2015show}的方法，在每个时刻选择5个语句作为候选答案。
+对于图像编码部分，我们采用两种卷积神经网络：VGG19~\cite{simonyan2015very}和ResNet152~\cite{he2016deep}。对于文本解码部分，我们使用递归神经网络LSTM~\cite{hochreiter1997long}来生成描述语句。单词编码向量的维度和LSTM的隐含状态的维度分别设定为100和1000。用于计算注意力权重的共同空间维度设置为512。对于Flickr8k数据集，批处理大小设置为16；对于Flickr30k和MSCOCO，批处理大小设置为64。为了避免模型过拟合，我们采用dropout和early stopping机制。整个SCA-CNN模型直接采用端到端的训练方式，用优化算法Adadelta~\cite{zeiler2012adadelta}进行参数优化。当模型刚好预测一个特定的“END”字符或者达到了预先设定的句子最长的长度（30个单词）时，整个语句的生成过程将会终止。在测试阶段，我们采用BeamSearch~\cite{vinyals2015show}的方法，在每个时刻选择5个语句作为候选答案。
 
 
 \subsection{通道注意力机制的性能分析}
@@ -188,12 +188,12 @@ y_t & \sim \bm{p}_t = \textrm{softmax} \left(\bm{h}_t, y_{t-1} \right).
 & & Channel-Spatial & \textbf{30.4} & \textbf{24.5} & \textbf{52.5} & \textbf{91.7}\\
 \hline
 \end{tabular}}
-\caption{VGG-19网络和ResNet-152网络中单层注意力机制的性能对比} 
+\caption{VGG19网络和ResNet152网络中单层注意力机制的性能对比} 
 \label{ch5:tab:Q1}
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\textbf{\kaishu{实验结果}}：从表~\ref{ch5:tab:Q1}中可以得到以下发现：（1）对于VGG19网络而言，Spatial模型的结果比HAT的好；但对于ResNet152网络，实验结果相反。这主要的原因在于VGG19网络中有全连接层，可以保持空间语义信息，而ResNet152网络中只有平均池化层，将会破坏原有的空间语义信息。（2）相比于VGG19网络，Channel模型在ResNet152网络中可以显著提升性能（与Spatial模型相比）。这主要的原因在于ResNet152网络的最后一个卷积特征图拥有更多的通道数（如：ResNet152有2048个通道，而VGG19网络只有512个通道）。（3）在ResNet152网络中，相比于Spatial模型，Channel-Spatial和Spatial-Channel都能显著提升性能。这说明通道注意力机制在特征图通道数足够大时能显著提升性能。（4）在VGG19网络和ResNet152网络中，Channel-Spatial和Spaital-Channel两个模型的效果都非常接近，其中Channel-Spatial稍微高一点。在之后的实验中，我们使用Channel-Spatial作为空间注意力机制和通道注意力机制的融合方式。
+\textbf{\kaishu{实验结果}}：从表~\ref{ch5:tab:Q1}中可以得到以下发现：（1）对于网络VGG19而言，模型Spatial的结果比HAT的好；但对于网络ResNet152，实验结果相反。这主要的原因在于VGG19网络中有全连接层，可以保持空间语义信息，而ResNet152网络中只有平均池化层，将会破坏原有的空间语义信息。（2）相比于网络VGG19，模型Channel在网络ResNet152中可以显著提升性能（与模型Spatial相比）。这主要的原因在于网络ResNet152的最后一个卷积特征图拥有更多的通道数（如：网络ResNet152有2048个通道，而网络VGG19只有512个通道）。（3）在网络ResNet152中，相比于模型Spatial，模型Channel-Spatial和模型Spatial-Channel都能显著提升性能。这说明通道注意力机制在特征图通道数足够大时能显著提升性能。（4）在网络VGG19和网络ResNet152中，模型Channel-Spatial和模型Spaital-Channel的效果都非常接近，其中模型Channel-Spatial稍微高一点。在之后的实验中，我们使用模型Channel-Spatial作为空间注意力机制和通道注意力机制的融合方式。
 
 
 %%%%%%%%%%%%%%%%%%%%%% Q2_1 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -229,7 +229,7 @@ y_t & \sim \bm{p}_t = \textrm{softmax} \left(\bm{h}_t, y_{t-1} \right).
 &  & 3-layer & 29.6 & \textbf{24.2} & 52.1 & 90.3 \\
 \hline
 \end{tabular}}
-\caption{空间注意力模型在VGG-19网络和ResNet-152网络下不同层的性能对比} 
+\caption{空间注意力模型在网络VGG19和网络ResNet152下不同层的性能对比} 
 \label{ch5:tab:Q2_1}
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -237,7 +237,7 @@ y_t & \sim \bm{p}_t = \textrm{softmax} \left(\bm{h}_t, y_{t-1} \right).
 
 \subsection{多层注意力机制的性能分析}
 
-\textbf{\kaishu{实验设定}}：本小节主要探讨在卷积神经网络的不同层级中使用空间注意力机制或通道注意力机制对模型性能的影响。我们分别对Spatial模型和Channel-Spatial模型进行了不同层级的实验：“一层”（1-layer）、“两层”（2-layer）、“三层”（3-layer）分别表示在一个层级、两个层级和三个层级上使用注意力机制。对于VGG19网络，这三个层级分别表示：特征图conv5\_4、特征图conv5\_3和特征图conv5\_2；对于ResNet152网络，这三个层级分别表示特征图res5c、特征图res5c\_branch2b和特征图res5c\_branch2a。
+\textbf{\kaishu{实验设定}}：本小节主要探讨在卷积神经网络的不同层级中使用空间注意力机制或通道注意力机制对模型性能的影响。我们分别对模型Spatial和模型Channel-Spatial进行了不同层级的实验：“一层”（1-layer）、“两层”（2-layer）、“三层”（3-layer）分别表示在一个层级、两个层级和三个层级上使用注意力机制。对于网络VGG19，这三个层级分别表示：特征图conv5\_4、特征图conv5\_3和特征图conv5\_2；对于网络ResNet152，这三个层级分别表示特征图res5c、特征图res5c\_branch2b和特征图res5c\_branch2a。
 
 %%%%%%%%%%%%%%%%%%%%% Q2_2 %%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{table}[t]
@@ -272,7 +272,7 @@ y_t & \sim \bm{p}_t = \textrm{softmax} \left(\bm{h}_t, y_{t-1} \right).
 &  & 3-layers & 30.9 & 24.8 & 53.0 & 94.7 \\   %%
 \hline
 \end{tabular}}
-\caption{空间和通道注意力模型在VGG-19网络和ResNet-152网络下不同层的性能对比} 
+\caption{空间和通道注意力模型在VGG19网络和ResNet152网络下不同层的性能对比} 
 \label{ch5:tab:Q2_2}
 \end{table}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -282,7 +282,7 @@ y_t & \sim \bm{p}_t = \textrm{softmax} \left(\bm{h}_t, y_{t-1} \right).
 
 \subsection{空间和通道注意力卷积神经网络的性能比较}
 
-\textbf{\kaishu{实验设定}}：我们将本章提出的模型SCA-CNN与目前最好的图像描述生成方法进行对比，这些方法主要可以分为三类：（1）\textbf{Deep VS}~\cite{karpathy2015deep}、\textbf{NIC}~\cite{vinyals2015show}、\textbf{m-RNN}~\cite{mao2015deep}。这些方法都是端到端的编码器-解码器框架，并且模型中没有包含注意力机制。（2）\textbf{SAT}~\cite{xu2015show}和\textbf{HAT}~\cite{xu2015show}是空间注意力模型。其中模型SAT（Soft-ATtention）是在每步生成单词的过程中对所有的空间区域进行线性加权，而模型HAT（Hard-ATtention）是在每步生成单词的过程中对所有的区域只采样其中一个区域特征。（3）\textbf{gLSTM}~\cite{jia2015guiding}和\textbf{ATT}~\cite{you2016image}是属性注意力模型。其中模型gLSTM使用图像和生成的描述语句作为全局的属性信息，而模型ATT使用图像额外检测的属性作为属性信息。表~\ref{ch5:tab:sota}的结果“ours (V)”和“ours (R)”分别表示VGG19网络和ResNet152网络中两层Channel-Spatial模型。另外，我们还将模型（基于ResNet152网络）对官方测试集生成的描述语句结果上传到MSCOCO在线服务器进行预测，其结果展示在表~\ref{ch5:tab:server}中。
+\textbf{\kaishu{实验设定}}：我们将本章提出的模型SCA-CNN与当时最好的图像描述生成方法进行对比，这些方法主要可以分为三类：（1）\textbf{Deep VS}~\cite{karpathy2015deep}、\textbf{NIC}~\cite{vinyals2015show}、\textbf{m-RNN}~\cite{mao2015deep}。这些方法都是端到端的编码器-解码器框架，并且模型中没有包含注意力机制。（2）\textbf{SAT}~\cite{xu2015show}和\textbf{HAT}~\cite{xu2015show}是空间注意力模型。其中模型SAT（Soft-ATtention）是在每步生成单词的过程中对所有的空间区域进行线性加权，而模型HAT（Hard-ATtention）是在每步生成单词的过程中对所有的区域只采样其中一个区域特征。（3）\textbf{gLSTM}~\cite{jia2015guiding}和\textbf{ATT}~\cite{you2016image}是属性注意力模型。其中模型gLSTM使用图像和生成的描述语句作为全局的属性信息，而模型ATT使用图像额外检测的属性作为属性信息。表~\ref{ch5:tab:sota}的结果“ours (V)”和“ours (R)”分别表示网络VGG19和网络ResNet152中两层模型Channel-Spatial。另外，我们还将模型（基于网络ResNet152）对官方测试集生成的描述语句结果上传到MSCOCO在线服务器进行预测，其结果展示在表~\ref{ch5:tab:server}中。
 
 \begin{figure}[t]
     \centering
@@ -342,7 +342,7 @@ NIC & 71.3 & 89.5 & 54.2& 80.2& 40.7& 69.4& 30.9& 58.7 & \textbf{25.4} & \textbf
 \end{table*}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\textbf{\kaishu{实验结果}}：从表~\ref{ch5:tab:sota}和表~\ref{ch5:tab:server}的结果可以看出，模型SCA-CNN可以超过目前现有的模型，这是因为SCA-CNN分别考虑了卷积神经网络特征层的三个维度：空间、通道和层级，而其他的方法只考虑了其中一个维度。在MSCOCO在线服务器上，模型SCA-CNN性能比模型ATT和模型NIC低的主要原因来自两个方面：（1）模型ATT和模型NIC的结果都是集成模型（ensemble model）的结果，而模型SCA-CNN是单个模型的结果。（2）它们使用更强的卷积神经网络对输入图像提取特征，如模型NIC使用Inception-V3网络~\cite{szegedy2016rethinking}而模型SCA-CNN只使用ResNet152网络。
+\textbf{\kaishu{实验结果}}：从表~\ref{ch5:tab:sota}和表~\ref{ch5:tab:server}的结果可以看出，模型SCA-CNN可以超过目前现有的模型，这是因为模型SCA-CNN分别考虑了卷积神经网络特征层的三个维度：空间、通道和层级，而其他的方法只考虑了其中一个维度。在MSCOCO在线服务器上，模型SCA-CNN性能比模型ATT和模型NIC低的主要原因来自两个方面：（1）模型ATT和模型NIC的结果都是集成模型（ensemble model）的结果，而模型SCA-CNN是单个模型的结果。（2）它们使用更强的卷积神经网络对输入图像提取特征，如模型NIC使用网络Inception-V3~\cite{szegedy2016rethinking}而模型SCA-CNN只使用网络ResNet152。
 
 
 \subsection{空间注意力和通道注意力权重的可视化}
@@ -351,4 +351,4 @@ NIC & 71.3 & 89.5 & 54.2& 80.2& 40.7& 69.4& 30.9& 58.7 & \textbf{25.4} & \textbf
 
 \section{本章小结}
 
-在本章，我们提出了一种全新的基于注意力机制的卷积神经网络：多层空间和通道注意力网络（SCA-CNN）对图像生成描述语句。模型SCA-CNN充分利用了卷积神经网络特征图的三个维度信息（空间维度、通道维度和层级维度），大大提升了卷积网络的编码能力，并在图像描述生成任务中达到了目前最好的性能。模型SCA-CNN的贡献不仅仅是提出了一个更强的注意力机制（通道注意力机制），同时帮助人们理解在语句生成过程中，卷积网络特征图的变化过程。
+在本章，我们提出了一种全新的基于注意力机制的卷积神经网络：多层空间和通道注意力网络（SCA-CNN）对图像生成描述语句。模型SCA-CNN充分利用了卷积神经网络特征图的三个维度信息（空间维度、通道维度和层级维度），大大提升了卷积网络的编码能力，并在图像描述生成任务中达到了当时最好的性能。模型SCA-CNN的贡献不仅仅是提出了一个更强的注意力机制（通道注意力机制），同时帮助人们理解在语句生成过程中，卷积网络特征图的变化过程。

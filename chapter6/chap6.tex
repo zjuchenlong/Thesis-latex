@@ -16,7 +16,7 @@
 
 到目前为止，绝大多数的视频片段检索方法都属于\textbf{自顶向下}的方法：它们将视频序列切分为众多的候选视频片段，然后对每个候选片段进行分类和回归。具体来说，这些自顶向下的方法又可以细分为两类：（1）滑窗型（sliding-window-based）~\cite{gao2017tall,anne2017localizing,liu2018attentive,liu2018cross,ge2019mac,chen2019semantic,xu2019multilevel,zhang2019exploiting}：它们预先定义一系列不同大小的滑窗，然后利用滑窗密集地将视频“显式”地切分成若干候选视频片段，最后分别对查询和候选片段提取特征。这样，视频片段检索任务就转变为一个相似度匹配问题。但是这类方法忽略了视频中每个视频帧与其他周围帧之间的内在联系，并且通常这些周围帧对视频语义理解有着巨大的帮助~\cite{wu2019long}。（2）锚框型（anchor-based）~\cite{chen2018temporally,zhang2019man}：它们不像滑窗型直接对视频进行预先切分，而是在每个视频帧上定义若干个锚框，然后对每个锚框内的视频进行分类和回归。为了充分地利用周围的视频帧，它们通常采用递归神经网络将所有的视频帧进行串接。这类方法可以看成是基于锚框型的目标检测方法~\cite{ren2015faster}在视频领域的拓展。
 
-尽管这些自顶向下的模型（包括滑窗型和锚框型）可以在多个视频片段检索数据集上达到目前最好的性能，但是这类方法本质上仍然有许多一些不可避免的缺点：（1）最终的视频片段检索结果受预先定义的规则影响较大（如滑窗或锚框的大小、数量等）；（2）为了尽可能的提高召回率，模型必须增大滑窗或锚框数量，这将导致整个计算量增大、定位速度慢。
+尽管这些自顶向下的模型（包括滑窗型和锚框型）可以在多个视频片段检索数据集上达到当时最好的性能，但是这类方法本质上仍然有许多一些不可避免的缺点：（1）最终的视频片段检索结果受预先定义的规则影响较大（如滑窗或锚框的大小、数量等）；（2）为了尽可能的提高召回率，模型必须增大滑窗或锚框数量，这将导致整个计算量增大、定位速度慢。
 
 
 \begin{figure}[t]
@@ -161,11 +161,11 @@ s^*_i=\left\{
 
 \textbf{\kaishu{基于语句查询的视频片段检索数据集}}：我们在以下三个基于语句查询的视频片段检索数据集上对模型GDP的性能进行评估：
 
-\textbf{TACoS}~\cite{regneri2013grounding}：它一共包含127个视频和17344个文本与视频序列对。我们参考Gao等人~\cite{gao2017tall}的数据集划分，将其中50\%的样本作为训练集，25\%的样本作为验证集，25\%的样本作为测试集。在数据集TACoS中，每个样本中视频的平均长度为5分钟。
+\textbf{TACoS}~\cite{regneri2013grounding}：它一共包含127个视频和17,344个文本与视频序列对。我们参考Gao等人~\cite{gao2017tall}的数据集划分，将其中50\%的样本作为训练集，25\%的样本作为验证集，25\%的样本作为测试集。在数据集TACoS中，每个样本中视频的平均长度为5分钟。
 
-\textbf{Charades-STA}~\cite{gao2017tall}：它一共包含12408个文本与视频序列对作为训练集，3720个文本与视频序列对作为测试集。在数据集Charades-STA中，每个样本中视频的平均长度为30秒。
+\textbf{Charades-STA}~\cite{gao2017tall}：它一共包含12,408个文本与视频序列对作为训练集，3,720个文本与视频序列对作为测试集。在数据集Charades-STA中，每个样本中视频的平均长度为30秒。
 
-\textbf{ActivityNet Captions}~\cite{krishna2017dense}：它是目前为止数据集最大、最丰富的数据集，一共包含19209个视频。我们参考Yuan等人~\cite{yuan2019find}的数据集划分，将其中37421个文本与视频序列作为训练集，17505个文本与视频序列作为测试集。在数据集ActivityNet Captions中，每个样本中视频的平均长度为2分钟。
+\textbf{ActivityNet Captions}~\cite{krishna2017dense}：它是目前为止数据集最大、最丰富的数据集，一共包含19,209个视频。我们参考Yuan等人~\cite{yuan2019find}的数据集划分，将其中37,421个文本与视频序列作为训练集，17,505个文本与视频序列作为测试集。在数据集ActivityNet Captions中，每个样本中视频的平均长度为2分钟。
 
 
 \textbf{\kaishu{基于视频查询的视频片段检索数据集}}：我们在一个基于视频查询的视频片段检索数据集上对模型GDP的性能进行评估：
@@ -252,14 +252,14 @@ s^*_i=\left\{
 
 \textbf{\kaishu{基于语句查询的视频片段检索}}：在本节，我们将本章提出的模型GDP与目前最先进的基于语句查询的视频片段检索方法进行对比。按照自顶向下和自底向上框架划分，这些方法可以分为三类：（1）自顶向下模型：\textbf{VSA-RNN}~\cite{gao2017tall}、\textbf{VSA-STV}~\cite{gao2017tall}、\textbf{CTRL}~\cite{gao2017tall}、\textbf{ROLE}~\cite{liu2018cross}、\textbf{ACRN}~\cite{liu2018attentive}、\textbf{MCF}~\cite{wu2018multi}、\textbf{TGN}~\cite{chen2018temporally}、\textbf{ACL}~\cite{ge2019mac}、\textbf{SAP}~\cite{chen2019semantic}、\textbf{QSPN}~\cite{xu2019multilevel}。（2)基于强化学习的模型：\textbf{RWM}~\cite{he2019read}、\textbf{SM-RL}~\cite{wang2019language}。（3)自底向上模型：\textbf{L-Net}~\cite{chen2019localizing}、\textbf{ABLR-af}、\textbf{ABLR-aw}~\cite{yuan2019find}。
 
-表~\ref{ch6:tab:sota_nlvl}展示了模型GDP在数据集TACoS、Charades-STA和ActivityNet Captions的定量实验结果。从表~\ref{ch6:tab:sota_nlvl}可以看出，模型GDP在这三个数据集下都可以达到目前最好的性能。尤其对于更加严格的评价指标，模型的性能增益往往更加明显。例如，在数据集TACoS和ActivityNet Captions中，mIoU可以分别提升2.77\%和2.81\%；在数据集Charades-STA中，IoU@0.7可以提升2.69\%。
+表~\ref{ch6:tab:sota_nlvl}展示了模型GDP在数据集TACoS、Charades-STA和ActivityNet Captions的定量实验结果。从表~\ref{ch6:tab:sota_nlvl}可以看出，模型GDP在这三个数据集下都可以达到当时最好的性能。尤其对于更加严格的评价指标，模型的性能增益往往更加明显。例如，在数据集TACoS和ActivityNet Captions中，mIoU可以分别提升2.77\%和2.81\%；在数据集Charades-STA中，IoU@0.7可以提升2.69\%。
 
-图~\ref{ch6:fig:qualtative_results}展示了GDP模型的定性实验结果。由图~\ref{ch6:fig:qualtative_results}可以看出，置信度最高的视频帧往往都接近于人工标注的检索片段中心位置，这也符合我们的模型设计初衷，将检索片段中心帧的置信分数设为最高。
+图~\ref{ch6:fig:qualtative_results}展示了模型GDP的定性实验结果。由图~\ref{ch6:fig:qualtative_results}可以看出，置信度最高的视频帧往往都接近于人工标注的检索片段中心位置，这也符合我们的模型设计初衷，将检索片段中心帧的置信分数设为最高。
 
 
 \textbf{\kaishu{基于视频查询的视频片段检索}}：在本节，我们将本章提出的模型GDP与目前最先进的基于视频查询的视频片段检索方法进行对比。同样，我们可以将这些方法分为两类：（1）自顶向下模型：\textbf{Frame-level}~\cite{feng2018video}、\textbf{video-level}~\cite{feng2018video}、\textbf{SST}~\cite{buch2017sst}。（2）自底向上模型：\textbf{CGBM}~\cite{feng2018video}。
 
-从表~\ref{ch6:tab:sota_vrl}可以看出，模型GDP在所有的评价指标下都超过目前最好的模型。尤其对于高质量的预测，性能增益更加明显。例如：当tIoU阈值设为0.9时，模型GDP的性能相比之前最好的模型性能提升接近100\%。
+从表~\ref{ch6:tab:sota_vrl}可以看出，模型GDP在所有的评价指标下都超过当时最好的模型。尤其对于高质量的预测，性能增益更加明显。例如：当tIoU阈值设为0.9时，模型GDP的性能相比之前最好的模型性能提升接近100\%。
 
 
 \begin{figure}[tbp]
@@ -370,4 +370,4 @@ s^*_i=\left\{
 \textbf{\kaishu{场景空间节点的可视化}}：在图~\ref{ch6:fig:node_visualization}中，我们随机选取了同一个尺度下的四个节点进行可视化，其中每个节点选取了三个视频帧来表示节点信息。如图~\ref{ch6:fig:node_visualization}所示，同一个节点中的视频帧通常包含一个特定的视觉场景或相似的场景内容。
 
 \section{本章小结}
-在本章，我们深入分析了目前视频片段检索方法的优缺点，并针对稀疏型自底向上框架的设计缺点，提出了一种全新的密集型自底向上网络：基于图特征金字塔的密集型预测（GDP）。模型GDP通过引入一个图特征金字塔层来充分编码视频中多个场景之间的内在联系，提升特征帧序列的表达能力。同时，模型GDP将目前的稀疏头网络替换成密集头网络，不仅可以避免训练过程中正负样本极度不均的问题，同时可以将动作边界预测问题分解成相关性预测和动作边界回归两个子问题，简化视频片段检索的难度。在两种不同的查询形式下（基于自然语句和视频片段）的视频片段检索任务中，模型GDP都能取得目前最好的实验性能。
+在本章，我们深入分析了目前视频片段检索方法的优缺点，并针对稀疏型自底向上框架的设计缺点，提出了一种全新的密集型自底向上网络：基于图特征金字塔的密集型预测（GDP）。模型GDP通过引入一个图特征金字塔层来充分编码视频中多个场景之间的内在联系，提升特征帧序列的表达能力。同时，模型GDP将目前的稀疏头网络替换成密集头网络，不仅可以避免训练过程中正负样本极度不均的问题，同时可以将动作边界预测问题分解成相关性预测和动作边界回归两个子问题，简化视频片段检索的难度。在两种不同的查询形式下（基于自然语句和视频片段）的视频片段检索任务中，模型GDP都能取得当时最好的实验性能。
