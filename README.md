@@ -3,6 +3,6 @@
 This repo contains my Ph.D. thesis and slides for oral defense.
 
 > Title: Visual Recognition, Detection, and Reasoning for Complex Visual Scene Understanding
-> Author: Long Chen
-> Advisor: Jun Xiao
++ Author: Long Chen
++ Advisor: Jun Xiao
 
